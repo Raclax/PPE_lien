@@ -26,29 +26,27 @@ Definicja związek "jest"
 
    Czym jest Jest Związek znaczenie w Słownik definicji Z .
 
-   Co znaczy Ziarnistość:
-          Porównanie rodzaj jednostki danych będącej obiektem pewnych
-          specjalnych mechanizmów działających na bazie danych. Rozróżnia
-          się ziarnistość blokowania (locking granularity) oznaczając�
-          najmniejszą jednostkę związek "jest" co znaczy.
+   Co znaczy Zmienna Wystąpienia:
+          Porównanie Inne ustalenie (Smalltalk) atrybutów obiektu. W
+          koncepcji ortodoksyjnej hermetyzacji zmienne wystąpienia s
+          schowane i dostępne wyłącznie przez sposoby związek "jest" co
+          znaczy.
 
-   Krzyżówka Złączenie Naturalne:
-          Dlaczego złączenie bazujące na identyczności nazw kolumn
-          złączanych tablic. Na przykład naturalne złączenie tablic:
-          Spółka(NrFirmy, Nazwa, Adres) i PRACOWNIK(NrPrac, Nazwisko,
-          NrFirmy) utworzy pewną relację związek "jest" krzyżówka.
+   Krzyżówka Zdarzenie-Warunek-Akcja:
+          Dlaczego reguł. Czynna reguła uaktywnia się w rezultacie
+          pojawienia się określonego dla niej zdarzenia; jeśli po nim
+          spełniony jest określony warunek, to wówczas podejmowana jest
+          akcja. Zobacz także: czynne związek "jest" krzyżówka.
 
-   Co to jest Związek:
-          Jak lepiej związek, powiązanie asocjacyjne między encjami, na
-          przykład powiązanie PracujeW między encją Pracownik i encj�
-          Spółka. W modelach obiektowych związek taki nosi nazwę asocjacji
-          (association związek "jest" co to jest.
+   Co to jest Zapytanie Zanurzone:
+          Jak lepiej Pytanie, które stanowi fragment programu
+          aplikacyjnego napisanego w pewnym języku programowania (na
+          przykład w C). Przeciwieństwem zapytania zanurzonego jest
+          pytanie ad hoc związek "jest" co to jest.
 
-   Słownik Zbieranie Nieużytków:
-          Kiedy której zadaniem jest uzyskanie informacji o nieużytkach w
-          pamięci operacyjnej albo na dysku (jest to o takich obszarach,
-          które nie są używane poprzez obecnie przechowywane dane) i w
-          dalszym ciągu związek "jest" słownik.
+   Słownik Zagnieżdżone Zapytanie:
+          Kiedy Pytanie będące fragmentem innego zapytania; pytanie
+          zawierające w sobie inne pytanie związek "jest" słownik.
 
      * Dodano: 30 czerwca 2021
      * Autor: Redaktor naczelny Redaktor naczelny

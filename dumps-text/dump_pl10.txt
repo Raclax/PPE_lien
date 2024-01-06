@@ -1,0 +1,576 @@
+
+     * Przejdź do menu głównego
+     * Przejdź do treści
+
+Poznan.pl, oficjalna strona Miasta Poznania
+
+   61 646 33 44
+   61 646 33 44
+   Cofnij menu Dla mieszkańca
+     * Dla mieszkańca
+         ______________________________________________________________
+
+     * Dla biznesu
+         ______________________________________________________________
+
+     * Dla turysty
+         ______________________________________________________________
+
+     * Dla Przyrody
+         ______________________________________________________________
+
+     * Bezpieczeństwo
+         ______________________________________________________________
+
+     * Straż Miejska - portal
+     * Zarządzanie bezpieczeństwem
+
+     Fundusze Europejskie
+     __________________________________________________________________
+
+     * Fundusze Unijne
+     * Projekty realizowane z dofinansowaniem UE
+
+     Infoteka
+     __________________________________________________________________
+
+     * Aktualności
+
+     Kultura
+     __________________________________________________________________
+
+     * Wydział Kultury
+     * Samorządowa Karta dla Kultury
+     * Kalendarz kulturalny
+     * Afisz Poznań - wydarzenia kulturalne
+     * Kulturapoznan.pl - portal poświęcony poznańskiej kulturze
+     * CYRYL - Cyfrowe Repozytorium Lokalne
+     * Multimikser - portal poznańskich ludzi kultury
+     * Wydawnictwo Miejskie Posnania
+     * Centrum Informacji Kulturalnej - portal
+     * Kronika Miasta Poznania
+     * Nagrody naukowe i artystyczne
+     * Repertuar kin
+     * Repertuar teatrów
+     * Wydano o Poznaniu
+
+     Kultura fizyczna, sport, turystyka
+     __________________________________________________________________
+
+     * Sport - portal
+     * Trakt Królewsko-Cesarski - portal
+     * Turystyka - portal
+
+     Lato w Poznaniu
+     __________________________________________________________________
+
+     * Lato w Poznaniu
+
+     Organizacje, społeczności, NGO
+     __________________________________________________________________
+
+     * Centrum Inicjatyw Lokalnych
+     * Konsultacje społeczne
+     * Osiedla - portal
+     * Miejska Rada Seniorów
+     * Panel Obywatelski
+     * Pozarządowy Poznań - portal
+     * Poznański Budżet Obywatelski
+     * Rodzicielstwo zastępcze - Mamy etaty dla mamy i taty
+     * Wolontariat
+
+     Oświata - edukacja
+     __________________________________________________________________
+
+     * Nabór do żłobków, przedszkoli i szkół
+     * Dziecko - portal
+     * Oświata - portal
+     * Studia - portal
+
+     Portale poznan.pl
+     __________________________________________________________________
+
+     * Biuletyn Miejski
+     * Biuro Spraw Lokalowych
+     * Centrum Informacji Kulturalnej
+     * Centrum Inicjatyw Lokalnych
+     * Dziecko
+     * Fakty i Liczby
+     * Gospodarka komunalna
+     * Poznań Biznes Partner
+     * Informacje bieżące
+     * Inwestycje
+     * Kulturapoznan.pl
+     * Niepełnosprawni
+     * Miejska Rada Seniorów
+     * Osiedla
+     * Oświata
+     * Panel Obywatelski
+     * Pozarządowy Poznań
+     * Poznań Kontakt - Linia Miasta
+     * Prezydent Miasta Poznania
+     * Rewitalizacja - Odnowa
+     * Rowery
+     * Smart City
+     * Sport
+     * Straż Miejska
+     * Studia
+     * Środowisko
+     * Transport
+     * Turystyka
+     * Urbanistyka i Architektura
+     * Wydawnictwo Miejskie Posnania
+     * Wolontariat
+     * Wszystko o odpadach
+     * Wydział Kultury
+     * Video
+     * Zdrowie
+     * Zaułek Rzemiosła
+
+     Statystyki
+     __________________________________________________________________
+
+     * Statystyki wizyt
+     * Ranking wortali
+     * Statystyki rozszerzone - dane statyczne
+
+     Środowisko, zieleń
+     __________________________________________________________________
+
+     * Środowisko - portal
+     * Gospodarka komunalna
+     * Wszystko o odpadach
+     * Zwierzęta w mieście
+
+     Tożsamość, historia, cmentarze
+     __________________________________________________________________
+
+     * 15 Pułk Ułanów Poznańskich
+     * Akcja Bollwerk
+     * Cmentarze - wyszukiwarka grobów
+     * Dni Świętomarcińskie
+     * Honorowi i zasłużeni obywatele Miasta Poznania
+     * Kuchnia wielkopolska
+     * Powstanie Wielkopolskie
+     * Poznań w latach 20 XX w.
+     * Poznańscy Bambrzy
+     * Poznański Czerwiec '56
+     * Słownik gwary miejskiej Poznania
+
+     Transport, drogi
+     __________________________________________________________________
+
+     * Transport - portal
+     * Rowery
+
+     Urząd, władze miasta, obsługa mieszkańca
+     __________________________________________________________________
+
+     * Badam - Baza Danych Miasta
+     * Biuletyn Informacji Publicznej
+     * Informacje bieżące - portal informacyjny
+     * Miejski Rzecznik Konsumentów
+     * Nieodpłatna pomoc prawna
+     * Prezydent Miasta Poznania - portal informacyjny
+     * Strategia Rozwoju Miasta Poznania 2020+
+     * Współpraca międzynarodowa
+
+     Video
+     __________________________________________________________________
+
+     * Platforma video Miasta Poznania
+
+     Zagospodarowanie przestrzeni, mieszkalnictwo
+     __________________________________________________________________
+
+     * Biuro Spraw Lokalowych
+     * Urbanistyka i Architektura
+     * Park kulturowy
+     * Przestrzeń publiczna
+     * Rewitalizacja - Odnowa
+     * Sprzedaż nieruchomości miejskich - wyszukiwarka
+
+     Zasoby portalu A-Z
+     __________________________________________________________________
+
+     * Akcja Bollwerk
+     * Aktualności
+     * API poznan.pl
+     * Badam - Baza Danych Miasta
+     * Biuro Spraw Lokalowych
+     * Biuletyn Miejski
+     * Centrum Informacji Kulturalnej
+     * Centrum Inicjatyw Lokalnych
+     * Centrum Usług Wspólnych
+     * Cmentarze - wyszukiwarka grobów
+     * Dni Przedsiębiorczości Poznań
+     * Dni Świętomarcińskie
+     * Dziecko
+     * Fakty i Liczby
+     * Fundusze europejskie
+     * Galerie zdjęć MIM-a
+     * Gdzie głosować?
+     * Gospodarka komunalna
+     * Honorowi i zasłużeni obywatele Miasta Poznania
+     * Inwestycje
+     * Karta Rodziny Dużej
+     * Karta Seniora - Poznańska Złota Karta
+     * Konsulaty
+     * Konsultacje społeczne
+     * Kronika Miasta Poznania
+     * Kuchnia wielkopolska
+     * Kultura
+     * Lato w Poznaniu
+     * Mamy etaty dla mamy i taty
+     * Miasta partnerskie Poznania
+     * Miejski Rzecznik konsumentów
+     * Miejska Rada Seniorów
+     * Nabór do żłobków, przedszkoli i szkół
+     * Nagrody naukowe i artystyczne
+     * Newsletter MIMa
+     * Nieodpłatna pomoc prawna
+     * Niepełnosprawni
+     * Osiedla
+     * Oświata
+     * Panel Obywatelski
+     * Powstanie Wielkopolskie
+     * Pozarządowy Poznań
+     * Poznań Biznes Partner
+     * Poznań Kontakt - Linia Miasta
+     * Poznańscy Bambrzy
+     * Video Poznań
+     * Poznański Czerwiec '56
+     * Przestrzeń publiczna
+     * Rewitalizacja - Odnowa
+     * Rowery
+     * Samorządowa Karta dla Kultury
+     * Słownik gwary Poznańskiej
+     * Smart City
+     * Sport
+     * Straż Miejska
+     * Studia
+     * Środowisko
+     * Telefony alarmowe i pogotowia
+     * Telefony zaufania, pomoc w kryzysie
+     * Toalety publiczne
+     * Trakt Królewsko-Cesarski
+     * Transport
+     * Turystyka
+     * Urbanistyka i Architektura
+     * WiFi - "Bezprzewodowy Poznań"
+     * Wydano o Poznaniu
+     * Wydawnictwo Miejskie
+     * Wolontariat
+     * Wydział Kultury
+     * Wsparcie UNICEF
+     * Wszystko o odpadach
+     * Zarządzanie bezpieczeństwem
+     * Zdrowie
+     * Zima w Poznaniu
+     * Zwierzęta w mieście
+
+     Zdrowie, pomoc i opieka społeczna
+     __________________________________________________________________
+
+     * Centrum Usług Wspólnych
+     * Karta Rodziny Dużej
+     * Karta Seniora - Poznańska Złota Karta
+     * Niepełnosprawni - portal
+     * Pomoc dla bezdomnych
+     * Pomoc społeczna
+     * Rodzicielstwo zastępcze - Mamy etaty dla mamy i taty
+     * Wsparcie w kryzysie
+     * Zdrowie - portal
+
+     Zima w mieście
+     __________________________________________________________________
+
+     * Zima w mieście
+
+   Zamknij menu
+
+   Cofnij menu Dla biznesu
+     * Dla mieszkańca
+         ______________________________________________________________
+
+     * Dla biznesu
+         ______________________________________________________________
+
+     * Dla turysty
+         ______________________________________________________________
+
+     * Dla Przyrody
+         ______________________________________________________________
+
+     * Innowacje
+         ______________________________________________________________
+
+     * Smart City
+
+     Inwestycje i nieruchomości
+     __________________________________________________________________
+
+     * Inwestuj w Poznaniu
+     * Nieruchomości miejskie
+
+     Serwisy dla firm i sektora MŚP
+     __________________________________________________________________
+
+     * Plus Jeden Poznań
+     * Poznań Biznes Partner - portal
+     * Dni Przedsiębiorczości Poznań
+     * Zaułek rzemiosła
+
+   Zamknij menu
+
+   Cofnij menu Dla turysty
+     * Dla mieszkańca
+         ______________________________________________________________
+
+     * Dla biznesu
+         ______________________________________________________________
+
+     * Dla turysty
+         ______________________________________________________________
+
+     * Dla Przyrody
+         ______________________________________________________________
+
+     * Informacje dla turystów
+         ______________________________________________________________
+
+     * Centrum Informacji Kulturalnej
+     * Konsulaty
+     * Lato w Poznaniu
+     * Turystyka - portal
+
+   Zamknij menu
+
+   Cofnij menu Dla Przyrody
+     * Dla mieszkańca
+         ______________________________________________________________
+
+     * Dla biznesu
+         ______________________________________________________________
+
+     * Dla turysty
+         ______________________________________________________________
+
+     * Dla Przyrody
+         ______________________________________________________________
+
+     * Zielone pojęcie
+         ______________________________________________________________
+
+     * Zielone pojęcie - wortal
+
+     Środowisko
+     __________________________________________________________________
+
+     * Środowisko - portal
+     * Poznań dla pszczół
+     * Zielony Poznań
+
+     Gospodarka Komunalna
+     __________________________________________________________________
+
+     * Gospodarka komunalna - wortal
+
+     Wszystko o odpadach
+     __________________________________________________________________
+
+     * Wszystko o odpadach - wortal
+
+     Zwierzęta w mieście
+     __________________________________________________________________
+
+     * Zwierzęta w mieście
+
+   Zamknij menu
+
+   WYSZUKAJ ____________________ (BUTTON______________) Szukaj
+
+   Dostępność Niepełnosprawni
+   Wysoki kontrast
+     * Kontrast domyślny
+     * Kontrast czarno-biały
+     * Kontrast biało-czarny
+     * Kontrast żółto-czarny
+     * Kontrast czarno-żółty
+     * Kontrast czarno-zielony
+     * Kontrast zielono-czarny
+     * Kontrast żółto-niebieski
+     * Kontrast niebiesko-żółty
+
+   Zamknij menu
+   Biuletyn Informacji Publicznej Miasta Poznania
+
+   Facebook YouTube Tik Tok Instagram LinkedIn RSS
+
+Informacja o przetwarzaniu danych
+
+   Nasz serwis używa plików cookies. Wykorzystujemy je w celu świadczenia
+   usług na najwyższym poziomie, w sposób dopasowany do indywidualnych
+   potrzeb Użytkowników. Dzięki temu możliwe jest także korzystanie z
+   narzędzi analitycznych oraz udostępnianie funkcji mediów
+   społecznościowych i odtwarzacza wideo.
+
+   Kliknij przycisk „Zaakceptuj lub zamknij”, by wyrazić zgodę na używanie
+   plików cookies i przejść bezpośrednio do strony lub „Wyświetl
+   ustawienia plików cookies”, aby zobaczyć szczegółowy opis typów plików
+   cookies, a następnie podjąć decyzję, które z nich chcesz zaakceptować.
+   W każdej chwili istnieje możliwość zarządzania ustawieniami plików
+   cookies - w stopce strony umieściliśmy link do "Zmień ustawienia
+   Cookies".
+
+   Administratorem danych osobowych użytkowników serwisu jest Prezydent
+   Miasta Poznania z siedzibą przy placu Kolegiackim 17, 61-841 Poznań,
+   natomiast podmiotem przetwarzającym dane jest Instytut Chemii
+   Bioorganicznej PAN - Poznańskie Centrum Superkomputerowo-Sieciowe
+   (PCSS) ul. Noskowskiego 12/14, 61-704 Poznań.
+
+   Szczegółowe informacje na temat przetwarzania Twoich danych znajduj
+   się w Polityce prywatności.
+
+   Szczegółowe informacje o tym, w jaki sposób używane są pliki cookies, a
+   także w jaki sposób można je zablokować lub usunąć, znajdziesz w
+   Polityce cookies.
+
+Cenimy Twoją prywatność
+
+   Urząd Miasta Poznania odpowiedzialny za prowadzenie Miejskiego
+   Informatora Multimedialnego Miasta Poznania, zwraca szczególną uwagę na
+   przestrzeganie prawa użytkowników do prywatności. Prezentowana
+   informacja poniżej opisuje za co odpowiadają poszczególne cookies.
+   Zarządzaj swoimi ustawieniami dotyczącymi prywatności i wybierz jakie
+   pliki cookies chcesz zaakceptować.
+
+Wybrane pliki cookies:
+
+     * [ ] Wszystkie
+     * [X] Rozszerzone
+     * [ ] Podstawowe
+
+     * Cookies plików wideo
+     * Cookies wpływające na wydajność
+     * Funkcjonalne pliki
+     * Niezbędne pliki cookies (przyspieszają stronę)
+
+Cookies plików wideo
+
+   Na naszym serwisie internetowym, zamieszczane są  wideo z serwisu
+   YouTube. W tym celu wykorzystywane są pliki cookies podmiotów trzecich
+   dotyczące usługi YouTube zawierające m.in. preferencje użytkownika oraz
+   liczydło kliknięć. Nie ma możliwości wyłączenia tych plików cookies
+   ponieważ ładowane są dopiero przy odtwarzaniu wideo. Jeżeli więc
+   Użytkownik nie godzi się na ich załadowanie, to nie powinien odtwarzać
+   udostępnionych na stronie wideo filmów.
+
+Cookies wpływające na wydajność
+
+   Pliki cookies o charakterze analitycznym, wpływającym na wydajność
+   zbierają informację o tym, jak często strona jest odwiedzana i jak się
+   z niej korzysta np. które strony są najbardziej i najmniej popularne i
+   w jaki sposób Użytkownicy poruszają się po serwisie. Pomagają w
+   identyfikowaniu problemów z poszczególnymi podstronami. Dzięki temu
+   możemy ulepszać zawartość i wydajność strony i uczynić ją bardziej
+   przyjazną i intuicyjną dla użytkownika.
+   Pliki cookie o charakterze analitycznym i wpływające na wydajność nie
+   są usuwane po zamknięciu przeglądarki i są trwale przechowywane na
+   komputerze lub urządzeniu użytkownika.
+
+Funkcjonalne pliki
+
+   Pliki cookie wpływające na funkcjonalność umożliwiają witrynie
+   przypomnienie sobie informacji wprowadzonych przez użytkownika lub
+   dokonanych przez niego wyborów (takich jak język, wyrażone zgody) i
+   mają na celu umożliwienie korzystania z lepszych i bardziej
+   spersonalizowanych funkcji. Pliki te umożliwiają także optymalizację
+   użytkowania witryny po zalogowaniu się.Pliki cookie wpływające na
+   funkcjonalność nie są usuwane po zamknięciu przeglądarki i są trwale
+   przechowywane na komputerze lub urządzeniu użytkownika.
+
+Niezbędne pliki cookies
+
+   Te pliki cookie są niezbędne do tego, aby umożliwić prawidłowe
+   poruszanie się po naszym serwisie internetowym. Pozwalają na działanie
+   niezbędnych funkcji strony takich jak logowanie, ustawienia preferencji
+   prywatności lub zapewnienie bezpieczeństwa i nie mogą być wyłączone.
+   Możesz zmienić ustawienia przeglądarki, aby zablokować te pliki cookie,
+   jednakże niektóre funkcjonalności strony mogą nie działać poprawnie.
+   Niezbędne pliki cookie nie są przechowywane w trwały sposób na
+   komputerze lub innym urządzeniu użytkownika i są usuwane z chwil
+   zamknięcia przeglądarki.
+   (BUTTON) Ustawienia
+   (BUTTON) Zaakceptuj
+
+pagina
+
+Gwara Poznania
+
+   Pominąłeś menu
+
+menu
+
+   (BUTTON)
+   otwórz / zamknij menu
+   Rozwiń
+
+Słownik gwary miejskiej Poznania
+
+     * Hasła Słownika
+     * O Słowniku
+     * Słowo wstępne
+     * Kwalifikatory
+     * Ilustracje
+     * Autorzy
+
+Hasło na dziś
+
+     * młodzie
+
+   poznan.pl Gwara Poznania
+
+związek
+
+   rozmiar tekstu drukuj kod qr
+     * związek daw. [połączenie kolejowe]: Zaroz po piyrszy wojnie nie
+       było wprost związku banóm z Poznania do Warszawy. Inform.
+
+sieci społecznościowe
+
+   Podziel się
+   facebook
+   instagram
+   tiktok
+
+   Urząd Miasta Poznania
+   Plac Kolegiacki 17
+   61-841 Poznań
+   tel: 616 46 33 44
+
+PLATFORMA POZNAN.PL
+
+     * FAQ
+     * Polityka prywatności
+     * API - otwarte dane
+     * Kontakt
+     * Deklaracja dostępności
+     * Cookies
+     * O serwisie
+     * Kanały RSS
+     * Zmień ustawienia cookies
+     * Newsletter
+     * Mapa Strony
+     *
+     * Zasady komunikowania
+     * W3C css
+
+   Do góry
+
+   Poznańskie Centrum Superkomputerowo-Sieciowe
+
+   © 1998 - 2024 Urząd Miasta Poznania
+   Facebook Instagram Tiktok RSS VP
+
+   otwórz / zamknij menu

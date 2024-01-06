@@ -1,0 +1,2379 @@
+   Strona główna en
+
+   PRZEGLĄD EPIDEMIOLOGICZNY Kwartalnik Narodowego Instytutu Zdrowia
+   Publicznego PZH
+   - Państwowego Instytutu Badawczego i Polskiego Towarzystwa
+   EPIDEMIOLOGÓW I LEKARZY CHORÓB ZAKAŹNYCH
+   Epidemiological Review quarterly JOURNAL OF THE NATIONAL INSTITUTE OF
+   PUBLIC HEALTH - NIH
+   - NATIONAL RESEARCH INSTITUTE
+   AND THE POLISH SOCIETY OF EPIDEMIOLOGY AND INFECTIOUS DISEASES
+
+   Index Copernicus 120,79
+
+   ISSN 0033-2100 e-ISSN 2545-1898
+
+   Punktacja MNiSW 70
+   Zmień rozmiar czcionki A A A
+
+   Aktualny numer
+   Tom 77 Nr 2
+
+   Tom 77 Nr 2
+   O czasopiśmie Aktualności Wiadomości Archiwum On-line first Dla autorów
+   Dla recenzentów Prześlij artykuł Redakcja KOLEGIUM REDAKCYJNE
+   prenumerata Kontakt Niezbędnik Epidemiologa
+
+   Wyszukaj
+     * [ROK PUBLIKACJI]
+     * AUTOR_______________
+     * SŁOWA KLUCZOWE______
+     * TYTUŁ ARTYKUŁU______
+     * (BUTTON) Znajdź
+     * Zobacz wszystkie
+
+Słowniczek terminów epidemiologicznych
+
+                   SŁOWNICZEK TERMINÓW EPIDEMIOLOGICZNYCH
+
+   Zamieszczony niżej słowniczek stanowi wstępny zbiór podstawowych
+   terminów epidemiologicznych. Jest rzeczą oczywistą, że autorstwo haseł
+   w takim słowniku nie należy do ich kompilatora za jakiego w tym
+   przypadku się uważam. W przygotowaniu definicji korzystałem z wielu
+   źródeł i swoją rolę rozumiałem przede wszystkim w takim dobraniu tych
+   źródeł, aby możliwe blisko odpowiadały stosowaniu definiowanych
+   terminów w praktyce opisów i badań epidemiologicznych. W przypadkach
+   niektórych terminów (np. w tłumaczeniach i w oryginalnych
+   zastosowaniach angielskich terminów „rate” and „ratio”) puryzm językowy
+   musiał ustąpić utrwalonym obyczajom epidemiologów.
+
+   Chciałbym bardzo podziękować pani dr Annie Poznańskiej za wielki wkład
+   pracy w porady i poprawki, a także za opracowanie niektórych haseł,
+   szczególnie dotyczących terminów statystycznych.
+
+   Proszę, aby koledzy nie traktowali tego zestawu jako zbioru
+   zamkniętego. Redakcja PE będzie wdzięczna za nadsyłanie propozycji
+   definicji terminów nie uwzględnionych w słowniczku oraz krytycznych
+   uwag dotyczących już wprowadzonych haseł. Mam nadzieję, że z pomoc
+   naszego krajowego środowiska epidemiologów, z biegiem czasu, ten
+   słowniczek stanie się naszym wspólnym SŁOWNIKIEM TERMINÓW
+   EPIDEMIOLOGICZNYCH.
+
+   Andrzej Zieliński, Redaktor PE
+
+                                   TERMIN
+
+
+                                  DEFINICJA
+
+                    Analityczna epidemiologia p. epidemiologia analityczna
+
+
+                                Analityczne badanie p. badanie analityczne
+
+
+                                       Analiza decyzji (decision analysis)
+
+            Zastosowanie metod ilościowych do badania procesu decyzyjnego.
+
+                                                         Antygen (antigen)
+
+   Substancja (np. toksyna, cząsteczka mikroorganizmu lub przeszczepionego
+   organu), która została rozpoznana przez układ immunologiczny gospodarza
+                             jako obca i inicjuje wytwarzanie przeciwciał.
+
+                                                     Arbowirus (arbowirus)
+
+     Wirus należący do grupy wirusów, które są przenoszone przez stawonogi
+                                                 (komary, kleszcze, etc.).
+
+                              Arytmetyczna średnia p. średnia arytmetyczna
+
+
+                                         Asocjacja p. związek statystyczny
+
+
+                              Asymetryczny rozkład p. rozkład asymetryczny
+
+
+                                            Asymptomatyczny (asymptomatic)
+
+   Bezobjawowy.  Określenie można stosować generalnie o przebiegu choroby,
+                                lub może dotyczyć indywidualnego pacjenta.
+
+                                      Badanie analityczne (analytic study)
+
+              Badanie obserwacyjne lub eksperymentalne, w którym występuje
+            porównywanie różnych grup dla wykrycia i wyliczenia zależności
+     statystycznych między narażeniem a efektem w celu sprawdzenia hipotez
+    dotyczących czynników ryzyka, przyczyn chorób lub efektywności działań
+     profilaktycznych i leczniczych. Podstawowe układy badań analitycznych
+                 stanowią badania kohortowe i badania kliniczno-kontrolne.
+
+                                                Badanie ankietowe (survey)
+
+     Systematyczne zbieranie danych, w założeniu od reprezentatywnej próby
+    osób z populacji. Może zawierać pojedyncze lub nieliczne pytania, albo
+     obszerne wywiady zbierane na podstawie ustrukturyzowanego formularza.
+
+                              Badanie eksperymentalne (experimental study)
+
+       Badanie w którym badający wprowadza ekspozycję na osoby należące do
+     jednej z kohort, a następnie porównuje częstość występowania badanego
+    efektu (stanu zdrowia) w grupach narażonych i nie narażonych, podobnie
+    jak to ma miejsce w badaniach kohortowych. Analogiczny jest też w tych
+                 badaniach sposób analizy wyników. W doborze grup do badań
+                     eksperymentalnych często stosowana jest randomizacja.
+
+                                        Badanie kliniczne (clinical trial)
+
+       Badanie eksperymentalne wykonane na osobach indywidualnych w którym
+        badacz nakłada uczestników badania określony czynnik ekspozycji, a
+     następnie obserwuje ich przez określony czas w celu ustalenia efektów
+           badanego czynnika. Badanie kliniczne wykonywane jest w układzie
+         kohortowym. W badaniach klinicznych najczęściej uczestniczą osoby
+              chore, a nałożoną ekspozycję stanowi lek lub inna  procedura
+                                                            terapeutyczna.
+
+    Badanie kliniczne z doborem losowym p. randomizowane badanie kliniczne
+
+
+                          Badania kliniczno-kontrolne (case-control study)
+
+   Obserwacyjne badanie analityczne w którym dobierane są dwie grupy osób:
+    z badaną cechą najczęściej z problemem zdrowotnym (przypadki) oraz bez
+              tej cechy (kontrole) i porównywane są częstości występowania
+      określonego narażenia w tych grupach. Podstawową miarą porównawczą w
+    tych badaniach jest iloraz szans. Badania kliniczno-kontrolne mogą być
+                                          retrospektywne lub prospektywne.
+
+           Badanie kliniczno-kontrolne przemienne  (case -crossover study)
+
+      Badanie to stanowi metodę do badania przemijającego wpływu na ryzyko
+     wystąpienia ostrych zdarzeń. Szczególną cechą tego typu badania  jest
+    to, że te same osoby w jednym okresie są klasyfikowane jako przypadki,
+                                                  a w innym jako kontrole.
+
+        Badanie kliniczno-kontrolne oparte na bazie przypadków (case-base,
+                                                              case-cohort)
+
+   W tym badaniu losowa próba kontroli pobierana jest z bazy określonej na
+     początku badania. Próba ta zawiera zarówno osoby zdrowe jak i chore i
+       pod względem narażenia stanowi tło do którego odnoszony jest poziom
+     narażenia przypadków.  Miarą związku jest stosunek ryzyka. Badanie to
+                                nie wymaga założenia niskiej zapadalności.
+
+   Badanie kliniczno-kontrolne zagnieżdżone w kohorcie (case-control study
+                                                         nested in cohort)
+
+        W literaturze epidemiologicznej nazwa „badanie kliniczno-kontrolne
+        zagnieżdżone w kohorcie” pojawia się w stosunku do różnych układów
+    badawczych, których wspólną podstawą jest istnienie określonej kohorty
+         stanowiącej bazę badania. W tej grupie mieszczą się odmiany badań
+          przypadek-kohorta z analizą przypadków, które wystąpiły w czasie
+              obserwacji kohorty i kontroli wylosowanych z całej kohorty z
+                                       dopasowaniem indywidualnym lub bez.
+
+                                          Badanie kohortowe (cohort study)
+
+      Badania obserwacyjne w których włączenie do odpowiednich grup opiera
+   się na statusie narażenia na badany czynnik.  Następnie grupy narażenia
+           są obserwowane pod kątem częstości występowania w nich badanych
+          zdarzeń: zgonów, zachorowań  lub innych rezultatów związanych ze
+         zdrowiem.  Miarami porównawczymi w badaniach kohortowych może być
+        stosunek lub różnica zapadalności albo umieralności ale także czas
+      upływający do badanego zdarzenia. Badania kohortowe mogą być zarówno
+                                        prospektywne jak i retrospektywne.
+
+                                Badanie obserwacyjne (observational study)
+
+        Badanie w którym narażenie występuje niezależnie od badacza i jest
+         przez niego obserwowane. Badacz może dobierać grupy badane według
+
+      stanu narażenia, dla skutecznej oceny wpływu narażenia na wynik, ale
+                                     nie może go nakładać lub modyfikować.
+
+                                  Badanie prospektywne (prospective study)
+
+      Badanie analityczne w którym uczestnicy są włączani do badania przed
+                                wystąpieniem badanego rezultatu (choroby).
+
+
+                               Badanie samych przypadków (case only study)
+
+           Uzasadnione przyjęcie niezależności statystycznej dwóch różnych
+         czynników narażenia stwarza możliwość wyliczenia stosunku szans w
+           oparciu wyłącznie o przypadki. Klasyczne przykłady takich badań
+     stanowią próby określenia interakcji miedzy czynnikami genetycznymi i
+                                  środowiskowymi w powstawaniu nowotworów.
+
+                               Badanie przekrojowe (cross-sectional study)
+
+          Badanie obserwacyjne w którym próba osób z populacji jest badana
+       jednoczasowo pod kątem narażenia i stanu zdrowia. Miarą stosowana w
+                             tych badaniach jest chorobowość (prewalence).
+
+                              Badanie retrospektywne (retrospective study)
+
+    Badanie w którym badany rezultat wystąpił przed włączeniem uczestników
+                                                               do badania.
+
+                                            Badanie terenowe (field trial)
+
+          Terenowe badania eksperymentalne oparte na doborze indywidualnym
+         zdrowych ochotników lub na kohortach osób zdrowych wylosowanych z
+           populacji ogólnej. Najczęściej są wykorzystywane do sprawdzania
+         efektywności profilaktyki pierwotnej. W tych przypadkach nałożona
+        ekspozycja stanowi procedurę profilaktyczną poddawaną weryfikacji.
+
+                                      Bierna odporność p. odporność bierna
+
+
+          Bierny nadzór epidemiologiczny p. nadzór epidemiologiczny bierny
+
+
+                        Biologiczna transmisja p. przenoszenie biologiczne
+
+
+                    Błąd standardowy średniej (standard error of the mean)
+
+   Odchylenie standardowe teoretycznego rozkładu średnich prób pobranych z
+      populacji wokół średniej populacji. Jest obliczany przez podzielenie
+            odchylenia standardowego zmiennej przez pierwiastek kwadratowy
+                                                        liczebności próby.
+
+                                          Cecha jako narażenie (attribute)
+
+                Czynnik ryzyka, który stanowi wrodzona lub nabytą osobist
+    charakterystykę indywidualnej osoby lub innego badanego organizmu (np.
+         podatność wrodzona – genetyczna, wiek, płeć, grupa etniczna, masa
+                                                                   ciała).
+
+                                       Choroba objawowa (clinical disease)
+
+       Choroba manifestująca się objawami dającymi się rozpoznać w badaniu
+                                                            przedmiotowym.
+
+                       Choroba podlegająca zgłaszaniu (notifiable disease)
+
+            Choroba podlegająca obowiązkowi zgłaszania odpowiednim służbom
+                            administracyjnym w nadzorze epidemiologicznym.
+
+                   Chorobowość (disease prevalence, prevalence of disease)
+
+        Liczba osób chorych na daną chorobę,  jakie występują w określonym
+   punkcie czasowym podzielona przez liczebność całej próby lub populacji,
+                                                   w której one wystąpiły.
+
+                            Chorobowość okresowa por. prewalencja okresowa
+
+      Liczba osób chorych w określonym przedziale czasu: tych, którzy byli
+     chorzy na początku tego okresu oraz tych, którzy zachorowali w czasie
+         jego trwania, podzielona przez liczebność populacji w środku tego
+   okresu. Wskaźnik rzadko używany. Ma zastosowanie do chorób o trudnym do
+                               ustalenia początku np. chorób psychicznych.
+
+                            Chorobowość punktowa por. prewalencja punktowa
+
+         Liczba osób chorych w danej populacji podzielona przez liczebność
+                               całej populacji, do której osoby te należą.
+
+                                          Ciągła zmienna p. zmienna ciągła
+
+
+                                                      Częstość (frequency)
+
+     Liczba zdarzeń lub właściwości występujących w populacji w określonym
+          czasie podzielona przez liczebność populacji. Określenie to bywa
+     stosowane również do określenia proporcji lub prawdopodobieństwa, ale
+                                        są to zastosowania mniej poprawne.
+
+                               Częstość skumulowana (cumulative frequency)
+
+      W rozkładzie częstości jest to proporcja obserwacji o danej wartości
+   powiększona o sumę liczb wszystkich obserwacji o wartościach mniejszych
+                                                                  od niej.
+
+                                                     Czułość (sensitivity)
+
+     Cecha sprawdzianu stanowiąca stosunek prawdziwie rozpoznanych za jego
+   pomocą przypadków do wszystkich przypadków rzeczywiście występujących w
+            badanej próbie lub populacji. Pojęcie odnoszące się do testów,
+      definicji, a także do rozpoznawania i zgłaszania przypadków ognisk w
+         nadzorze epidemicznym. W liczniku występują przypadki  prawidłowo
+      rozpoznane, a w mianowniku wszystkie rzeczywiście posiadające badan
+       cechę - zarówno rozpoznane, jak i nierozpoznane (fałszywie ujemne).
+
+                                      Czynna odporność p. odporność czynna
+
+
+                                            Czynnik chorobotwórczy (agent)
+
+       Organizm, substancja chemiczna lub forma energii, którego obecność,
+        nadmiar, niedobór lub brak stanowi warunek wystąpienia choroby lub
+                                  innego niepożądanego efektu zdrowotnego.
+
+                                          Czynnik gospodarza (host factor)
+
+   Osobnicza cecha, która wpływa na podatność, narażenie lub reakcje danej
+                                   osoby w stosunku do czynnika zakaźnego.
+
+                                              Czynnik ryzyka (risk factor)
+
+      Cecha zachowania lub stylu życia danej osoby, narażenie środowiskowe
+    lub cecha wrodzona związana ze wzrostem prawdopodobieństwa wystąpienia
+                                        niekorzystnego efektu zdrowotnego.
+
+                               Czynnik środowiskowy (environmental factor)
+
+          Czynnik zewnętrzny (np. klimat, pogoda, stan sanitarny, obecność
+                insektów, opieka medyczna), który może wpływać na czynniki
+                      chorobotwórcze oraz na prawdopodobieństwo narażenia.
+
+          Czynny nadzór epidemiologiczny p. nadzór epidemiologiczny czynny
+
+
+                                       Dane indywidualne (individual data)
+
+    Wyniki obserwacji dotyczące pojedynczego uczestnika badania; syn. dane
+                                                           surowe, rekord.
+
+                                          Dane surowe p. dane indywidualne
+
+
+                                         Dawka - odpowiedź (dose-response)
+
+         Funkcja zależności między wielkością odpowiedzi (efektu), a dawk
+                                                   narażenia (ekspozycji).
+
+                                     Definicja przypadku (case definition)
+
+      Zbiór jednolicie stosowanych kryteriów określających, czy dana osoba
+   może być zakwalifikowana jako przypadek w badaniach epidemiologicznych.
+        Kryteria te zwykle dotyczą stopnia pewności rozpoznania (przypadek
+         możliwy, prawdopodobny, potwierdzony) i opierają się na objawach,
+          badaniach dodatkowych, a w przypadku chorób zakaźnych również na
+                   prawdopodobieństwie kontaktu z osobą chorą. W badaniach
+       epidemiologicznych, a szczególnie w opracowaniu ognisk do definicji
+                  mogą być włączone dane dotyczące czasu, miejsca i osoby.
+
+                                                Determinanta (determinant)
+
+   Czynnik, który wpływa na wystąpienie efektu w postaci stanu zdrowia lub
+        innej zdefiniowanej cechy. Pojęcie to obejmuje przyczyny, czynniki
+        ryzyka oraz czynniki zapobiegające i lecznicze. Jest to określenie
+                  mocne i nie powinno być stosowane przy słabych związkach
+                                                           statystycznych.
+
+                                    Diagram prostokątny p. wykres słupkowy
+
+
+                           Droga szerzenia zakażeń (route of transmission)
+
+             Sposób w jaki czynnik zakaźny jest przenoszony między źródłem
+       zakażenia, a osoba zakażaną.  Jest pięć podstawowych dróg szerzenia
+        zakażeń: kontakt, droga kropelkowa, droga powietrzna, przenoszenie
+            przez przedmioty, przenoszenie przez wektory; p. przenoszenie.
+
+                                            Drzewo decyzji (decision tree)
+
+        Wykres rozgałęziony, który reprezentuje logiczną sekwencję decyzji
+        podejmowanych w różnych dziedzinach, w tym w medycynie i w zdrowiu
+                                                               publicznym.
+
+                                    Dyskretna zmienna p. zmienna dyskretna
+
+
+                                                            Efekt (effect)
+
+                Rezultat zdarzenia lub cechy; skutek określonej przyczyny.
+
+                         Efekt przynależności p. efekt zdrowego pracownika
+
+        Uogólnienie „efektu zdrowego pracownika” na inne wyróżnione grupy.
+
+                         Efekt zdrowego pracownika (healthy worker effect)
+
+    Potencjalne źródło stronniczości doboru w badaniach epidemiologicznych
+          wynikające z faktu, że osoby pracujące mają zwykle lepsze wyniki
+   mierników stanu zdrowia niż ogół populacji. Stąd w badaniach, gdy grupę
+     badana stanowią pracownicy, a grupę kontrolną próba populacji ogólnej
+            epidemiologiczne miary porównawcze mogą być zaniżone lub nawet
+            odwrócone w stosunku do ich rzeczywistej wartości uzyskanej na
+                                             jednolicie dobranych próbach.
+
+                                               Efektywność (effectiveness)
+
+       Zdolność realnie prowadzonego programu interwencyjnego do uzyskania
+                                  założonego lub przewidywanego rezultatu.
+
+                        Eksperymentalne badanie p. badanie eksperymentalne
+
+
+                                                   Ekspozycja p. narażenie
+
+
+                                                         Endemia (endemic)
+
+   Stała obecność czynnika zakaźnego lub choroby w określonym obszarze lub
+      populacji. Niezmienne lub nieznacznie zmieniająca się zapadalność na
+                                                        określoną chorobę.
+
+                                                       Epidemia (epidemic)
+
+    Występowanie większej od oczekiwanej liczby przypadków choroby, urazów
+        lub innych zdarzeń związanych ze zdrowiem w określonej okolicy lub
+     populacji w określonym przedziale czasowym. Zwykle zakłada się, że s
+     to przypadki mające wspólną przyczynę lub w jakiś sposób powiązane ze
+                                           sobą; por. ognisko epidemiczne.
+
+                                              Epidemiologia (epidemiology)
+
+          Nauka zajmująca się badaniem rozpowszechnienia chorób lub innych
+    zjawisk związanych ze zdrowiem w populacji oraz warunkami i czynnikami
+      wpływającymi na ich występowanie, a także zastosowaniem wyników tych
+                               badań dla zapobiegania im i ich zwalczania.
+
+                         Epidemiologia analityczna (analytic epidemiology)
+
+          Badania epidemiologiczne służące sprawdzaniu zależności pomiędzy
+       narażeniem, a jego efektem w tym związków przyczynowych i czynników
+     ryzyka.  W epidemiologii analitycznej stosowane są grupy porównawcze:
+    grupa kontrolna dostarczająca danych wyjściowych lub oczekiwanych oraz
+       badana, której dane mogą być odnoszone do grupy kontrolnej w sposób
+             ilościowy w celu sprawdzania hipotez na temat związków między
+                                                    narażeniem, a efektem.
+
+                          Epidemiologia opisowa (descriptive epidemiology)
+
+   Dział epidemiologii zajmujący się zbieraniem i systematyzowaniem danych
+         o zachorowaniach i narażeniach ludzi w populacji z uwzględnieniem
+       charakterystyki tych osób (kto?), czasu zachorowania (kiedy?), oraz
+                              miejsca zachorowania lub narażenia (gdzie?).
+
+                            Epidemiologia stosowana (applied epidemiology)
+
+       Dział epidemiologii zajmujący się praktycznym wykorzystaniem wiedzy
+              epidemiologicznej do zapobiegania chorobom i ich zwalczania.
+
+                               Epidemiologia terenowa (field epidemiology)
+
+              Dział epidemiologii stosowanej, w którym badania i działania
+             zapobiegawcze są wykonywane w terenie, tzn. w obszarach lub w
+              populacjach, gdzie badane zdarzenia wystąpiły lub występują.
+
+                       Estmator Kaplana –Meiera (Kaplan - Meier estimator)
+
+    Formuła oszacowania prawdopodobieństwa dotrwania członków populacji do
+     czasu  wystąpienia  określonego wydarzenia (time to event), np. zgonu
+                                                          (survival time):
+
+     gdzie t[i] stanowi czas trwania badania do punktu czasowego  i,  d[i]
+     jest liczbą zdarzeń (zgonów) jakie wystąpiły do punktu i, a n[i] jest
+      wyjściową liczbą osób, którzy dożyli do momentu t[i][  ](dokładniej,
+                                pozostawali w obserwacji do tego momentu).
+
+     Graficzna prezentacja estymatora K-M w skali czasu nosi nazwę krzywej
+                                    Kaplana Meiera; por. krzywa przeżycia.
+
+                                                    Ewaluacja (evaluation)
+
+     Systematyczne i bezstronne badanie działań i prowadzonych programów w
+               celu określenia ich trafności, efektywności i skuteczności.
+
+                        Fałszywie dodatni wynik p. wynik fałszywie dodatni
+
+
+                          Fałszywie ujemny wynik p. wynik fałszywie ujemny
+
+
+                                Frakcja przypisana p. proporcja przypisana
+
+
+                              Geometryczna średnia p. średnia geometryczna
+
+
+               Gęstość zapadalności (incidence density, incidence rate) p.
+                                                 współczynnik zapadalności
+
+        Liczba osób, u których rozwija się choroba w określonym przedziale
+     czasu lub wieku podzielona przez osobo-czas np. osobo-lata obserwacji
+                                  wszystkich członków populacji źródłowej.
+
+                                                          Gospodarz (host)
+
+      Osoba lub inna żywa istota, która jest podatna na zakażenie lub jest
+          miejscem schronienia czynnika zakaźnego bez objawów chorobowych.
+
+                                      Granice grupy (klasy) (class limits)
+
+        Wartości liczbowe górnej i dolnej granicy przedziału klasyfikacji.
+
+                               Granice przedziału ufności (confidence limi
+
+                   Punkty końcowe przedziału ufności (maksimum i minimum).
+
+       Grupa kontrolna (comparison group, referent group, reference group)
+
+     W badaniu analitycznym stanowi grupę porównawczą, do której odnoszone
+           są wyniki uzyskane w grupie podstawowej (badanej); narażonych w
+    badaniach kohortowych, a przypadków w badaniach kliniczno-kontrolnych.
+   W badaniu kohortowym jest to grupa (kohorta) nienarażonych, a w badaniu
+                                 kliniczno-kontrolnym grupa osób zdrowych.
+
+                     Grupa narażonych, syn. grupa narażona (exposed group)
+
+       Zbiór osób, które pozostawały w kontakcie z podejrzewaną przyczyną,
+           albo posiadają cechę, która jest podejrzewana o bycie przyczyn
+                        (czynnikiem ryzyka) badanego problemu zdrowotnego.
+
+                              Grupa podwyższonego ryzyka (high risk group)
+
+              Podzbiór populacji składający się z osób, które z racji cech
+           osobniczych, uwarunkowań środowiskowych, trybu życia lub innych
+   okoliczności mają wyższe prawdopodobieństwo wystąpienia u nich choroby,
+      urazu lub innej niekorzystnej okoliczności związanej ze zdrowiem niż
+                           wynosi średnia dla populacji z której pochodzą.
+
+                                      Grupa porównawcza p. grupa kontrolna
+
+
+                                Grupa ryzyka p. grupa podwyższonego ryzyka
+
+
+                                  Grupowanie zmiennych (class of variable)
+
+      Łączenie zmiennych w grupy według według ich wartości liczbowych lub
+         innych kryteriów. Dokonywane bywa w celu ułatwienia analizy przez
+                           operacje na grupach powiązanych wspólnotą cech.
+
+                                            Hiperendemiczny (hyperendemic)
+
+         Obszar lub populacja, w której występuje stale szczególnie wysoka
+                                              zapadalność lub chorobowość.
+
+                                                    Hipoteza  (hypothesis)
+
+         Przypuszczenie sformułowane w postaci zdań dających się sprawdzić
+      (potwierdzić lub odrzucić) w odpowiednio przeprowadzonych badaniach.
+
+                            Hipoteza statystyczna (statistical hypothesis)
+
+          Zdanie dotyczące istnienia lub braku różnic między porównywanymi
+   parametrami lub rozkładami, które może zostać zweryfikowane przy użyciu
+                                                    testów statystycznych.
+
+                            Hipoteza alternatywna (alternative hypothesis)
+
+         Przypuszczenie, że badane narażenie jest powiązane badanym stanem
+   zdrowia. Hipoteza alternatywna jest przyjmowana, gdy prawdopodobieństwo
+       prawdziwości hipotezy zerowej („p”) jest niższe od założonego przed
+                            badaniem jako wystarczającego do jej przyjęcia
+
+                                         Hipoteza zerowa (null hypothesis)
+
+   Przypuszczenie, że dwie  grupy (lub więcej) nie różnią się pod względem
+                 badanej miary (np. zapadalności lub częstości narażenia).
+             Przeprowadzony test statystyczny nie pozwala na potwierdzenie
+      słuszności hipotezy zerowej. Jej weryfikacja polega na odrzuceniu na
+         rzecz hipotezy alternatywnej lub na stwierdzeniu braku podstaw do
+                                                               odrzucenia,
+
+                                                     Histogram (histogram)
+
+     Kolumnowy wykres rozkładu częstości zmiennej ciągłej, której wartości
+         są podzielone na przedziały odłożone na osi poziomej, a częstości
+   odpowiadające tym przedziałom na osi pionowej. Szerokość kolumn wykresu
+     odpowiada szerokości przedziałów, więc kolumny histogramu stykają się
+   ze sobą. Stąd pole kolumn histogramu pozostaje w proporcji do częstości
+                                    wartości zmiennej, które reprezentują.
+
+                   Historia naturalna choroby (natural history of disease)
+
+                 Dzieje postępu choroby od momentu zachorowania do zejścia
+            (wyzdrowienie, trwały ubytek zdrowia lub zgon) bez interwencji
+                                                             zewnętrznych.
+
+                                            Iloraz szans p. stosunek szans
+
+
+                        Informacja demograficzna (demographic information)
+
+            Osobista charakterystyka osoby lub grupy osób (np. wiek, płeć,
+      przynależność etniczna, zajęcie) używana w epidemiologii opisowej do
+                                       charakterystyki osób lub populacji.
+
+                                    Interwałowa skala p. skala interwałowa
+
+
+                                                      Izolacja (isolation)
+
+        Odseparowanie osób chorych od zdrowych podatnych, a praktycznie od
+    ogółu społeczeństwa, w celu zapobiegania zakażeniom, por. kwarantanna.
+
+                                                         Klaster (cluster)
+
+             W epidemiologii oznacza nagromadzenie ponad liczbę oczekiwan
+   przypadków choroby, urazów lub innych zdarzeń związanych ze zdrowiem na
+                               określonym obszarze i w określonym okresie.
+
+                            Klastrowe próbkowanie p. próbkowanie klastrowe
+
+
+                            Klasyfikacja zmiennych p. grupowanie zmiennych
+
+
+                                  Kliniczne kryteria p. kryteria kliniczne
+
+
+                Kliniczno-kontrolne badania p. badania kliniczno-kontrolne
+
+
+                                                          Kohorta (cohort)
+
+
+        W szerokim sensie jest to odpowiednio zdefiniowana grupa ludzi lub
+         innych jednostek, na których wykonywane jest badanie. W badaniach
+       kohortowych definiowana jest jako grupa o wspólnych przejściach lub
+    narażeniach, obserwowana przez określony czas pod kątem występowania u
+         jej członków badanego wyniku (outcome). W badaniach analitycznych
+                             porównywane są kohorty o różnych narażeniach.
+
+                                            Kohorta urodzeń (birth cohort)
+
+      Grupa ludzi urodzonych w tym samym, niezbyt długim okresie czasu np.
+                                                        roku, pięcioleciu.
+
+                                    Kohortowe badanie p. badanie kohortowe
+
+
+                                                         Kontakt (contact)
+
+                Styczność ze źródłem zakażenia; osoba która była narażona.
+
+                                      Kontakt bezpośredni (direct contact)
+
+
+         Narażenie lub przeniesienie czynnika zakaźnego ze źródła na osobę
+     podatną przez dotyk (np. kontakt jego skóry lub śluzówki ze skórą lub
+            śluzówkami człowieka, zwierzęcia, rośliną lub innymi skażonymi
+                                                   elementami środowiska).
+
+                                                        Kontrola (control)
+
+
+                      Członek grupy kontrolnej (referencyjnej).  W badaniu
+     kliniczno-kontrolnym jest to osoba wolna od badanej choroby,  badaniu
+                                             kohortowym osoba nienarażona.
+
+                                     Kryteria kliniczne (clinical critera)
+
+     Cechy i zdarzenia występujące u osób chorych  (objawy, dane wywiadu i
+          wyniki badań laboratoryjnych) mające zastosowanie w definiowaniu
+                                      choroby do celów epidemiologicznych.
+
+                Krzywa częstości skumulowanej (cumulative frequency curve)
+
+
+
+
+
+
+
+    Wykres częstości skumulowanej podający dla każdego przedziału zmiennej
+    proporcje lub odsetek wartości mniejszych lub równych. Ten typ wykresu
+                              ułatwia znalezienie mediany oraz percentyli.
+
+
+                                          Krzywa epidemii (epidemic curve)
+
+      Histogram przedstawiający przebieg epidemii (ogniska epidemicznego),
+      który przyporządkowuje liczby nowych zachorowań przedziałom czasowym
+                                      (najczęściej dniom) ich wystąpienia.
+
+                                            Krzywa normalna (normal curve)
+
+            Graficzne przedstawienie rozkładu normalnego (Gaussa), “krzywa
+                                         dzwonowa”, por. rozkład normalny.
+
+                                         Krzywa przeżycia (survival curve)
+
+      Wykres liniowy przedstawiający odsetek osób z danej populacji, które
+    przeżyły określone okresy czasu liczone od punktu startowego, w którym
+     żyli wszyscy członkowie populacji. Może dotyczyć też innych problemów
+   zdrowotnych lub pojawiających się cech. Jej najczęściej stosowaną form
+         jest krzywa Kaplana –Meiera oparta na estymatorze tych autorów, w
+      którym szacowane jest prawdopodobieństwo, że członek danej populacji
+           przeżyje poza punkt czasowy t; por. estymator Kaplana - Meiera.
+
+                                                  Kwarantanna (quarantine)
+
+   Oddzielenie od ogółu społeczeństwa osób zdrowych podejrzanych o kontakt
+                                      z osobami zakażonymi, por. izolacja.
+
+                                                       Licznik (numerator)
+
+       Dzielna w liczbach przedstawianych w postaci ułamka, por. mianownik
+
+                                             Lista rekordów (line listing)
+
+       Typ bazy danych epidemiologicznych sporządzonej podobnie do arkusza
+    kalkulacyjnego z kolumnami i rzędami, w której każdy rząd reprezentuje
+      „rekord” danych określonej osoby, a kolumny zawierają przypisane tym
+                                  osobom wartości analizowanych zmiennych.
+
+                                 Łańcuch epidemiczny  (chain of infection)
+
+       Szerzenie się czynnika zakaźnego z rezerwuaru lub gospodarza, który
+   opuszcza go przez „wrota wyjścia”, jest przenoszony „drogami szerzenia”
+         i wnika do następnego podatnego gospodarza przez „wrota wejścia”.
+
+                                   Mapa epidemiologiczna (shaded area map)
+
+   Wizualne przedstawienie geograficznego wzorca problemu zdrowotnego (np.
+     zapadalności, umieralności, miejsca narażenia). Mapy epidemiologiczne
+      mogą przedstawiać dane zbiorcze, przy czym kolorowane lub zacieniane
+   obszary mogą pokrywać się z jednostkami administracyjnymi lub regionami
+       geograficznymi (choropleth). W innej odmianie obszary kolorowane s
+        według przedziałów przedstawianej miary w formie zamkniętych pętli
+     (isopleth). Mapy epidemiologiczne mogą też zawierać nanoszone na mapę
+             geograficzną np. plan miasta punkty występowania pojedynczych
+      zachorowań lub ognisk epidemicznych - mapa punktowa; por mapa Snowa.
+
+                                                  Mapa punktowa (spot map)
+
+   Mapa danego obszaru z naniesionymi na nią punktami obrazującymi miejsca
+       zachorowań lub występowania przypadków choroby, jak również miejsca
+      zamieszkania lub zatrudnienia osób chorych albo miejsca występowania
+                                                 narażeń, por. mapa Snowa.
+
+                                             Mapa Snowa (Snow cholera map)
+
+               Naniesione na plan Londynu punkty odpowiadające lokalizacji
+    pojedynczych zachorowań na cholerę w 1854 r. wokół studni na Broad st.
+   Jest to najbardziej znana z wielu podobnych map wykonanych na polecenie
+                                                                 J. Snowa.
+
+
+
+                                                          Mediana (median)
+
+     Miara centralnego położenia, która rozdziela dane na dwie równoliczne
+       części. Równe liczby wyników są położone poniżej i powyżej mediany.
+
+                                                   Mianownik (denominator)
+
+           Mianownik stanowi dzielnik w liczbach przedstawianych w postaci
+        ułamka.  Stosowany w miarach epidemiologicznych stanowi liczebność
+             zbioru odniesienia, którym najczęściej jest badana populacja.
+
+                                  Miara asocjacji (measure of associacion)
+
+   Ilościowa zależność między narażeniem (ekspozycją), a badanym problemem
+           zdrowotnym np. stosunek ryzyka, różnica ryzyka, stosunek szans.
+
+                 Miara położenia centralnego (measure of central location)
+
+   Wartość centralna reprezentująca rozkład danych w zbiorze. Podstawowymi
+          miarami centralnymi są: średnia arytmetyczna, mediana i modalna.
+
+                                          Miara rozkładu p. miara rozrzutu
+
+
+                                        Miara rozrzutu (measure of spread)
+
+           Miara rozkładu obserwacji w stosunki do miary centralnej. Miary
+   rozrzutu używane w epidemiologii to wariancja, odchylenie standardowe i
+                                                  zakres międzykwartylowy.
+
+                                          Miara związku p. miara asocjacji
+
+
+                        Międzykwartylowy zakres p. zakres międzykwartylowy
+
+
+                                                            Modalna (mode)
+
+    Miara położenia centralnego stanowiąca wartość najczęściej występując
+                                                                w zbiorze.
+
+                    Nadzór epidemiologiczny (epidemiological surveillance)
+
+     Systematyczna, bieżąca ocena zagrożeń dla zdrowia populacji oparta na
+    zbieraniu, interpretacji, analizie i udostępnianiu informacji na temat
+       aktualnie występujących zachorowań lub innych zdarzeń związanych ze
+    zdrowiem. Jego celem jest umożliwienie decydentom bardziej efektywnego
+   zarządzania poprzez dostarczanie aktualnych, danych epidemiologicznych.
+
+                     Nadzór epidemiologiczny bierny (passive surveillance)
+
+     Nadzór w którym zachorowania są zgłaszane przez uprawnione osoby (np.
+      lekarzy), które je rozpoznali. Instytucje zajmujące się gromadzeniem
+   danych nie wyszukują ich czynnie, ale mogą zwracać się do zgłaszających
+         o weryfikację zgłoszeń. Rutynowy nadzór nad chorobami zakaźnymi w
+                                  Polsce jest przykładem nadzoru biernego.
+
+                      Nadzór epidemiologiczny czynny (active surveillance)
+
+             Nadzór w którym zachorowania są wyszukiwane w populacji lub w
+          instytucjach medycznych przez epidemiologów prowadzących nadzór.
+
+                                    Nadzór lekarski (medical surveillance)
+
+   Monitorowanie stanu zdrowia osób, które mogły być narażone na określone
+    patogeny lub czynniki szkodliwe w środowisku w celu wczesnego wykrycia
+                               zachorowania lub pogorszenia stanu zdrowia.
+
+               Nadzór oparty na wskaźnikach (indicator based surveillance)
+
+           Nadzór epidemiologiczny w którym podstawą zgłoszeń są wskaźniki
+    choroby: objawy lub wyniki badań laboratoryjnych. Nadzór rutynowy jest
+                                          nadzorem opartym na wskaźnikach.
+
+                   Nadzór oparty na zdarzeniach (event based surveillance)
+
+      Nadzór w którym przedmiotem zgłoszeń są zdarzenia np. zgony, ogniska
+        biegunek. Ten typ zgłoszeń pochodzących często od służb i osób nie
+             należących personelu medycznego jest wprowadzany w sytuacjach
+                             specjalnych np. w czasie masowych zgromadzeń.
+
+                              Nadzór syndromiczny (syndromic surveillance)
+
+    Monitorowanie częstości występowania w określonej pojedynczych objawów
+         lub ich zespołów bez odnoszenia ich do specyficznych chorób. Taki
+     system służy do wczesnego wykrywania epidemii (ognisk epidemicznych),
+       szczególnie z wielu źródeł. Jest wprowadzany w przypadkach masowych
+                  zgromadzeń lub w stanach zagrożenia bioterrorystycznego.
+
+                              Nadzór typu sentinel (sentinel surveillance)
+
+      Typ nadzoru epidemiologicznego, który korzysta z wybranych wcześniej
+        źródeł informacji (lekarzy, szpitali, przychodni), które raportuj
+          wszystkie przypadki określonej choroby lub grupy chorób. Ten typ
+        nadzoru najlepiej sprawdza się jako uzupełnienie rutynowego sytemu
+                nadzoru. Pozwala bowiem na dokładniejszą analizę czynników
+        etiologicznych, często pomijaną w nadzorze rutynowym. Zastosowanie
+      nadzoru typu sentinel do oceny zapadalności wiąże się z trudnościami
+                dopasowania populacji źródłowej  występujących przypadków.
+
+                                                      Narażenie (exposure)
+
+       Wejście w styczność z przyczyną lub posiadanie cechy która może być
+           przyczyną (czynnikiem ryzyka) określonego problemu zdrowotnego.
+        Negatywna konotacja słowa narażenie w języku polskim sprawia, że w
+           stosunku do czynników mogących zapobiegać powstaniu choroby lub
+    łagodzić jej przebieg, np. szczepionki lub leki, zręczniej jest używać
+                                                    określenia ekspozycja.
+
+                                  Niezależna zmienna p. zmienna niezależna
+
+
+                                        Nominalna skala p. skala nominalna
+
+
+                                                        Nosiciel (carrier)
+
+        Osoba lub zwierzę, w organizmie którego przebywa  czynnik zakaźny,
+           który może być przenoszony na innych, przy czym u nosiciela nie
+      występują objawy chorobowe. Nosiciel może być asymptomatyczny, który
+    nigdy nie ma objawów choroby lub mieć objawy choroby, a być nosicielem
+           w okresie bezobjawowym lub skąpoobjawowym: w okresie wylęgania,
+          rekonwalescencji i później. Okres nosicielstwa może być krótki -
+             nosicielstwo przejściowe lub długi - nosicielstwo chroniczne.
+
+                            Nowopojawiające się przypadki (incydent cases)
+
+     Przypadki zachorowań, które występują w czasie obserwacji danej próby
+                                    lub populacji, por. przypadki zastane.
+
+                                                Obciążenie p. stronniczość
+
+
+                                                   Objaw obiektywny (sign)
+
+    Objaw choroby obserwowany przez inne osoby niż sam chory, zwykle przez
+     lekarza w czasie badania fizykalnego, np. podwyższone ciśnienie krwi,
+       wybroczyny. Wyniki badań laboratoryjnych i innych badań dodatkowych
+                 mimo ich obiektywnego charakteru klasyfikowane są osobno.
+
+                                               Objaw subiektywny (symptom)
+
+   Objaw choroby zaobserwowany lub odczuwany przez pacjenta, np. niepokój,
+                                                          męczliwość, ból.
+
+                                Obserwacja lekarska (medical surveillance)
+
+       Monitorowanie osoby, która mogła być narażona na działanie czynnika
+   szkodliwego (zakaźnego, chemicznego, radiologicznego lub innego) w celu
+                                       wczesnego wykrycia objawów choroby.
+
+                              Obserwacyjne badanie p. badania obserwacyjne
+
+
+                               Odchylenie standartowe (standard deviation)
+
+      Najczęściej używana miara rozproszenia rozkładu częstości. Wyliczana
+                               jest jako pierwiastek kwadratowy wariancji.
+
+                                             Odcięta p. zmienna niezależna
+
+
+                                       Odporność bierna (passive immunity)
+
+           Odporność uzyskana w wyniku wniknięcia do organizmu przeciwciał
+   wytworzonych w innym organizmie. Ten rodzaj odporności uzyskuje płód od
+        matki w wyniku przechodzenia przeciwciał przez łożysko albo osoba,
+      której podano w celach leczniczych surowicę zawierająca przeciwciała
+                                 lub preparat zawierający immunoglobuliny.
+
+                                       Odporność czynna (active immunity).
+
+       Odporność wywołana w odpowiedzi na antygen (np. czynnik zakaźny lub
+               szczepionkę) charakteryzująca się występowaniem przeciwciał
+         wytworzonych przez gospodarza. Jej składnikiem jest też aktywacja
+                                                    odporności komórkowej.
+
+              Odporność zbiorowiskowa (community immunity, herd immunity )
+
+         Zmniejszenie prawdopodobieństwa zachorowania na chorobę zakaźną w
+       populacji obejmującej odpowiednio duży odsetek osób odpornych np. z
+        powodu zaszczepienia, p. próg odporności zbiorowiskowej. Odporność
+            zbiorowiskowa zależy od mniejszego prawdopodobieństwa kontaktu
+     zakaźnego.  W kontaktach rzadziej się trafia na osoby, które mogą być
+                                                        źródłem zakażenia.
+
+                                Ognisko szerzące się (propagated outbreak)
+
+       Ognisko choroby zakaźnej w którym występuje szerzenie się zakażeń z
+      osób zakażonych wcześniej na osoby uprzednio zdrowe. Są to zakażenia
+                                       wtórne i zakażenia wyższych rzędów.
+
+          Ognisko zależne od zachowań ryzykownych (behavioral risk related
+                                                                 outbreak)
+
+      Ognisko w którym szerzenie się chorób jest uwarunkowane zachowaniami
+           ryzykownymi, np. uprawianiem nie chronionego seksu lub dożylnym
+                                                 przyjmowaniem narkotyków.
+
+                      Ognisko ze wspólnym źródłem (common-source outbreak)
+
+          Ognisko epidemiczne w którym wszystkie osoby, które zachorowały,
+        zakaziły się lub zatruły z tego samego źródła, np. zachorowania po
+        wypiciu wody ze skażonej studni. Pojedyncze  źródło może działać w
+                                               sposób ciągły lub punktowo.
+
+                   Ognisko ze źródłem ciągłym (continuous source outbreak)
+
+               Ognisko ze wspólnym źródłem, które działa przez okres równy
+                                  wielokrotności okresu inkubacji choroby.
+
+                      Ognisko ze źródłem punktowym (point source outbreak)
+
+          Ognisko ze wspólnym źródłem, które działa przez okres krótszy od
+                                         jednego okresu inkubacji choroby.
+
+                                          Okres epidemii (epidemic period)
+
+        Czas trwania epidemii  od początku wzrostu zapadalności do powrotu
+                 zapadalności do wartości bliskich tym sprzed jej wybuchu.
+
+                        Okres latencji (latency period) p. okres wylęgania
+
+        Czas upływający od narażenia na czynnik przyczynowy do wystąpienia
+               objawów. Określenie stosowane częściej w stosunku do chorób
+      niezakaźnych. W chorobach zakaźnych okres latencji nosi nazwę okresu
+                                                                wylęgania.
+
+                                       Okres wylęgania (incubation period)
+
+    Czas upływający od narażenia na czynnik zakaźny do wystąpienia objawów
+                                                                  choroby.
+
+                                Okres zaraźliwości (period of infectivity)
+
+   Okres w którym osoba zakażona wydala czynnik zakaźny i może być źródłem
+         zakażenia. W różnych chorobach okres ten może wykraczać poza czas
+                                                     występowania objawów.
+
+                            Opisowa epidemiologia p. epidemiologia opisowa
+
+
+                                                  Osobo-czas (person-time)
+
+
+     Suma czasu obserwacji wszystkich uczestników danej kohorty wolnych od
+        choroby (zdrowych do końca badania oraz osób, które zachorowały do
+         momentu zachorowania). Stanowi mianownik przy obliczaniu gęstości
+                                                             zapadalności.
+
+                                                                 Oś (axis)
+
+         W prostokątnym układzie współrzędnych linia prosta reprezentująca
+               wartości liczbowe. Oś pozioma („X”) tzw. odcięta (abscissa)
+        reprezentuje zwykle zmienne niezależne (zmienne analizy) np. czas,
+        dawki badanej substancji, czynniki ryzyka choroby), zaś oś pionowa
+           („Y”) tzw. rzędna (ordinate) badane efekty (outcome) np. liczbę
+                                                    zachorowań lub zgonów.
+
+                                                         p patrz wartość p
+
+
+                                        Pacjent – przypadek (case-patient)
+
+     W badaniu kliniczno-kontrolnym osoba chora, mająca uraz lub inny stan
+    związany ze zdrowiem, który spełnia kryteria definicji przypadku w tym
+                                                                  badaniu.
+
+                                                       Pandemia (pandemic)
+
+      Epidemia występująca na dużych obszarach globu (w licznych krajach i
+         kontynentach) i zwykle charakteryzująca się wysoką zapadalnością.
+
+                                       Pandemia grypy (influenza pandemic)
+
+    Definicja pandemii grypy (WHO- luty 2009) dotyczy szerzenia się nowych
+            szczepów wirusa grypy bez odniesienia do ciężkości zachorowań.
+     Wyróżniono w tej definicji 4 okresy i 6 faz z których trzeci okres (6
+    faza) określa właściwą pandemię: trwałe szerzenie się zakażeń  wirusem
+                grypy w populacji ludzkiej w dwu lub więcej regionach WHO.
+
+                                                Patogenność (patogenicity)
+
+          Zdolność czynnika zakaźnego do wywoływania choroby po zakażeniu,
+     mierzona jako proporcja osób, które zachorowały  w stosunku do liczby
+                                         zakażonych  przez ten czynnik.  .
+
+                                                   Percentyle (percentile)
+
+              Zbiór punktów odcięcia używanych do podziału rozkładu na 100
+      uszeregowanych interwałów z których każdy zawiera 1% obserwacji. Np.
+    5-ty percentyl stanowi punkt odcięcia z 5% danych poniżej tego punktu,
+                                                     a 95% danych powyżej.
+
+                                 Phylogenetic tree (drzewo filogenetyczne)
+
+            Wykres rozgałęziony, który pokazuje pochodzenie ewolucyjne lub
+                genetyczne grup osobniczych lub poszczególnych organizmów.
+
+                                    Piramida populacji (poulation pyramid)
+
+          Graficzne przedstawienie rozkładu wieku osób należących do danej
+      populacji z uwzględnieniem ich płci w formie histogramu poziomego, w
+    którym kobiety rozkład wieku kobiet umieszczony jest po prawej stronie
+                       linii środkowej (podstawowej), a mężczyzn po lewej.
+
+                                      Piramida populacji Polski, dane GUS:
+
+
+
+                                     Podział rozłączny (disjoint division)
+
+          Podział w którym każdy element należy tylko do jednej kategorii.
+
+                                Podział wyczerpujący (exhaustive division)
+
+   Podział zmiennej na kategorie w którym każdy element zmiennej należy do
+                                                        jakiejś kategorii.
+
+                  Położenie centralne (central location, central tendency)
+
+           Statystyczna miara środka rozkładu. Najczęściej stosowane miary
+                      położenia centralnego to średnia, mediana i modalna.
+
+                                                    Populacja (population)
+
+       Zbiór mieszkańców obszaru geograficznego lub całkowita liczba ludzi
+        odpowiednio zdefiniowanej grupy, np. osób pracujących w określonym
+         zawodzie. W badaniach epidemiologicznych populacją nazywamy zbiór
+      jednostek, osób lub przedmiotów do którego zamierzamy odnieść wyniki
+                              przeprowadzonego badania epidemiologicznego.
+
+                            Populacja osób podatnych p. populacja w ryzyku
+
+
+                                   Populacja w ryzyku (population at risk)
+
+      Grupa ludzi, których wspólną cechą jest podatność na badaną chorobę.
+    Stanowi ona mianownik miar zapadalności i chorobowości. Nie należy jej
+          mylić z populacją osób narażonych, które mogą w niej występować.
+
+          W literaturze epidemiologicznej jako „population at risk” często
+            określa się grupy szczególnie zagrożone jakaś chorobą. Jest to
+    alternatywne, poprawne stosowanie tego terminu w języku angielskim. Po
+               polsku właściwsze jest określenie „grupy ryzyka” lub „grupy
+                                                     podwyższonego ryzyka”
+
+                                    Populacja źródłowa (source population)
+
+   Jest to populacja, z której pobierana jest próba. Znaczy to, że wszyscy
+     uczestnicy tej populacji mają szansę, że zostaną włączeni do badania.
+      Wyniki uzyskane z tak pobranej próby powinny dotyczyć tej populacji.
+      Warunek ten stanowi wewnętrzną ważność badania (internal validity)..
+
+                                      Porządkowa skala p. skala porządkowa
+
+
+                                  Populacji piramida p. piramida populacji
+
+
+                                                  Prewalencja (prevalence)
+
+     Liczba osób posiadająca daną cechę podzielona przez liczebność  całej
+       próby lub populacji, do której osoby te należą. Prewalencja choroby
+                                                  nosi nazwę chorobowości.
+
+                                  Prewalencja okresowa (period prevalence)
+
+        Liczba osób z określoną cechą w określonym przedziale czasu: tych,
+    którzy mieli tę cechę na początku tego okresu oraz tych, którzy nabyli
+        tę cechę (np. zachorowali) w czasie jego trwania, podzielona przez
+                                liczebność populacji w środku tego okresu.
+
+                                   Prewalencja punktowa (point prevalence)
+
+         Prewalencja w podstawowym znaczeniu słowa. Proporcja osób w danej
+         populacji posiadających określoną cechę określona w danym punkcie
+                                           czasowym np. w określonym dniu.
+
+                   Procent przypisanego ryzyka (attributable risk percent)
+
+   Dla kohort narażonych i nie narażonych stanowi on wyrażony w procentach
+              iloczyn „różnicy ryzyka” podzielonej przez zapadalność wśród
+                                                               narażonych:
+
+
+           Można go też wyliczyć na podstawie stosunku ryzyka, bo jeżeli w
+        powyższym ułamku licznik i mianownik podzielimy przez  zapadalność
+                                      wśród nienarażonych I[0], otrzymamy:
+
+
+       W badaniach kliniczno-kontrolnych procent przypisanego ryzyka można
+        wyliczyć w przybliżeniu zastępując stosunek ryzyka „RR” stosunkiem
+                                                                szans „OR”
+
+
+   Procent przypisanego ryzyka dla populacji (population attributable risk
+                                                                  percent)
+
+        Procent przypisanego ryzyka  można wyliczyć dla populacji w której
+                   proporcja narażonych wynosi P[e ], a zapadalność  I[t]:
+
+
+
+       Proporcja  przypisana (attributable proportion, etiologic fraction)
+
+    Stosunek różnicy zapadalności która nastąpiła w związku z zadziałaniem
+    danego narażenia  (AR) w do liczby zapadalności wśród narażonych w tym
+                                       samym czasie w tej samej populacji.
+
+
+
+                                                    Proporcja (proportion)
+
+         Stosunek liczebności części jakiegoś zbioru do liczebności całego
+           zbioru. Może być wyrażona jako ułamek lub procent, por. szanse.
+
+                             Proporcja zapadalności (incidence proportion)
+
+    Proporcja osób należących do zamkniętej kohorty, które zachorowały lub
+      u których wystąpiło inne zdarzenie związane ze zdrowiem w określonym
+            przedziale czasowym wyliczana jako stosunek liczby tych nowych
+              przypadków do liczebności populacji w chwili rozpoczęcia jej
+            obserwacji. Zapadalność w ognisku epidemicznym jest przykładem
+                                                   proporcji zapadalności.
+
+                              Prospektywne badanie p. badanie prospektywne
+
+
+                                   Próba (sample, actual study population)
+
+              Podzbiór populacji docelowej wybrany w celu wykonania na nim
+        bezpośrednich pomiarów i analiz. Próbę charakteryzuje liczebność i
+                                                            sposób doboru.
+
+                                              Próba losowa (random sample)
+
+   Stanowi podzbiór (osób lub przedmiotów) z populacji źródłowej dobranych
+          w ten sposób, że każda z nich ma znane z góry prawdopodobieństwo
+                 (zwykle, ale zawsze takie samo) znalezienia się w próbie.
+
+
+                             Próba reprezentatywna (representative sample)
+
+        Próba, której charakterystyka odpowiada cechom populacji, z której
+                                                          została pobrana.
+
+                                  Próbkowanie klastrowe (cluster sampling)
+
+           Odmiana doboru losowego w której losowane są zdefiniowane grupy
+          uczestników badania, np. klasy szkolne, zakłady pracy, jednostki
+   terytorialne, a następnie badaniu poddawane są wszystkie osoby należące
+    do poszczególnych grup. W porównaniu z indywidualnym doborem losowym w
+    próbkowaniu klastrowym do osiągnięcia tego samego poziomu znamienności
+                    statystycznej potrzebne są większe liczby uczestników.
+
+                               Próbkowanie warstwowe (stratified sampling)
+
+     Odmiana doboru losowego w którym populacja jest w sposób wyczerpujący
+   podzielona na warstwy (subpopulacje) rozłączne i z każdej z tych warstw
+   dobierana jest próba losowa. Próbkowanie warstwowe pozwala na uzyskanie
+             próby bardziej reprezentatywnej w populacji o nierównomiernym
+    rozkładzie liczebności subpopulacji interesujących badacza, np. kobiet
+                                               i mężczyzn albo grup wieku.
+
+               Próg odporności zbiorowiskowej (threshold of herd immunity)
+
+    Odsetek osób uodpornionych w populacji, który wystarcza do wystąpienia
+      spadku zapadalności na daną chorobę. Dla chorób bardziej zaraźliwych
+    (odra) jest on wyższy niż dla mniej zaraźliwych (zakażenia Haemophilus
+                                                              influenzae).
+
+                                                   Przeciwciało (antibody)
+
+                  Substancja białkowa powstająca w organizmie w odpowiedzi
+                                               immunologicznej  na antygen
+
+                                   Przedział klasyfikacji (class interval)
+
+      Zakres wartości liczbowych zmiennej ciągłej odpowiadający określonej
+             kategorii zmiennych pogrupowanych. Może być podstawą rozkładu
+      prawdopodobieństwa nowej zmiennej składającej się z grup. Przykładem
+                                  przedziałów klasyfikacji są grupy wieku.
+
+                                   Przedział ufności (confidence interval)
+
+               Wyznaczany na podstawie próby przedział, który z określonym
+      prawdopodobieństwem  (np. 95%) zawiera wartość szacowanego parametru
+                                                            dla populacji.
+
+
+                                Przekrojowe badanie p. badania przekrojowe
+
+
+                Przekształcenie logarytmiczne (logarithmic transformation)
+
+      Przekształcenie danych liczbowych na ich logarytmy. Bywa stosowane w
+         przypadku rozkładów silnie asymetrycznych oraz w przypadku dużych
+   różnic w wielkości analizowanych liczb, a także w sytuacjach, gdy celem
+                badania jest określenie stosunku liczb, a nie ich różnicy.
+
+                           Przenoszenie bezpośrednie (direct transmission)
+
+      Przenoszenie zakażenia przez przekazanie czynnika zakaźnego wprost z
+                rezerwuaru przez bezpośredni kontakt lub drogą kropelkową.
+
+                          Przenoszenie biologiczne (biologic transmission)
+
+        Czynne przekazywanie zakażenia przez wektora, w którego organizmie
+          czynnik zakaźny przed zakażeniem gospodarza przechodzi przemiany
+      biologiczne stanowiące część jego cyklu życiowego, por. przenoszenie
+                                                              mechaniczne.
+
+
+                     Przenoszenie droga powietrzną (airborne transmission)
+
+             Forma przenoszenia pośredniego, w którym czynnik zakaźny jest
+        zawiedzony w powietrzu w postaci drobnego pyłu lub kropelek płynu,
+                                   które mogą długo przebywać w powietrzu.
+
+     Przenoszenie drogą kropelkową (droplet transmission, droplet spread))
+
+   Przenoszenie zakażenia na krótki dystans przy kaszlu lub kichaniu przez
+      większe kropelki przebywające w powietrzu stosunkowo krótko. Jest to
+               przenoszenie bezpośrednie w przeciwieństwie do przenoszenia
+                                       powietrznego, które jest pośrednie.
+
+                          Przenoszenie drogą płciową (sexual transmission)
+
+    Przenoszenie czynnika zakaźnego w czasie kontaktów płciowych. Niektóre
+   z tych zakażeń mogą być przenoszone bezpośrednio przy innych kontaktach
+                               niż seksualne, a także drogą krwiopochodną.
+
+                        Przenoszenie mechaniczne (mechanical transmission)
+
+      Pośrednie przenoszenie czynnika zakaźnego przez wektora w organizmie
+           którego czynnik zakaźny nie podlega procesom biologicznym, por.
+                                                 przenoszenie biologiczne.
+
+                             Przenoszenie pośrednie (indirect transmisjon)
+
+      Przenoszenie czynnika zakaźnego z rezerwuaru na gospodarza w postaci
+       aerosolu, za pośrednictwem przedmiotów nieożywionych (nośników) lub
+                                              żywych nosicieli (wektorów).
+
+                           Przenoszenie przez krew (bloodborne infections)
+
+         Przenoszenie czynnika zakaźnego poprzez zakażona lub skażona krew
+      bezpośrednio do krwioobiegu lub do płynów ustrojowych po uszkodzeniu
+         ciągłości skóry. Zakażenia te mogą być przenoszone przy zabiegach
+          medycznych i kosmetycznych, dzieleniu się sprzętem przy używaniu
+   narkotyków dożylnych, ale też przy bezpośrednim kontakcie oraz w czasie
+                                                      kontaktów płciowych.
+
+       Przenoszenie przez przedmioty (nośniki) (vehicleborne transmission)
+
+    Typ przenoszenia czynnika zakaźnego przez przedmioty nieożywione w tym
+                                                     przez żywność i wodę.
+
+                     Przenoszenie przez wektory (vectorborne transmission)
+
+     Przenoszenie czynnika zakaźnego za pośrednictwem żywych wektorów (np.
+                                                  much, komarów, kleszczy)
+
+   Przenoszenie przez wodę (waterborne transmission) p. przenoszenie przez
+                                                                przedmioty
+
+        Szczególny przypadek przenoszenia przez przedmioty. Dotyczy ważnej
+                                        grupy chorób –zakażeń pokarmowych.
+
+       Przenoszenie przez żywność (foodborne transmission) p. przenoszenie
+                                                          przez przedmioty
+
+        Szczególny przypadek przenoszenia przez przedmioty. Dotyczy ważnej
+                                        grupy chorób –zakażeń pokarmowych.
+
+   Przenoszenie z uszkodzeniem ciągłości tkanek p. przenoszenie przez krew
+
+
+                        Przenoszenie zakażenia (transmission of infection)
+
+      Sposób lub mechanizm przenoszenia czynnika zakaźnego z rezerwuaru na
+                                                     podatnego gospodarza.
+
+                                                      Przenośnik (vehicle)
+
+        Przedmiot nieożywiony na którym czynnik zakaźny jest przenoszony z
+            rezerwuaru na podatnego gospodarza (np. pokarm, woda, produkty
+                                                   krwiopochodne, pościel)
+
+                              Przewidywana długość życia (life expectancy)
+
+    Przewidywana długość życia stanowi liczbę lat (kategorii wieku), jakie
+   pozostały do przeżycia każdej osobie, która dożyła do określonego wieku
+      (kategorii), przy założeniu że dotychczasowa umieralność nie ulegnie
+                                                                  zmianie.
+
+                                  Przyczyna choroby (cause of the disease)
+
+           Czynnik lub zdarzenie (np. cecha, zachowanie, zdarzenie), które
+    powoduje występowanie choroby. Zmniejszenie występowania tego czynnika
+      w populacji zmniejsza częstość występowania choroby w tej populacji.
+
+                                     Przyczyna konieczna (necessary cause)
+
+     Czynnik, bez obecności którego choroba lub inny problem zdrowotny nie
+                występuje. Przyczyna konieczna nie musi być wystarczająca.
+
+                                Przyczyna wystarczająca (sufficient cause)
+
+            Czynnik lub zespól czynników, których wystąpienie nieodmiennie
+                poprzedza wystąpienie choroby lub innego skutku. Przyczyna
+                                     wystarczająca nie musi być konieczna.
+
+                                                          Przypadek (case)
+
+   Skrótowe określenie osoby chorej lub posiadającej inną cechę stanowiąc
+        badany efekt (outcome). Określenie to bywa też stosowane do samego
+      efektu: choroby, urazu lub innego zdarzenia mogącego mieć związek ze
+   zdrowiem. W badaniach epidemiologicznych przypadek musi być odpowiednio
+         zdefiniowany p. definicja przypadku. Przypadki, które wystąpiły w
+     nieustalonym czasie przed rozpoczęciem badania noszą nazwę przypadków
+   zastanych (prevalent cases), a te które pojawiają się w okresie badania
+                                   stanowią zachorowania (incident cases).
+
+                                         Przypadek wskazujący (index case)
+
+     Pierwszy w epidemii  (ognisku) przypadek choroby lub zdarzenia, które
+                          zostało zgłoszone do nadzoru epidemiologicznego.
+
+                                         Przypadek wyjściowy (source case)
+
+      Człowiek chory lub sytuacja związana z pacjentem, która jest źródłem
+    zakażeń innych osób, stwarzając warunki prowadzące do wybuchu epidemii
+                                                    (wystąpienia ogniska).
+
+                                       Przypadki zastane (prevalent cases)
+
+      Przypadki choroby, które wystąpiły przed rozpoczęciem badania i brak
+           jest danych o czasie ich wystąpienia, por. nowo pojawiające się
+                                                                przypadki.
+
+                              Przypisana proporcja p. proporcja przypisana
+
+
+                Przypisanego ryzyka procent p. procent przypisanego ryzyka
+
+
+               Randomizowane badanie kliniczne (randomized clinical trial)
+
+     Badanie kliniczne w którym uczestnicy są losowo dobierani do badanych
+     grup: ekspozycji na badany czynnik np. lek, oraz do grupy kontrolnej.
+
+                                         Rekord (rekord) p. lista rekordów
+
+            W liście rekordów stanowi rząd danych dotyczących pojedynczego
+                                                                przypadku.
+
+                                               Rekord p. dane indywidualne
+
+
+                            Reprezentatywna próba p. próba reprezentatywna
+
+
+                          Retrospektywne badanie p. badanie retrospektywne
+
+
+                                                      Rezerwuar (resevoir)
+
+      Środowisko bytowania czynnika zakaźnego, w którym on żyje, wzrasta i
+       rozmnaża się. Może to być człowiek, zwierzę lub inny typ środowiska
+                                                         (np. woda, gleba)
+
+                                                    Rozkład (distribution)
+
+      Częstość występowania wszystkich  wartości lub kategorii zmiennej. W
+   epidemiologii odnosi się do rozkładu zdarzeń związanych ze zdrowiem np.
+                           zachorowań, charakterystyki populacji, narażeń.
+
+                          Rozkład asymetryczny (asymmetrical distribution)
+
+     Rozkład, którego kształt po prawej i po lewej stronie miary tendencji
+         centralnej nie jest jednakowy. Czasem bywa określany jako rozkład
+                                                          skośny (skewed).
+
+
+                                  Rozkład bimodalny (bimodal distribution)
+
+          Rozkład prawdopodobieństwa o dwóch lokalnych maksymach częstości
+                                                   oddzielonych od siebie.
+
+                               Rozkład częstości (frequency distribution).
+
+   Kompletne zestawienie częstości wartości lub kategorii zmiennej, zwykle
+   przedstawiane w formie tablicy składającej się z dwóch kolumn z których
+    jedna (lewa) zawiera wartości liczbowe lub nazwy kategorii zmiennej, a
+          druga liczebność danych należących do tej kategorii. W przypadku
+         zmiennych ciągłych warunkiem sporządzenia rozkładu częstości jest
+          wyczerpujący podział takiej zmiennej na przedziały lub kategorie
+                                                                rozłączne.
+
+                           Rozkład normalny (Gaussa) (normal distribution)
+
+         Ciągły rozkład prawdopodobieństwa zdefiniowany na całej osi liczb
+                                    rzeczywistych. Jest opisywany  funkcj
+
+         gęstości prawdopodobieństwa w kształcie krzywej dzwonowej Gaussa:
+
+          Gdzie  parametr μ reprezentuje średnią, a σ^ 2  stanowi wielkość
+     wariancji. Rozkład, w którym μ = 0 i σ^ 2= 1 nosi nazwę standardowego
+      lub jednostkowego rozkładu normalnego (standard normal distribution,
+                                                unit normal distribution).
+
+                                Rozkład symetryczny p. symetryczny rozkład
+
+
+                                       Różnica ryzyka p. ryzyko przypisane
+
+
+                                                             Ryzyko (risk)
+
+   Prawdopodobieństwo zdarzenia związanego ze zdrowiem w określonym czasie
+                                                     lub przedziale wieku.
+
+                    Ryzyko przypisane (attributable risk, risk difference)
+
+           Różnica ryzyka obliczana w badaniach kohortowych  przez odjęcie
+              zapadalności w grupie nienarażonych od zapadalności w grupie
+       narażonych.  Zapadalność jest tu traktowana jako bezpośrednia miara
+                                 prawdopodobieństwa (ryzyka) zachorowania.
+
+         Wskaźnik ten jest interpretowany jako przyrost zapadalności wśród
+                narażonych, które jest spowodowana tym właśnie narażeniem.
+
+                               Ryzyko względne (relative risk, risk ratio)
+
+     Stosunek ryzyka mierzony stosunkiem zapadalności, a przybliżany przez
+       stosunek (iloraz) szans. W badaniach analitycznych określa stosunek
+      prawdopodobieństwa zachorowania w grupie narażonych i nienarażonych.
+
+
+                                                 Rzędna p. zmienna zależna
+
+
+                                          Sentinel p. nadzór typu sentinel
+
+
+                                                  Sezonowość (seasonality)
+
+     Powtarzające się w kolejnych latach zmiany występujące w zapadalności
+          lub w rozpowszechnieniu innych zjawisk w przeciągu jednego roku.
+
+                                        Skala interwałowa (interval scale)
+
+      Skala pomiarowa zawierająca ilościowe kategorie, których wartości s
+         mierzone na skali w równomiernie rozłożonych jednostkach, ale bez
+             naturalnego zera (np. daty urodzenia, temperatura w stopniach
+     Celsjusza). Wartości zmiennych tej skali można dodawać i odejmować od
+                               siebie, ale nie można przez siebie dzielić.
+
+                                         Skala kardynalna (cardinal scale)
+
+   Skala w której różnice między kolejnymi możliwymi wartościami są stałe.
+   Służy do porównywania liczebności zbiorów. Przykłady wielkości dających
+       się wyrazić w skali kardynalnej to: zarobki, liczebność grup ludzi.
+
+                                           Skala nominalna (nominal scale)
+
+         Przedstawienie zmiennej nie mającej kategorii ilościowych, której
+         elementów nie da się uporządkować w ciąg, np. płeć, przynależność
+                etniczna, religia, kraj urodzenia, por. zmienna nominalna.
+
+                                       Skala pomiarowa (measurement scale)
+
+                     Całkowity zakres możliwych wartości pomiaru zmiennej.
+
+                                          Skala porządkowa (ordinal scale)
+
+      Skala wielkości, które można uporządkować w szereg według wielkości,
+          ale nie zawsze można odległościom między nimi przypisać wartości
+        liczbowe i określić różnice między nimi, np. charakterystyka bólu,
+        stadia nowotworu. Dokładniejsze skale pomiarowe są również skalami
+                                                             porządkowymi.
+
+                                             Skala stosunków (ratio scale)
+
+        Skala interwałowa z naturalnym zerem. Jej wartości można dodawać i
+   odejmować oraz dzielić jedne przez drugie. Przykłady skali interwałowej
+                               to: wiek, masa ciała, czas trwania choroby.
+
+                                                  Skażenie (contamination)
+
+    Obecność niewielkiej ilości niepożądanego składnika w materiale lub na
+   jego powierzchni albo w środowisku. Określenie „skażenie” można odnosić
+      do działania, stanu lub czynnika. W przypadku, gdy skażenie wywołuje
+                       czynnik biologiczny może ono być źródłem zakażenia.
+
+                     Składnik (element) przyczyny (component of the cause)
+
+            Czynnik lub zdarzenie stanowiące jedną ze składowych przyczyny
+                                                             dostatecznej.
+
+                                                    Skuteczność (efficacy)
+
+
+   Skuteczność zdolność interwencji lub programu do uzyskania zamierzonego
+                            lub oczekiwanego wyniku w idealnych warunkach.
+
+                                    Spektrum choroby (spectrum of illness)
+
+        Zakres ciężkości objawów, które mogą występować w danej chorobie w
+     różnych przypadkach (od asymptomatycznych poprzez przypadki lekkie do
+                                                 ciężkich i śmiertelnych).
+
+                                                  Spis powszechny (census)
+
+       Przeprowadzane regularne (w Polsce co ok. 10 lat) badanie ankietowe
+         ogółu ludności opisujące sytuację demograficzną, z uwzględnieniem
+            charakterystyk gospodarstw domowych  i aktywności ekonomicznej
+                                                              mieszkańców.
+
+                                    Sporadyczne zdarzenie (sporadic event)
+
+                             Zdarzenie występujące rzadko i nieregularnie.
+
+    Standaryzowany współczynnik umieralności (age-adjusted mortality rate,
+                                             syn. standardized death rate)
+
+              Współczynnik umieralności zmodyfikowany statystycznie w celu
+           wyeliminowania wpływu różnic w rozkładzie wieku w porównywanych
+                                            populacjach, p. standaryzacja.
+
+                                                    Statystyka (statistic)
+    1. Funkcja służąca wyodrębnieniu istotnych cech danych doświadczanych
+       (np. średnia lub wariancja).
+    2. Wartość funkcji charakteryzująca próbę lub populację, dla której
+       została wyliczona
+
+                                                   Statystyka (statistics)
+
+      Dział matematyki dotyczący metod zbierania, klasyfikowania i analizy
+          danych, w celu przeprowadzenia wnioskowań  mających zastosowania
+        praktyczne, a dotyczących rozpowszechnienia cech i związków między
+               nimi. W szczególności  przedmiotem dociekań statystyki jest
+           charakterystyka populacji dokonywana na podstawie analizy próby
+                                                 pobranej z tej populacji.
+
+          Statystyka ludności (vital statistics), statystyka demograficzna
+                                                  (demographic statistics)
+
+            Systematycznie zbierane i tabelaryzowane dane odnoszące się do
+                     rejestrowanych urodzeń, małżeństw, rozwodów i zgonów.
+
+                                         Statystyka testu (test statistic)
+
+                  Funkcja danych z próby, stosowana w celu wykonania testu
+          statystycznego. Przy słuszności hipotezy zerowej podlega znanemu
+           rozkładowi statystycznemu np. statystyka t rozkładowi Studenta.
+   Porównanie obliczonej statystyki z wartością krytyczną rozkładu pozwala
+                 odrzucić hipotezę zerową na rzecz hipotezy alternatywnej.
+
+                        Stosowana epidemiologia p. epidemiologia stosowana
+
+
+                                                          Stosunek (ratio)
+
+   Jest to wskaźnik porównawczy względnej wielkości dwóch liczb wyrażany w
+                                  formie ich ilorazu, np. w formie ułamka.
+
+                      Stosunek szans, OR (odds ratio, cross-product ratio)
+
+          Miara związku stosowana w badaniach analitycznych, szczególnie w
+     badaniach kliniczno-kontrolnych. Iloraz szans narażenia ze względu na
+     stan choroba/zdrowie jest równy ilorazowi szans choroby ze względu na
+          stan narażenia. W przypadku chorób rzadkich iloraz szans stanowi
+            akceptowalne przybliżenie stosunku ryzyka (ryzyka względnego).
+
+                                                       Stronniczość (bias)
+
+    Systematyczny błąd w wynikach lub opracowaniach  na poziomie zbierania
+    danych, ich analizy, interpretacji lub publikowania, który prowadzi do
+                   powtarzającego się co do kierunku odchylenia od prawdy.
+
+          Może mieć wiele przyczyn i nie implikuje świadomego fałszerstwa.
+
+                                      Stronniczość doboru (selection bias)
+
+            Systematyczny błąd wynikający z włączania do grup narażonych i
+    nienarażonych lub przypadków i kontroli osób pochodzących z różniących
+      się od siebie populacji lub subpopulacji.  Prowadzi do odchylenia od
+                                     rzeczywistości miar związku (RR, OR).
+
+                                Stronniczość informacji (information bias)
+
+      Systematyczny błąd w rozpoznawaniu choroby lub narażenia spowodowany
+             zbyt szeroką lub zbyt wąską definicją, albo powtarzającym się
+       odchyleniem pomiarów od wartości rzeczywistej. Powoduje odejście od
+           prawdy w kwalifikowaniu jednostek uczestniczących w badaniu pod
+         względem oceny (pomiaru) narażenia lub stanu zdrowia. W badaniach
+        analitycznych zmienia wielkość miar związku (RR, OR). Jeżeli w obu
+      porównywanych grupach odsetek błędnych zaklasyfikowani jest ten sam,
+    błąd jest nieróżnicowy i zmniejsza miary związku (RR lub OR) – odchyla
+     je w kierunku wartości „1” (bias toward the null). Jeżeli w badaniach
+       kohortowych inny błąd systematyczny dotyczy rozpoznawania choroby w
+         grupach narażonych i nienarażonych, a w kliniczno - kontrolnych w
+      grupach przypadków i kontroli, błąd jest różnicowy o nie dającym się
+         przewidzieć kierunku i może doprowadzić nawet do odwrócenia miar.
+
+                           Stronniczość pomiaru p. stronniczość informacji
+
+
+                                                      Styczność p. kontakt
+
+
+                                         Surowy (crude); o współczynnikach
+
+              Sumaryczny współczynnik odnoszący się do całej populacji bez
+                                                            standaryzacji.
+
+     Surowy współczynnik umieralności p. współczynnik umieralności, surowy
+
+
+                                                   Swoistość (specificity)
+
+    Cecha sprawdzianu, testu lub definicji stanowiąca stosunek liczby osób
+     prawdziwie rozpoznanych za jego pomocą jako nie posiadające tej cechy
+            do liczby wszystkich osób nie posiadających badanej cechy (np.
+      zdrowych) . Nie ma zastosowania w ocenie nadzoru epidemiologicznego,
+   którego przedmiotem badania są wyłącznie osoby posiadające badaną cechę
+                (chorobę). Błędem swoistości są wyniki fałszywie dodatnie.
+
+                            Symetryczny rozkład (symmetrical distribution)
+
+          Rozkład częstości w którym kształt krzywej po obu stronach miary
+     tendencji centralnej jest taki sam. Przykładem rozkładu symetrycznego
+                                             jest rozkład normalny Gaussa.
+
+                                Syndromiczny nadzór p. nadzór syndromiczny
+
+
+                  System informacji zdrowotnej (health information system)
+
+         Ogół pochodzących z różnych źródeł danych statystycznych na temat
+      zdrowia populacji. Może być instytucjonalnie zintegrowany. Dostarcza
+        informacji o stanie zdrowia populacji, struktur opieki medycznej i
+    stopnia ich wykorzystania oraz wpływu usług i programów zdrowotnych na
+       stan zdrowia społeczeństwa. W skład systemu wchodzą również sposoby
+          definiowania, gromadzenia, przetwarzania i udostępniania danych.
+
+                                                             Szanse (odds)
+
+             W epidemiologii jest to stosunek liczebności części zbioru do
+      liczebności jego dopełnienia, np. liczby osób chorych do liczby osób
+                                       zdrowych w zbiorze, por. proporcja.
+
+                                      Śmiertelność (case – fatality ratio)
+
+           Proporcja osób w określonym stanie zdrowia lub eksponowanych na
+      określony czynnik lub zdarzenie, która umiera z powodu tego stanu. W
+     mianowniku występuje liczba osób chorych lub narażonych, a w liczniku
+        liczba zgonów, jaka wśród nich wystąpiła; por. „wskaźnik zgonów do
+                                                               przypadków”
+
+                                    Średnia arytmetyczna (arithmetic mean)
+
+    Miara tendencji centralnej rozkładu, szczególnie właściwa dla danych o
+   rozkładzie zbliżonym do normalnego, wyliczana jako iloraz sumy wartości
+        liczbowych wszystkich elementów danego zbioru do jego liczebności.
+
+                    Średnia arytmetyczna ważona (weighted arithmetic mean)
+
+              Średnia arytmetyczna ważona stanowi sumę wartości wszystkich
+           pojedynczych pomiarów poszczególnych jednostek występujących we
+    wszystkich podzbiorach podzielona przez liczbę wszystkich pomierzonych
+       jednostek.W przypadku wyliczania średniej arytmetycznej ze średnich
+      uzyskanych dla różnych podzbiorów, nieuwzględnienie liczby elementów
+                        tych podzbiorów może prowadzić do błędnego wyniku.
+
+                                     Średnia geometryczna (geometric mean)
+
+     W zbiorze liczb {X[1….]X[n]} jest to pierwiastek stopnia n z iloczynu
+                                                   wszystkich liczb zbioru
+
+
+     Ponieważ logarytm średniej geometrycznej stanowi średnią arytmetyczn
+                                    logarytmów liczb należących do zbioru:
+
+
+
+          średnia geometryczna stanowi miarę tendencji centralnej pomiarów
+                                      dokonywanych w skali logarytmicznej.
+
+                                    Środek przedziału (midpoint, midrange)
+
+        Średnia arytmetyczna skrajnych wyników. Jest to orientacyjny punkt
+                 obliczany jako wstęp do innych miar tendencji centralnej.
+
+                                                            Tabela (table)
+
+         Uporządkowanie danych w postaci wierszy i kolumn. W epidemiologii
+         tabele służą do porównania indywidualnych danych o zachorowaniu i
+     narażeniu poszczególnych uczestników badania, p. lista rekordów. Może
+             też służyć porównaniu danych zbiorczych dotyczących częstości
+                              występowania zdarzeń w różnych grupach osób.
+
+                                  Tabela dwa na dwa p. tabela kontyngencji
+
+                              Tabela kontyngencji dla dwóch par zmiennych.
+
+                 Tabela krzyżowa (cross tabulation) p. tabela kontyngencji
+
+
+        Tabela kontyngencji syn. tabela krzyżowa (contingency table, cross
+                                                               tabulation)
+
+    Matryca dwu lub więcej zmiennych przedstawiająca rozkład częstości dla
+                     zestawionych ze sobą wartości narażenia i efektu. Np.
+
+
+                                          Tabela szkieletowa (table shell)
+
+            Całkowicie wyrysowana i oznaczona tabela bez wpisanych danych,
+                                               przygotowana do wypełnienia
+
+                                 Tablica czteropolowa p. tabela możliwości
+
+
+                                                        Tendencja p. trend
+
+
+                          Terenowa epidemiologia p. epidemiologia terenowa
+
+
+                              Terenowe badanie wspólnoty (community trial)
+
+          Badanie eksperymentalne wykonane na określonej społeczności poza
+             szpitalnej bez indywidualnej oceny ekspozycji i stanu zdrowia
+        uczestników.  Najczęściej służy ono do wstępnej oceny skuteczności
+             profilaktyki pierwotnej. W badaniu tym badacz nakłada na dan
+        społeczność określony czynnik ekspozycji, a następnie obserwuje tę
+   wspólnotę przez określony czas w celu ustalenia efektów swoich działań.
+              Analizie poddawane są zbiorcze dane dotyczące wpływu działań
+                                     profilaktycznych na oczekiwany efekt.
+
+                             Transmisja p. przenoszenie czynnika zakaźnego
+
+
+                                                             Trend (trend)
+
+   Zmiana częstości zdarzeń w czasie. Trend może być rosnący lub malejący.
+
+                                       Trend długookresowy (secular trend)
+
+            Zmiany rozpowszechnienia zdarzeń związanych ze zdrowiem, które
+                                        występują w okresach wieloletnich.
+
+                             Triada epidemiologiczna (epidemiologic triad)
+
+        Tradycyjny model składowych występowania chorób zakaźnych: czynnik
+           zakaźny, podatna osoba i środowisko, w którym występują warunki
+                        przeniesienia czynnika zakaźnego na osobę podatną.
+
+                      Umieralność proporcjonalna (proportionate mortality)
+
+           Wyrażona w procentach proporcja zgonów, jakie wystąpiły w danej
+     populacji w określonym czasie, przypisana poszczególnym przyczynom. W
+    mianowniku jest liczba zgonów ze wszystkich przyczyn, a nie liczebność
+                      populacji jak w innych współczynnikach umieralności.
+
+        Utracone lata potencjalnego życia (years of potential life lost  -
+                                                                     YPLL)
+
+       Miara wpływu przedwczesnych zgonów na populację wyliczana jako suma
+     różnic między wcześniej przyjętym  wiekiem odniesienia (65 lat według
+   WHO),  a wiekiem zgonu wszystkich osób, które zmarły przed osiągnięciem
+                                                               tego wieku.
+
+                                                      Wariancja (variance)
+
+       Podstawowa miara rozproszenia obserwacji w rozkładzie zmiennej. Dla
+    rozkładu próby stanowi sumę kwadratów odchyleń (różnic) poszczególnych
+       wartości od średniej tego rozkładu (x) podzielonej przez liczebność
+      próby. Tak obliczona wariancja może stanowić estymator (oszacowanie)
+                wariancji dla całej populacji  (tzw. estymator największej
+                  wiarygodności). Częściej w tym celu używa się estymatora
+                                      nieobciążonego, zdefiniowanego jako:
+
+
+   Wartość p, prawdopodobieństwo testowe, poziom krytyczny testu (p-value)
+
+   W statystycznym testowaniu hipotez jest to prawdopodobieństwo uzyskania
+    w wielu badaniach podobnych do aktualnego, wartości wyniku testu (jego
+      statystyki) przynajmniej tak ekstremalnej jak aktualnie obserwowana,
+         przy założeniu, że hipoteza zerowa jest prawdziwa. Badacz odrzuca
+     hipotezę zerową (przyjmuje hipotezę alternatywną), gdy wartość p jest
+    niższa niż przyjęty z góry poziom znamienności (istotności) „α”, który
+      zwykle wynosi 0,05 lub 0,01. Innymi słowy, wartość „p” jest to górna
+              granica prawdopodobieństwa, że wynik badania został uzyskany
+                                przypadkowo (w wyniku zmienności losowej).
+
+                 Ważność uogólnienia (external validity, generalizability)
+
+   Stopień, w jakim wyniki badania mogą mieć zastosowanie poza próbą użyt
+        w badaniu, tzn. mogą być uogólnione na populację, z której pobrano
+                                              próbę lub na inne populacje.
+
+                              Ważność wyniku (validity, internal validity)
+
+       Stopień, w jakim pomiar, kwestionariusz, test lub całe badanie, lub
+            jakikolwiek zbiór danych mierzy to, co w założeniu ma mierzyć.
+
+                                                           Wektor (vector)
+
+          Żywy pośrednik w przenoszeniu czynnika zakaźnego z rezerwuaru na
+                         podatnego gospodarza (np. komar, kleszcz, mucha).
+
+                                    Wielokąt częstości (frequency polygon)
+
+
+     Wykres rozkładu częstości, w którym przedziały wartości lub kategorie
+        zmiennej są odłożone na osi poziomej, a liczba obserwacji w każdej
+      kategorii na osi pionowej.   Punkty odpowiadające danym są połączone
+           linią ciągłą. W przypadku przedziałów wartości są to ich punkty
+                                                                 środkowe.
+
+
+                                                  Wirulencja p. zjadliwość
+
+
+                                           Wrota wejścia (portal of entry)
+
+           Miejsce w którym czynnik zakaźny wnika do organizmu gospodarza.
+
+                                            Wrota wyjścia (portal of exit)
+
+            Miejsce w którym czynnik zakaźny opuszcza organizm gospodarza.
+
+                                                          Wskaźnik (ratio)
+
+    Wskaźnik w szerszym sensie to wielkość niosąca informacje o rozważanym
+          zjawisku (np. wskaźniki stanu zdrowia populacji. W epidemiologii
+   odnosimy ten termin do miar ilorazowych, których licznik i mianownik s
+     wielkościami tego samego rodzaju (np. stosunek wielkości obserwowanej
+         do oczekiwanej). W świetle tej definicji współczynniki wyrażające
+            rozpowszechnienie zdarzeń (ich ilość w stosunku do liczebności
+     populacji) nie są więc wskaźnikami. W języku angielskim ratio oznacza
+                stosunek dwu liczb i ma zastosowanie bardziej uniwersalne.
+
+      Wskaźnik predykcji pozytywnej (dodatniej) (positive predictive value
+                                                                      PPV)
+
+     Stosunek liczby wyników prawdziwie dodatnich do rozpoznanych w teście
+     (lub w systemie nadzoru epidemiologicznego) jako dodatnie, czyli sumy
+   prawdziwie i fałszywie dodatnich.  Jest to miara prawdopodobieństwa, że
+       osoba z dodatnim wynikiem testu ma w rzeczywistości stan (chorobę),
+      który dany test ma sprawdzić. W nadzorze epidemiologicznym, w którym
+         nie może być badana swoistość zgłoszeń z racji braku informacji o
+        osobach zdrowych, predykcja dodatnia stanowi orientacyjny wskaźnik
+                                                               swoistości.
+
+       Wskaźnik predykcji negatywnej (ujemnej) (negative predictive value,
+                                                                      NPV)
+
+      Stosunek liczby wyników prawdziwie ujemnych do rozpoznanych w teście
+   jako ujemne, czyli sumy prawdziwie  i fałszywie ujemnych. Jest to miara
+                prawdopodobieństwa, że osoba z ujemnym wynikiem testu ma w
+    rzeczywistości wolna od stanu (choroby), który dany test ma sprawdzić.
+
+                                       Wskaźnik zdrowia (health indicator)
+
+    Każda z wielu miar (np. wskaźnik umieralności), które wskazują na stan
+                                             zdrowia określonej populacji.
+
+                       Wskaźnik zgonów do przypadków (death-to-case ratio)
+
+     Liczba zgonów przypisanych danej chorobie, urazowi lub innej sytuacji
+    związanej ze zdrowiem, jakie wystąpiły w określonym czasie, podzielona
+   przez liczbę nowych przypadków tej choroby, które wystąpiły w tym samym
+                                              czasie; por. „śmiertelność”.
+
+                                                       Współczynnik (rate)
+
+    W epidemiologii odnosimy ten termin do miar wyznaczanych przez ułamki,
+   które najczęściej mają w mianowniku liczebność populacji lub próby, a w
+      liczniku jej określony podzbiór (do wyjątków należy np. współczynnik
+       płodności kobiet). Angielskie tłumaczenie „rate” ma węższy zakres i
+    określa względną częstość zdarzeń występujących w określonej populacji
+     w jednostce czasu (lub rzadziej w określonym obszarze). Natomiast nie
+              jest zalecane stosowanie tego terminu do określania stosunku
+                                                        prawdopodobieństw.
+
+         Wspólczynnik płodności (dzietności) kobiet (total fertility rate)
+
+      Liczba dzieci przypadająca na jedną kobetę w wieku rozrodczym (15-49
+                                                                      lat)
+
+    Wspólczynnik umieralnosci ponoworodkowej (postneonatal mortality rate)
+
+    Stosunek liczby zgonów dzieci, jakie wystąpiły w określonym przedziale
+      czasowym wśród dzieci powyżej 28 dnia życia, ale przed ukończeniem 1
+    roku życia, w stosunku do liczby żywych urodzeń w tym samym przedziale
+         czasowym, zwykle przeliczany na 1000 żywych urodzeń w ciągu roku.
+
+       Wspólczynnik umieralności okołoporodowej (perinatal mortality rate)
+
+     Światowa Organizacja Zdrowia definiuje umieralność okołoporodową jako
+      "liczbę martwych urodzeń i zgonów w pierwszym tygodniu życia na 1000
+   urodzeń żywych i martwych”. W innych definicjach licznik tego wskaźnika
+      bywa definiowany  z zaznaczeniem tygodnia życia płodowego od którego
+                              liczone są urodzenia martwe  (20, 22lub 28).
+
+    Wspólczynnik umieralności specyficzny dla płci (sex-specific mortality
+                                                                     rate)
+
+            Stosunek liczby zgonów w grupie osób określonej płci w badanej
+     populacji w określonym przedziale czasowym do liczebności tej grupy w
+        połowie przedziału czasowego; zwykle przeliczany na 100000 na rok.
+
+               Wspólczynnik umieralności, standaryzowany p. standaryzowany
+                                                 współczynnik umieralności
+
+
+                                Wspólczynnik zapadalności (incidence rate)
+
+       Miara częstości pojawiania się nowych przypadków choroby lub innego
+    zdarzenia związanego ze zdrowiem odniesiona wyraźnie do ram czasowych.
+          Jest wyliczana jako liczba nowych przypadków w określonym czasie
+     podzielona przez średnią liczebność populacji, zwykle w środku okresu
+    obserwacji lub do sumy osobo-czasu obserwacji populacji pozostającej w
+                                                                   ryzyku.
+
+                                                       Współczynnik (rate)
+
+    W epidemiologii odnosimy ten termin do miar wyznaczanych przez ułamki,
+   które najczęściej mają w mianowniku liczebność populacji lub próby, a w
+      liczniku jej określony podzbiór (do wyjątków należy np. współczynnik
+       płodności kobiet). Angielskie tłumaczenie „rate” ma węższy zakres i
+    określa względną częstość zdarzeń występujących w określonej populacji
+     w jednostce czasu (lub rzadziej w określonym obszarze). Natomiast nie
+              jest zalecane stosowanie tego terminu do określania stosunku
+                                                        prawdopodobieństw.
+
+   Współczynnik umieralności niemowląt, syn. umieralność niemowląt (infant
+                                                           mortality rate)
+
+   Stosunek liczby zgonów jakie wystąpiły w określonym przedziale czasowym
+       wśród dzieci poniżej jednego roku życia w stosunku do liczby żywych
+       urodzeń w tym samym przedziale czasowym, zwykle przeliczany na 1000
+                               żywych urodzeń w ciągu roku kalendarzowego.
+
+            Współczynnik umieralności noworodków (neonatal mortality rate)
+
+     Stosunek liczby zgonów dzieci jakie wystąpiły w określonym przedziale
+   czasowym wśród dzieci poniżej 28 dnia życia w stosunku do liczby żywych
+       urodzeń w tym samym przedziale czasowym, zwykle przeliczany na 1000
+                                              żywych urodzeń w ciągu roku.
+
+   Współczynnik umieralności specyficzny dla wieku (age specific mortality
+                                                                     rate)
+
+      Stosunek liczby zgonów w określonej grupie wieku badanej populacji w
+   określonym przedziale czasowym do liczebności tej grupy wieku w połowie
+       przedziału czasowego; zwykle przeliczany na 100000 ludności na rok.
+
+    Współczynnik umieralności z określonej (specyficznej) przyczyny (cause
+                                                  specific mortality rate)
+
+   Stosunek liczby zgonów z określonej przyczyny jakie wystąpiły w badanej
+   populacji w określonym przedziale czasowym do liczebności tej populacji
+     w połowie przedziału czasowego; zwykle przeliczany na 100000 ludności
+                                                                   na rok.
+
+          Współczynnik umieralności z określonej przyczyny (cause-specific
+                                                           mortality rate)
+
+   Iloraz liczby zgonów z określonej przyczyny przez liczebność populacji,
+   w której te zgony wystąpiły; zwykle przeliczany na 100 000 mieszkańców.
+
+       Współczynnik umieralności, surowy (crude mortality rate, syn. crude
+                                                               death rate)
+
+        Stosunek liczby wszystkich zgonów w badanej populacji w określonym
+     przedziale czasowym do liczebności tej populacji w połowie przedziału
+                  czasowego; zwykle przeliczany na 100000 ludności na rok.
+
+                           Współczynnik urodzeń, surowy (crude birth rate)
+
+             Liczba żywych urodzeń w czasie danego okresu podzielona przez
+             liczebność populacji w połowie tego okresu, zwykle wyrażana w
+                                                przeliczeniu na 1000 osób.
+
+         Wtórna zapadalność w ognisku epidemicznym p. zapadalność wtórna w
+                                                      ognisku epidemicznym
+
+
+                                                    Wydajność (efficiency)
+
+           Zdolność interwencji lub programu do uzyskania zamierzonego lub
+     oczekiwanego wyniku przy określonych nakładach czasu i zasobów. Miar
+                              wydajności jest stosunek efektu do nakładów.
+
+                                                            Wykres (graph)
+
+                                 Przedstawienie danych w formie graficznej
+
+                                       Wykres kolumnowy p. wykres słupkowy
+
+
+                                                 Wykres kołowy (pie chart)
+
+           Wykres w kształcie koła, w którym powierzchnia każdego segmentu
+        ograniczonego przez dwa promienie (wycinka) jest proporcjonalna do
+                    częstości kategorii reprezentowanej przez ten segment.
+
+       Wykres liniowy w skali arytmetycznej (line graph, arithmetic-scale)
+
+     Wykres, który przedstawia w postaci linii wzorzec lub trend częstości
+    zdarzeń (np. liczbę, chorobowość lub zapadalność) wobec innej zmiennej
+    (zwykle czasu) przy zastosowaniu skali arytmetycznej (liniowej) na osi
+                                                             rzędnych „y”.
+
+     Wykres liniowy w skali półlogarytmicznej (line graph, semilogarithmic
+                                                                    scale)
+
+     Wykres, który przedstawia w postaci linii wzorzec lub trend częstości
+    zdarzeń (np. liczbę, chorobowość lub zapadalność) wobec innej zmiennej
+     (zwykle czasu) przy zastosowaniu skali logarytmicznej na osi rzędnych
+    „y”.  Szczególnym uzasadnieniem dla stosowania skali logarytmicznej s
+                  duże różnice w wartościach liczbowych zmiennej zależnej.
+
+                                               Wykres pudełkowy (box plot)
+
+         Orientacyjna charakterystyka graficzna danych epidemiologicznych.
+     Długość pudełka reprezentuje zakres dwóch centralnych kwartyli, linie
+    przeprowadzone od końców pudełka (wąsy) sięgają wyników skrajnych, a w
+                     poprzek pudełka przechodzi linia oznaczająca medianę.
+
+
+               Wykres punktowy (scatter diagram lub scattergram, dot plot)
+
+          Graficzne przedstawienie związku dwu zmiennych w postaci punktów
+    odpowiadających parom wartości dwu zmiennych ciągłych reprezentowanych
+                                           na osiach układu współrzędnych.
+
+
+                                               Wykres słupkowy (bar chart)
+
+       Graficzne przedstawienie wyników, w którym każda kategoria zmiennej
+   jest reprezentowana przez słupek, którego długość pozostaje w proporcji
+      do odpowiadającej jej wartości liczbowej lub logarytmu tej wartości.
+
+                            Wykres słupkowy grupowany (bar chart, grouped)
+
+         Wykres słupkowy przedstawiający wartości liczbowe dwu zmiennych w
+      postaci połączonych ze sobą słupków reprezentujących jedną zmienną i
+   oddzielonych od siebie grup słupków reprezentujących drugą zmienną. Np.
+        Słupki zapadalności w różnych tygodniach pogrupowane w kategoriach
+                                                                    wieku.
+
+                            Wykres słupkowy odchyleń (deviation bar chart)
+
+       Zawiera słupki dodatnich lub ujemnych odchyleń od linii podstawowej
+                                                      (normy, odniesienia)
+
+                    Wykres słupkowy procentowy (bar chart, 100% component)
+
+         Zawiera kolumny tej samej wysokości (100%) podzielone na segmenty
+      odpowiadające różnym zmiennym lub kategoriom wartości danej zmiennej
+                                                dopełniającym się do 100%.
+
+                                               Wykres tyczek (forest plot)
+
+       Wykres przedstawiający dane dotyczące jednej wielkości pochodzące z
+           różnych źródeł,  stosowany w metaanalizie lub w systematycznych
+   przeglądach literatury. Ma postać szeregu pionowych lub poziomych linii
+        (odpowiadających przedziałom ufności poszczególnych oszacowań), na
+                          których punktami zaznaczono wartości parametru..
+
+                          Wynik fałszywie dodatni (false- positive result)
+
+     Dodatni wynik testu lub innego badania uzyskany u osoby, która nie ma
+      cechy (choroby) będącej przedmiotem badania. Dotyczy też osób, które
+    nie mając badanej choroby  pasują do definicji przyjętych w nadzorze w
+    przypadku zbyt szerokiej definicji. Wyniki fałszywie dodatnie stanowi
+   błąd swoistości testu lub nadzoru epidemiologicznego, szczególnie ważny
+      w przypadku chorób rzadkich, gdyż przy danym poziomie swoistości ich
+       bezwzględna liczba rośnie proporcjonalnie do odsetka osób zdrowych.
+       Wyniki fałszywie dodatnie stanowią również błąd dodatniej predykcji
+                                                                    testu.
+
+                           Wynik fałszywie ujemny (false- negative result)
+
+    Ujemny wynik testu lub innego badania uzyskany u osoby, która ma cechę
+       (chorobę) będącą przedmiotem badania. Dotyczy też osób, które mając
+            badaną chorobę nie pasują do definicji przyjętych w nadzorze w
+   przypadku zbyt wąskiej definicji. Wyniki fałszywie ujemne stanowią błąd
+        czułości testu lub nadzoru epidemiologicznego. Przy danym poziomie
+                 czułości ich bezwzględna liczba rośnie proporcjonalnie do
+                                                rozpowszechnienia choroby.
+
+     Wynik odbiegający, wartość odbiegajaca obserwacja odstająca (outlier)
+
+        Wynik znacznie różniący się od pozostałych obserwacji uzyskanych w
+                                                                  badaniu.
+
+             Wynikanie (wnioskowanie) statystyczne (statistical inference)
+
+      Zbiór reguł dotyczących uogólniania wyników badania próby losowej na
+             całą populację, obejmujący weryfikację hipotez statystycznych
+      (przypuszczeń dotyczących rozkładów jakim podlegają dane), estymację
+            nieznanych wartości parametrów rozkładu oraz szacowanie błędów
+   wynikających zastosowanych procedur. Wyniki wnioskowania statystycznego
+                     są  zawsze określone z pewnym marginesem niepewności.
+
+
+                                Zachorowania (incident cases) p. przypadek
+
+
+                                                     Zakażenie (infection)
+
+   Inwazja tkanek organizmu przez czynnik zakaźny nienależnie od tego, czy
+     wywołuje chorobę. W przyjętej w Polsce terminologii zakażenie dotyczy
+      bakterii, wirusów i grzybów, natomiast w przypadku pasożytów używane
+                                             jest określenie zarażenie, p.
+
+                                                  Zakłócenie (confounding)
+
+
+        Odchylenie zależności między narażeniem a efektem zdrowotnym przez
+        trzecią zmienną, która pozostaje w związku statystycznym zarówno z
+      narażeniem, jak i efektem, pozostając poza drogą wpływu narażenia na
+                                                                    efekt.
+
+     Metody analityczne eliminacji wpływu czynników zakłócających opieraj
+         się na stratyfikacji badanych prób tak, aby porównywane grupy nie
+              różniły się pod względem obecności lub nieobecności czynnika
+                                  zakłócającego wśród zmiennych narażenia.
+
+                                                            Zakres (range)
+
+         Przedział liczbowy ograniczony najmniejszą i największa wartości
+                                                                 zmiennej.
+
+                    Zakres / odstęp międzykwartylowy (interquartile range)
+
+    Miara rozrzutu reprezentująca połowę obserwacji, mierzona jako różnica
+    między trzecim kwartylem (75. percentylem), a pierwszym kwartylem (25.
+                                      percentylem), por. wykres pudełkowy.
+
+                                        Zależna zmienna p. zmienna zależna
+
+
+                                                   Zapadalność (incidence)
+
+             Miara częstości występowania chorób, stanowiąca iloraz nowych
+         zachorowań, które pojawiły się w określonym przedziale czasowym w
+             określonej populacji w stosunku do liczebności tej populacji.
+
+             Zapadalność epidemiczna p. zapadalność w ognisku epidemicznym
+
+
+               Zapadalność skumulowana (cumulative incidence) p. proporcja
+                                                              zapadalności
+
+
+             Zapadalność w ognisku epidemicznym (attack rate) p. proporcja
+                                                              zapadalności
+
+        Forma zapadalności, która stanowi stosunek nowych przypadków danej
+   choroby występujących w populacji, która jest narażona na ostre choroby
+         w stosunkowo krótkim okresie czasu np. w ognisku epidemicznym, do
+   liczebności tej populacji na początku epidemii. Zazwyczaj wyrażana jest
+                     jako odsetek nowych zachorowań w populacji narażonych
+
+        Zapadalność wtórna w ognisku epidemicznym (attack rate, secondary)
+
+     Zapadalność wśród kontaktów znanych przypadków pierwotnych w ognisku.
+
+                                                 Zaraźliwość (infectivity)
+
+       Zdolność czynnika zakaźnego do wywołania choroby mierzona proporcj
+       osób, które zachorowały, w stosunku do tych, które były narażone na
+                                                          czynnik zakaźny.
+
+                                                    Zaraźliwy (contagious)
+
+    O chorobie zakaźnej: zdolna do szerzenia się na inne osoby w kontakcie
+   bezpośrednim. O czynniku zakaźnym: zdolny do bycia przenoszonym z osoby
+                                                  chorej na osoby podatne.
+
+                                                   Zarażenie (infestation)
+
+          Inwazja tkanek organizmu przez pasożyta nienależnie od tego, czy
+                                                         wywołuje chorobę.
+
+                                                          Zdrowie (health)
+
+     Stan pełnej fizycznej, mentalnej i społecznej sprawności, a nie tylko
+                   nieobecność choroby lub innego ograniczenia fizycznego.
+
+                                                 Zespół objawów (syndrome)
+
+       Zbiór objawów charakteryzujących chorobę lub stan zdrowia. Niekiedy
+      odnosi się do stanu mogącego mieć jedną z wielu przyczyn, np. zespół
+                                                  przewlekłej męczliwości.
+
+                                                    Zjadliwość (virulence)
+
+          Zdolność czynnika zakaźnego wywołanie ciężkiej choroby, mierzona
+       odsetkiem osób zakażonych, u których choroba ma przebieg ciężki lub
+                                                      prowadzi do śmierci.
+
+                                                        Zmienna (variable)
+
+    Charakterystyka, cecha lub zdarzenie, którym można przypisać nazwy lub
+                            liczby i które mogą przybierać różne wartości.
+
+                                      Zmienna ciągła (continuous variable)
+
+           Zmienne, które mogą przyjmować wszystkie wartości z określonego
+                                           przedziału liczb rzeczywistych.
+
+                                     Zmienna dyskretna (discrete variable)
+
+        Zmienna,  która przyjmuje skończona liczbę wartości liczbowych lub
+    opisowych. Przykładami opisowych zmiennych dyskretnych są grupy wieku,
+             grupy zawodowe, płeć, przynależność etniczna etc. Szczególnym
+      przykładem zmiennej dyskretnej jest podział dychotomiczny obejmujący
+   tylko dwie możliwości, np. przynależność do zbioru lub jej brak, prawda
+                                                                  i fałsz.
+
+                                    Zmienna kardynalna (cardinal variable)
+
+    Zmienna w której występują stałe odstępy między kolejnymi wartościami.
+      Można na nich wykonywać działania dodawania i odejmowania. Wszystkie
+         zmienne kardynalne są zmiennymi porządkowymi. Przykładem zmiennej
+                                      kardynalnej jest liczebność zbiorów.
+
+                              Zmienna kategoryczna  (categorical variable)
+
+   Rozszerzone pojęcie zmiennej dyskretnej obejmujące również wartości nie
+                                                  liczbowe np. płeć, rasa.
+
+                                 Zmienna niezależna (independent variable)
+
+     W matematyce zmienna „x” stanowiąca argument funkcji. W epidemiologii
+           reprezentuje zmienne analizy np. narażenia lub czas wystąpienia
+          zdarzenia. Na wykresach zmienna niezależna jest skalowana na osi
+                     poziomej wykresu współrzędnych – odciętej (abscissa).
+
+                                      Zmienna nominalna (nominal variable)
+
+     Zmienne dyskretne służące do oznaczenia poszczególnych kategorii osób
+     lub przedmiotów. Zmiennych nominalnych, jak płeć czy rasa, nie możemy
+         uporządkować w szereg według kryterium większości lub następstwa.
+      Zmienne nominalne wskazują jedynie przynależność do jakiegoś zbioru.
+
+                                     Zmienna porządkowa (ordinal variable)
+
+          Zmienne, które można uporządkować, ale nie zawsze można określić
+            różnice między kolejnymi wartościami. Na przykład ból może być
+    niewielki, wyraźny, silny, bardzo silny, nie do zniesienia. Ale nie ma
+     podstaw, aby podawać różnicę między bólem silnym, a nie do zniesienia
+
+                                         Zmienna sztuczna (dummy variable)
+
+        Zmienna zawierająca dwie wartości „1” i „0” oznaczające posiadanie
+     danej cechy lub jej nie posiadanie, prawdę lub fałsz. Jest to odmiana
+           zmiennej dyskretnej stosowanej w podziałach dychotomicznych, p.
+
+                   Zmienna wynikowa (outcome variable, indicator variable)
+
+   Jest tą zasadniczą charakterystyką, której dotyczy badanie. Może to być
+    choroba, lub jej zejście: wyleczenie, śmierć czy stan przewlekły, może
+               to być rezultat zabiegów rehabilitacyjnych lub oświatowych.
+
+                                      Zmienna zależna (dependent variable)
+
+          W matematyce jest to zmienna, zwykle oznaczana literą „y”, która
+            stanowi funkcję innej zmiennej (niezależnej).  W epidemiologii
+   określenie to jest stosowane do wyników badań (outcome), które stanowi
+    funkcje zmiennych analizy (niezależnych). Na wykresach zmienna zależna
+     jest zwykle skalowana na osi pionowej wykresu współrzędnych – rzędnej
+                                                               (ordinate).
+
+                          Zmienne analizy (analysis variables, predictors)
+
+              Są to zmienne, których związek przyczynowy lub tylko związek
+      statystyczny ze zmienną wynikową jest badany. Zwykle zmienne analizy
+          stanowią jakościowe lub ilościowe określenia czynników narażenia
+                                                               (exposure).
+
+           Znamienność (istotność) statystyczna (statistical significance)
+
+        Cecha wyniku analizy statystycznej określająca siłę związku między
+       badanymi zmiennymi. Wynik uznajemy za znamienny (odrzucamy hipotezę
+        zerową), gdy prawdopodobieństwo testowe p odpowiadające obliczonej
+   wartości statystyki testowej jest mniejsze od z góry założonego poziomu
+                                                         istotności („α”).
+
+                                                        Zoonoza (zoonosis)
+
+             Choroba odzwierzęca. Jedna z chorób zakaźnych, które mogą być
+                                         przenoszone ze zwierząt na ludzi.
+
+                                        Związek statystyczny (association)
+
+   Stwierdzone za pomocą testów statystycznych powiązanie między zmiennymi
+    reprezentującymi badane cechy lub częstości występowania badanych cech
+     albo zdarzeń na określonym z góry poziomie znamienności (istotności).
+
+                                    Źródło zakażenia (source of infection)
+
+    Osoba, zwierzę, przedmiot lub substancja z której czynnik zakaźny jest
+                                             przenoszony na osobę podatną.
+
+
+   Webdesign SG24 Copyright © Przegląd Epidemiologiczny 2013
+
+   Strona finansowana ze środków Ministra Nauki i Szkolnictwa Wyższego w
+   ramach Programu Index Plus 2012.
