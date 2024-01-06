@@ -34,27 +34,22 @@ Definicja związek "jest"
 
    Czym jest Jest Związek znaczenie w Słownik definicji Z .
 
-   Co znaczy Zmienna Wystąpienia:
-          Porównanie Inne ustalenie (Smalltalk) atrybutów obiektu. W
-          koncepcji ortodoksyjnej hermetyzacji zmienne wystąpienia s
-          schowane i dostępne wyłącznie przez sposoby związek "jest" co
-          znaczy.
+   Co znaczy Zastosowanie Spadkowe:
+          Porównanie Wykorzystanie oparte o mechanizm spadkowy, a więc
+          starszy mechanizm wciąż będący w eksploatacji. Przeciwieństwo:
+          aplikacja spadkowa związek "jest" co znaczy.
 
-   Krzyżówka Zdarzenie-Warunek-Akcja:
-          Dlaczego reguł. Czynna reguła uaktywnia się w rezultacie
-          pojawienia się określonego dla niej zdarzenia; jeśli po nim
-          spełniony jest określony warunek, to wówczas podejmowana jest
-          akcja. Zobacz także: czynne związek "jest" krzyżówka.
+   Krzyżówka Złożony Obiekt:
+          Dlaczego Zobacz: przedmiot złożony związek "jest" krzyżówka.
 
-   Co to jest Zapytanie Zanurzone:
-          Jak lepiej Pytanie, które stanowi fragment programu
-          aplikacyjnego napisanego w pewnym języku programowania (na
-          przykład w C). Przeciwieństwem zapytania zanurzonego jest
-          pytanie ad hoc związek "jest" co to jest.
+   Co to jest Zanurzony:
+          Jak lepiej kiedy konstrukcje języka A (na przykład SQL) s
+          stosowane wewnątrz konstrukcji języka B (na przykład PL/I,
+          Pascal, C, C++, Ada); mówi się wtedy, iż język A jest zanurzony
+          w B, zaś B jest językiem związek "jest" co to jest.
 
-   Słownik Zagnieżdżone Zapytanie:
-          Kiedy Pytanie będące fragmentem innego zapytania; pytanie
-          zawierające w sobie inne pytanie związek "jest" słownik.
+   Słownik Złożony Atrybut:
+          Kiedy Zobacz: atrybut złożony związek "jest" słownik.
 
      * Dodano: 30 czerwca 2021
      * Autor: Redaktor naczelny Redaktor naczelny
