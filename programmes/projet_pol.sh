@@ -30,7 +30,7 @@ do
 	if [ $response == 200 ]; 
 	then
 	# 	if [ ! "$CODE" == "UTF-8" ]; 
-	# 	then
+	#then
     #     iconv -f "$CODE" -t "UTF-8" -o "/tmp/reencodage_$N.html"  "../aspirations/aspiration_pl$N.html"
 	# 	mv "/tmp/reencodage_$N.html" "./aspirations/aspiration_pl$N.html"
     # fi
@@ -43,7 +43,7 @@ do
     COMPTE=$(cat "../dumps-text/dump_pl$N.txt" | egrep -i -o -E "(Z|z)wi(a|ą)z(ek|k(u|owi|iem|i|(o|ó)w|om|ami|ach))"  | wc -w)
 	cat "../dumps-text/dump_pl$N.txt" | egrep -C 3 -i -E "(Z|z)wi(a|ą)z(ek|k(u|owi|iem|i|(o|ó)w|om|ami|ach))" > "../contextes/contexte_pl$N.txt"
 	bash ../concordances/concordancier.sh pl pl$N > "../concordances/concord_pl$N.html"
-	#fi
+	fi
 
     echo "<tr>
     <td>$N</td>

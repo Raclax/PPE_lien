@@ -34,25 +34,29 @@ Definicja związek "jest"
 
    Czym jest Jest Związek znaczenie w Słownik definicji Z .
 
-   Co znaczy Zasada Otwarte/Zamknięte:
-          Porównanie przy konstrukcji obiektowych języków programowania,
-          odpowiednio z którą klasa jest otwarta na rozszerzenia
-          (specjalizacje), ale jest zamknięta na modyfikacje. Konsekwencj�
-          tej zasady jest zasada związek "jest" co znaczy.
+   Co znaczy Ziarnistość:
+          Porównanie rodzaj jednostki danych będącej obiektem pewnych
+          specjalnych mechanizmów działających na bazie danych. Rozróżnia
+          się ziarnistość blokowania (locking granularity) oznaczając�
+          najmniejszą jednostkę związek "jest" co znaczy.
 
-   Krzyżówka Zachowanie:
-          Dlaczego Zbiór metod i innych abstrakcji proceduralnych
-          przypisany do (klasy) obiektów. Przeciwieństwo: behawior związek
-          "jest" krzyżówka.
+   Krzyżówka Złączenie Naturalne:
+          Dlaczego złączenie bazujące na identyczności nazw kolumn
+          złączanych tablic. Na przykład naturalne złączenie tablic:
+          Spółka(NrFirmy, Nazwa, Adres) i PRACOWNIK(NrPrac, Nazwisko,
+          NrFirmy) utworzy pewną relację związek "jest" krzyżówka.
 
-   Co to jest Zapis:
-          Jak lepiej wielu starszych językach i systemach na oznaczenia
-          zestawu nazwanych wartości. Synonimem zapisu w rodzinie języków
-          C/C++ jest struktura, w systemach relacyjnych jest nim krotka
-          albo wiersz, zaś w związek "jest" co to jest.
+   Co to jest Związek:
+          Jak lepiej związek, powiązanie asocjacyjne między encjami, na
+          przykład powiązanie PracujeW między encją Pracownik i encj�
+          Spółka. W modelach obiektowych związek taki nosi nazwę asocjacji
+          (association związek "jest" co to jest.
 
-   Słownik Złożony Obiekt:
-          Kiedy Zobacz: przedmiot złożony związek "jest" słownik.
+   Słownik Zbieranie Nieużytków:
+          Kiedy której zadaniem jest uzyskanie informacji o nieużytkach w
+          pamięci operacyjnej albo na dysku (jest to o takich obszarach,
+          które nie są używane poprzez obecnie przechowywane dane) i w
+          dalszym ciągu związek "jest" słownik.
 
      * Dodano: 30 czerwca 2021
      * Autor: Redaktor naczelny Redaktor naczelny
