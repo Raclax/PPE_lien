@@ -26,23 +26,20 @@ Definicja związek "jest"
 
    Czym jest Jest Związek znaczenie w Słownik definicji Z .
 
-   Co znaczy Zorientowany Obiektowo:
-          Porównanie Odmiennie obiektowy; zobacz: obiektowość związek
-          "jest" co znaczy.
+   Co znaczy Zerwanie Transakcji:
+          Porównanie Zobacz: zerwanie związek "jest" co znaczy.
 
-   Krzyżówka Związek Dwukierunkowy:
-          Dlaczego Związek pozwalający na przechodzenie (nawigację) od
-          jednej klasy do drugiej klasy, i odwrotnie związek "jest"
-          krzyżówka.
+   Krzyżówka Zanurzone Zapytanie:
+          Dlaczego Zobacz: pytanie zanurzone związek "jest" krzyżówka.
 
-   Co to jest Zasada Relatywizmu:
-          Jak lepiej część pewnego bytu semantycznego powinna mieć takie
-          same ogólne własności jak całość. Relatywizm obiektów znaczy, iż
-          dowolny przedmiot złożona jest także z obiektów (podobiektów);
-          definicja atrybutu związek "jest" co to jest.
+   Co to jest Złączenie Zależne:
+          Jak lepiej Zobacz: zależne złączenie związek "jest" co to jest.
 
-   Słownik Zarządca Trwałymi Obiektami:
-          Kiedy Zobacz: skład trwałych obiektów związek "jest" słownik.
+   Słownik Związek:
+          Kiedy związek, powiązanie asocjacyjne między encjami, na
+          przykład powiązanie PracujeW między encją Pracownik i encj�
+          Spółka. W modelach obiektowych związek taki nosi nazwę asocjacji
+          (association związek "jest" słownik.
 
      * Dodano: 30 czerwca 2021
      * Autor: Redaktor naczelny Redaktor naczelny
