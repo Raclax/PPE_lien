@@ -1,149 +1,50 @@
-          + [24]2.4 논리적 동치 관계
-     * [58]5 관계와 표현
-          + [59]5.1 관계 (Relations)
-          + [60]5.2 관계의 표현 방법
-          + [61]5.3 관계의 합성 (Combining Relations)
-          + [62]5.4 Complementary Relations (보수 관계)
-          + [63]5.5 관계의 성질 (Properties of Relations)
-          + [65]5.7 부분 순서 관계
-     * [118]11 순열, 이산확률, 재귀적관계
-          + [158]관계와 표현 연습문제
-5 장 관계와 표현
-   관계(Relation)
-     * 관계(Relation)란 객체들 간의 연관성을 표현하는 구조로서, 수학이나 공학 분야뿐만 아니라 여러 다른 분야에서도
-     * 수학, 컴퓨터, 여러 가지 공학 분야에서의 객체들도 이와 같이 여러 가지 관계를 가짐
-   관계의 예시
-     * 집합A가 집합B의 부분 집합인 경우 관계가 있음
-     * 두 개의 디지털 논리 회로가 같은 입출력 도표를 가졌을 때 두 회로는 관계가 있음
-     * 컴퓨터 프로그램에서 두 변수가 같은 이름과 프로그램 실행 시 같은 저장 장소를 사용하면 관계가 있다고 함
-5.1 관계 (Relations)
-   B\))의 부분집합(subset) \(R\)을 \(A\)에서 \(B\)로 관계라고 한다. 또는 binary relations
-   (이진관계, 이항관계)라고 한다. \[ R := \{(a,b) | a\in A, b \in B\} \subseteq
-     * \((a,b)\)가 관계 \(R\)의 원소이면 아래처럼 표시함 \[ (a,b) \in R, \\ aRb, \\ R (a,
-     * \(aRb\)이면, “\(a\)는 (관계 \(R\)에 의해서) \(b\)에 관계된다”고 말한다.
-   \(A\)에서 \(B\)로의 관계이다.
-   정의 5.2 집합 \(A\)에서 자기 자신 \(A\)로의 관계를 집합 \(A\) 위로의 관계(relation on a set
-   하는 관계를 구하라.
-   예제 5.3 \(A = \{a,b,c\}\)일 때, 집합\(A\) 위로의 관계는 모두 몇개인가?
-   풀이. 집합 \(A\)위로의 관계는 카테시안 곱 (\(A\times A\))의 부분집합이다.
-   가능한 집합\(A\) 위로의 관계는 카테시안 곱 (\(A\times A\))의 부분집합의 개수와 같다.
-   정의 5.3 (항등 관계) 집합 \(A\)위로의 관계가 아래와 같을 때, \(I_A\)를 항등 관계(identity
-   정의 5.4 (역관계, inverse relation) \(A\)에서 \(B\)로의 이진관계 \(R\)의 역관계 (inverse
-   relation) \(R^{−1}\)는 \(B\)에서 \(A\)로의 관계로 다음과 같이 정의함 \[ R^{−1} :=
-   예제 5.4 \(A = \{1,2,3\}\), \(B=\{3,4\}\)일 때, 관계 \(R\)이 다음과 같이 정의되었다고 하자.
-   \(R\)의 역관계는 ? \[ R = \{(1,3), (2,3), (2,4), (3,4)\} \]
-   풀이. 역관계는 순서쌍의 순서를 바꾸면 됨, 따라서 \[ R^{-1} = \{(3,1), (3,2), (4,2),
-5.2 관계의 표현 방법
-     관계를 표현하는 편리한 방법들로는 화살표 도표(arrow diagram), 좌표 도표(coordinate diagram),
-     방향 그래프(directed graph), 관계 행렬(relation matrix) 등이 있음
-          관계 \(R\)이 집합 \(A\) 위로의 관계라고 할 때, 집합 \(A\)의 원소를 그래프의
-   관계 행렬(Relation Matrix), 부울 행렬(Boolean Matrix)
-          행렬의 각 행은 집합 A의 원소, 각 열은 집합 B의 원소를 표시하고, 관계의 원소인 순서쌍 \((a, b) \in
-          \(B=\{a,b,c,d\}\)로의 관계를 관계행렬로 나타낸 것임
-5.3 관계의 합성 (Combining Relations)
-   정의 5.5 (합성관계) \(R: A {\leftrightarrow}B\), \(S: B
-   {\leftrightarrow}C\)라고 할 때, \(R\)과 \(S\)의 합성관계 (composite relation)은
-   예제 5.6 \(A= \{1, 2, 3\}, B= \{1, 2, 3, 4\}, C=\{0, 1, 2\}\)가 주어지고, 관계
-   \(R: A \iff B\)과 \(S: B\iff C\)를 아래와 같이 정의할 때, 합성관계 \(R \circ S\)를 구하라.
-   불리안(Boolian) 행렬곱을 이용한 합성관계의 계산 \[ R= \begin{bmatrix} 1 & 0& 0 &1 \\ 0 &
-   예제 5.7 \(A = \{1,2,3,4\}, B=\{1,2,3\}\)이고 \(A\)에서 \(B\)로의 관계 \(R\)이 다음과
-    1. \(I_A\) (\(A\)위로의 항등관계)
-    2. \(I_B\) (\(A\)위로의 항등관계)
-   0 \\ 0 & 1& 0 \\ \end{bmatrix} = R. \] 위와 비슷하게 \(R I_B = R\), 즉 어떤 관계와
-   항등관계의 합성은 다음과 같은 성질이 성립한다. \[ I_A \circ R = R\circ I_B = R. \]
-5.4 Complementary Relations (보수 관계)
-     * 어떤 이진관계 \(R:A{\leftrightarrow}B\)에 대하여, \(R\)의 보수(complement) \[
-       \Rx:A{\leftrightarrow}B \] 는 이진관계이며 아래와 같이 정의한다. \[ \Rx := \{(a,b)
-     * 예제: \(A = \{0, 1, 2\}, B = \{a, b\}\)라 하고, A에서 B로의 이진관계 \(R =
-5.5 관계의 성질 (Properties of Relations)
-    1. \(A\)위로의 관계 \(R\)이 다음 조건을 만족하면 반사적 (reflexive)이다. \[ (a, a) \in R
-    2. \(A\)위로의 관계 \(R\)이 다음 조건을 만족하면 비반사적 (irreflexive)이다. \[ (a, a)
-   아래 그림은 반사관계의 예시를 방향 그래프 로 나타낸 것임
-     * 양의 정수 집합에 대해 “나누다(/)” 관계는 반사적인가?
-    1. 집합 \(A\)위로의 관계 \(R\)이 다음 조건을 만족하면 대칭적 (symmetric)이다. \[ \forall a,
-    2. 집합 \(A\)위로의 관계 \(R\)이 다음 조건을 만족하면 반대칭적 (antisymmetric)이다. \[
-       않음, \((a,b)\) 이고 \((b,a)\)인 관계가 있으면 반드시 \(a\)와 \(b\)는 같아야 된다는 의미.
-    2. 집합 \(A\)위로의 관계 \(R\)이 다음 조건을 만족하면 비대칭적 (asymmetric)이다. \[ \forall
-   정리5.1 비대칭(asymmetric) 관계는 반대칭(antisymmetric)이다.
-   대칭, 반대칭, 비대칭관계 비교
-   왼쪽은 반대칭 & 비대칭 관계, 오른쪽 그림은 반대칭이지만 비대칭 아닌 관계의 예
-   정리5.2 비대칭(asymmetric) 관계는 반대칭(antisymmetric)이고 비반사적인(irreflexive) 관계와
-    1. 비대칭 관계이면 반대칭 관계이고 동시에 비반사적이다.
-    2. 역으로 반대칭 관계이고 동시에 비반사적이면 비대칭 관계이다.
-   비반사관계이고 반대칭이면 비대칭 관계
-   예제 5.10 자연수 집합에 대한 “나누다” 관계(\(\vert\))는 대칭인가? 반대칭인가?
-   예제 5.11 \(A = \{1,2,3,4\}\) 위로 정의된 관계 \(R\)는 대칭, 반대칭, 비대칭?\[ R = \{ (1,
-   예제 5.12 \(A = \{1,2,3,4\}\) 위로 정의된 관계 \(R\)는 대칭, 반대칭, 비대칭? \[ R = \{
-   정의 5.9 (transitive, 추이관계) 집합 \(A\)위로의 \(R\)이 다음 조건을 만족하면 \(R\)를 추이관계
-   예제 5.13 자연수 집합(\(\mathrm{N}\))위의 “divides” (\(\vert\)) 관계는 transitive?
-   예제 5.14 정수 집합(\(\mathrm{Z}\))위의 \(<\) 관계는 transitive?
-     * \(a < b \land b< c\) 이면 \(a < c\)이므로 추이관계
-   정리5.3 집합 \(A\)위로의 \(R\)이 다음 조건을 만족하면 \(R\)은 추이관계 (transitive)이다. \[
-   위에서 성질 P는 관계의 성질인 반사성, 대칭성, 추이성 중 하나임
-   예제 5.15 (reflexive closure) \(A = \{1, 2, 3\}\)위로의 관계 \(R = \{(1, 1),
-         1. \(\Delta = \{(a, a)| a \in A\}\)를 diagonal relation(대각 관계)라고 함
-         1. \(R^{-1} = \{(b, a)| (a, b) \in R\}\) (역관계)
-   예제 5.16 정수집합위에 정의된 관계 \(R = \{(a, b) | a < b\}\)의 반사성(reflexivity)을 가지는
-   정의 5.12 (동치관계, equivalence) A relation is called equivalence relation
-   반사성, 대칭성, 추이성을 가지는 관계를 동치관계(equivalence relation)라고 함, 즉
-   예제 5.17 집합 \(X=\{a,b,c\}\)위로의 관계 \(R\)을 아래와 같이 정의할 때, \(R\)은 동치관계? \[
-   동치관계?
-   정의 5.13 (동치클래스, equialence class) \(R\)를 집합 \(A\)위로의 동치관계일 때, \(A\)에 속한
-   예제 5.19 집합 \(X=\{a,b,c\}\)위로의 동치관계 \(R\)을 아래와 같이 정의할 때, \[
-    4. \(A\)에서 정의한 동치관계의 모든 동치클래스는 집합 \(A\)의 분할이다.
-   예제 5.20 위의 예제에서 \(X=\{a,b,c\}\)위로의 동치관계 \[
-   \((a, b)\)들로 이루어진 관계를 mod 합동 관계라고 하고, 두 수의 관계를 다음과 같이 표시함 \[ a \equiv b
-   (mod ~~m). \] 즉, mod 합동 관계는 \[ R = \{(a, b) | a \equiv b (mod ~~m)\}.
-   정리5.6 mod 합동 관계(congruence modulo)는 동치관계임
-5.7 부분 순서 관계
-   정의 5.16 (부분 순서 관계, partial ordered relation)
-     * 반사성(reflexive), 반대칭성(antisymmetric), 추이성(transitive)을 가지는 관계를 부분 순서
-       관계라고 함
-     * 집합 \(A\)와 \(A\)위로의 관계 \(R\)이 부분 순서 관계이면 \((A, R)\)을 부분순서집합(partial
-     * \((x, y) \in R\) (부분 순서 관계)이면 \(x \lesssim y\)으로 표시함
-   예제 5.22 아래는 \(\{x,y,z\}\)의 멱집합(power set)위로의 포함관계(\(\subset\))를 방향그래프로
-   나타낸 것이다. 이런 관계는 부분 순서 관계인가?
-   부분 순서 관계그래프
-   예제 5.23 자연수 집합에서 \(\le\) 는 부분순서관계임
-   부분순서관계에 대한 조건을 체크:
-    1. 반사관계 \[ \forall x\in N, ~x \le x \]
-    2. 반대칭관계 \[ \forall x, y \in N,~ x \le y \land y \le x \then x=y \]
-    3. 추이관계 \[ \forall x, y,z \in N, ~x \le y \land y \le x \then x \le z
-   예제 5.24 집합 \(S\)의 부분집합에서의 포함관계 \(\subseteq\) 는 부분순서관계임
-    1. 반사관계 \[ \forall A\subseteq S, ~A \subseteq A \]
-    2. 반대칭관계 \[ \forall A, B \subseteq S,~ A \subseteq B \land B \subseteq
-    3. 추이관계 \[ \forall A, B,C \subseteq S, ~A \le B \land B \subseteq C
-   정의 5.17 (선형순서, linear order, total order) 집합 \(A\)위로의 관계 \(R\)이 다음 조건을
-    1. \(R\)이 부분 순서 관계이면서
-   선형 순서 관계(linearly ordered relation, linear order)
-          선형 순서 집합, \((A, \lesssim)\)에서 관계 \(\lesssim\)를 선형 순서 관계라고 함
-   예제 5.25 정수집합에서 \(\le\)는 선형순서 관계임
-   예제 5.26 \(A = \{1, 2, 3, 4\}\)위의 관계 \(\le\)에 대한 Hasse Diagram의 작성
-     * 범위: 논리와 명제, 집합과 수, 증명, 관계, 행렬
-  24. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/논리명제.html#논리적-동치-관계
-  58. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/관계.html
-  59. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/관계.html#관계-relations
-  60. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/관계.html#관계의-표현-방법
-  61. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/관계.html#관계의-합성-combining-relations
-  62. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/관계.html#complementary-relations-보수-관계
-  63. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/관계.html#관계의-성질-properties-of-relations
-  64. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/관계.html#동치와-분할
-  65. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/관계.html#부분-순서-관계
-  66. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/관계.html#연습문제
-  67. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/관계.html#중간고사-일정-공지
- 118. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/순열-이산확률-재귀적관계.html
- 119. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/순열-이산확률-재귀적관계.html#경우의-수-순열과-조합
- 120. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/순열-이산확률-재귀적관계.html#이산적-확률과-통계
- 121. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/순열-이산확률-재귀적관계.html#확률의-유래
- 122. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/순열-이산확률-재귀적관계.html#확률의-정의
- 123. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/순열-이산확률-재귀적관계.html#확률의-계산-고전적-정의에-의한
- 124. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/순열-이산확률-재귀적관계.html#조건부-확률과-베이즈-정리
- 125. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/순열-이산확률-재귀적관계.html#확률변수
- 126. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/순열-이산확률-재귀적관계.html#베르누이-분포-이항분포
- 127. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/순열-이산확률-재귀적관계.html#초기하분포와-확률변수
- 128. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/순열-이산확률-재귀적관계.html#기하분포-음이항분포
- 129. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/순열-이산확률-재귀적관계.html#포아송poisson-문포
- 130. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/순열-이산확률-재귀적관계.html#비둘기-집-원리
- 131. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/순열-이산확률-재귀적관계.html#재귀적-정의
- 132. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/순열-이산확률-재귀적관계.html#피보나치-수fibonacci-numbers
- 158. http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/a2.-과제-및-연습문제-풀이.html#관계와-표현-연습문제
+대한민국 법원 전자가족관계등록시스템
+          + 가족관계등록부
+               o 가족관계증명서
+               o 혼인관계증명서
+               o 입양관계증명서
+               o 친양자입양관계증명서
+     가족관계등록창설 신고
+     * 가족관계등록제도 개요
+     * 가족관계증명서
+     * 혼인관계증명서
+     * 입양관계증명서
+     * 친양자입양관계증명서
+     * 가족관계등록창설 신고
+     재외국민 가족관계등록창설, 가족관계등록부 정정 및 정리
+     가족관계등록비송
+     * 가족관계등록부정정 허가
+     * 가족관계등록창설 허가
+     가족관계등록예규 및 선례
+     * 가족관계등록부상 성씨 현황
+   전자가족관계등록시스템
+          + 가족관계등록부
+               o 가족관계증명서
+               o 혼인관계증명서
+               o 입양관계증명서
+               o 친양자입양관계증명서
+     가족관계등록창설 신고
+     * 가족관계등록제도 개요
+     * 가족관계증명서
+     * 혼인관계증명서
+     * 입양관계증명서
+     * 친양자입양관계증명서
+     * 가족관계등록창설 신고
+     재외국민 가족관계등록창설, 가족관계등록부 정정 및 정리
+     가족관계등록비송
+     * 가족관계등록부정정 허가
+     * 가족관계등록창설 허가
+     가족관계등록예규 및 선례
+     * 가족관계등록부상 성씨 현황
+     * 가족관계
+     * 혼인관계
+     * 입양관계
+     * 친양자입양관계
+     * 가족관계
+     * 가족관계
+     * 가족관계증명서에 형제자매가 나오지 않아요. 형제자매의 관계를 증명하려면 어떻게 해야 하나요...
+     * ‘가족관계등록부가 폐쇄되었다’는 메시지가 나오며 영문증명서가 발급이 되지 않습니다.
+     * 시각장애인에 대한 점자 문서(가족관계증명서) 제공을 위...   2022-08-09
+   가족관계 전자증명서 발급 서비스 시행 안내 새창 특정증명서 발급 서비스 확대 시행 및 홈페이지 개편 안내 새창 가족관계에 관한
+   전자가족관계등록시스템 365일 24시간 서비스 제공 안내 새창 보이스피싱, 파밍, 스미싱 등 금융사기 주의 안내 자세히 보기
+     * 재외국민 가족관계등록사무소

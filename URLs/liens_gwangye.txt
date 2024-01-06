@@ -3,11 +3,9 @@ https://namu.wiki/w/%EA%B4%80%EA%B3%84
 https://ko.wikipedia.org/wiki/%EA%B4%80%EA%B3%84
 https://dataonair.or.kr/db-tech-reference/d-guide/sql/?mod=document&uid=328
 https://ko.wikipedia.org/wiki/%EA%B4%80%EA%B3%84_(%EC%88%98%ED%95%99)
-https://www.collinsdictionary.com/ko/dictionary/korean-english/%EA%B4%80%EA%B3%84
 http://www.ktword.co.kr/test/view/view.php?m_temp1=444
 https://korean.dict.naver.com/koendict/#/entry/koen/31b2639fe46c459bade624efa2b2d9dd
 https://music.bugs.co.kr/track/6202207?wl_ref=list_tr_08
-http://bigdata.dongguk.ac.kr/lectures/disc_math/_book/%EA%B4%80%EA%B3%84.html
 https://help.tableau.com/current/pro/desktop/ko-kr/datasource_relationships_learnmorepage.htm
 https://efamily.scourt.go.kr/index.jsp
 https://ko.bab.la/%EC%82%AC%EC%A0%84/%ED%95%9C%EA%B5%AD%EC%96%B4-%EC%98%81%EC%96%B4/%EA%B4%80%EA%B3%84
@@ -18,14 +16,10 @@ https://ambseoul.esteri.it/ko/italia-e-corea/cooperazione-allo-sviluppo/
 https://www.nrc.re.kr/board.es?mid=a30400000000&bid=0046&act=view&list_no=175087&tag=&nPage=1&issue_cd=33
 https://www.appier.com/ko-kr/blog/relationship-marketing-how-to-build-a-lifelong-relationship-with-your-customers
 https://www.kli.re.kr/menu.es?mid=a10507010000
-https://www.rwandainkorea.gov.rw/ko/%EA%B4%80%EA%B3%84
 https://support.klac.or.kr/front/contents/06/03003-01.do
 https://www.kmou.ac.kr/ic/main.do
 https://hanilhis.or.kr/
-https://m.ncs.go.kr/th03/TH0302List.do?dirSeq=126
-https://www.gov.kr/mw/AA020InfoCappView.do?HighCtgCD=A01008&CappBizCD=97400000004&tp_seq=
 http://data.krx.co.kr/contents/MDC/HARD/hardController/MDCHARD011.cmd
-https://korea-seoul.mid.ru/ko/russia-korea/bilateral-relations/politics/
 https://sydkorea.um.dk/ko/korean-bilateral-relations/bilateral
 https://hanmaths.tistory.com/50
 https://www.hani.co.kr/arti/well/well_friend/996494.html
@@ -60,6 +54,5 @@ https://lazypazy.tistory.com/37
 https://www.dongascience.com/news.php?idx=9522
 https://kormedi.com/1614666/%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84-%ED%9E%98%EB%93%A0-%EC%82%AC%EB%9E%8C%EC%9D%B4%EB%9D%BC%EB%A9%B4-%EA%BC%AD-%EC%A7%80%EC%BC%9C%EC%95%BC-%ED%95%A0-3%EA%B0%80%EC%A7%80/
 https://dbr.donga.com/article/view/1303/article_no/6894/ac/magazine
-https://www.zendesk.kr/blog/customer-relationship-marketing/
 https://help.salesforce.com/s/articleView?id=sf.overview_of_custom_object_relationships.htm&type=5
 https://www.hani.co.kr/arti/politics/defense/1122439.html

@@ -1,7 +1,27 @@
-    1. 가격정보 수익률 상관관계
-    1. 가격정보 수익률 상관관계
-       수익률 상관관계
-수익률 상관관계 (BUTTON)
-   투자분석정보  /  가격정보  / 수익률 상관관계
-   수익률 상관관계
-   조회 대상 종목과 여타 종목간의 과거 수익률 상관관계를 산출하여 상관관계가 높은 종목을 표출합니다.
+   관계(Relations) / 관계의 특징(Relations and their properties)
+관계(Relations) / 관계의 특징(Relations and their properties)
+이항관계(binary relations)
+   정의 1 : A와 B라는 집합이 있을 때, A로부터 B까지의 이항 관계는 AXB의 부분집합이다.
+     * set A 와 B의 관계를 graphically 하게 표현할 수 있다.
+     * 관계는 함수보다 더 general한 표현이다.
+   정의 2: A라는 집합에 대한 관계는 A X A 의 부분집합이다.
+   문제) 만약 n개의 element가 있는 set은 몇개의 관계(relation)을 가질까?
+   1. 반사 관계(reflective relation)
+   정의 :모든 a ∈ A 에 대해 (a,a) ∈R인 관계
+   반사 관계 / 반사 관계 아닌 것
+   주의해야할 점은 반산관계가 아니라고 해서 비반사관계거나, 비반사관계가 아니라고 해서 반사관계는 아니다.
+   2.대칭관계(Symmetric relation)
+   정의 : 어떤 a,b ∈ A에 대해 (a,b) ∈R이면 (b,a) ∈R인 관계
+   3.반대칭관계(Antisymmetric relation)
+   정의 : 어떤 a,b ∈ A 에 대해 (a,b) ∈ R 일 때, (b,a) ∈R이면 a=b인 관계
+   4.추적관계(transitive relation)
+   5. 구성 관계(composition relation)
+   정의 : R 은 set A와 set B의 관계, S는 set B와 setC의 관계이다. R과 S의 구성관계는 set A 에서
+   setC의 관계이다.
+   동치관계(equivalence relation)/동치류(Equivalence Class)  (0) 2020.11.29
+            관계의 표현(representing relations)  (0)           2020.11.25
+     * 동치관계(equivalence relation)/동치류(Equivalence Class)
+     * 관계의 표현(representing relations)
+   Relation, 관계, 이산수학
+   관계의 표현(representing relations)
+   관계의 표현(representing relations)

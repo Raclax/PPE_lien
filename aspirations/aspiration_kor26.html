@@ -1,2605 +1,1109 @@
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
-<html lang="ko"> 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, minimum-scale=1, user-scalable=yes">
-	<meta name="author" content="한국거래소" />
-	<meta name="description" content="증권·파생상품의 시장정보(Marketdata), 공매도정보, 투자분석정보(SMILE) 등 한국거래소의 정보데이터를 통합하여 제공 서비스" />
-	<meta name="keywords" content="정보데이터시스템 데이터시스템 한국거래소 통계 KRX통계 한국거래소정보 시장정보 주식 한국거래소데이터 KRX 한국거래소공매도 공매도 투자분석정보 증권투자정보포털 코스닥기술분석보고서 분석보고서" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="KRX 정보데이터시스템" />
-	<meta property="og:description" content="증권·파생상품의 시장정보(Marketdata), 공매도정보, 투자분석정보(SMILE) 등 한국거래소의 정보데이터를 통합하여 제공 서비스" />
-	<meta name="naver-site-verification" content="222ad2f14a7a611c5494c898d311a8d7b61ba13e"/>
-	<meta name="robots" content="index,follow" >
-	
-		
-			
-				
-				
-					
-				
-			
-		
-	
-	<title>수익률 상관관계 - KRX | 정보데이터시스템</title>
-	<script type="text/javascript" src="/inc/lib/jquery/jquery-1.12.4.min.js"></script>
-<link rel="stylesheet" type="text/css" href="/inc/lib/jquery/jquery-ui-1.12.1.custom.min.css" />
-<script type="text/javascript" src="/inc/lib/jquery/jquery-ui-1.12.1.custom.min.js"></script>
-<script type="text/javascript" src="/inc/lib/scroll/jquery.slimscroll.min.js"></script>
-<script type="text/javascript" src="/inc/lib/scroll/slimScrollHorizontal.js?v=20220108_2"></script>
-<script type="text/javascript" src="/inc/lib/lodash/lodash-3.10.1.min.js"></script>
+<html id="__hELLO" lang="ko" data-theme="#">
 
-      <script type="text/javascript">
-      	if (!Object.assign) Object.assign = _.assign;
-      </script>
-      
-<script type="text/javascript" src="/WEB-APP/webponent/ci/agent.js"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/ci/util.js"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/ci/ui.js"></script>
-<!-- getDevice not defined --><script type="text/javascript" src="/inc/js/mdc.js?v=20231229_2 "></script>
-<script type="text/javascript" src="/inc/js/mdc.lang.js?v=20231229_2 "></script>
-<script type="text/javascript" src="/inc/js/mdc.module.js?v=20231229_2 "></script>
-<script type="text/javascript" src="/inc/js/mdc.util.js?v=20231229_2 "></script>
-<script type="text/javascript" src="/inc/js/mdc.layer.js?v=20231229_2 "></script>
-<script type="text/javascript" src="/inc/js/mdc.validate.js?v=20231229_2 "></script>
+                                                                                  <head>
+                <script type="text/javascript">if (!window.T) { window.T = {} }
+window.T.config = {"TOP_SSL_URL":"https://www.tistory.com","PREVIEW":false,"ROLE":"guest","PREV_PAGE":"","NEXT_PAGE":"","BLOG":{"id":4291663,"name":"jesus-never-fail","title":"가즈아","isDormancy":false,"nickName":"샨샨","status":"open"},"NEED_COMMENT_LOGIN":false,"COMMENT_LOGIN_CONFIRM_MESSAGE":"","LOGIN_URL":"https://www.tistory.com/auth/login/?redirectUrl=https://jesus-never-fail.tistory.com/22","DEFAULT_URL":"https://jesus-never-fail.tistory.com","USER":{"name":null,"homepage":null,"id":0,"profileImage":null},"SUBSCRIPTION":{"status":"none","isConnected":false,"isPending":false,"isWait":false,"isProcessing":false,"isNone":true},"IS_LOGIN":false,"HAS_BLOG":false,"IS_SUPPORT":false,"TOP_URL":"http://www.tistory.com","JOIN_URL":"https://www.tistory.com/member/join","ROLE_GROUP":"visitor"};
+window.appInfo = {"domain":"tistory.com","topUrl":"https://www.tistory.com","loginUrl":"https://www.tistory.com/auth/login","logoutUrl":"https://www.tistory.com/auth/logout"};
+window.initData = {};
 
-      <script type="text/javascript">
-      	/*
-				if (ci.agent.isMobile) {
-					if (location.pathname.indexOf('/contents/MDC/') > -1) location.href='/contents/MMC/MAIN/main/index.cmd';
-				} else {
-					if (location.pathname.indexOf('/contents/MMC/') > -1) location.href='/contents/MDC/MAIN/main/index.cmd';
-				}
-				*/
-      	mdc.lang.setLocale(document.querySelector('html').lang);
-				mdc.lang.setResources();
+window.TistoryBlog = {
+    basePath: "",
+    url: "https://jesus-never-fail.tistory.com",
+    tistoryUrl: "https://jesus-never-fail.tistory.com",
+    manageUrl: "https://jesus-never-fail.tistory.com/manage",
+    token: "ygzXR0c6i9JhnwH7y/6ZX1lm0jg3q/QZWbR90qwrwtWd9y+9Jt2xyDn3MoFKfZzq"
+};
+var servicePath = "";
+var blogURL = "";</script>
 
-				if (!location.origin) {
-					location.origin = location.protocol + '//' + location.hostname;
-					if (location.port) location.origin += ':' + location.port;
-				}
-      </script>
-      
- 
-	<link rel="stylesheet" type="text/css" href="/WEB-APP/webponent/dialog/dialog.css" />
-<link rel="stylesheet" type="text/css" href="/WEB-APP/webponent/dialog/layerlink.css" />
-<link rel="stylesheet" type="text/css" href="/templets/mdc_hard/css/common.css?v=20231229_2 " />
-<link rel="stylesheet" type="text/css" href="/templets/mdc_hard/css/dev.css?v=20231229_2 " />
-<link rel="stylesheet" type="text/css" href="/inc/lib/calendar/css/pc/calendar.css?v=20231229_2 " />
-<link rel="stylesheet" type="text/css" href="/WEB-APP/webponent/grid2.0/css/webponent.grid.css" />
-<link rel="stylesheet" type="text/css" href="/WEB-APP/webponent/grid2.0/css/webponent.grid.flat.css?v=20230707_5" />
-<link rel="stylesheet" type="text/css" href="/templets/mdc/css/grid.css?v=20230707_5" />
-<link rel="stylesheet" type="text/css" href="/WEB-APP/webponent/grid2.0/css/webponent.pagingUI.css" />
-<link rel="stylesheet" type="text/css" href="/WEB-APP/webponent/grid2.0/css/webponent.Tree.css" />
-<link rel="stylesheet" type="text/css" href="/inc/lib/ci-grid/css/ci-grid.css?v=20231229_2 " />
-<link rel="stylesheet" type="text/css" href="/WEB-APP/webponent/chart2.0/lib/chart/webponent.chart.css" />
-<link rel="stylesheet" type="text/css" href="/inc/lib/d3/custom-chart.css" />
-<link rel="stylesheet" type="text/css" href="/inc/lib/Nwagon/Nwagon.css" />
-<script type="text/javascript" src="/WEB-APP/webponent/dialog/dialog.js?v=20230707_5"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/dialog/layerlink.js"></script>
-<script type="text/javascript" src="/templets/mdc_hard/js/common.js?v=20231229_2 "></script>
-<script type="text/javascript" src="/inc/lib/calendar/calendar.js?v=20231229_2 "></script>
-<script type="text/javascript" src="/webponent.licenseKey.js?v=20230707_5"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/grid2.0/external/jquery.mousewheel.min.js"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/grid2.0/webponent.grid.js?v=20230707_5"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/grid2.0/external/webponent.pagingUI.js"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/grid2.0/webponent.grid.UIplugin.js"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/grid2.0/external/json2.min.js"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/grid2.0/external/lz-string.js"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/grid2.0/webponent.report.js"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/grid2.0/webponent.grid.AjaxTree.js"></script>
-<script type="text/javascript" src="/inc/lib/ci-grid/js/ci-grid-1.00.0.js?v=20231229_2 "></script>
-<script type="text/javascript" src="/webponent.licenseKey.js?v=20230707_5"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/comm/raphael.js"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/comm/webponent.comm.common.js"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/comm/webponent.comm.export.js"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/chart/webponent.chart.js?v=20230707_5"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/chart/webponent.chart.style.js?v=20230707_5"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/chart/webponent.chart.option.js?v=20230707_5"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/chart/webponent.chart.series.js"></script>
-<script type="text/javascript" src="/inc/lib/d3/d3.v3.min.js"></script>
-<script type="text/javascript" src="/inc/lib/d3/d3.v4.min.js"></script>
-<script type="text/javascript" src="/inc/lib/d3/queue.v1.min.js"></script>
-<script type="text/javascript" src="/inc/lib/d3/topojson.v1.min.js"></script>
-<script type="text/javascript" src="/inc/lib/Nwagon/Nwagon.js"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.horizon.js?v=20230707_5"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.korea.js?v=20230707_5"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.pie.js?v=20230707_5"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.scatterplot.js?v=20230707_5"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.treemap.js?v=20230707_5"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.radar.js?v=20230707_5"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.shaped.js?v=20230707_5"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.gauge.style.js?v=20230707_5"></script>
-<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.angular.js?v=20230707_5"></script>
-<script type="text/javascript" src="/inc/lib/atoh/atoh.js"></script>
-
-	
-
-	<style type="text/css">
-		.tab.type02_fix.scrolldown li {margin-right:1px;width:calc((100% - 6px)/5);}
-		.tab.type03.scrolldown li {width:calc((100% - 3px)/2);}
-	</style>
-</head>
-<body>
-<div class="wrap">
-	<header>
-		<h1><a href="/contents/MDC/HARD/hardController/MDCHARD001.cmd"><img src="/templets/mdc_hard/img/logo.png" alt=""></a></h1>
-		<div class="btnLang">
-			<button type="button" onclick="kor();" class="btn_lang on"><span>KOR</span></button>
-			<button type="button" onclick="eng();" class="btn_lang"><span>ENG</span></button>
-	    </div>
-		<form id="tempFrm" action="/contents/MDC/HARD/hardController/changeLanguage.cmd" method="post">
-			<input type="hidden" name="language" value=""/>
-		</form>
-		<script>
-		function eng(){
-			mdc.util.setCookie("lang","en",365);
-			$("#tempFrm input").val('en');
-			$("#tempFrm").submit();
-		}
-		function kor(){
-			$("#tempFrm input").val('ko');
-			mdc.util.setCookie("lang","ko_KR",365);
-			$("#tempFrm").submit();
-			
-		}
-		</script>
-		<button><img src="/templets/mdc_hard/img/menu_tit1.png" alt="전체메뉴 열기"><img src="/templets/mdc_hard/img/menu_tit2.png" alt="전체메뉴 닫기"></button>
-		<div class="header_toggles">
-			<div>
-				
-					
-						<h5>서비스 소개</h5>
-						<p>
-							
-								
-								
-								
-									
-									
-									
-									
-									
-									
-									
-									
-										<a href="/contents/MDC/INFO/informationController/MDCINFO001.cmd" target="_blank">정보데이터시스템 소개</a>
-									
-								
-							
-								
-								
-								
-									
-									
-									
-									
-									
-									
-									
-									
-										<a href="/contents/MDC/INFO/informationController/MDCINFO002.cmd" target="_blank">이용안내</a>
-									
-								
-							
-								
-								
-								
-									
-									
-									
-									
-									
-									
-									
-									
-										<a href="/contents/MDC/INFO/informationController/MDCINFO003.cmd" target="_blank">마켓데이터 이용약관</a>
-									
-								
-							
-								
-								
-								
-									
-									
-									
-									
-									
-									
-									
-									
-										<a href="http://open.krx.co.kr/contents/OPN/05/05000000/OPN05000000.jsp" target="_blank">보도자료</a>
-									
-								
-							
-								
-								
-								
-									
-									
-									
-									
-									
-									
-									
-									
-										<a href="/contents/MDC/COMS/board/MDCCOMS010_S1.cmd?boardId=MDCINFO004" target="_blank">공지사항</a>
-									
-								
-							
-						</p>
-					
-				
-					
-						<h5>통계</h5>
-						<p>
-							
-								
-								
-								
-									
-									
-										<a href="/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201" target="_blank">기본 통계</a>
-									
-									
-									
-									
-									
-									
-									
-								
-							
-								
-								
-								
-									
-									
-									
-										<a href="/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0202" target="_blank">이슈 통계</a>
-									
-									
-									
-									
-									
-									
-								
-							
-								
-								
-								
-									
-									
-									
-									
-										<a href="/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203" target="_blank">공매도 통계</a>
-									
-									
-									
-									
-									
-								
-							
-								
-								
-								
-									
-									
-									
-									
-									
-										<a href="/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0204" target="_blank">통계DB 정보</a>
-									
-									
-									
-									
-								
-							
-								
-								
-								
-									
-										<a href="javascript:window.open('/contents/MDC/STAT/dataDic/dictionary/index.cmd?menuId=MDC0205', 'MDC0205', 'width=1000,height=800,resizable=yes'); void(0);">정보데이터 종합사전</a>
-									
-									
-									
-									
-									
-									
-									
-									
-								
-							
-						</p>
-					
-				
-					
-						<h5>쉽게 보는 통계</h5>
-						<p>
-							
-								
-								
-								
-									
-									
-									
-									
-									
-									
-										<a href="/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0301" target="_blank">주요 통계</a>
-									
-									
-									
-								
-							
-								
-								
-								
-									
-									
-									
-									
-									
-									
-									
-										<a href="/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0302" target="_blank">순위 통계</a>
-									
-									
-								
-							
-								
-								
-								
-									
-									
-									
-									
-									
-									
-									
-									
-										<a href="/contents/MDC/EASY/visualController/MDCEASY001.cmd" target="_blank">시각화 통계</a>
-									
-								
-							
-						</p>
-					
-				
-					
-						<h5>깊이 있는 통계</h5>
-						<p>
-							
-								
-								
-								
-									
-									
-									
-									
-									
-									
-									
-									
-										<a href="/contents/MDC/HARD/hardController/MDCHARD002.cmd" target="_blank">기업분석보고서</a>
-									
-								
-							
-								
-								
-								
-									
-									
-									
-									
-									
-									
-									
-									
-										<a href="/contents/MDC/HARD/hardController/MDCHARD008.cmd" target="_blank">투자분석정보</a>
-									
-								
-							
-								
-								
-								
-									
-									
-									
-									
-									
-									
-									
-									
-										<a href="http://esgportal.kr" target="_blank">ESG 정보</a>
-									
-								
-							
-								
-								
-								
-									
-									
-									
-									
-									
-									
-									
-									
-										<a href="/contents/MDC/HARD/hardController/MDCHARD054.cmd" target="_blank">이용안내</a>
-									
-								
-							
-						</p>
-					
-				
-					
-						<h5>간행물</h5>
-						<p>
-							
-								
-								
-								
-									
-									
-									
-									
-									
-									
-									
-									
-										<a href="/contents/MDC/MGZN/publication/MDCMGZN001.cmd?menuId=MDCMGZN001" target="_blank">시장동향</a>
-									
-								
-							
-								
-								
-								
-									
-									
-									
-									
-									
-									
-									
-									
-										<a href="/contents/MDC/MGZN/publication/MDCMGZN001.cmd?menuId=MDCMGZN014" target="_blank">발간자료</a>
-									
-								
-							
-						</p>
-					
-				
-					
-						<h5>데이터 상품</h5>
-						<p>
-							
-								
-								
-								
-									
-									
-									
-									
-									
-									
-									
-									
-										<a href="/contents/MDC/DATA/datasale/index.cmd?viewNm=MDCDATA001" target="_blank">데이터 구입</a>
-									
-								
-							
-								
-								
-								
-									
-									
-									
-									
-									
-									
-									
-									
-										<a href="/contents/MDC/DATA/datasale/index.cmd?viewNm=MDCDATA400" target="_blank">데이터 분배</a>
-									
-								
-							
-								
-								
-								
-									
-									
-									
-									
-									
-									
-									
-									
-										<a href="/contents/MDC/DATA/datasale/index.cmd?viewNm=MDCDATA403" target="_blank">지수 라이센스</a>
-									
-								
-							
-						</p>
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-			</div>
-		</div>
-		<ul class="jsDepth2">
-			
-				
-			
-				
-			
-				
-			
-				
-					
-						
-							
-								<li >
-									<a href="/contents/MDC/HARD/hardController/MDCHARD002.cmd">기업분석보고서</a>
-								</li>
-								
-							
-						
-							
-								<li class="on">
-									<a href="/contents/MDC/HARD/hardController/MDCHARD008.cmd">투자분석정보</a>
-								</li>
-								
-									
-									
-										
-									
-									
-								
-							
-						
-							
-								<li >
-									<a href="http://esgportal.kr">ESG 정보</a>
-								</li>
-								
-							
-						
-							
-								<li >
-									<a href="/contents/MDC/HARD/hardController/MDCHARD054.cmd">이용안내</a>
-								</li>
-								
-							
-						
-					
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-		</ul>
-
-		
-			
-		
-			
-		
-			
-		
-			
-				
-					
-						
-					
-						
-							
-								<div class="tab jsDepth3 type02_fix on">
-									<ol>
-										
-											
-												<li class="on">
-
-													<a href="/contents/MDC/HARD/hardController/MDCHARD008.cmd"  >가격정보
-														
-															
-														
-															
-																<span>수익률 상관관계</span>
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-													</a>
-												</li>
-											
-										
-											
-												<li >
-
-													<a href="/contents/MDC/HARD/hardController/MDCHARD023.cmd"  >거래정보
-														
-															
-														
-															
-														
-															
-														
-															
-														
-													</a>
-												</li>
-											
-										
-											
-												<li >
-
-													<a href="/contents/MDC/HARD/hardController/MDCHARD028.cmd"  >추세정보
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-													</a>
-												</li>
-											
-										
-											
-												<li >
-
-													<a href="/contents/MDC/HARD/hardController/MDCHARD036.cmd"  >기업정보
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-													</a>
-												</li>
-											
-										
-											
-												<li >
-
-													<a href="/contents/MDC/HARD/hardController/MDCHARD046.cmd"  >참고정보
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-													</a>
-												</li>
-											
-										
-										
-											
-											
-												
-													
-														
-															
-														
-															
-																
-																
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-													
-												
-													
-												
-													
-												
-													
-												
-													
-												
-											
-										
-									</ol>
-								</div>
-							
-						
-					
-						
-					
-						
-					
-				
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-
-
-		<div class="tab type02">
-			<ol>
-				
-					
-				
-					
-				
-					
-				
-					
-						
-							
-								
-									
-								
-							
-								
-									
-										
-											
-												<li class="on">
-													<a href="/contents/MDC/HARD/hardController/MDCHARD008.cmd">가격정보
-														
-															
-														
-															
-																<span>수익률 상관관계</span>
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-													</a>
-													<div>
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD008.cmd">가격 유사도 분석</a></p>
-															
-														
-															
-																<p class="on"><a href="/contents/MDC/HARD/hardController/MDCHARD011.cmd">수익률 상관관계</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD014.cmd">상대가격 평균 회귀</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD017.cmd">VWAP</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD020.cmd">최우선매수(매도)호가 상승(하락) 비율</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD021.cmd">체결가 상향(하향) 비율</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD022.cmd">최종최우선매도(매수)호가 상승(하락) 비율</a></p>
-															
-														
-													</div>
-												</li>
-											
-										
-											
-												<li >
-													<a href="/contents/MDC/HARD/hardController/MDCHARD023.cmd">거래정보
-														
-															
-														
-															
-														
-															
-														
-															
-														
-													</a>
-													<div>
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD023.cmd">거래빈도·거래규모</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD024.cmd">수정 거래회전율</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD025.cmd">거래대금·시가총액비율</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD026.cmd">매수·매도불균형</a></p>
-															
-														
-													</div>
-												</li>
-											
-										
-											
-												<li >
-													<a href="/contents/MDC/HARD/hardController/MDCHARD028.cmd">추세정보
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-													</a>
-													<div>
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD028.cmd">모멘텀</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD029.cmd">단기·장기반전</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD031.cmd">맥클레란 오실레이터</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD032.cmd">트린지수</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD033.cmd">계절효과</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD034.cmd">폭(Breadth)</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD035.cmd">코팍커브</a></p>
-															
-														
-													</div>
-												</li>
-											
-										
-											
-												<li >
-													<a href="/contents/MDC/HARD/hardController/MDCHARD036.cmd">기업정보
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-													</a>
-													<div>
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD036.cmd">실적개선랭킹</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD038.cmd">초과이익 지속성</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD039.cmd">매출액이익 변동성</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD040.cmd">총자산이익 변동성</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD041.cmd">성장성 측정지표</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD042.cmd">규모 측정지표</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD043.cmd">수익성 측정지표</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD044.cmd">잠재력 측정지표</a></p>
-															
-														
-													</div>
-												</li>
-											
-										
-											
-												<li >
-													<a href="/contents/MDC/HARD/hardController/MDCHARD046.cmd">참고정보
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-															
-														
-													</a>
-													<div>
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD046.cmd">Treemap</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD047.cmd">이벤트 효과분석</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD048.cmd">기업 주요 변동사항</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD049.cmd">종목별 시장경보 지정 정보</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD050.cmd">ESG 평가 등급</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD051.cmd">샤프비율</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD052.cmd">투자심리선</a></p>
-															
-														
-															
-																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD053.cmd">종목별 외국인 국적 분류</a></p>
-															
-														
-													</div>
-												</li>
-											
-										
-									
-								
-							
-								
-									
-								
-							
-								
-									
-								
-							
-						
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-			</ol>
-		</div>
-	</header>
-
-	<section class="title">
-		<h3><span>수익률 상관관계<button></button></span></h3>
-		<p>
-			<img src="/templets/mdc_hard/img/ico_home.png" alt="">
-			
-				
-			
-				
-			
-				
-			
-				
-					
-						
-					
-						
-							투자분석정보
-							
-								
-									&nbsp;/&nbsp;
-									가격정보
-									
-									
-										
-									
-										
-											&nbsp;/&nbsp;<em>수익률 상관관계</em>
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-										
-									
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-						
-					
-						
-					
-						
-					
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-		</p>
-	</section>
-	 
-	 
-	
-		<div class="describe ">
-			
-			 
-				<div>
-					<span>수익률 상관관계</span>
-					<p>조회 대상 종목과 여타 종목간의 과거 수익률 상관관계를 산출하여 상관관계가 높은 종목을 표출합니다.<br>수치가 1에 가까울수록 유사한 패턴을 나타내며, 수치가 0에 가까울수록 상이한 패턴을 지닙니다.</p>
-				</div>
-			
-
-		</div>
-	
-
-	
-
-
-
-
-
-
-
-
- 
- 
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<ul class="list_arrow jsPdfHide">
-  
-    
-  
-    
-  
-    
-  
-    
-      
+                
+                
+                
+                        <!-- BusinessLicenseInfo - START -->
         
-          
-        
-          
-            
-              
-                
-                  
-                    
-                      
-                    
-                      
-                        
-                          
-                            
-                              <li class="on"><a href="/contents/MDC/HARD/hardController/MDCHARD011.cmd">상위종목</a></li>
-                            
-                          
-                            
-                              <li ><a href="/contents/MDC/HARD/hardController/MDCHARD012.cmd">차트</a></li>
-                            
-                          
-                            
-                              <li ><a href="/contents/MDC/HARD/hardController/MDCHARD013.cmd">종목비교</a></li>
-                            
-                          
-                        
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                  
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-            
-          
-        
-          
-        
-          
-        
-      
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-</ul>
+            <link href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/plugin/BusinessLicenseInfo/style.css" rel="stylesheet" type="text/css"/>
 
+            <script>function switchFold(entryId) {
+    var businessLayer = document.getElementById("businessInfoLayer_" + entryId);
 
-
-
-
-
-
-  <section class="content type02">
-
-    
-
-
-
-
-
-
-
-
-
-
-<form class="CI-MDI-COMPONENT-WRAP" name="MDCHARD011_FORM" id="MDCHARD011_FORM" action="null" method="post" onsubmit="return false;">
-	<input type="hidden" name="locale" value="ko_KR"/>
-  
-
-
-        <div class="list_search_term">
-          <table>
-            <colgroup>
-              <col style="width:90px;">
-              <col>
-            </colgroup>
-            <tr>
-              <th scope="col"><span>종목명</span></th>
-              <td>
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="searchBoxWrap">
-  <div class="search">
-    <p>
-      <input type="text" id="tboxisuCd_finder_stkisu0" name="tboxisuCd_finder_stkisu0" style="width: 350px;" autocomplete="off" value="005930/삼성전자" title="주식 종목 검색"  >
-      <img name="btnisuCd_finder_stkisu0" id="btnisuCd_finder_stkisu0" src="/pub/img/btn_dbg.png" alt="검색팝업">
-    </p>
-  </div>
-  
-</div>
-<input type="hidden" name="isuCd" id="isuCd_finder_stkisu0" value="KR7005930003" />
-<input type="hidden" name="isuCd2" id="isuCd_finder_stkisu02" value="KR7005930003" />
-<input type="hidden" name="codeNmisuCd_finder_stkisu0" id="codeNmisuCd_finder_stkisu0" value="삼성전자" />
-<input type="hidden" name="param1isuCd_finder_stkisu0" id="param1isuCd_finder_stkisu0" value="ALL" />
-<input type="hidden" name="" id="" value="" />
-
-<script type="text/javascript">
-  mdc.module.setModule({
-    name: 'FINDER_COMPONENT_isuCd_finder_stkisu0',
-    init: 'init',
-    mdi: {
-      name: mdc.module.getMdiModuleName()
-    },
-    function: function (self, api) {
-      var $content = api.getModuleNode();
-      var $sel = $content.select;
-	    var locale = "ko_KR";
-
-      self.init = function () {
-        
-      };
-
-      
-
-      $sel('#btnisuCd_finder_stkisu0').on('click', function () {
-
-        if($sel('#tboxisuCd_finder_stkisu0').val()==""){
-          self.openFinder(false);
-        }else{
-          self.openFinder(true);
-        }
-
-      });
-
-      $sel('#tboxisuCd_finder_stkisu0').on('keydown', function (e) {
-        if (13 == e.keyCode) {
-          if($sel('#tboxisuCd_finder_stkisu0').val()==""){
-            self.openFinder(false);
-          }else{
-            self.openFinder(true);
-          }
-
-        }
-      });
-
-      self.openFinder = function (isKeyDown) {
-        var s_tboxNmVal = '';
-
-        //검색텍스트박스값의 변경이 없을 경우 검색어 안넘어가도록 (전체 검색 개념)
-        var s_defaultVal = '005930/삼성전자';
-        var input = {
-          lang: 'ko_KR',
-          finderCd: 'finder_stkisu',
-          typeNo: '0'
-        };
-        var s_tbox = api.util.getFinderStorage(input);
-
-        if(s_tbox.tbox !== $sel('#tboxisuCd_finder_stkisu0').val() && s_defaultVal !== $sel('#tboxisuCd_finder_stkisu0').val()){
-          s_tboxNmVal = $sel('#tboxisuCd_finder_stkisu0').val();
-        }
-
-        var params = {
-          finderNo: '_finder_stkisu0',
-          finderCd: 'finder_stkisu',
-          typeNo: '0',
-          compValue: '',
-          param1 : $sel('#param1isuCd_finder_stkisu0').val(),
-          tboxId : 'tboxisuCd_finder_stkisu0',
-          tboxNm : s_tboxNmVal,
-          codeValId : 'isuCd_finder_stkisu0',
-          codeNmId : 'codeNmisuCd_finder_stkisu0',
-          pnlid : '',
-          disableCompValue: '',
-          initSearch: 'false'
-        };
-
-        if(!isKeyDown){
-          params.tboxNm = '';
-        }
-
-        if(mdc.validate.checkSearchText(params.tboxNm)){
-          //= (20201120, 김정삼) 자동검색 목록을 선택목록 엔터키 입력 시 검색기 팝업 하지 않는다.
-          //  >>> 개발담당자 로직 확인하자
-          var $searchAuto = $sel('.search-auto');
-          var visble = $searchAuto.is(':visible');
-          // 목록에 1개 있을 때 enter 키인시 선택
-          if ( visble && $searchAuto.find('li').length == 1 ) {
-            $searchAuto.find('li').addClass('on');
-          }
-          var $selLi = $searchAuto.find('li.on');
-
-          if ( visble && $selLi.length ) {
-            $('a', $selLi).click();
-
-            
-
-            return false;
-          }
-          //=/
-					
-					if(params.finderCd == "finder_drvetcidx"){
-	          mdc.layer.openModal({
-	              appendTo: $content.getNode(),
-	              className: 'pop_opened pop_opened1',
-	              id: 'jsLayer_finder_stkisu0',
-	              title: '주식 종목 검색',
-	              width: 563,
-	              height: 530,
-	              url: '/comm/finder/finder_stkisu.jsp',
-	              useCloseButton: false,
-	              ajaxOption: {data: params},
-	              focus: $(this),
-	              afterAppend: function () {
-	                api.module.getModule('FINDER_LAYER__finder_stkisu0').procInit();
-	              }
-                
-	            });
-					} else {          
-	          mdc.layer.openModal({
-	            appendTo: $content.getNode(),
-	            className: 'pop_opened pop_opened1',
-	            id: 'jsLayer_finder_stkisu0',
-	            title: '주식 종목 검색',
-	            width: 548,
-	            height: 'auto',
-	            url: '/comm/finder/finder_stkisu.jsp',
-	            useCloseButton: false,
-	            ajaxOption: {data: params},
-	            focus: $(this),
-	            afterAppend: function () {
-	              api.module.getModule('FINDER_LAYER__finder_stkisu0').procInit();
-	            }
-              
-	          });
-					}
-        }
-      };
-
-      
-      
-      var isEmptyCodeVal = false;
-      $sel('#tboxisuCd_finder_stkisu0').on('keyup', function (e) {
-        if ( e.keyCode != 13 && !isEmptyCodeVal) {
-
-          var s_defaultVal = '005930/삼성전자';
-          var input = {
-            lang: 'ko_KR',
-            finderCd: 'finder_stkisu',
-            typeNo: '0'
-          };
-          var s_tbox = api.util.getFinderStorage(input);
-
-          if(s_tbox.tbox === '' && s_defaultVal === ''){
-            isEmptyCodeVal = true;
-          }
-          else {
-            if(s_tbox.tbox !== $sel('#tboxisuCd_finder_stkisu0').val() && s_defaultVal !== $sel('#tboxisuCd_finder_stkisu0').val()){
-              $sel('#isuCd_finder_stkisu0').val("");
-              $sel('#isuCd_finder_stkisu02').val("");
-              isEmptyCodeVal = true;
-            }
-          }
-
-        }
-      });
-      
-    }
-  });
-
-
-
-  
-  $.fn.defaultAutocomplete = $.fn.autocomplete;
-
-  $.fn.autocomplete = function (options) {
-
-    var _this = this;
-    var isMouseUnder = false;
-
-    var config = {
-      'contextName' : 'output',
-      'viewCount' : 7,
-      'bldPath' : '',
-      'submit' : undefined,
-      'listFn' : undefined,
-      'className' : 'search-auto',
-      'submitClear' :  true,
-      'searchCookie' : false,
-      'searchCookieType' : '',
-      'enterSubmit' : false,
-      'param' : { }
-    };
-
-    if (options != null && options !== undefined) {
-      $.extend(config, options);
-    }
-
-    var $searchAuto = $('<div></div>', {
-      'class' : config.className,
-      'css' : {
-        'display' : 'none'
-      }
-    });
-
-    $(_this).after($searchAuto);
-
-    var submit = function (obj) {
-      if (config.submit) {
-        config.submit(obj);
-      }
-      $searchAuto.html('');
-      $searchAuto.hide();
-      if (config.submitClear) {
-        $(_this).val('');
-      }
-    };
-
-    $(_this).focusout(function () {
-      if (!isMouseUnder) {
-        $searchAuto.hide();
-      }
-    });
-
-    $(_this).keyup(function (e) {
-      if ((47 < e.keyCode && e.keyCode < 106) || (185 < e.keyCode && e.keyCode < 223) || (105 < e.keyCode && e.keyCode < 112) || 8 == e.keyCode || 46 == e.keyCode){
-        if (!config.searchCookie){
-          getSearchList();
-        }
-      }
-
-      if (13 == e.keyCode && config.enterSubmit) {
-        submit($searchAuto.find('li[data-selected=true]'));
-      }
-
-    });
-
-    $(_this).keydown(function (e) {
-      if(e.keyCode == 40) {
-        var selected = $searchAuto.find('li[data-selected=true]');
-        if (selected.length == 1) {
-          selected.removeAttr('data-selected');
-          selected.removeClass('on');
-
-          var next = selected.next();
-          next.attr('data-selected', 'true');
-          next.addClass('on');
-          $(_this).val(next.children('a').text());
+    if (businessLayer) {
+        if (businessLayer.className.indexOf("unfold_license") > 0) {
+            businessLayer.className = "business_license_layer";
         } else {
-          var first = $searchAuto.find('li:first');
-          first.attr('data-selected', 'true');
-          first.addClass('on');
-          $(_this).val(first.children('a').text());
+            businessLayer.className = "business_license_layer unfold_license";
         }
-      }else if(e.keyCode == 38){
-        var selected = $searchAuto.find('li[data-selected=true]');
-        if (selected.length == 1) {
-          selected.removeAttr('data-selected');
-          selected.removeClass('on');
-
-          var prev = selected.prev();
-          prev.attr('data-selected', 'true');
-          prev.addClass('on');
-          $(_this).val(prev.children('a').text());
-        } else {
-          var last = $searchAuto.find('li:last');
-          last.attr('data-selected', 'true');
-          last.addClass('on');
-          $(_this).val(last.children('a').text());
-        }
-      }
-    }).click(function(e){
-      if (config.searchCookie){
-        if(Cookies.get(config.searchCookieType) != undefined){
-          var schSaveData = Cookies.getJSON(config.searchCookieType);
-          $ul = $('<ul/>');
-          $.each(schSaveData, function(i, item){
-            $ul.append('<li data-cd=\"'+ item.keyCd +'\" data-fcd=\"'+ item.KeyFullCd +'\" data-nm=\"'+ item.codNm +'\"><a href=\"#\">'+item.title+'</a></li>');
-          });
-          $searchAuto.html($ul);
-          attachListEvent();
-          $searchAuto.show();
-        }
-      }
-    });
-
-    var attachListEvent = function () {
-      var li = $searchAuto.find('li');
-      li.find('a').click(function () {
-        submit($(this).parent());
-        return false;
-      });
-
-      li.find('a').focusout(function () {
-        $searchAuto.hide();
-      });
-
-      li.find('a').focus(function () {
-        $searchAuto.show();
-      });
-
-      $searchAuto.find('ul').mouseleave(function () {
-        isMouseUnder = false;
-      });
-
-      li.mouseenter(function () {
-        li.removeAttr('data-selected');
-        li.removeClass('on');
-        var t = $(this);
-        t.addClass('on');
-        t.attr('data-selected', 'true');
-        $(_this).val(t.children('a').text());
-        isMouseUnder = true;
-      });
-    };
-
-    var getSearchList = function () {
-      var data = {
-        'contextName' : config.contextName,
-        'value' : encodeURIComponent($(_this).val()),
-        'viewCount' : config.viewCount,
-        'bldPath' : config.bldPath
-      };
-      $.extend(data, config.param);
-      $.ajax({
-        'url' : '/comm/finder/autocomplete.jspx',
-        'data' : data,
-        'success' : function (html) {
-          if (html == '') {
-            $searchAuto.hide();
-          } else {
-            var ul = '<ul>'+html+'</ul>';
-            $searchAuto.html(ul);
-            if (config.listFn) {
-              config.listFn($searchAuto);
-            }
-            attachListEvent();
-            $searchAuto.show();
-          }
-        }
-      });
-    };
-  };
-
-  $('#tboxisuCd_finder_stkisu0').autocomplete({
-    'contextName' : 'finder_stkisu',
-    'bldPath' : '/dbms/comm/finder/finder_stkisu_autocomplete',
-    'viewCount' : 5,
-    'submit' : function (li) {
-      var shotCd = li.attr('data-tp');
-      var fullCd = li.attr('data-cd');
-      var codeNm = li.attr('data-nm');
-      var mktNm = 'ALL';
-
-      $('#codeNmisuCd_finder_stkisu0').val(li.attr('data-nm'));
-      $('#isuCd_finder_stkisu0').val(li.attr('data-cd'));
-      $('#isuCd_finder_stkisu02').val(li.attr('data-tp'));
-
-      // 지수면 명칭만
-      if ( 'ISU' === 'IDX' ) {
-        $('#tboxisuCd_finder_stkisu0').val(li.attr('data-nm'));
-      }
-      // 회사면 발행기관 코드
-      else if ( 'ISU' === 'COM' ) {
-        $('#tboxisuCd_finder_stkisu0').val(li.attr('data-cd')+'/'+li.attr('data-nm'));
-      }
-      // 그외 코드/명칭
-      else {
-        $('#tboxisuCd_finder_stkisu0').val(li.attr('data-tp')+'/'+li.attr('data-nm'));
-      }
-
-      var input = {
-        lang: 'ko_KR',
-        finderCd: 'finder_stkisu',
-        tbox: shotCd +'/'+ codeNm,
-        codeNm: codeNm,
-        codeVal: fullCd,
-        codeVal2: fullCd,
-        typeNo: '',
-        param1: mktNm
-      };
-
-      //= (20201202, 김정삼)
-      if ( 'ISU' === 'IDX' ) {//지수
-        input.tbox = codeNm;
-        input.codeVal2 = shotCd;
-      }
-      //=/
-      mdc.util.setFinderStorage(input);
-
-      return false;
-    },
-    'submitClear' : false
-  });
-  
-</script>
-
-
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="#none" class="btn_search_tr null" name="search" id="jsSearchButton">조회</a>
-
-
-<script type="text/javascript">
-  mdc.module.setModule({
-    name: 'SEARCH_COMPONENT__015019159',
-    mdi: {
-      name: mdc.module.getMdiModuleName()
-    },
-    function: function (self, api) {
-      var $content = api.getModuleNode();
-      var $element = $content.select('[name="search"]');
-
-      
-
-      
-
-      
-        $element.on('click', function () {
-          mdc.module.getModule('MDCHARD011')['getList']($element);
-        });
-      
-
-      
     }
-  });
+}
 </script>
 
+        
+        <!-- BusinessLicenseInfo - END -->
+        <!-- DaumShow - START -->
+        <style type="text/css">#daumSearchBox {
+    height: 21px;
+    background-image: url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bg_search2_2.gif);
+    margin: 5px auto;
+    padding: 0;
+}
 
-              </td>
-            </tr>
-            <tr>
-              <th scope="col"><span>비교시장</span></th>
-              <td>
+#daumSearchBox input {
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#daumSearchBox #daumLogo {
+    width: 34px;
+    height: 21px;
+    float: left;
+    margin-right: 5px;
+    background-image: url(//i1.daumcdn.net/img-media/tistory/img/bg_search1_2_2010ci.gif);
+}
+
+#daumSearchBox #show_q {
+    background-color: transparent;
+    border: none;
+    font: 12px Gulim, Sans-serif;
+    color: #555;
+    margin-top: 4px;
+    margin-right: 15px;
+    float: left;
+}
+
+#daumSearchBox #show_btn {
+    background-image: url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bt_search_2.gif);
+    width: 37px;
+    height: 21px;
+    float: left;
+    margin: 0;
+    cursor: pointer;
+    text-indent: -1000em;
+}
+</style>
+
+        <!-- DaumShow - END -->
+
+<!-- System - START -->
+<script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async="async" data-ad-host="ca-host-pub-9691043933427338" data-ad-client="ca-pub-5245554735620256"></script>
+<!-- System - END -->
+
+        <!-- GoogleSearchConsole - START -->
+        
+<!-- BEGIN GOOGLE_SITE_VERIFICATION -->
+<meta name="google-site-verification" content="pAQDl0I8MMEJAV9SXla2wzdBRcaN2GAWDY0YME-i2k8"/>
+<!-- END GOOGLE_SITE_VERIFICATION -->
+
+        <!-- GoogleSearchConsole - END -->
+
+        <!-- TistoryProfileLayer - START -->
+        <link href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/plugin/TistoryProfileLayer/style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/plugin/TistoryProfileLayer/script.js"></script>
+
+        <!-- TistoryProfileLayer - END -->
+
                 
+                <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="format-detection" content="telephone=no">
+<script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="//t1.daumcdn.net/tistory_admin/lib/lightbox/js/lightbox-v2.10.0.min.js" defer></script>
+<script type="text/javascript" src="//t1.daumcdn.net/tiara/js/v1/tiara.min.js"></script><meta name="referrer" content="always"/>
+<meta name="google-adsense-platform-account" content="ca-host-pub-9691043933427338"/>
+<meta name="google-adsense-platform-domain" content="tistory.com"/>
+<meta name="google-adsense-account" content="ca-pub-5245554735620256"/>
+<meta name="description" content="이항관계(binary relations) 정의 1 : A와 B라는 집합이 있을 때, A로부터 B까지의 이항 관계는 AXB의 부분집합이다. def 1 : Let A and B be sets. A binary relation from A to B is a subset of AXB 예시) A={0,1,2} B={a,b} A X B = {(0,a), (0,b), (1,a), (2,b)} set A 와 B의 관계를 graphically 하게 표현할 수 있다. 관계는 함수보다 더 general한 표현이다. 정의 2: A라는 집합에 대한 관계는 A X A 의 부분집합이다. def 2 : a binary relation on a set A is a subset of A X A 예시) A={1,2,3,4} R={(a,b.."/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://jesus-never-fail.tistory.com/22"/>
+<meta property="og.article.author" content="샨샨"/>
+<meta property="og:site_name" content="가즈아"/>
+<meta property="og:title" content="관계(Relations) / 관계의 특징(Relations and their properties)"/>
+<meta name="by" content="샨샨"/>
+<meta property="og:description" content="이항관계(binary relations) 정의 1 : A와 B라는 집합이 있을 때, A로부터 B까지의 이항 관계는 AXB의 부분집합이다. def 1 : Let A and B be sets. A binary relation from A to B is a subset of AXB 예시) A={0,1,2} B={a,b} A X B = {(0,a), (0,b), (1,a), (2,b)} set A 와 B의 관계를 graphically 하게 표현할 수 있다. 관계는 함수보다 더 general한 표현이다. 정의 2: A라는 집합에 대한 관계는 A X A 의 부분집합이다. def 2 : a binary relation on a set A is a subset of A X A 예시) A={1,2,3,4} R={(a,b.."/>
+<meta property="og:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F4pKJ6%2FbtqN6S9eDHc%2FKDMH640w5nchLQZ6Kn4qH0%2Fimg.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@TISTORY"/>
+<meta name="twitter:title" content="관계(Relations) / 관계의 특징(Relations and their properties)"/>
+<meta name="twitter:description" content="이항관계(binary relations) 정의 1 : A와 B라는 집합이 있을 때, A로부터 B까지의 이항 관계는 AXB의 부분집합이다. def 1 : Let A and B be sets. A binary relation from A to B is a subset of AXB 예시) A={0,1,2} B={a,b} A X B = {(0,a), (0,b), (1,a), (2,b)} set A 와 B의 관계를 graphically 하게 표현할 수 있다. 관계는 함수보다 더 general한 표현이다. 정의 2: A라는 집합에 대한 관계는 A X A 의 부분집합이다. def 2 : a binary relation on a set A is a subset of A X A 예시) A={1,2,3,4} R={(a,b.."/>
+<meta property="twitter:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F4pKJ6%2FbtqN6S9eDHc%2FKDMH640w5nchLQZ6Kn4qH0%2Fimg.png"/>
+<meta content="https://jesus-never-fail.tistory.com/22" property="dg:plink" content="https://jesus-never-fail.tistory.com/22"/>
+<meta name="plink"/>
+<meta name="title" content="관계(Relations) / 관계의 특징(Relations and their properties)"/>
+<meta name="article:media_name" content="가즈아"/>
+<meta property="article:mobile_url" content="https://jesus-never-fail.tistory.com/m/22"/>
+<meta property="article:pc_url" content="https://jesus-never-fail.tistory.com/22"/>
+<meta property="article:mobile_view_url" content="https://jesus-never-fail.tistory.com/m/22"/>
+<meta property="article:pc_view_url" content="https://jesus-never-fail.tistory.com/22"/>
+<meta property="article:talk_channel_view_url" content="https://jesus-never-fail.tistory.com/m/22"/>
+<meta property="article:pc_service_home" content="https://www.tistory.com"/>
+<meta property="article:mobile_service_home" content="https://www.tistory.com/m"/>
+<meta property="article:txid" content="4291663_22"/>
+<meta property="article:published_time" content="2020-11-24T22:31:23+09:00"/>
+<meta property="og:regDate" content="20201124103123"/>
+<meta property="article:modified_time" content="2020-11-25T11:39:18+09:00"/>
+<link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/lib/lightbox/css/lightbox.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/style/font.css"/>
+<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/style/content.css"/>
+<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/style/uselessPMargin.css"/>
+<script type="text/javascript">(function() {
+    var tjQuery = jQuery.noConflict(true);
+    window.tjQuery = tjQuery;
+    window.orgjQuery = window.jQuery; window.jQuery = tjQuery;
+    window.jQuery = window.orgjQuery; delete window.orgjQuery;
+})()</script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/script/base.js"></script>
+<script type="text/javascript" src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="radiowrap"><label for="marketGubun_0"><input type="radio" name="marketGubun" id="marketGubun_0" value="ALL"><span>전체</span><span></span></label></span><span class="radiowrap"><label for="marketGubun_1"><input type="radio" name="marketGubun" id="marketGubun_1" value="STK" checked><span>KOSPI</span><span></span></label></span><span class="radiowrap"><label for="marketGubun_2"><input type="radio" name="marketGubun" id="marketGubun_2" value="KSQ"><span>KOSDAQ</span><span></span></label></span><span class="radiowrap"><label for="marketGubun_3"><input type="radio" name="marketGubun" id="marketGubun_3" value="KNX"><span>KONEX</span><span></span></label></span>
-
-
-
-              </td>
-            </tr>
-            <tr>
-              <th scope="col"><span>표출결과</span></th>
-              <td>
                 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<select class="selectbox search_select" name="rsltCnt" id="rsltCnt"><option value="20">20위</option><option value="50" selected>50위</option><option value="100">100위</option><option value="200">200위</option></select>
-
-
-
-              </td>
-            </tr>
-          </table>
-        </div>
-      
-
-
-
-
-
-
-
-
-
-<div class="foldupdown jsPdfHide">
-
-	
-		<button><span>검색조건 닫기</span><span>검색조건 열기</span></button>
-	
-	
-
-</div>
-
-<script>
-  $(function () {
-    $(".foldupdown").bind('click', function () {
-      $('.list_search_term').toggle();
-      $(".foldupdown").toggleClass('on');
-    });
-
-    $('.search').each(function (index, item) {
-      $(item).children().addClass('search_input');
-      $(item).find('img').hide().wrap('<button></button>');
-
-      $(item).find('button').off('mousedown').on('mousedown', function () {
-        $(this).find('img').trigger('click');
-      });
-    });
-
-  });
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>관계(Relations) / 관계의 특징(Relations and their properties) — 가즈아</title>
+    <link rel="alternate" type="application/rss+xml" title="가즈아" href="https://jesus-never-fail.tistory.com/rss">
+    <script async src="//kit.fontawesome.com/65f7e05682.js"></script>
+    <script defer src="//cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
+    <script defer src="//cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit-icons.min.js"></script>
+    <link rel="preconnect" href="//ka-f.fontawesome.com">
+    <link rel="preconnect" href="//fonts.gstatic.com">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-ligature-full.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/pronist/hELLO@3.6.2/themes/light.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/pronist/hELLO@3.6.2/themes/dark.min.css">
+    <link id="__hljs" rel="stylesheet" href="#">
+    <style>
+      :root {
+        --h-article-width: 720px;
+        --h-index-width: 1100px;
+        --h-guestbook-width: 720px;
+        --h-tagcloud-width: 1100px;
+      }
+    </style>
+    <script>
+      const $ = tjQuery
+    </script>
+    <script>
+      window.H = {}
+      window.H.skinOptions = {
+        indexWidth: '1100',
+        articleWidth: '720',
+        guestbookWidth: '720',
+        tagCloudWidth: '1100',
+        lightTheme: 'light',
+        darkTheme: 'dark',
+        hljsLight: 'xcode',
+        hljsDark: 'vs2015',
+        noticeListMode: 'default',
+        listImageMode: 'default',
+        articleImageMode: 'default',
+        sidebar: '1',
+        foldableCategory: '1',
+        scrollspy: '1',
+        author: '1',
+        related: '1',
+        notify: '1',
+        message: '1',
+        messageRequest: '도움이 되셨다면 공감 부탁드립니다!',
+        messageHeart: '공감해주셔서 감사합니다.',
+        messageUnheart: '공감이 취소되었습니다.',
+        messageSubscribe: '구독 감사합니다.',
+        messageUnsubscribe: '구독이 취소되었습니다.',
+        messageUrl: '포스트 주소가 복사되었습니다.'
+      }
+    </script>
+    <script>
+      $('html').attr('data-theme', localStorage.TTDARK ?
+        localStorage.TTDARK === 'Y' ? H.skinOptions.darkTheme : H.skinOptions.lightTheme :
+        window.matchMedia('(prefers-color-scheme: dark)').matches ? H.skinOptions.darkTheme : H.skinOptions.lightTheme
+      )
+    </script>
+    <script defer src="https://tistory1.daumcdn.net/tistory/4291663/skin/images/vendor.e2e13f26b44e91ffb384.js?_version_=1669976970"></script>
+    <script defer src="https://tistory1.daumcdn.net/tistory/4291663/skin/images/app.e2e13f26b44e91ffb384.js?_version_=1669976970"></script>
+    <link rel="stylesheet" href="https://tistory1.daumcdn.net/tistory/4291663/skin/style.css?_version_=1669976970">
+    <script defer src="https://tistory1.daumcdn.net/tistory/4291663/skin/images/script.JlWMoCx13ayuhCq8Q4h0.js?_version_=1669976970"></script>
+  
+                
+                
+                <style type="text/css">.another_category {
+    border: 1px solid #E5E5E5;
+    padding: 10px 10px 5px;
+    margin: 10px 0;
+    clear: both;
+}
+
+.another_category h4 {
+    font-size: 12px !important;
+    margin: 0 !important;
+    border-bottom: 1px solid #E5E5E5 !important;
+    padding: 2px 0 6px !important;
+}
+
+.another_category h4 a {
+    font-weight: bold !important;
+}
+
+.another_category table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100% !important;
+    margin-top: 10px !important;
+}
+
+* html .another_category table {
+    width: auto !important;
+}
+
+*:first-child + html .another_category table {
+    width: auto !important;
+}
+
+.another_category th, .another_category td {
+    padding: 0 0 4px !important;
+}
+
+.another_category th {
+    text-align: left;
+    font-size: 12px !important;
+    font-weight: normal;
+    word-break: break-all;
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+.another_category td {
+    text-align: right;
+    width: 80px;
+    font-size: 11px;
+}
+
+.another_category th a {
+    font-weight: normal;
+    text-decoration: none;
+    border: none !important;
+}
+
+.another_category th a.current {
+    font-weight: bold;
+    text-decoration: none !important;
+    border-bottom: 1px solid !important;
+}
+
+.another_category th span {
+    font-weight: normal;
+    text-decoration: none;
+    font: 10px Tahoma, Sans-serif;
+    border: none !important;
+}
+
+.another_category_color_gray, .another_category_color_gray h4 {
+    border-color: #E5E5E5 !important;
+}
+
+.another_category_color_gray * {
+    color: #909090 !important;
+}
+
+.another_category_color_gray th a.current {
+    border-color: #909090 !important;
+}
+
+.another_category_color_gray h4, .another_category_color_gray h4 a {
+    color: #737373 !important;
+}
+
+.another_category_color_red, .another_category_color_red h4 {
+    border-color: #F6D4D3 !important;
+}
+
+.another_category_color_red * {
+    color: #E86869 !important;
+}
+
+.another_category_color_red th a.current {
+    border-color: #E86869 !important;
+}
+
+.another_category_color_red h4, .another_category_color_red h4 a {
+    color: #ED0908 !important;
+}
+
+.another_category_color_green, .another_category_color_green h4 {
+    border-color: #CCE7C8 !important;
+}
+
+.another_category_color_green * {
+    color: #64C05B !important;
+}
+
+.another_category_color_green th a.current {
+    border-color: #64C05B !important;
+}
+
+.another_category_color_green h4, .another_category_color_green h4 a {
+    color: #3EA731 !important;
+}
+
+.another_category_color_blue, .another_category_color_blue h4 {
+    border-color: #C8DAF2 !important;
+}
+
+.another_category_color_blue * {
+    color: #477FD6 !important;
+}
+
+.another_category_color_blue th a.current {
+    border-color: #477FD6 !important;
+}
+
+.another_category_color_blue h4, .another_category_color_blue h4 a {
+    color: #1960CA !important;
+}
+
+.another_category_color_violet, .another_category_color_violet h4 {
+    border-color: #E1CEEC !important;
+}
+
+.another_category_color_violet * {
+    color: #9D64C5 !important;
+}
+
+.another_category_color_violet th a.current {
+    border-color: #9D64C5 !important;
+}
+
+.another_category_color_violet h4, .another_category_color_violet h4 a {
+    color: #7E2CB5 !important;
+}
+</style>
+
+                
+                <link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/style/dialog.css"/>
+<link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/tistory_admin/www/style/top/font.css"/>
+<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/style/postBtn.css"/>
+<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/style/comment.css"/>
+<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/style/tistory.css"/>
+<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/style/revenue.css"/>
+<link rel="canonical" href="https://jesus-never-fail.tistory.com/22"/>
+
+<!-- BEGIN STRUCTURED_DATA -->
+<script type="application/ld+json">
+    {"@context":"http://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@id":"https://jesus-never-fail.tistory.com/22","name":null},"url":"https://jesus-never-fail.tistory.com/22","headline":"관계(Relations) / 관계의 특징(Relations and their properties)","description":"이항관계(binary relations) 정의 1 : A와 B라는 집합이 있을 때, A로부터 B까지의 이항 관계는 AXB의 부분집합이다. def 1 : Let A and B be sets. A binary relation from A to B is a subset of AXB 예시) A={0,1,2} B={a,b} A X B = {(0,a), (0,b), (1,a), (2,b)} set A 와 B의 관계를 graphically 하게 표현할 수 있다. 관계는 함수보다 더 general한 표현이다. 정의 2: A라는 집합에 대한 관계는 A X A 의 부분집합이다. def 2 : a binary relation on a set A is a subset of A X A 예시) A={1,2,3,4} R={(a,b..","author":{"@type":"Person","name":"샨샨","logo":null},"image":{"@type":"ImageObject","url":"https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F4pKJ6%2FbtqN6S9eDHc%2FKDMH640w5nchLQZ6Kn4qH0%2Fimg.png","width":"800px","height":"800px"},"datePublished":"20201124T22:31:23","dateModified":"20201125T11:39:18","publisher":{"@type":"Organization","name":"TISTORY","logo":{"@type":"ImageObject","url":"https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png","width":"800px","height":"800px"}}}
 </script>
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="CI-MDI-UNIT-WRAP" id="UNIT-WRAP0">
-  <div class="time CI-MDI-UNIT"  data-view-sequence="0">
-    
-    <p class="CI-MDI-UNIT-TIME"></p>
-    
-    
-    <p>
-      
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<select class="CI-MDI-UNIT-SHARE" name="share" disabled style="display: none;"><option value="1" selected>주</option><option value="2">천주</option><option value="3">백만주</option></select>
-
-
-
-      
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<select class="CI-MDI-UNIT-MONEY" name="money" disabled style="display: none;"><option value="1" selected>원</option><option value="2">천원</option><option value="3">백만원</option><option value="4">십억원</option></select>
-
-
-
-      
-      
-      
-      
-      <button type="button" class="CI-MDI-UNIT-FILTER"
-       style="display: none;"><img src="/templets/mdc/img/btn_time2.png" title="
-      컬럼필터 팝업" /></button>
-      <button type="button" class="CI-MDI-UNIT-DOWNLOAD"><img src="/templets/mdc/img/btn_time1.png" title="
-      다운로드 팝업" /></button>
-    </p>
-  </div>
-</div>
-
-<script type="text/javascript">
-(function(mdc, $) {
-  var $sel = $('#UNIT-WRAP0 select[name="otherUnit"].CI-MDI-UNIT-MONEY');
-  if ( $('option',$sel).length <= 1 ) { $sel.addClass('bg_none'); }
-
-  var $money = $('#UNIT-WRAP0 select[name="money"].CI-MDI-UNIT-MONEY');
-  if ( $('option',$money).length <= 1 ) { $money.addClass('bg_none'); }
-}(window.mdc, jQuery));
-</script>
-
-    
-</form>
-
-
-
-    <table id="jsListTable" class="table_pink mb20">
-      <colgroup>
-        <col style="width:250px;">
-        <col style="width:120px;">
-        <col style="width:100px;">
-        <col style="width:100px;">
-        <col style="width:120px;">
-        <col style="width:120px;">
-        <col style="width:120px;">
-        <col style="width:200px;">
-        <col>
-      </colgroup>
-      <thead>
-      <tr>
-        <th scope="col">종목명</th>
-        <th scope="col">현재가</th>
-        <th scope="col">대비</th>
-        <th scope="col">등락률(%)</th>
-        <th scope="col">시가</th>
-        <th scope="col">고가</th>
-        <th scope="col">저가</th>
-        <th scope="col">거래량(주)</th>
-        <th scope="col">거래대금(원)</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr style="height: 28px;">
-        <td name="ISU_ABBRV" data-bind="ISU_ABBRV"></td>
-        <td name="ISU_CUR_PR" data-bind="ISU_CUR_PR"></td>
-        <td name="CMPR_RT" data-bind="CMPR_RT"></td>
-        <td name="UPDN_RATE" data-bind="UPDN_RATE"></td>
-        <td name="ISU_OPN_PR" data-bind="ISU_OPN_PR"></td>
-        <td name="ISU_HG_PR" data-bind="ISU_HG_PR"></td>
-        <td name="ISU_LW_PR" data-bind="ISU_LW_PR"></td>
-        <td name="ISU_TR_VL" data-bind="ISU_TR_VL"></td>
-        <td name="ISU_TR_AMT" data-bind="ISU_TR_AMT"></td>
-      </tr>
-      </tbody>
-    </table>
-
-
-    <div id="jsGrid_MDCHARD011_0" class="COMPST-INFO-GRID">
-      <table id="jsTable_MDCHARD011_0" data-grid="{databind: true, emptyData: true, scroll: true}" summary="수익률 상관관계">
-        <colgroup>
-          <col style="width:60px;">
-          <col style="width:100px;">
-          <col style="width:100px;">
-          <col style="width:100px;">
-          <col style="width:100px;">
-          <col style="width:100px;">
-          <col style="width:100px;">
-          <col style="width:100px;">
-          <col style="width:100px;">
-        </colgroup>
-        <thead>
-        <tr>
-          <th scope="col" name="RN" rowspan="2">순위</th>
-          <th scope="col" name="day10" colspan="2">10일</th>
-          <th scope="col" name="day20" colspan="2">20일</th>
-          <th scope="col" name="day50" colspan="2">50일</th>
-          <th scope="col" name="day100" colspan="2">100일</th>
-        </tr>
-        <tr>
-          <th scope="col" parent="day10" name="CMP_ISU_NM_10">종목명</th>
-          <th scope="col" parent="day10" name="CORR_VAL_10">수치</th>
-          <th scope="col" parent="day20" name="CMP_ISU_NM_20">종목명</th>
-          <th scope="col" parent="day20" name="CORR_VAL_20">수치</th>
-          <th scope="col" parent="day50" name="CMP_ISU_NM_50">종목명</th>
-          <th scope="col" parent="day50" name="CORR_VAL_50">수치</th>
-          <th scope="col" parent="day100" name="CMP_ISU_NM_100">종목명</th>
-          <th scope="col" parent="day100" name="CORR_VAL_100">수치</th>
-        </tr>
-        </thead>
-        <tbody data-keepdata="true">
-        <tr>
-          <td class="tac" name="RN" data-bind="RN"></td>
-          <td name="CMP_ISU_NM_10" data-bind="CMP_ISU_NM_10"></td>
-          <td class="tar" name="CORR_VAL_10" data-bind="CORR_VAL_10"></td>
-          <td name="CMP_ISU_NM_20" data-bind="CMP_ISU_NM_20"></td>
-          <td class="tar" name="CORR_VAL_20" data-bind="CORR_VAL_20"></td>
-          <td name="CMP_ISU_NM_50" data-bind="CMP_ISU_NM_50"></td>
-          <td class="tar" name="CORR_VAL_50" data-bind="CORR_VAL_50"></td>
-          <td name="CMP_ISU_NM_100" data-bind="CMP_ISU_NM_100"></td>
-          <td class="tar" name="CORR_VAL_100" data-bind="CORR_VAL_100"></td>
-        </tr>
-        </tbody>
-      </table>
+<!-- END STRUCTURED_DATA -->
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/script/common.js"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/script/comment.js" defer=""></script>
+
+                
+                </head>
+
+                                                  <body id="tt-body-page">
+                
+                
+                
+    <div id="__loader">
+      <div class="la-ball-clip-rotate uk-position-center">
+        <div></div>
+      </div>
     </div>
     
+      <div id="__tidory">
+        <aside id="__sidebar">
+          <div class="__">
+            <div class="___">
+              
+                  <!-- 프로필-->
+                  <div class="profile"><img class="thumbnail lazyload" data-src="https://tistory1.daumcdn.net/tistory/4291663/attach/30adacf2e80f47418fe61d2fde81911e" data-sizes="auto" width="100" height="100" alt="샨샨">
+                    <div class="title"><a href="https://jesus-never-fail.tistory.com/">가즈아</a></div>
+                    <div class="blogger">샨샨</div>
+                  </div>
+                
+                  <!-- 방문자 수-->
+                  <div class="counter">
+                    <div class="total">
+                      <div class="cnt-item">
+                        <div class="title">전체 방문자</div>
+                        <div class="cnt">158,639</div>
+                      </div>
+                    </div>
+                    <div class="day">
+                      <div class="cnt-item">
+                        <div class="title">오늘</div>
+                        <div class="cnt">25</div>
+                      </div>
+                      <div class="cnt-item">
+                        <div class="title">어제</div>
+                        <div class="cnt">129</div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <!-- 검색-->
+                  <div class="search">
+                    
+                      <div class="uk-search uk-search-default"><span uk-search-icon=""></span><label for="search">검색</label><input class="uk-search-input" id="search" type="search" name="search" value="" onkeypress="if (event.keyCode == 13) { try {
+    window.location.href = '/search' + '/' + looseURIEncode(document.getElementsByName('search')[0].value);
+    document.getElementsByName('search')[0].value = '';
+    return false;
+} catch (e) {} }"></div>
+                    
+                  </div>
+                
+                  <!-- 카테고리-->
+                  <nav class="category"><ul class="tt_category"><li class=""><a href="/category" class="link_tit"> 전체보기 <span class="c_cnt">(48)</span> </a>
+  <ul class="category_list"><li class=""><a href="/category/%E0%A9%88%E2%9C%A9%E2%80%A7%E2%82%8A%CB%9A%EC%9C%A0%ED%95%99%20Life" class="link_item"> ੈ✩‧₊˚유학 Life <span class="c_cnt">(0)</span> </a></li>
+<li class=""><a href="/category/%E0%A9%88%E2%9C%A9%E2%80%A7%E2%82%8A%CB%9ADaily%20%26%20Review" class="link_item"> ੈ✩‧₊˚Daily &amp; Review <span class="c_cnt">(14)</span> </a></li>
+<li class=""><a href="/category/%E0%A9%88%E2%9C%A9%E2%80%A7%E2%82%8A%CB%9AComputer%20Science" class="link_item"> ੈ✩‧₊˚Computer Science <span class="c_cnt">(30)</span> </a>
+  <ul class="sub_category_list"><li class=""><a href="/category/%E0%A9%88%E2%9C%A9%E2%80%A7%E2%82%8A%CB%9AComputer%20Science/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0" class="link_sub_item"> 컴퓨터구조 <span class="c_cnt">(15)</span> </a></li>
+<li class=""><a href="/category/%E0%A9%88%E2%9C%A9%E2%80%A7%E2%82%8A%CB%9AComputer%20Science/%EC%BB%B4%ED%93%A8%ED%84%B0%EB%B9%84%EC%A0%84" class="link_sub_item"> 컴퓨터비전 <span class="c_cnt">(5)</span> </a></li>
+<li class=""><a href="/category/%E0%A9%88%E2%9C%A9%E2%80%A7%E2%82%8A%CB%9AComputer%20Science/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99" class="link_sub_item"> 이산수학 <span class="c_cnt">(4)</span> </a></li>
+<li class=""><a href="/category/%E0%A9%88%E2%9C%A9%E2%80%A7%E2%82%8A%CB%9AComputer%20Science/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C%20%7C%20%EB%B0%B1%EC%97%94%EB%93%9C" class="link_sub_item"> 프론트엔드 | 백엔드 <span class="c_cnt">(6)</span> </a></li>
+<li class=""><a href="/category/%E0%A9%88%E2%9C%A9%E2%80%A7%E2%82%8A%CB%9AComputer%20Science/JAVA" class="link_sub_item"> JAVA <span class="c_cnt">(0)</span> </a></li>
+</ul>
+</li>
+<li class=""><a href="/category/%E0%A9%88%E2%9C%A9%E2%80%A7%E2%82%8A%CB%9A%20MIT%20%EC%B1%8C%EB%A6%B0%EC%A7%80" class="link_item"> ੈ✩‧₊˚ MIT 챌린지 <span class="c_cnt">(3)</span> </a>
+  <ul class="sub_category_list"><li class=""><a href="/category/%E0%A9%88%E2%9C%A9%E2%80%A7%E2%82%8A%CB%9A%20MIT%20%EC%B1%8C%EB%A6%B0%EC%A7%80/%F0%9F%93%88%20Economics" class="link_sub_item"> 📈 Economics <span class="c_cnt">(0)</span> </a></li>
+<li class=""><a href="/category/%E0%A9%88%E2%9C%A9%E2%80%A7%E2%82%8A%CB%9A%20MIT%20%EC%B1%8C%EB%A6%B0%EC%A7%80/%F0%9F%92%BB%20Computer%20Science" class="link_sub_item"> 💻 Computer Science <span class="c_cnt">(3)</span> </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+                
+                  <!-- 블로그 메뉴-->
+                  <nav class="blogmenu">
+                    <h2>블로그 메뉴</h2><ul>
+  <li class="t_menu_home first"><a href="/" target="">홈</a></li>
+  <li class="t_menu_tag"><a href="/tag" target="">태그</a></li>
+  <li class="t_menu_guestbook last"><a href="/guestbook" target="">방명록</a></li>
+</ul>
+                  </nav>
+                
+                  <!-- 공지사항-->
+                  <div class="notice"><a href="/notice">
+                      <h2>공지사항</h2>
+                    </a>
+                    
+                      <ul>
+                        
+                      </ul>
+                    
+                  </div>
+                
+                  <!-- 인기 글-->
+                  <nav class="popular-posts">
+                    <h2>인기 글</h2>
+                    <ul>
+                      
+                        <li>
+                          <div class="metainfo"><a class="title" href="/35">토익(TOEIC) 독학 한달 만에 930점 후기, 공부법,⋯</a>
+                            <div class="date">2021.02.03</div>
+                          </div>
+                          <img class="thumbnail lazyload" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb9k92a%2FbtqVugutsUG%2Fijl9dpxwbZSNRZpkgS4a0k%2Fimg.png" data-sizes="auto" width="60" height="45" alt="토익(TOEIC) 독학 한달 만에 930점 후기, 공부법,⋯">
+                        </li>
+                      
+                        <li>
+                          <div class="metainfo"><a class="title" href="/51">[Disney +] 디즈니 플러스 동시자막 설정하는 법💛 ⋯</a>
+                            <div class="date">2022.01.03</div>
+                          </div>
+                          <img class="thumbnail lazyload" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbf6vHo%2FbtrpzJ7Q3FQ%2FpSUcMd6rLOhc20MrmUT4BK%2Fimg.png" data-sizes="auto" width="60" height="45" alt="[Disney +] 디즈니 플러스 동시자막 설정하는 법💛 ⋯">
+                        </li>
+                      
+                        <li>
+                          <div class="metainfo"><a class="title" href="/46">#0.MIT challenge란? + 나의 포부와 생각들 ⋯</a>
+                            <div class="date">2021.10.29</div>
+                          </div>
+                          <img class="thumbnail lazyload" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Ft8Aye%2Fbtrjjq6Vp0n%2FHkK1cl3A8RL7qmVG81wSTK%2Fimg.png" data-sizes="auto" width="60" height="45" alt="#0.MIT challenge란? + 나의 포부와 생각들 ⋯">
+                        </li>
+                      
+                        <li>
+                          <div class="metainfo"><a class="title" href="/20">[컴퓨터구조] 부동 소수점 연산(Floating point⋯</a>
+                            <div class="date">2020.11.22</div>
+                          </div>
+                          <img class="thumbnail lazyload" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc9ZO5f%2FbtqNXep8XDz%2F42wbcgKrk64mYgGebtykS0%2Fimg.png" data-sizes="auto" width="60" height="45" alt="[컴퓨터구조] 부동 소수점 연산(Floating point⋯">
+                        </li>
+                      
+                        <li>
+                          <div class="metainfo"><a class="title" href="/69">[내돈내산] 미국 장기렌트카 플렉스카 찐후기 &amp; 장단점 &amp;⋯</a>
+                            <div class="date">2023.02.15</div>
+                          </div>
+                          <img class="thumbnail lazyload" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FckAmwl%2FbtrZkxYWJNz%2FSsT8cvuVZLDckMY7ODh0xk%2Fimg.jpg" data-sizes="auto" width="60" height="45" alt="[내돈내산] 미국 장기렌트카 플렉스카 찐후기 &amp; 장단점 &amp;⋯">
+                        </li>
+                      
+                    </ul>
+                  </nav>
+                            <div class="revenue_unit_wrap">
+  <div class="revenue_unit_item adsense responsive">
+    <div class="revenue_unit_info">반응형</div>
+    <script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async="async"></script>
+    <ins class="adsbygoogle" style="display: block;" data-ad-host="ca-host-pub-9691043933427338" data-ad-client="ca-pub-5245554735620256" data-ad-format="auto"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+                  <!-- 태그-->
+                  <div class="tags"><a href="/tag">
+                      <h2>태그</h2>
+                    </a>
+                    <ul>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud4" href="/tag/%ED%86%A0%EC%9D%B5">토익</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud3" href="/tag/mit">mit</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud5" href="/tag/%ED%94%8C%EB%A0%89%EC%8A%A4%EC%B9%B4">플렉스카</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud4" href="/tag/MIT%EA%B2%BD%EC%A0%9C%ED%95%99%EB%B6%80">MIT경제학부</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud4" href="/tag/mitchallenge">mitchallenge</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud4" href="/tag/%EC%97%90%EB%A6%AD%EB%82%A8">에릭남</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud3" href="/tag/%EC%BB%B4%ED%93%A8%ED%84%B0%EB%B9%84%EC%A0%84">컴퓨터비전</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud3" href="/tag/%EC%98%A8%EB%9D%BC%EC%9D%B8%EA%B0%95%EC%9D%98">온라인강의</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud3" href="/tag/OpenCV">OpenCV</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud4" href="/tag/MITOCW">MITOCW</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud4" href="/tag/Economics">Economics</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud5" href="/tag/%EB%A0%8C%ED%8A%B8%EC%B9%B4%ED%9B%84%EA%B8%B0">렌트카후기</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud4" href="/tag/%EC%98%81%EC%96%B4%EC%84%80%EB%8F%84%EC%9E%89">영어섀도잉</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud3" href="/tag/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B3%B5%ED%95%99">컴퓨터공학</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud1" href="/tag/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0">컴퓨터구조</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud4" href="/tag/mips">mips</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud3" href="/tag/%EC%96%B8%EC%96%B4%EA%B3%B5%EB%B6%80">언어공부</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud1" href="/tag/%EC%98%81%EC%96%B4%EA%B3%B5%EB%B6%80">영어공부</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud5" href="/tag/%EB%AF%B8%EA%B5%AD%EB%A0%8C%ED%8A%B8">미국렌트</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud5" href="/tag/%EB%AF%B8%EA%B5%AD%EB%A0%8C%ED%8A%B8%EC%B9%B4%EC%86%94%EC%A7%81%ED%9B%84%EA%B8%B0">미국렌트카솔직후기</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud3" href="/tag/%EC%98%81%EC%96%B4%ED%9A%8C%ED%99%94">영어회화</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud4" href="/tag/%EB%AF%B8%EA%B5%AD%EC%9C%A0%ED%95%99">미국유학</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud4" href="/tag/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99">이산수학</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud5" href="/tag/%EB%AF%B8%EA%B5%AD%EC%9E%90%EB%8F%99%EC%B0%A8%EB%A0%8C%ED%8A%B8">미국자동차렌트</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud4" href="/tag/%EC%BB%B4%EA%B3%B5">컴공</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud5" href="/tag/%EC%98%81%EC%96%B4%EA%B3%B5%EB%B6%80%EA%BF%80%ED%8C%81">영어공부꿀팁</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud4" href="/tag/%EC%BB%B4%EA%B3%B5%EA%B3%B5%EB%B6%80">컴공공부</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud5" href="/tag/%EB%AF%B8%EA%B5%AD%EC%B0%A8%EB%A0%8C%ED%8A%B8">미국차렌트</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud4" href="/tag/%EC%98%81%EC%96%B4%ED%9A%8C%ED%99%94%EA%B3%B5%EB%B6%80">영어회화공부</a></li>
+                      
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="cloud3" href="/tag/%EC%98%81%EC%96%B4%EA%B3%B5%EB%B6%80%EB%B2%95">영어공부법</a></li>
+                      
+                    </ul>
+                  </div>
+                
+                  <!-- 최근 댓글-->
+                  <div class="recent-comments">
+                    <h2>최근 댓글</h2>
+                    <ul>
+                      
+                        <li><a href="/65#comment16178050">안녕하세요! 캐나다 어학연수 관련해 궁금한 점이 있어 찾다⋯</a>
+                          <div class="metainfo">
+                            <div class="author">숑숑</div>
+                          </div>
+                        </li>
+                      
+                        <li><a href="/65#comment15164968">안녕하세요 3번 유학원 알 수 있을까요? 댓글로는 어렵다면⋯</a>
+                          <div class="metainfo">
+                            <div class="author">쏭</div>
+                          </div>
+                        </li>
+                      
+                        <li><a href="/63#comment15111701">한국어책도 읽기 가능한가요?</a>
+                          <div class="metainfo">
+                            <div class="author">thinking one more</div>
+                          </div>
+                        </li>
+                      
+                        <li><a href="/51#comment15088674">감사해요 ^^</a>
+                          <div class="metainfo">
+                            <div class="author">dsd</div>
+                          </div>
+                        </li>
+                      
+                        <li><a href="/65#comment14974624">안녕하세요 상세한 후기 너무 감사드립니다!
+내년 초에 어학⋯</a>
+                          <div class="metainfo">
+                            <div class="author">호</div>
+                          </div>
+                        </li>
+                      
+                    </ul>
+                  </div>
+                
+                  <!-- 최근 글-->
+                  <div class="recent-posts">
+                    <h2>최근 글</h2>
+                    <ul>
+                      
+                        <li>
+                          <div class="metainfo"><a class="title" href="/70">[내돈내산/꿀팁] 미국 유학생 Italki 찐 후기! (장⋯</a>
+                            <div class="date">2023.10.30</div>
+                          </div>
+                          
+                        </li>
+                      
+                        <li>
+                          <div class="metainfo"><a class="title" href="/69">[내돈내산] 미국 장기렌트카 플렉스카 찐후기 &amp; 장단점 &amp;⋯</a>
+                            <div class="date">2023.02.15</div>
+                          </div>
+                          <img class="thumbnail lazyload" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FckAmwl%2FbtrZkxYWJNz%2FSsT8cvuVZLDckMY7ODh0xk%2Fimg.jpg" data-sizes="auto" width="60" height="45" alt="[내돈내산] 미국 장기렌트카 플렉스카 찐후기 &amp; 장단점 &amp;⋯">
+                        </li>
+                      
+                        <li>
+                          <div class="metainfo"><a class="title" href="/67">✈️ 대한항공 애틀랜타(ATL) &rarr; 인천/서울(ICN) 탑⋯</a>
+                            <div class="date">2022.12.05</div>
+                          </div>
+                          <img class="thumbnail lazyload" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F3hnNO%2FbtrSISpsWIQ%2FdQHJ5snf9Z8rredm3NuMEK%2Fimg.png" data-sizes="auto" width="60" height="45" alt="✈️ 대한항공 애틀랜타(ATL) &rarr; 인천/서울(ICN) 탑⋯">
+                        </li>
+                      
+                        <li>
+                          <div class="metainfo"><a class="title" href="/66">Grammer in use 책 후기 &amp; 소개 :: 대학생 ⋯</a>
+                            <div class="date">2022.12.02</div>
+                          </div>
+                          <img class="thumbnail lazyload" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fqql89%2FbtrSHMbgkgv%2FjKymbJv6wLnyARYeA2Vx5K%2Fimg.jpg" data-sizes="auto" width="60" height="45" alt="Grammer in use 책 후기 &amp; 소개 :: 대학생 ⋯">
+                        </li>
+                      
+                        <li>
+                          <div class="metainfo"><a class="title" href="/65">[안보면후회] 캐나다 어학연수 유학원 상담 솔직후기!! ✨⋯</a>
+                            <div class="date">2022.12.02</div>
+                          </div>
+                          <img class="thumbnail lazyload" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fm7c6I%2FbtrSHx5pDn2%2FVeKtzkPiMoDPgHhjs0vSQk%2Fimg.jpg" data-sizes="auto" width="60" height="45" alt="[안보면후회] 캐나다 어학연수 유학원 상담 솔직후기!! ✨⋯">
+                        </li>
+                      
+                    </ul>
+                  </div>
+                
+                  <!-- 티스토리-->
+                  <div class="tistory">
+                    <h2>티스토리</h2>
+                  </div>
+                
+              <div class="copyright">
+                <!--이 부분은 스킨 소개페이지 및 제작자의 깃허브 링크로 이동됩니다.
+hELLO 는 무료인 만큼, 링크의 주소는 반드시 지켜주시기 바랍니다.--><a href="https://pronist.tistory.com/5">hELLO</a> · Designed By <a href="https://github.com/pronist">정상우</a>.
+              </div>
+            </div>
+          </div>
+          <div class="overlay" uk-toggle="target: #__sidebar; cls: opened"></div>
+        </aside>
+        <nav class="uk-navbar-container uk-navbar-transparent" id="__nav" uk-navbar="">
+          <div class="left uk-navbar-left"><img class="profile lazyload" data-src="https://tistory1.daumcdn.net/tistory/4291663/attach/30adacf2e80f47418fe61d2fde81911e" data-sizes="auto" alt="샨샨" width="40" height="40" uk-toggle="target: #__sidebar; cls: opened"></div>
+          <div class="center uk-navbar-center">
+            <h1 class="title">가즈아</h1>
+          </div>
+          <div class="right uk-navbar-right"></div>
+        </nav>
+        <main id="__main">
+          
+          
+                
+          
+  
+    <div id="permalink_article">
+      <div class="article permalink" data-mode="default">
+        <header class="header">
+          
+            <div class="img">
+              <div class="mask"></div><img class="thumbnail lazyload" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F4pKJ6%2FbtqN6S9eDHc%2FKDMH640w5nchLQZ6Kn4qH0%2Fimg.png" data-sizes="auto" alt="관계(Relations) / 관계의 특징(Relations and their properties)">
+            </div>
+          
+          <div class="heading"><a class="category" href="/category/%E0%A9%88%E2%9C%A9%E2%80%A7%E2%82%8A%CB%9AComputer%20Science/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99">ੈ✩‧₊˚Computer Science/이산수학</a>
+            <h1 class="title">관계(Relations) / 관계의 특징(Relations and their properties)</h1>
+            <div class="metainfo"><time class="date">2020. 11. 24. 22:31</time><span class="admin">
+                
+              </span></div>
+          </div>
+        </header>
+        <article class="content"><script onerror="changeAdsenseToAdfit()" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9527582522912841" crossorigin="anonymous"></script>
+<!-- inventory -->
+<ins class="adsbygoogle" style="margin:50px 0; display:block" data-ad-client="ca-pub-9527582522912841" data-ad-slot="3825649038" data-ad-format="auto" data-full-width-responsive="true" data-ad-type="inventory" data-ad-adfit-unit="DAN-nRFiQiN4avFYIKbk"></ins>
 
-
-
-
-
-
-
-
-
-
-
-
-
-<p class="txt_pink">본 정보는 투자자 편의 제고를 위한 투자 참고 사항으로 , 한국거래소는 제공된 정보에 의한 투자결과에 대하여 법적 책임을 지지 않습니다. 결과 산출에 이용된 재무관련 데이터는 NICE평가정보(주)의 제공 자료에 기반하였습니다.</p>
-
-
-
-
-  </section>
-
-
-
-<script type="text/javascript">
-  mdc.module.setModule({
-    name: 'MDCHARD011',
-    init: 'init',
-    function: function (self, api) {
-      var $f = $('#MDCHARD011_FORM');
-      var $gridTable = $('#jsTable_MDCHARD011_0');
-      var $grid;
-      self.init = function () {
-        self.grid = api.util.grid.init({
-          node: api.getModuleNode().getNode(),
-          form: $f,
-          layout: 'mdc_hard',
-          gridHeight: $(window).height() - 100 - $('.txt_pink').outerHeight(),
-          grid: [
-            {
-              // template: $('#jsGrid_MDCHARD011_0'),
-              // bld: 'dbms/MDC/HARD/MDCHARD01101',
-              // bldDataKey: 'block1',
-              menuIdForPdf: 'MDCHARD011'
-            }
-          ]
-        });
-
-        $grid = $gridTable.initGrid({
-          message: {
-            emptyData: api.lang.getMessage('MD002') // 데이터가 없습니다.
-          },
-          scroll: {
-            maxRowCount: 28,
-            autoHeight: true
-          }
-        });
-
-        
-        
-        
-
-        self.getList();
-
-        $(window).resize(function () {
-          $('.CI-TBODY-WRAPPER').css('height',$(window).height() - 170 - $('.txt_pink').outerHeight());
-        });
-      };
-
-      self.getList = function () {
-        self.isuNm = $('#codeNmisuCd_finder_stkisu0').val();
-        api.util.submitAjax({
-          url: '/comm/bldAttendant/getJsonData.cmd?bld=dbms/MDC/HARD/MDCHARD01101',
-          data: $f.serialize(),
-            showLoading: true,
-            success: function (resp) {
-              var data = resp['block1'];
-              data = {result: data};
-              $grid.databind(data, 'result');
-              $('.CI-MDI-UNIT-TIME').html(api.util.getDateTimeFormat(resp['CURRENT_DATETIME']));
-
-            $grid.$table.find('tbody tr').each(function (index, item) {
-              if ($(item).hasClass('CI-EMPTY-ROW')) {
-                return false;
-              }
-              cmpIsuPopup(item, 1);
-              cmpIsuPopup(item, 3);
-              cmpIsuPopup(item, 5);
-              cmpIsuPopup(item, 7);
-            });
-
-            if ('mdc_hard'.indexOf('pdf') === -1) $('.CI-TBODY-WRAPPER').css('height',$(window).height() - 170 - $('.txt_pink').outerHeight());
-          }
-        });
-
-        api.util.submitAjax({
-          url: '/comm/bldAttendant/getJsonData.cmd?bld=dbms/MDC/HARD/MDCHARD00001',
-          data: $f.serialize(),
-          success: function (data) {
-            $('#jsListTable [name=CMPR_RT], #jsListTable [name=UPDN_RATE]').removeClass();
-
-            if(data.CMPR_RT !== '-') data.CMPR_RT = data.CMPR_RT.replace('-', '');
-
-            mdc.util.singleDatabind($('#jsListTable'), data);
-            if (data.UPDN_TYP === '1') {
-              $('#jsListTable [name=CMPR_RT], #jsListTable [name=UPDN_RATE]').addClass('up');
-              $('#jsListTable [name=CMPR_RT]').prepend('▲ ');
-              $('#jsListTable [name=UPDN_RATE]').prepend('+');
-            } else if (data.UPDN_TYP === '2') {
-              $('#jsListTable [name=CMPR_RT], #jsListTable [name=UPDN_RATE]').addClass('down');
-              $('#jsListTable [name=CMPR_RT]').prepend('▼ ');
-            }
-          }
-        });
-      }
-
-      var cmpIsuPopup = function (item, index) {
-        item.children[index].innerHTML = '<span class="jsCmpIsu">' + item.children[index].innerHTML + '</span>';
-        $(item).find('.jsCmpIsu').on('click', function () {
-          self.selRow = this;
-          var $bigChartLayerWrap = $('<DIV>', {
-            class: 'ci-dialog-content bigChartLayerWrap'
-          }).append($('<DIV>', {
-            id: 'chart_cls_big',
-            class: 'chart_cls_big'
-          }));
-
-          api.layer.openModal({
-            width: '822',
-            height: '592',
-            id: 'bigChartLayer',
-            title: api.lang.getWord('WS015'), //시세 비교 차트
-            dom: $bigChartLayerWrap,
-            afterAppend: function () {
-              var cmpDate = $(self.selRow).closest('td').attr('name').substr(-2) === '00' ? 100 : $(self.selRow).closest('td').attr('name').substr(-2);
-              var chart_option = webponent.chart.options.multiLine;
-              chart_option.func.tip = function (tipElement, data, rect) {
-                var date = data.xaxis;
-                var tip = '<div class="text">'+
-                  '<p class="tooltip_head">'+date+'</p>'+
-                  '<p class="tooltip_body">'+ //WE001(좌축), WE002(우축)
-                  self.isuNm + api.lang.getWord('WE001')+' : ' + String(data.data.DATA1).format().trim()+'<br>'+
-                  self.selRow.textContent + api.lang.getWord('WE002')+' : ' + String(data.data.DATA2).format()+
-                  '</p>'+
-                  '</div>';
-
-                tipElement.html(tip).show();
-                webponent.chart.options.tip.common(tipElement, rect);
-              };
-              chart_option.use.multiYAxis = true;
-              var chart_style = webponent.chart.styles.multiLine_bar;
-              chart_style.main.xAxis.text.size = 12;
-              chart_style.main.layout.paddingBottom = 20;
-              var chart_series = { //차트 형태 및 X,Y축 기준 설정
-                main: {
-                  s1: {series: 'line', xaxis: 'TRD_DD', yaxis: 'DATA1', yaxisid: 's1'},
-                  s3_r: {series: 'line', xaxis: 'TRD_DD', yaxis: 'DATA2', yaxisid: 's3_r'}
-                }
-              }
-              api.util.submitAjax({
-                url: '/comm/bldAttendant/getJsonData.cmd?bld=dbms/MDC/HARD/MDCHARD00004',
-                data: {isuCd: $(self.selRow).closest('tr')[0]["rowData"]["ISU_CD"],
-                  cmpIsuCd: $(self.selRow).closest('tr')[0]["rowData"]["CMP_ISU_CD_"+cmpDate],
-                  periodVal: '-'+cmpDate},
-                async: false,
-                success: function (resp) {
-                  var data = {};
-                  data.data = resp['block1'];
-                  chart_option.data = data;
-                }
-              });
-
-              webponent.chart.init($('#chart_cls_big'), chart_option, chart_style, chart_series);
-
-              var markupList = $('<UL>',{class: 'result_bottomlist2'});
-              markupList.append(
-                $('<LI>').append(
-                  $('<SPAN>', {class: 'color_tp1'})
-                ).append(
-                  $('<SPAN>').append(self.isuNm + api.lang.getWord('WE001')) //(좌축)
-                )
-              );
-              markupList.append(
-                $('<LI>').append(
-                  $('<SPAN>', {class: 'color_tp3'})
-                ).append(
-                  $('<SPAN>').append(self.selRow.textContent + api.lang.getWord('WE002')) //(우축) 
-                )
-              );
-              $('#chart_cls_big').append(markupList);
-
-            },
-            focus: $(this)
-          });
-        })
-      }
-
-    }
-  });
+<script id="adsense_script">
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+<script>
+    if(window.ObserveAdsenseUnfilledState !== undefined){ ObserveAdsenseUnfilledState(); }
+</script>
+                    <!-- System - START -->
+        <div class="revenue_unit_wrap">
+  <div class="revenue_unit_item adsense responsive">
+    <div class="revenue_unit_info">반응형</div>
+    <script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async="async"></script>
+    <ins class="adsbygoogle" style="display: block;" data-ad-host="ca-host-pub-9691043933427338" data-ad-client="ca-pub-5245554735620256" data-ad-format="auto"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+        <!-- System - END -->
+
+            <div class="tt_article_useless_p_margin contents_style"><h4 data-ke-size="size20"><b>이항관계(binary relations)</b></h4>
+<p><b>정의 1 :</b> A와 B라는 집합이 있을 때, A로부터 B까지의 이항 관계는 AXB의 부분집합이다.&nbsp;</p>
+<p><span style="color: #006dd7;"><b>def 1 :</b> Let A and B be sets. A binary relation from A to B is a subset of AXB</span></p>
+<p>&nbsp;</p>
+<p><span style="color: #ee2323;"><b>예시)</b></span> A={0,1,2} B={a,b}</p>
+<p><figure class="imageblock floatLeft" data-origin-width="0" data-origin-height="0" width="300" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/4pKJ6/btqN6S9eDHc/KDMH640w5nchLQZ6Kn4qH0/img.png" data-lightbox="lightbox"><img src="https://blog.kakaocdn.net/dn/4pKJ6/btqN6S9eDHc/KDMH640w5nchLQZ6Kn4qH0/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F4pKJ6%2FbtqN6S9eDHc%2FKDMH640w5nchLQZ6Kn4qH0%2Fimg.png" data-origin-width="0" data-origin-height="0" width="300" data-ke-mobilestyle="widthContent" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';"/></span></figure>
+</p>
+<p>&nbsp;</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>A X B = {(0,a), (0,b), (1,a), (2,b)}</li>
+<li>set A 와 B의 관계를 graphically 하게 표현할 수 있다.</li>
+<li>관계는 함수보다 더 general한 표현이다.</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><b>정의 2:</b> A라는 집합에 대한 관계는 A X A 의 부분집합이다.</p>
+<p><span style="color: #006dd7;"><b>def 2 :</b> a binary relation on a set A is a subset of A X A</span></p>
+<p>&nbsp;</p>
+<p><span style="color: #ee2323;"><b>예시)</b></span> A={1,2,3,4} R={(a,b) | a divides b}</p>
+<p><b>답)</b></p>
+<p><figure class="imageblock alignLeft" data-origin-width="0" data-origin-height="0" width="400" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/oYjvX/btqObZeX8iL/R7sXxmtXW6iVL6GGPdCfW1/img.png" data-lightbox="lightbox"><img src="https://blog.kakaocdn.net/dn/oYjvX/btqObZeX8iL/R7sXxmtXW6iVL6GGPdCfW1/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FoYjvX%2FbtqObZeX8iL%2FR7sXxmtXW6iVL6GGPdCfW1%2Fimg.png" data-origin-width="0" data-origin-height="0" width="400" data-ke-mobilestyle="widthContent" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';"/></span></figure>
+</p>
+<p>&nbsp;</p>
+<p><b>문제)</b> <b>만약 n개의 element가 있는 set은 몇개의 관계(relation)을 가질까?</b></p>
+<p><b>답)</b> A X A 가 n의 제곱개의 원소를 가지니까 2의 n제곱 승이 정답</p>
+<p><figure class="imageblock alignLeft" data-origin-width="0" data-origin-height="0" width="400" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/dQeh0v/btqOcQ9T0Q1/j0heGeZr3bKOAirJsbmRP1/img.png" data-lightbox="lightbox"><img src="https://blog.kakaocdn.net/dn/dQeh0v/btqOcQ9T0Q1/j0heGeZr3bKOAirJsbmRP1/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdQeh0v%2FbtqOcQ9T0Q1%2Fj0heGeZr3bKOAirJsbmRP1%2Fimg.png" data-origin-width="0" data-origin-height="0" width="400" data-ke-mobilestyle="widthContent" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';"/></span></figure>
+</p>
+<h4 data-ke-size="size20"><b>relation의 종류</b></h4>
+<p data-ke-size="size16"><span style="color: #1b711d;"><b>1. 반사 관계(reflective relation)</b></span></p>
+<p data-ke-size="size16"><b>정의 :</b>모든 a <span style="color: #333333;">&isin;<span> A 에 대해 (a,a) </span></span><span style="color: #333333;"><span><span style="color: #333333;">&isin;R인 관계</span></span></span></p>
+<p data-ke-size="size16"><span style="color: #006dd7;"><b>def :</b> R is reflective if (a,a)&isin; R for every element a&isin;A</span></p>
+<p><figure class="imageblock alignLeft" data-origin-width="0" data-origin-height="0" width="400" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/FOS2L/btqN6UFZko0/7sZf7OmIQYb1BE6RAVaCE0/img.png" data-lightbox="lightbox"><img src="https://blog.kakaocdn.net/dn/FOS2L/btqN6UFZko0/7sZf7OmIQYb1BE6RAVaCE0/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FFOS2L%2FbtqN6UFZko0%2F7sZf7OmIQYb1BE6RAVaCE0%2Fimg.png" data-origin-width="0" data-origin-height="0" width="400" data-ke-mobilestyle="widthContent" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';"/></span></figure>
+</p>
+<p data-ke-size="size16">- A가 공집합일때도 reflective relation 이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>반사 관계 / 반사 관계 아닌 것</b></p>
+<p><figure class="imageblock alignLeft" data-origin-width="0" data-origin-height="0" width="500" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/cpuSAC/btqOdODLSR1/1r4XOOZQ0mzC7RhilLMYVk/img.png" data-lightbox="lightbox"><img src="https://blog.kakaocdn.net/dn/cpuSAC/btqOdODLSR1/1r4XOOZQ0mzC7RhilLMYVk/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcpuSAC%2FbtqOdODLSR1%2F1r4XOOZQ0mzC7RhilLMYVk%2Fimg.png" data-origin-width="0" data-origin-height="0" width="500" data-ke-mobilestyle="widthContent" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';"/></span></figure>
+</p>
+<p data-ke-size="size16"><b><span style="color: #ee2323;">주의해야할 점은 반산관계가 아니라고 해서 비반사관계거나, 비반사관계가 아니라고 해서 반사관계는 아니다.</span></b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><span style="color: #1b711d;"><b>2.대칭관계(Symmetric relation)</b></span></p>
+<p data-ke-size="size16"><b>정의 :</b><span>&nbsp;</span>어떤 a,b <span style="color: #333333;">&isin; A에 대해 (a,b) <span style="color: #333333;">&isin;R이면 (b,a) <span style="color: #333333;">&isin;R인 관계</span></span></span></p>
+<p data-ke-size="size16"><span style="color: #006dd7;"><b>def :</b><span>&nbsp;</span>R is symmetric iff (b,a) &isin; R whenever (a,b) <span style="color: #006dd7;">&isin; R for all, a,b <span style="color: #006dd7;">&isin;A</span></span></span></p>
+<p><figure class="imageblock alignLeft" data-origin-width="0" data-origin-height="0" width="400" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/A7nPg/btqN6UTtOQ8/6q9g4LmKn7QSBkRywScDkk/img.png" data-lightbox="lightbox"><img src="https://blog.kakaocdn.net/dn/A7nPg/btqN6UTtOQ8/6q9g4LmKn7QSBkRywScDkk/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FA7nPg%2FbtqN6UTtOQ8%2F6q9g4LmKn7QSBkRywScDkk%2Fimg.png" data-origin-width="0" data-origin-height="0" width="400" data-ke-mobilestyle="widthContent" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';"/></span></figure>
+</p>
+<p data-ke-size="size16"><span style="color: #ee2323;"><b>예시)</b></span></p>
+<p><figure class="imageblock alignLeft" data-origin-width="0" data-origin-height="0" width="500" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/dndntw/btqN8fW8E1k/GgBbofgu3DalWi7HK1GDek/img.png" data-lightbox="lightbox"><img src="https://blog.kakaocdn.net/dn/dndntw/btqN8fW8E1k/GgBbofgu3DalWi7HK1GDek/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdndntw%2FbtqN8fW8E1k%2FGgBbofgu3DalWi7HK1GDek%2Fimg.png" data-origin-width="0" data-origin-height="0" width="500" data-ke-mobilestyle="widthContent" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';"/></span></figure>
+</p>
+<p data-ke-size="size16"><span style="color: #006dd7;"><span style="color: #006dd7;"><span style="color: #006dd7;"><span style="color: #1b711d;"><b>3.반대칭관계(Antisymmetric relation)</b></span></span></span></span></p>
+<p data-ke-size="size16"><b>정의 : </b>어떤 a,b <span style="color: #333333;">&isin; A 에 대해 (a,b) <span style="color: #333333;">&isin; R 일 때, (b,a) <span style="color: #333333;">&isin;R이면 a=b인 관계</span></span></span><span></span></p>
+<p data-ke-size="size16"><span style="color: #006dd7;"><b>def :</b><span>&nbsp;</span>R is antisymmetric when (a,b) <span style="color: #006dd7;">&isin; R, (b,a) <span style="color: #006dd7;">&isin;<span> R only if a= b for all a <span style="color: #006dd7;">&isin;<span> A, b <span style="color: #006dd7;">&isin;<span> A</span></span></span></span></span></span>&nbsp;</span></span></p>
+<p data-ke-size="size16"><span style="color: #ee2323;"><b>예시)</b></span></p>
+<p><figure class="imageblock alignLeft" data-origin-width="0" data-origin-height="0" width="500" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/n6Sw0/btqN7T7S2z0/vqW2ifWpXrVSwYmPTFukPK/img.png" data-lightbox="lightbox"><img src="https://blog.kakaocdn.net/dn/n6Sw0/btqN7T7S2z0/vqW2ifWpXrVSwYmPTFukPK/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fn6Sw0%2FbtqN7T7S2z0%2FvqW2ifWpXrVSwYmPTFukPK%2Fimg.png" data-origin-width="0" data-origin-height="0" width="500" data-ke-mobilestyle="widthContent" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';"/></span></figure>
+</p>
+<p><span style="color: #006dd7;"><span style="color: #006dd7;"><span style="color: #006dd7;"><span style="color: #1b711d;"><b>4.추적관계(transitive relation)</b></span></span></span></span></p>
+<p data-ke-size="size16"><b>정의 :&nbsp;</b>(a,b) &isin; R , (b,c) <span style="color: #333333;">&isin; R 일 때, 모든 a,b,c <span style="color: #333333;">&isin;<span> A에 대하여&nbsp;</span></span>(a,c) <span style="color: #333333;">&isin;<span> R이다.</span></span></span><span></span></p>
+<p data-ke-size="size16"><span style="color: #006dd7;"><b>def :</b>&nbsp;R is transitive if whenever (a,b) &isin; R and (b,c) <span style="color: #333333;"><span style="color: #006dd7;">&isin;</span><span><span style="color: #006dd7;"> R then (a,c) </span><span style="color: #333333;"><span style="color: #006dd7;">&isin;R, for all a,b,c &isin; A</span><span></span></span></span></span></span><span style="color: #006dd7;"><span style="color: #333333;"><span><span style="color: #333333;"></span></span></span></span></p>
+<p data-ke-size="size16"><span style="color: #ee2323;"><b>예시)</b></span></p>
+<p><figure class="imageblock alignLeft" data-origin-width="0" data-origin-height="0" width="500" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/bqIzwL/btqObYf4ASQ/LjjoGX2ZZELkEA9tKn88u1/img.png" data-lightbox="lightbox"><img src="https://blog.kakaocdn.net/dn/bqIzwL/btqObYf4ASQ/LjjoGX2ZZELkEA9tKn88u1/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbqIzwL%2FbtqObYf4ASQ%2FLjjoGX2ZZELkEA9tKn88u1%2Fimg.png" data-origin-width="0" data-origin-height="0" width="500" data-ke-mobilestyle="widthContent" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';"/></span></figure>
+</p>
+<p>&nbsp;</p>
+<p><span style="color: #1b711d;"><b>5. 구성 관계(composition relation)</b></span></p>
+<p><span style="color: #333333;"><b><b>정의 : R 은 set A와 set B의 관계, S는 set B와 setC의 관계이다. R과 S의 구성관계는 set A 에서 setC의 관계이다.</b></b></span></p>
+<p><figure class="imageblock alignLeft" data-origin-width="0" data-origin-height="0" width="500" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/camBMM/btqOcPXtJa6/S1k3gQkQxVanHL1hRp40n1/img.png" data-lightbox="lightbox"><img src="https://blog.kakaocdn.net/dn/camBMM/btqOcPXtJa6/S1k3gQkQxVanHL1hRp40n1/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcamBMM%2FbtqOcPXtJa6%2FS1k3gQkQxVanHL1hRp40n1%2Fimg.png" data-origin-width="0" data-origin-height="0" width="500" data-ke-mobilestyle="widthContent" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';"/></span></figure>
+</p>
+<p>&nbsp;</p>
+<p><b>Theorm 1 .</b> The relation R on a set A is transitive iff R^n &sube; R for n = 1,2,3...</p>
+<p>&nbsp;</p></div>
+                    <!-- System - START -->
+        <div class="revenue_unit_wrap">
+  <div class="revenue_unit_item adsense responsive">
+    <div class="revenue_unit_info">반응형</div>
+    <script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async="async"></script>
+    <ins class="adsbygoogle" style="display: block;" data-ad-host="ca-host-pub-9691043933427338" data-ad-client="ca-pub-5245554735620256" data-ad-format="auto"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+        <!-- System - END -->
 
 
-	<button class="jsTopBtn"></button>
+                    <div class="container_postbtn #post_button_group">
+  <div class="postbtn_like"><script>window.ReactionButtonType = 'reaction';
+window.ReactionApiUrl = '//jesus-never-fail.tistory.com/reaction';
+window.ReactionReqBody = {
+    entryId: 22
+}</script>
+<div class="wrap_btn" id="reaction-22"></div>
+<script src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/script/reaction-button-container.min.js"></script><div class="wrap_btn wrap_btn_share"><button type="button" class="btn_post sns_btn btn_share" aria-expanded="false" data-thumbnail-url="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F4pKJ6%2FbtqN6S9eDHc%2FKDMH640w5nchLQZ6Kn4qH0%2Fimg.png" data-title="관계(Relations) / 관계의 특징(Relations and their properties)" data-description="이항관계(binary relations) 정의 1 : A와 B라는 집합이 있을 때, A로부터 B까지의 이항 관계는 AXB의 부분집합이다. def 1 : Let A and B be sets. A binary relation from A to B is a subset of AXB 예시) A={0,1,2} B={a,b} A X B = {(0,a), (0,b), (1,a), (2,b)} set A 와 B의 관계를 graphically 하게 표현할 수 있다. 관계는 함수보다 더 general한 표현이다. 정의 2: A라는 집합에 대한 관계는 A X A 의 부분집합이다. def 2 : a binary relation on a set A is a subset of A X A 예시) A={1,2,3,4} R={(a,b.." data-profile-image="https://tistory1.daumcdn.net/tistory/4291663/attach/30adacf2e80f47418fe61d2fde81911e" data-profile-name="샨샨" data-pc-url="https://jesus-never-fail.tistory.com/22" data-relative-pc-url="/22" data-blog-title="가즈아"><span class="ico_postbtn ico_share">공유하기</span></button>
+  <div class="layer_post" id="tistorySnsLayer"></div>
+</div><div class="wrap_btn wrap_btn_etc" data-entry-id="22" data-entry-visibility="public" data-category-visibility="public"><button type="button" class="btn_post btn_etc2" aria-expanded="false"><span class="ico_postbtn ico_etc">게시글 관리</span></button>
+  <div class="layer_post" id="tistoryEtcLayer"></div>
+</div></div>
+<button type="button" class="btn_menu_toolbar btn_subscription  #subscribe" data-blog-id="4291663" data-url="https://jesus-never-fail.tistory.com/22" data-device="web_pc"><em class="txt_state">구독하기</em><strong class="txt_tool_id">가즈아</strong><span class="img_common_tistory ico_check_type1"></span></button><div class="postbtn_ccl" data-ccl-type="2" data-ccl-derive="1">
+    <a href="https://creativecommons.org/licenses/by/4.0/deed.ko" target="_blank" class="link_ccl" rel="license">
+        <span class="bundle_ccl">
+            <span class="ico_postbtn ico_ccl1">저작자표시</span> 
+        </span>
+    </a>
+</div>
+<!--
+<rdf:RDF xmlns="https://web.resource.org/cc/" xmlns:dc="https://purl.org/dc/elements/1.1/" xmlns:rdf="https://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <Work rdf:about="">
+        <license rdf:resource="https://creativecommons.org/licenses/by/4.0/deed.ko" />
+    </Work>
+    <License rdf:about="https://creativecommons.org/licenses/by/4.0/deed.ko">
+        <permits rdf:resource="https://web.resource.org/cc/Reproduction"/>
+        <permits rdf:resource="https://web.resource.org/cc/Distribution"/>
+        <requires rdf:resource="https://web.resource.org/cc/Notice"/>
+        <requires rdf:resource="https://web.resource.org/cc/Attribution"/>
+        <permits rdf:resource="https://web.resource.org/cc/DerivativeWorks"/>
+
+    </License>
+</rdf:RDF>
+-->  <div data-tistory-react-app="SupportButton"></div>
 </div>
 
-<script type="text/javascript">
-	mdc.module.setModule({
-		name: 'TEMPLET_MODULE',
-		function: function (self, api) {
-			self.init = function () {
-				if("en"==""){
-					mdc.util.setCookie("lang","en",365);					
-				}else if("ko_KR"==""){
-					mdc.util.setCookie("lang","ko_KR",365);
-				}
-			};
-			$('.jsTopBtn').on('click', function () {
-				window.scrollTo(0,0);
-				$('.jsTopBtn').css({opacity:0});
-			});
+                    <!-- PostListinCategory - START -->
+<div class="another_category another_category_color_gray">
+  <h4>'<a href="/category/%E0%A9%88%E2%9C%A9%E2%80%A7%E2%82%8A%CB%9AComputer%20Science">ੈ✩‧₊˚Computer Science</a> &gt; <a href="/category/%E0%A9%88%E2%9C%A9%E2%80%A7%E2%82%8A%CB%9AComputer%20Science/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99">이산수학</a>' 카테고리의 다른 글</h4>
+  <table>
+    <tr>
+      <th><a href="/28">동치관계(equivalence relation)/동치류(Equivalence Class)</a>&nbsp;&nbsp;<span>(0)</span></th>
+      <td>2020.11.29</td>
+    </tr>
+    <tr>
+      <th><a href="/23">관계의 표현(representing relations)</a>&nbsp;&nbsp;<span>(0)</span></th>
+      <td>2020.11.25</td>
+    </tr>
+    <tr>
+      <th><a href="/19">베이즈 정리(Bayes' theorem)</a>&nbsp;&nbsp;<span>(0)</span></th>
+      <td>2020.11.21</td>
+    </tr>
+  </table>
+</div>
 
-			$(window).scroll(function () {
-				if ($(window).scrollTop() > 100) {
-					$('.jsTopBtn').css({opacity:1});
-				} else {
-					$('.jsTopBtn').css({opacity:0});
-				}
-			});
-		}
-	});
-</script>
-</body>
+<!-- PostListinCategory - END -->
+
+            <div id="__spy">
+              <div class="__">
+                <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; offset: 65"></ul>
+              </div>
+            </div>
+          
+        </article>
+        <footer class="footer">
+          
+            
+              <div class="related"><strong>'ੈ✩‧₊˚Computer Science/이산수학' 카테고리의 다른 글</strong>
+                <ul>
+                  
+                    <li><a href="/28?category=899260">동치관계(equivalence relation)/동치류(Equivalence Class)</a></li>
+                  
+                    <li><a href="/23?category=899260">관계의 표현(representing relations)</a></li>
+                  
+                    <li><a href="/19?category=899260">베이즈 정리(Bayes' theorem)</a></li>
+                  
+                </ul>
+              </div>
+            
+          
+          
+            <div class="tags"><a href="/tag/Relation" rel="tag">Relation</a>, <a href="/tag/%EA%B4%80%EA%B3%84" rel="tag">관계</a>, <a href="/tag/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99" rel="tag">이산수학</a></div>
+          
+          
+            <div class="author"><img class="profile lazyload" data-src="https://tistory1.daumcdn.net/tistory/4291663/attach/30adacf2e80f47418fe61d2fde81911e" data-sizes="auto" width="80" height="80" alt="샨샨">
+              <div class="description">
+                <div class="user">샨샨</div>
+                <div class="desc">나의 기록</div>
+              </div>
+            </div>
+          
+        </footer>
+      </div>
+      <div data-tistory-react-app="Namecard"></div><div id="entry22Comment">
+          <form method="post" action="/comment/add/22" onsubmit="return false" style="margin: 0">
+      
+<div class="rp-form form">
+  <div class="__"><label for="comment">댓글</label><textarea id="comment" name="comment"></textarea>
+    <div class="rp-form-control form-control">
+      
+        <div class="inputs">
+          
+            <div class="guest">
+              <div class="name"><label for="name">이름</label><input id="name" name="name" value=""></div>
+              <div class="password"><label for="password">암호</label><input id="password" type="password" maxlength="8" name="password" value=""></div>
+            </div>
+          
+        </div>
+      
+      <div class="submit"><input id="secret" type="checkbox" name="secret"><label id="secret-label" for="secret"></label><a href="#" onclick="addComment(this, 22); return false;">댓글쓰기</a></div>
+    </div>
+  </div>
+</div>
+
+  </form>
+        
+          <div class="rp-list comments">
+            <ol uk-accordion="multiple: true; toggle: .control > .more; content: > ol; animation: false; targets: > li[id^=comment]">
+                          
+
+            
+            </ol>
+          </div>
+        
+      </div>
+<script type="text/javascript">loadedComments[22]=true;
+findFragmentAndHighlight(22);</script>
+
+      
+        <a class="notify uk-box-shadow-medium" href="/23" id="next">
+            <img class="thumbnail lazyload" src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FPPNz5%2FbtqN9MAsjyp%2Fin7CA3KcaWIDeQHD9YcbP0%2Fimg.png" alt="관계의 표현(representing relations)">
+            <div class="metainfo">
+              <div class="description">다음 글</div>
+              <div class="title">관계의 표현(representing relations)</div>
+            </div>
+          </a>
+        <a class="notify uk-box-shadow-medium" href="/19" id="prev">
+            <img class="thumbnail lazyload" src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F0iqYM%2FbtqNVSHD1rc%2FzImfLLua55UdDOa8DjJkwk%2Fimg.png" alt="베이즈 정리(Bayes' theorem)">
+            <div class="metainfo">
+              <div class="description">이전 글</div>
+              <div class="title">베이즈 정리(Bayes' theorem)</div>
+            </div>
+          </a>
+      
+    </div>
+  
+  
+  
+
+          
+      
+          
+          
+          
+          
+        </main>
+        <footer class="uk-navbar-container uk-navbar-transparent" id="__footer" uk-navbar="">
+          <div class="uk-navbar-right"><button class="theme-btn">테마 바꾸기<i class="fa fa-moon" aria-hidden="true"></i></button><button class="toTop" uk-scroll="target: #__hELLO">제일 위로<i class="fa fa-chevron-up"></i></button></div>
+        </footer>
+      </div>
+    
+    <div id="scroll-indicator">
+      <div class="progress-container">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+  <div class="#menubar menu_toolbar ">
+  <h2 class="screen_out">티스토리툴바</h2>
+</div>
+<div class="#menubar menu_toolbar "></div>
+<div class="layer_tooltip">
+  <div class="inner_layer_tooltip">
+    <p class="desc_g"></p>
+  </div>
+</div>
+<iframe id="editEntry" style="position:absolute;width:1px;height:1px;left:-100px;top:-100px" src="//jesus-never-fail.tistory.com/api"></iframe>
+
+                        <!-- CallBack - START -->
+        <script>                    (function () { 
+                        var blogTitle = '가즈아';
+                        
+                        (function () {
+    function isShortContents () {
+        return window.getSelection().toString().length < 30;
+    }
+    function isCommentLink (elementID) {
+        return elementID === 'commentLinkClipboardInput'
+    }
+
+    function copyWithSource (event) {
+        if (isShortContents() || isCommentLink(event.target.id)) {
+            return;
+        }
+        var range = window.getSelection().getRangeAt(0);
+        var contents = range.cloneContents();
+        var temp = document.createElement('div');
+
+        temp.appendChild(contents);
+
+        var url = document.location.href;
+        var decodedUrl = decodeURI(url);
+        var postfix = ' [' + blogTitle + ':티스토리]';
+
+        event.clipboardData.setData('text/plain', temp.innerText + '\n출처: ' + decodedUrl + postfix);
+        event.clipboardData.setData('text/html', '<pre data-ke-type="codeblock">' + temp.innerHTML + '</pre>' + '출처: <a href="' + url + '">' + decodedUrl + '</a>' + postfix);
+        event.preventDefault();
+    }
+
+    document.addEventListener('copy', copyWithSource);
+})()
+
+                    })()</script>
+
+        <!-- CallBack - END -->
+
+<!-- DragSearchHandler - START -->
+<script src="//search1.daumcdn.net/search/statics/common/js/g/search_dragselection.min.js"></script>
+
+<!-- DragSearchHandler - END -->
+
+        <!-- SyntaxHighlight - START -->
+        <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/styles/atom-one-dark-reasonable.min.css" rel="stylesheet"/><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/delphi.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/php.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/r.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/ruby.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/scala.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/shell.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/sql.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/swift.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/typescript.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/vbnet.min.js" defer></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+        <!-- SyntaxHighlight - END -->
+
+                
+                <script type="text/javascript">(function($) {
+    $(document).ready(function() {
+        lightbox.options.fadeDuration = 200;
+        lightbox.options.resizeDuration = 200;
+        lightbox.options.wrapAround = false;
+        lightbox.options.albumLabel = "%1 / %2";
+    })
+})(tjQuery);</script>
+<div style="margin:0; padding:0; border:none; background:none; float:none; clear:none; z-index:0"></div>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/script/common.js"></script>
+<script type="text/javascript">window.roosevelt_params_queue = window.roosevelt_params_queue || [{channel_id: 'dk', channel_label: '{tistory}'}]</script>
+<script type="text/javascript" src="//t1.daumcdn.net/midas/rt/dk_bt/roosevelt_dk_bt.js" async="async"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/script/menubar.min.js"></script>
+<script>            (function (win, doc, src) {
+    win.Wpm = win.Wpm || function (name, param) {
+        win.Wpm.queue = win.Wpm.queue || [];
+        const { queue } = win.Wpm;
+        queue.push([name, param]);
+    };
+    const script = doc.createElement('script');
+    script.src = src;
+    script.async = 1;
+    const [elem] = doc.getElementsByTagName('script');
+    elem.parentNode.insertBefore(script, elem);
+})(window, document, 'https://t1.kakaocdn.net/malibu_prod/normal_wpm.js');
+            const APP_KEY = 'fd21bd1c091849f9a2555e49c43a73dd';
+            Wpm('appKey', APP_KEY);</script>
+
+                
+                <script>window.tiara = {"svcDomain":"user.tistory.com","section":"글뷰","trackPage":"글뷰_보기","page":"글뷰","key":"4291663-22","customProps":{"userId":"0","blogId":"4291663","entryId":"22","role":"guest","trackPage":"글뷰_보기","filterTarget":false},"entry":{"entryId":"22","categoryName":"ੈ✩‧₊˚Computer Science/이산수학","categoryId":"899260","author":"4617330","image":"kage@4pKJ6/btqN6S9eDHc/KDMH640w5nchLQZ6Kn4qH0","plink":"/22","tags":["Relation","관계","이산수학"]},"kakaoAppKey":"3e6ddd834b023f24221217e370daed18","appUserId":"null"}</script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/script/tiara.min.js"></script>
+
+                </body>
+
 </html>
