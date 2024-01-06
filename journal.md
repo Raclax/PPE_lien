@@ -49,8 +49,7 @@ problèmes en particulier.
 (Maria) J'ai modifié le script de concordances en bash pour qu'il génère une page HTML avec des concordances.
 
 # 05/01
-(Maria)
-Aujourd'hui, j'ai travaillé sur mon script, et j'ai rencontré quelques difficultés tout au long du processus :
+(Maria) Aujourd'hui, j'ai travaillé sur mon script, et j'ai rencontré quelques difficultés tout au long du processus :
 - Encodage des caractères polonais :
 J'ai dû m'assurer que les caractères polonais étaient correctement affichés dans le script. Pour cela, j'ai ajouté l'option -assume_charset=UTF-8 à Lynx pour garantir le traitement en UTF-8 du contenu.
 - Encodage des fichiers dump :
@@ -58,7 +57,8 @@ La gestion appropriée de l'encodage des fichiers dump générés par Lynx étai
 - Utilisation de grep avec différentes versions :
 J'ai rencontré des problèmes liés à l'utilisation de grep avec l'option -P. Certains systèmes ne la prennent pas en charge, donc j'ai ajusté le script pour utiliser l'option -E là où nécessaire.
 
-#06/01
+# 06/01
+(Maria) Aujourd'hui, j'ai rencontré un problème persistant d'encodage lié aux fichiers de dumps, mais finalement, j'ai réussi à le résoudre. J'ai également terminé l'analyse sur iTrameur et ajouté les captures d'écran de mes résultats. À présent, j'attends les analyses de Clara et de Débora pour compléter cette section et effectuer les modifications nécessaires sur le site HTML. De plus, j'ai ajouté un dossier dédié aux images et à la modification avec Bulma.
 (Clara) Tous les tableaux ont une colonne concordancier avec des liens qui mènent effectivement vers une page html, si 
 le site n'a pas d'errreur de type 400. Le script que j'avais fait focntionnait pour l'anglais mais pas pour le 
 polonais apparement, donc Maria a écrit des lignes de codes pour cette langue et j'ai fait une boucle if pour que si 
