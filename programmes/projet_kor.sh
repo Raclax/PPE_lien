@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 urls=$1
-N=0
+N=1
 
 if [ $# -ne 1 ]
 then
@@ -29,7 +29,7 @@ echo "  <table>
             <tr><th>Numéro</th>
 			<th>URLs</th>
 			<th>encodage HTTP</th>
-			<th>Encodage/th>
+			<th>Encodage</th>
 			<th>Aspiration</th>
 			<th>Dump</th>
 			<th>Nombre d'occurences</th>

@@ -1,1337 +1,2605 @@
-<!doctype html>
-<html lang="ko">
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko"> 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" id="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta name="format-detection" content="telephone=no">
-    <title>한일관계사학회</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="title" content="한일관계사학회">
-<meta property="og:title" content="한일관계사학회">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:url" content="https://hanilhis.or.kr">
-<meta name="twitter:title" content="한일관계사학회">
-<meta name="twitter:site" content="@한일관계사학회">
-<meta name="twitter:creator" content="@한일관계사학회">
-
-    <link rel="shortcut icon" href="/config/favicon.ico" type="image/x-icon">    
-    <link rel="canonical" href="https://hanilhis.or.kr/">
-    <link rel="stylesheet" type="text/css" href="/inc/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/inc/css/animation.css">
-    <link rel="stylesheet" type="text/css" href="/inc/css/sns_list.css">
-
-
-    <style type="text/css">
-            body .mobile_wrap, th, td, input, select, textarea, button { font-family:"Noto Sans KR"; }
-        /* 템플릿 공통 */
-button.point_btn { background-color:#cc9964; }
-.point_color { color:#cc9964; }
-.point_bg { background-color:#cc9964; }
-.point_ico:before { color:#cc9964; }
-.point_ico_hover:hover:before { color:#cc9964; }
-.point_hover_bg:hover { background-color:#cc9964; }
-.point_hover_txt:hover { color:#cc9964; }
-.point_hover_bd:hover { border-color:#cc9964; }
-.point_hover_bd_left5:hover { border-color:#cc9964; }
-
-/* 네비게이션 */
-.point_bd:before { border-color:#cc9964 transparent;}
-#main_menu .depth1:hover > a.point_hover_bd { border-color:#cc9964; }
-#main_menu .gnb .depth1.active > a { color:#cc9964; }
-.depth2 li.active  > a.point_hover_txt { color:#cc9964; }
-.depth3 li.active a.point_hover_txt { color:#cc9964; }
-#main_menu .depth1:hover .depth2{border-color:#cc9964;}
-.tit_m_hmenu { background-color:#cc9964; }
-.mobile_wrap .mobile_hmenu.point_bg { background-color:#cc9964;}
-#mobile_mainmenu .depth_back { background-color:#cc9964;}
-.mobile_wrap.default_color #mobile_mainmenu h3.point_bg { background-color:#cc9964 !important; }
-.mobile_wrap .mobile_hmenu .bth_m_hmenu { background-color:#cc9964 !important;}
-#main_menu .depth2.point_nav_bg:before { border-color: #cc9964 transparent;  }
-
-/* 서브메뉴 */
-.sub_depth li.active a.point_bg { background-color:#cc9964; }
-#sub_title h1 .sub_title_desc { background-color:#cc9964; }
-#sub_title > p .sub_title_desc { background-color:#cc9964; }
-
-#sub_lnb li:last-child span{ color:#cc9964; }
-
-/* 로그인 페이지 */
-.member_page .member_links a { color:#cc9964; }
-.member_page .member_links a:hover { color:#cc9964; }
-.member_page .login_tap li.active { color:#cc9964; }
-.member_page .login_tap li.active::after { background-color:#cc9964; }
-.box_join_certify .box_inner .btn_default.point_btn { background-color:#cc9964; }
-.box_join_certify .box_inner .btn_primary { background-color:#cc9964; }
-.member_page .wrap_join_step { border-top-color: #cc9964; }
-.wrap_btn_agree .btn_comm.btn_primary.point_btn { background-color:#cc9964; }
-.wrap_join_step li div span.txt_join_step1.point_bg { background-color:#cc9964; }
-.wrap_join_step li div span.txt_join_step2.point_bg { background-color:#cc9964; }
-.wrap_join_step li div span.txt_join_step3.point_bg { background-color:#cc9964; }
-.list_join_step1, .list_join_step2, .list_join_step3 { background-color:#cc9964; }
-.wrap_tab_joincertify .tab_list a.point_bd { border-color:#cc9964; }
-.wrap_tab_joincertify .tab_list.active a.point_color { color:#cc9964; }
-.login_info .tab_list a.point_bd { border-color:#cc9964; }
-.login_info .tab_list.active a.point_color { color:#cc9964; }
-.cont_check .login_page_button { background-color:#cc9964; }
-.ddCombobox .ddTitle .arrow { background-color:#cc9964; }
-.login_id .box_id .ddCombobox .ddChild li:hover { color:#cc9964; }
-.login_id .box_id .ddCombobox .ddChild li.selected { color:#cc9964; }
-.member_page button.btn_submit { background-color:#cc9964; }
-.wrap_tab_joincertify .tab_list.active { background-color:#cc9964; border-color:#cc9964; }
-.member_page .btn_comm.btn_login{background-color:#cc9964; border-color:#cc9964;}
-.member_page .btn_primary.btn_save_pwd{background-color:#cc9964; border-color:#cc9964;}
-
-/* 마이페이지 */
-.member_page .element_box.date .date_option .date_select.point_bg { background-color:#cc9964; }
-.tit_my_activity { color:#cc9964; }
-.my_activity dd { color:#cc9964; }
-.box_sub .btn_comm.btn_member_leave { color:#cc9964; }
-.your_page .your_page_tab_bot { background-color:#cc9964; }
-.board_order_content .mo_date { background-color:#cc9964; }
-.board_order_content .mo_status { color:#cc9964; }
-@media screen and (max-width:767px) {
-.lnb_mypage li.active a.point_bg { background-color:#cc9964; }
-}
-.your_page .your_page_sub_tab li.active { border-color:#cc9964; color:#cc9964; }
-
-/* 나의 게시글(mytrace) */
-.board_mypage_tab .tab_list.active a.point_color { color:#cc9964; }
-.board_mypage_tab .tab_list.active a.point_bd { border-color:#cc9964; }
-
-/* 셀렉트 박스 */
-.element_box .selectBox-dropdown .selectBox-arrow.point_bg { background-color:#cc9964; }
-.selectBox-dropdown .selectBox-arrow.point_bg { background-color:#cc9964; }
-.join_birth .selectBox-dropdown .selectBox-arrow.point_bg { background-color:#cc9964; }
-.board_mytrace .selectBox-dropdown .selectBox-arrow.point_bg { background-color:#cc9964; }
-.board_page .selectBox-dropdown .selectBox-arrow.point_bg { background-color:#cc9964; }
-.board_page .board_write_main dl.box_period .date_select { background-color:#cc9964; }
-
-/* 사이트맵 */
-.site_map .list_depth1>li strong a { color:#cc9964; }
-
-/* 풋터 */
-#footer_menu .link_privacy a { color:#cc9964; }
-
-/* 스크롤업 */
-.scrollup.point_bg { background-color:#cc9964; }
-
-/* 개인정보처리방침 */
-.privacy_lst dt .btn_top { background-color:#cc9964; }
-.privacy_lst dt .btn_top:hover { color:#cc9964; }
-.privacy_nav li:hover a { color:#cc9964; }
-ul.privacy_nav li:hover { border-color:#cc9964; }
-ul.privacy_nav li:nth-child(2n+1):hover:before { border-color:#cc9964; }
-ul.privacy_nav li:nth-child(2n+2):hover:before { border-color:#cc9964; }
-ul.privacy_nav li:nth-child(2n+2):hover:after { border-color:#cc9964; }
-
-/* 이용약관 */
-.terms_lst>li dt { color:#cc9964; }
-.terms_main .btn_top a { background-color:#cc9964; }
-.terms_main .btn_top a:hover { color:#cc9964; }
-
-/* Switch */
-.switch > input:checked + span.point_bg { background-color:#cc9964; }
-
-/* 게시판 앱 공통 */
-.DUBU_Board_s150319001001 .inquiry_main_write .btn_apply.point_btn { background-color:#cc9964; }
-.DUBU_Board_s150319001001 .gallery_main_group:hover .wrap_gallery_contents .txt_subject a { color:#cc9964; }
-.DUBU_Board_a151027001001 .inquiry_main_write .btn_apply.point_btn { background-color:#cc9964; }
-.DUBU_Board_a151027001001 .gallery_main_group:hover .wrap_gallery_contents .txt_subject a { color:#cc9964; }
-.DUBU_Board_t150320001001 .inquiry_main_write .btn_apply.point_btn { background-color:#cc9964; }
-.DUBU_Board_t150320001001 .gallery_main_group:hover .wrap_gallery_contents .txt_subject a { color:#cc9964; }
-.DUBU_Board_c170203001001 .inquiry_main_write .btn_apply.point_btn { background-color:#cc9964; }
-.DUBU_Board_c170203001001 .gallery_main_group:hover .wrap_gallery_contents .txt_subject a { color:#cc9964; }
-.DUBU_Board_i170213001001 .inquiry_main_write .btn_apply.point_btn { background-color:#cc9964; }
-.DUBU_Board_i170213001001 .gallery_main_group:hover .wrap_gallery_contents .txt_subject a { color:#cc9964; }
-.DUBU_Board_m170313001001 .inquiry_main_write .btn_apply.point_btn { background-color:#cc9964; }
-.DUBU_Board_m170313001001 .gallery_main_group:hover .wrap_gallery_contents .txt_subject a { color:#cc9964; }
-.DUBU_Board_s171127001001 .inquiry_main_write .btn_apply.point_btn { background-color:#cc9964; }
-.DUBU_Board_s171127001001 .gallery_main_group:hover .wrap_gallery_contents .txt_subject a { color:#cc9964; }
-.board_main .tab_list.active a.point_color { color:#cc9964; }
-.board_main .tab_list.active.point_bg:after { background-color:#cc9964; }
-.mobile_wrap .board_main .tab_list:hover a.point_color { color:#cc9964; }
-.mobile_wrap .board_main .tab_list.point_bg:hover:after { background-color:#cc9964; }
-.board_page button.btn_admin { background-color:#cc9964; }
-.board_main .tab_list.active a.link_tab_list { color:#cc9964; }
-.board_main .tab_list:hover a.link_tab_list { color:#cc9964; }
-.board_page .tbl_board_list tbody tr:hover .col_subject a { color:#cc9964; }
-.board_page .btn_apply.point_bg { background-color:#cc9964; }
-.board_main .tab_list.active a:after { background-color:#cc9964; }
-.board_main .tab_list:hover a:after { background-color:#cc9964; }
-.webzine_main .tab_box .tab_list.active a.link_tab_list { color:#cc9964; }
-.webzine_main .tab_box .tab_list:hover a.link_tab_list { color:#cc9964; }
-.webzine_main .tab_box .tab_list.active a:after { background-color:#cc9964; }
-.webzine_main .tab_box .tab_list:hover a:after { background-color:#cc9964; }
-.board_page .paginator a:hover { color:#cc9964; }
-.board_page .txt_subject a { color:#cc9964; }
-.board_page .txt_subject a:hover { color:#cc9964; }
-.board_page button.btn_more { background-color:#cc9964; }
-.board_page .num_file { color:#cc9964; }
-.board_page .answer_write h3 { background-color:#cc9964; }
-.board_page .txt_content h3 { color:#cc9964; }
-.board_page .txt_cmt_count { color:#cc9964; }
-.board_page .layer_delete h4 { background-color:#cc9964; }
-.board_page .layer_delete p { background-color:#cc9964; }
-.board_page .btn_layer_apply { background-color:#cc9964; }
-.board_page button.btn_write,
-.board_page button.btn_list { background-color:#cc9964; }
-.board_page .wrap_gallery_contents { border-color:#cc9964; }
-.board_page .txt_content h3:before { background-color:#cc9964; }
-.board_page .btn_comm.point_btn { background-color:#cc9964; }
-.board_page .btn_comm.point_btn.btn_write { background-color:#cc9964; }
-.board_page li.notice .txt_subject > a { color:#cc9964; }
-
-/* 게시판 비밀글 */
-.board_secret_main .btn_comm.btn_apply { background-color:#cc9964; }
-
-/* 메인 게시판 */
-.gallery_main .tab_box .tab_list:hover a.link_tab_list { color:#cc9964; }
-.gallery_main .tab_box .tab_list.active a.link_tab_list { color:#cc9964; }
-.gallery_main .tab_box .tab_list a:after { background-color:#cc9964; }
-.gallery_main .tab_box .tab_list.active a:after { background-color:#cc9964; }
-.gallery_main .txt_subject a:hover { color:#cc9964; }
-.board_main .txt_subject:hover > .tit_content { color:#cc9964; }
-.webzine_list li:hover .box_subject { color:#cc9964; }
-.webzine_list li:hover .box_subject .txt_subject > a { color:#cc9964; }
-.txt_s_title { color:#cc9964; }
-.selectBox-options li:hover a { color:#cc9964; }
-.selectBox-options li.selectBox-selected a { color:#cc9964;  }
-.box_datepic .tbl_pic_month td.selected a { background-color:#cc9964; }
-.box_datepic .tbl_pic_month td a:hover { background-color:#cc9964; }
-.webzine_main_content.tab_info_content .box_post .box_subject:hover{ color:#cc9964;}
-.tab_box .tab_info .tab_list.active { border-color:#cc9964; }
-
-    .DUBU_Booking_Search_b160128001001 .booking_gallery_col .btn_primary { background-color:#cc9964; }
-    .DUBU_Booking_Search_b160128002001 .booking_gallery_col .btn_primary { background-color:#cc9964; }
-    .DUBU_Booking_Search_b160128003001 .booking_gallery_col .btn_primary { background-color:#cc9964; }
-    .DUBU_Booking_Search_b160128004001 .booking_gallery_col .btn_primary { background-color:#cc9964; }
-    .DUBU_Booking_Search_i170213001001 .booking_gallery_col .btn_primary { background-color:#cc9964; }
-    .DUBU_Booking_Search_i170213002001 .booking_gallery_col .btn_primary { background-color:#cc9964; }
-    .DUBU_Booking_Search_m170313001001 .booking_gallery_col .btn_primary { background-color:#cc9964; }
-    .DUBU_Booking_Search_m170313002001 .booking_gallery_col .btn_primary { background-color:#cc9964; }
-.booking_type_01 .box_booking_gallery:hover .inner_gallery { border-color:#cc9964; }
-.booking_type_01 .box_booking_gallery:hover .gallery_contents{ border-color:#cc9964; }
-.booking_gallery_control .ddCombobox.active,
-.booking_gallery_control input.booking_tf:focus,
-.booking_gallery_control input.booking_tf:active { box-shadow: 0 0 0 2px #cc9964; }
-.booking_list_footer .mo_booking_paginator .mo_paginator span.npage {color:#cc9964;}
-
-/* social_stream */
-.sns_stream_wrap .sns_filter ul li.point_hover_bg.on { background-color:#cc9964; }
-.sns_stream_wrap .sns_filter ul li.point_hover_bg:hover { background-color:#cc9964; }
-.sns_stream_wrap .sns_filter ul li.point_bd { border-color:#cc9964; }
-.sns_stream_wrap .sns_filter ul li.on.point_bd { border-color:#cc9964; }
-.sns_stream_wrap .sns_filter ul li.point_bd:hover { border-color:#cc9964; }
-.sns_stream_wrap .sns_filter ul li.on .sns_tit.point_color { color:#cc9964; }
-.sns_stream_wrap .sns_filter ul li:hover .sns_ico.point_ico_hover:before { color:#cc9964; }
-.sns_stream_wrap .sns_filter ul li.on .sns_ico.point_ico_hover:before { color:#cc9964; }
-.sns_stream_wrap .btn_more span.point_bd { border-color:#cc9964; }
-.sns_stream_wrap .btn_more span.point_color { color:#cc9964; }
-
-    .sns_stream_skin1 .btn_more span.point_btn { background-color:#cc9964; }
-    .sns_stream_skin2 .btn_more span.point_btn { background-color:#cc9964; }
-    .sns_stream_skin3 .btn_more span.point_btn { background-color:#cc9964; }
-    .sns_stream_skin4 .btn_more span.point_btn { background-color:#cc9964; }
-    .sns_stream_skin5 .btn_more span.point_btn { background-color:#cc9964; }
-
-/* 메인 회원관리 앱 */
-    .DUBU_Members_s150319001001 .login_page .btn_login.point_bg { background-color:#cc9964; }
-    .DUBU_Members_s150319001001 .login_page .num_active_info { color:#cc9964; }
-    .DUBU_Members_s150319001001 .login_page .member_links a.link_join { color:#cc9964; }
-    .DUBU_Members_s150319001001 .login_page .member_links a.link_find_pwd { color:#cc9964; }
-    .DUBU_Members_s150319001001 .login_page .member_links a.link_find_id { color:#cc9964; }
-    .DUBU_Members_s150319001001 .login_page .box_btn_loginon .btn_comm.btn_logout { background-color:#cc9964; }
-    .DUBU_Members_t150320001001 .login_page .btn_login.point_bg { background-color:#cc9964; }
-    .DUBU_Members_t150320001001 .login_page .num_active_info { color:#cc9964; }
-    .DUBU_Members_t150320001001 .login_page .member_links a.link_join { color:#cc9964; }
-    .DUBU_Members_t150320001001 .login_page .member_links a.link_find_pwd { color:#cc9964; }
-    .DUBU_Members_t150320001001 .login_page .member_links a.link_find_id { color:#cc9964; }
-    .DUBU_Members_t150320001001 .login_page .box_btn_loginon .btn_comm.btn_logout { background-color:#cc9964; }
-    .DUBU_Members_c170203001001 .login_page .btn_login.point_bg { background-color:#cc9964; }
-    .DUBU_Members_c170203001001 .login_page .num_active_info { color:#cc9964; }
-    .DUBU_Members_c170203001001 .login_page .member_links a.link_join { color:#cc9964; }
-    .DUBU_Members_c170203001001 .login_page .member_links a.link_find_pwd { color:#cc9964; }
-    .DUBU_Members_c170203001001 .login_page .member_links a.link_find_id { color:#cc9964; }
-    .DUBU_Members_c170203001001 .login_page .box_btn_loginon .btn_comm.btn_logout { background-color:#cc9964; }
-    .DUBU_Members_i170213001001 .login_page .btn_login.point_bg { background-color:#cc9964; }
-    .DUBU_Members_i170213001001 .login_page .num_active_info { color:#cc9964; }
-    .DUBU_Members_i170213001001 .login_page .member_links a.link_join { color:#cc9964; }
-    .DUBU_Members_i170213001001 .login_page .member_links a.link_find_pwd { color:#cc9964; }
-    .DUBU_Members_i170213001001 .login_page .member_links a.link_find_id { color:#cc9964; }
-    .DUBU_Members_i170213001001 .login_page .box_btn_loginon .btn_comm.btn_logout { background-color:#cc9964; }
-    .DUBU_Members_m170313001001 .login_page .btn_login.point_bg { background-color:#cc9964; }
-    .DUBU_Members_m170313001001 .login_page .num_active_info { color:#cc9964; }
-    .DUBU_Members_m170313001001 .login_page .member_links a.link_join { color:#cc9964; }
-    .DUBU_Members_m170313001001 .login_page .member_links a.link_find_pwd { color:#cc9964; }
-    .DUBU_Members_m170313001001 .login_page .member_links a.link_find_id { color:#cc9964; }
-    .DUBU_Members_m170313001001 .login_page .box_btn_loginon .btn_comm.btn_logout { background-color:#cc9964; }
-    .DUBU_Members_s171127001001 .login_page .btn_login.point_bg { background-color:#cc9964; }
-    .DUBU_Members_s171127001001 .login_page .num_active_info { color:#cc9964; }
-    .DUBU_Members_s171127001001 .login_page .member_links a.link_join { color:#cc9964; }
-    .DUBU_Members_s171127001001 .login_page .member_links a.link_find_pwd { color:#cc9964; }
-    .DUBU_Members_s171127001001 .login_page .member_links a.link_find_id { color:#cc9964; }
-    .DUBU_Members_s171127001001 .login_page .box_btn_loginon .btn_comm.btn_logout { background-color:#cc9964; }
-    .DUBU_Members_z180726001001 .login_page .btn_login.point_bg { background-color:#cc9964; }
-    .DUBU_Members_z180726001001 .login_page .num_active_info { color:#cc9964; }
-    .DUBU_Members_z180726001001 .login_page .member_links a.link_join { color:#cc9964; }
-    .DUBU_Members_z180726001001 .login_page .member_links a.link_find_pwd { color:#cc9964; }
-    .DUBU_Members_z180726001001 .login_page .member_links a.link_find_id { color:#cc9964; }
-    .DUBU_Members_z180726001001 .login_page .box_btn_loginon .btn_comm.btn_logout { background-color:#cc9964; }
-
-/* 우편번호 */
-.postcode_page .header_post_code:after { background-color:#cc9964; }
-.postcode_page .explain_post_code h2 { color:#cc9964; }
-.postcode_page .search_post_code .btn_search_postcode { background-color:#cc9964; }
-.postcode_page .txt_result_postcode { background-color:#cc9964; }
-.postcode_page .list_postcode .txt_postcode { color:#cc9964; }
-.postcode_page .paging_postcode strong { color:#cc9964; }
-@media screen and (max-width:767px) {
-.postcode_page .header_post_code { background-color:#cc9964 !important; }
-}
-
-/* i170213001001 (안단테1987) */
-#section_1484881768 div h3:after{background-color:#cc9964;}
-
-/* 템플릿 공통 */
-.point_section_bg { background-color:#cc9964; }
-.point_section_txt { color:#cc9964; }
-
-/* 서브메뉴 */
-#sub_title h1 { color:#cc9964; }
-#sub_title > p { color:#cc9964; }
-
-#sub_menu .sub_depth .depth3 li:first-of-type { border-top-color:#cc9964; }
-
-/* 템플릿 공통 */
-.body_point_bg { background-color:#ffffff; }
-
-/* 템플릿 공통 */
-.header_point_bg { background-color:#ffffff; }
-
-/* 메인 게시판 */
-.body_point_bd { border-color:#ffffff; }
-
-/* 템플릿 공통 */
-.footer_point_bg { background-color:#332e2c; }
-
-/* 템플릿 공통 */
-#sub_menu .sub_menu_title.point_bg_sub { background-color:#ffffff; }
-
-/* 템플릿 공통 */
-.point_bg_sub_depth { background-color:#7a8b01; }
-
-/* 서브메뉴 */
-.point_bg_sub_depth a.point_bg{ background-color:#7a8b01; }
-
-/* 템플릿 공통 */
-.point_bd { border-color:#0bb5a9; }
-
-/* 네비게이션 */
-#mobile_header { border-color: #0bb5a9; }
-
-/* 마이페이지 */
-.member_page .board_mytrace .board_mytrace_content,
-.your_page .your_page_tab_content { border-color:#0bb5a9; }
-
-/* Switch */
-.switch > input:checked + span.point_bd { border-color:#0bb5a9; }
-
-
-/* 메인 회원관리 앱 */
-.DUBU_Members_s150319001001 .login_page .btn_login.point_bg:hover { background-color:#ebba78; }
-.DUBU_Members_t150320001001 .login_page .btn_login.point_bg:hover { background-color:#ebba78; }
-.DUBU_Members_c170203001001 .login_page .btn_login.point_bg:hover { background-color:#ebba78; }
-.DUBU_Members_i170213001001 .login_page .btn_login.point_bg:hover { background-color:#ebba78; }
-.DUBU_Members_m170313001001 .login_page .btn_login.point_bg:hover { background-color:#ebba78; }
-.DUBU_Members_s171127001001 .login_page .btn_login.point_bg:hover { background-color:#ebba78; }
-.DUBU_Members_z180726001001 .login_page .btn_login.point_bg:hover { background-color:#ebba78; }
-
-/* 템플릿 공통 */
-button.point_btn:hover { background-color:#ebba78; }
-
-/* 네비게이션 */
-#mobile_mainmenu h3.point_bg { background-color:#ebba78; }
-
-/* 로그인 페이지 */
-.box_join_certify .box_inner .btn_default.point_btn:hover { background-color:#ebba78; }
-.wrap_btn_agree .btn_comm.btn_primary.point_btn:hover { background-color:#ebba78; }
-.cont_check .login_page_button:hover { background-color:#ebba78; }
-.member_page .btn_comm.point_btn:hover { background-color:#ebba78; }
-.member_page button.btn_submit:hover { background-color:#ebba78; }
-
-/* 게시판 앱 공통 */
-.board_page .btn_admin:hover { background-color:#ebba78; }
-.board_page .btn_apply.point_bg:hover { background-color:#ebba78; }
-.board_page button.btn_write:hover { background-color:#ebba78; }
-.board_page button.btn_list:hover { background-color:#ebba78; }
-
-/* 메인 게시판 앱 공통 */
-.DUBU_Board_s150319001001 .inquiry_main_write .btn_apply.point_btn:hover { background-color:#ebba78; }
-.DUBU_Board_a151027001001 .inquiry_main_write .btn_apply.point_btn:hover { background-color:#ebba78; }
-.DUBU_Board_t150320001001 .inquiry_main_write .btn_apply.point_btn:hover { background-color:#ebba78; }
-.DUBU_Board_c170203001001 .inquiry_main_write .btn_apply.point_btn:hover { background-color:#ebba78; }
-.DUBU_Board_i170213001001 .inquiry_main_write .btn_apply.point_btn:hover { background-color:#ebba78; }
-.DUBU_Board_m170313001001 .inquiry_main_write .btn_apply.point_btn:hover { background-color:#ebba78; }
-.DUBU_Board_s171127001001 .inquiry_main_write .btn_apply.point_btn:hover { background-color:#ebba78; }
-
-
-/* 추가 */
-.board_page .btn_comm.point_btn:hover { background-color:#ebba78; }
-.board_page .btn_comm.point_btn.btn_write:hover { background-color:#ebba78; }
-
-/* 게시판 비밀글 */
-.board_secret_main .btn_comm.btn_apply:hover { background-color:#ebba78; }
-
-/* 메인 숙박 앱  */
-.booking_gallery_col .btn_primary:active { background-color:#ebba78; }
-    .DUBU_Booking_Search_b160128001001 .booking_gallery_col .btn_primary:hover { background-color:#ebba78; }
-    .DUBU_Booking_Search_b160128002001 .booking_gallery_col .btn_primary:hover { background-color:#ebba78; }
-    .DUBU_Booking_Search_b160128003001 .booking_gallery_col .btn_primary:hover { background-color:#ebba78; }
-    .DUBU_Booking_Search_b160128004001 .booking_gallery_col .btn_primary:hover { background-color:#ebba78; }
-    .DUBU_Booking_Search_i170213001001 .booking_gallery_col .btn_primary:hover { background-color:#ebba78; }
-    .DUBU_Booking_Search_i170213002001 .booking_gallery_col .btn_primary:hover { background-color:#ebba78; }
-    .DUBU_Booking_Search_m170313001001 .booking_gallery_col .btn_primary:hover { background-color:#ebba78; }
-    .DUBU_Booking_Search_m170313002001 .booking_gallery_col .btn_primary:hover { background-color:#ebba78; }
-
-/* 우편번호 */
-.postcode_page .search_post_code .btn_search_postcode:hover { background-color:#ebba78; }
-
-/* social_stream */
-    .sns_stream_skin1 .btn_more span.point_btn:hover { background-color:#ebba78; }
-    .sns_stream_skin2 .btn_more span.point_btn:hover { background-color:#ebba78; }
-    .sns_stream_skin3 .btn_more span.point_btn:hover { background-color:#ebba78; }
-    .sns_stream_skin4 .btn_more span.point_btn:hover { background-color:#ebba78; }
-    .sns_stream_skin5 .btn_more span.point_btn:hover { background-color:#ebba78; }
-
-/* 메인 회원관리 앱 */
-    .DUBU_Members_s150319001001 .login_page .box_btn_loginon .btn_comm.btn_logout:hover { background-color:#ebba78; }
-    .DUBU_Members_t150320001001 .login_page .box_btn_loginon .btn_comm.btn_logout:hover { background-color:#ebba78; }
-    .DUBU_Members_c170203001001 .login_page .box_btn_loginon .btn_comm.btn_logout:hover { background-color:#ebba78; }
-    .DUBU_Members_i170213001001 .login_page .box_btn_loginon .btn_comm.btn_logout:hover { background-color:#ebba78; }
-    .DUBU_Members_m170313001001 .login_page .box_btn_loginon .btn_comm.btn_logout:hover { background-color:#ebba78; }
-    .DUBU_Members_s171127001001 .login_page .box_btn_loginon .btn_comm.btn_logout:hover { background-color:#ebba78; }
-    .DUBU_Members_z180726001001 .login_page .box_btn_loginon .btn_comm.btn_logout:hover { background-color:#ebba78; }
-
-/* 템플릿 공통 */
-.point_bd_bottom { border-color:#515c00; }
-
-/* 템플릿 공통 */
-.point_sub_menu { background-color:#f1f6f9; }
-
-/* 템플릿 공통 */
-.point_section_bd { border-color:#0bb5a9; }
-
-/* 템플릿 공통 */
-.header_nav_bg { background-color:#ffffff; }
-
-/* 네비게이션 */
-#mobile_mainmenu h3 > a{ color:#ffffff; }
-#mobile_mainmenu .depth1 a.on.point_hover_txt { color:#ffffff; }
-.depth1:hover > a { color:#ffffff; }
-.depth1:hover > a.point_hover_txt { color:#ffffff; }
-#mobile_mainmenu .depth2 > ul > li:hover > a{ color:#ffffff; }
-#mobile_mainmenu .depth3 > ul > li:hover > a{ color:#ffffff; }
-#main_menu .gnb .depth1:hover > a { color:#ffffff; }
-
-/* 네비게이션 */
-#main_menu .point_hover_bg:hover { background-color:#cc9964; }
-#main_menu .gnb .depth1.active.point_hover_bg { background-color:#cc9964; }
-#main_menu .gnb .depth1:hover > a { background-color:#cc9964; }
-.box_mobile_hmenu > li:hover > a { color:#cc9964;  }
-
-/* 네비게이션 */
-#main_menu .gnb .depth2.point_nav_bg .depth3.point_nav_bg { background-color:#144990; }
-#main_menu .depth2 li:hover > .depth3{background-color:#144990;}
-
-
-/* 네비게이션 */
-.point_nav_bg { background-color:#cc9964; }
-
-/* 네비게이션 */
-#main_menu .point_section_bd { border-color:#e6e6e6; }
-
-/* 네비게이션 */
-#main_menu .gnb .depth1 > a {color:#ffffff;}
-
-/* m170313001001 (두부펜션) */
-.section_txt p { color:#ffffff; }
-
-/* 네비게이션 */
-#main_menu .gnb .depth2.point_nav_bg { background-color:#ffffff; }
-
-/* 네비게이션 */
-#main_menu .gnb ul.depth2.point_nav_bg li:hover { background-color:#6aa3a2; }
-
-/* 네비게이션 */
-#main_menu .gnb .depth2.point_nav_bg > li > a { color:#999999; }
-
-/* 네비게이션 */
-#main_menu .gnb .depth2.point_nav_bg > li:hover > a { color:#cc9964; }
-
-/* 네비게이션 */
-#main_menu .gnb .depth2.point_nav_bg li > .depth3 li:hover { background-color:#0d0d0d; }
-
-/* 네비게이션 */
-#main_menu .gnb .depth3.point_nav_bg > li > a { color:#999999; }
-
-/* 네비게이션 */
-#main_menu .gnb .depth3.point_nav_bg > li:hover > a { color:#cc9964; }
-
-/* 헤더메뉴 */
-#header_menu li a { color:#666666; }
-
-
-/* 헤더메뉴 */
-#header_menu li.link_home a.point_bd { border-color:#2c8cbd; }
-
-/* 헤더메뉴 */
-.header-section-bg{background-color:#36a9e3;}
-
-/* 헤더메뉴 */
-.sub_depth li.active >a.point_color { color:#cc9964; }
-#sub_menu .sub_depth .depth3 li:hover a { color:#cc9964; }
-.sub_depth .depth3 .active >a{ color:#cc9964; }
-
-/* m170313001001 (두부펜션) */
-.contact_point_bg { background-color:#cc9964; }
-.contact_point_color { color:#cc9964; }
-
-/* 서브메뉴 */
-#sub_menu .sub_menu_title h1 { color:#98a4b0; }
-
-/* 서브메뉴 */
-#sub_menu .sub_depth > li > a{ color:#666666; }
-
-/* 서브메뉴 */
-#sub_menu .sub_depth > li:hover> a { color:#cc9964; background-color:#6ba3a2; }
-#sub_menu .sub_depth > li.active > a{ color:#cc9964; background-color:#6ba3a2;}
-
-/* 로그인 페이지 */
-.member_page .btn_comm.point_btn { background-color:#cc9964; border-color:#0bb5a9; }
-
-
-/* 마이페이지 */
-.member_page .lnb_mypage li.active { border-top-color:#cc9964;}
-.lnb_mypage li.active a.point_bg:after { background-color:#cc9964; }
-.lnb_mypage li.active a.point_color { color:#cc9964; }
-
-
-
-/* 풋터 */
-.footer_point_txt #copyright p, .footer_point_txt #copyright a{ color:#999999; }
-
-/* 게시판 앱 공통 */
-.board_main .tab_list.active.point_bg,
-.gallery_main .tab_list.active.point_bg{ background-color:#cc9964; }
-
-/* 메인 게시판 */
-.webzine_main .webzine_main_header .tab_box .tab_list.active{ background-color:#cc9964; }
-
-/* 메인 게시판 */
-.webzine_main .tab_list.active a.link_more.point_board_more{ background-color:#0bb5a9; }
-
-/* c170203001001 (두부사랑치과) - 게시판 앱 */
-.DUBU_Board_c170203001001 .board_main .tab_box .tab_info .tab_list.active,
-.DUBU_Board_c170203001001 .webzine_main .tab_box .tab_info .tab_list.active,
-.DUBU_Board_c170203001001 .gallery_main .tab_box .tab_info .tab_list.active{border-color:#b4814d !important;}
-
-/* c170203001001 (두부사랑치과) - 게시판 앱 */
-.DUBU_Board_c170203001001 .board_main .tab_list.active a.link_more.point_board_more,
-.DUBU_Board_c170203001001 .webzine_main .tab_list.active a.link_more.point_board_more,
-.DUBU_Board_c170203001001 .gallery_main .tab_list.active a.link_more.point_board_more{ background-color:#b4814d !important;}
-
-/* m170313001001 (두부펜션) */
-.section1_point_bg { background-color:#f0f6f8; }
-
-/* m170313001001 (두부펜션) */
-.section2_point_bg { background-color:#f0f6f8; }
-
-
-
-/* c181129001001 건축 추가 */
-
-
-.border-theme:hover{color:#ebba78;} 
-.slide_items.button.point_bd:hover:after,
-.slide_items.button.point_bd:hover:before{border-color: !important;}
-
-/* u200921001001 Quadri Coffee */
-.DUBU_Board_u200921001001 .tab_info .tab_list:hover .link_more::before { background-color: #cc9964; }
-.DUBU_Board_u200921001001 .tab_info .tab_list:hover .link_more::after { background-color: #cc9964; }
-.DUBU_Board_u200921001001 .tab_info .tab_list.active .link_more::before { background-color: #cc9964; }
-.DUBU_Board_u200921001001 .tab_info .tab_list.active .link_more::after { background-color: #cc9964; }
-.DUBU_Board_u200921001001 .tab_list.active::after { background-color: #cc9964; }
-.DUBU_Board_u200921001001 .tab_list:hover::after { background-color:#cc9964; }
-.DUBU_Board_u200921001001 .box_agrees .person_info .pc_hidden div:first-child { color:#cc9964; }
-.DUBU_Board_u200921001001 .gallery_main div.gallery_contents { background-color: rgba(204, 153, 100, 0.8); }
-.DUBU_Members_u200921001001 .login_page .member_links a.link_join { color: #cc9964 }
-.DUBU_Members_u200921001001 .login_page .btn_logout { background-color: #cc9964 }
-.DUBU_Members_u200921001001 .login_page .btn_logout:hover,
-.DUBU_Members_u200921001001 .login_page .btn_logout:focus { background-color: #ebba78 }
-.DUBU_Members_u200921001001 .box_active_info .num_active_info { color: #cc9964 }
-.DUBU_Members_u200921001001 .social_login_wrap .title_txt::before { background-color: #cc9964 }
-.DUBU_Members_u200921001001 .social_login_wrap .title_txt::after { background-color: #cc9964 }
-
-/* common */
-.ico_file { background-color: #cc9964 }
-.box_msg_satisfy ul.list_msg_satisfy li.active::before { background-color: #cc9964 }
-.box_msg ul.list_msg_satisfy li.active::before { background-color: #cc9964 }
-.wrap_btn_agree .btn_comm.btn_primary.point_btn:focus { background-color:#ebba78; }
-.slideshow.skin_type10 ol li.active span { background-color: #cc9964 }
-
-/* social_account */
-.social_account .title_txt::before { background-color: #cc9964 }
-.social_account .title_txt::after { background-color: #cc9964 }
-
-/* board_page */
-.board_page .mo_paginator .page_lst { color: #cc9964 }
-.board_page span.txt_s_title { color: #cc9964 }
-.board_page .form_add dt { color: #cc9964 }
-.board_page .board_secret { color: #cc9964; }
-.board_page .list_thumb_img li:hover::after { border-color:#cc9964; }
-.board_page .list_btn_share a.url_copy { background-color:#cc9964; }
-.board_page .wrap_gallery_contents .gallery_contents.point_bg { background-color: rgba(204, 153, 100, 0.8); }
-.board_page button.btn_img_delete { background-color:#cc9964; }
-.board_page button.btn_zip_code { background-color:#cc9964; }
-.board_page button.btn_layer_apply { background-color: #cc9964 }
-.board_page button.btn_modify { background-color: #cc9964 }
-.board_page button.btn_modify:hover { background-color: #ebba78 }
-.board_page button.btn_modify:focus { background-color: #ebba78 }
-.board_page button.btn_list:focus { background-color: #ebba78 }
-.board_page button.btn_write:focus { background-color:#ebba78; }
-.board_page button.btn_list:focus { background-color:#ebba78; }
-
-/* member_page */
-.member_page p.dubu_login a { color: #cc9964 }
-.member_page .pwdset_id { color: #cc9964 }
-.member_page .check_id { color:#cc9964; }
-.member_page div.box_mypage dd { color: #cc9964 }
-.member_page .account_check .user_id { color:#cc9964; }
-.member_page .switch input:checked + span { background-color: #cc9964; border-color: #cc9964 }
-.lnb_mypage li.active a { color: #cc9964 }
-.lnb_mypage li.active a::after { background-color: #cc9964 }
-.btn_sleepok_login { background-color: #cc9964 }
-.btn_sleepok_login:hover,
-.btn_sleepok_login:focus { background-color: #ebba78 }
-.dues_history li::after { background-color: #cc9964 }
-
-/* mobile_mainmenu */
-#mobile_mainmenu .gnb .depth_open { color: #cc9964 }
-
-/* sub_menu */
-#sub_menu li:hover > a { color: #cc9964 }
-#sub_menu li a:hover { color: #cc9964 }
-#sub_menu .depth3 li::before { background-color: #cc9964 }
-
-/* payment */
-.dues_payment_list_box div.dues_payment_list_price { color: #cc9964 }
-
-/* mypage review */
-.your_page .your_page_qa_right { background-color:#cc9964; }
-
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, minimum-scale=1, user-scalable=yes">
+	<meta name="author" content="한국거래소" />
+	<meta name="description" content="증권·파생상품의 시장정보(Marketdata), 공매도정보, 투자분석정보(SMILE) 등 한국거래소의 정보데이터를 통합하여 제공 서비스" />
+	<meta name="keywords" content="정보데이터시스템 데이터시스템 한국거래소 통계 KRX통계 한국거래소정보 시장정보 주식 한국거래소데이터 KRX 한국거래소공매도 공매도 투자분석정보 증권투자정보포털 코스닥기술분석보고서 분석보고서" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="KRX 정보데이터시스템" />
+	<meta property="og:description" content="증권·파생상품의 시장정보(Marketdata), 공매도정보, 투자분석정보(SMILE) 등 한국거래소의 정보데이터를 통합하여 제공 서비스" />
+	<meta name="naver-site-verification" content="222ad2f14a7a611c5494c898d311a8d7b61ba13e"/>
+	<meta name="robots" content="index,follow" >
+	
+		
+			
+				
+				
+					
+				
+			
+		
+	
+	<title>수익률 상관관계 - KRX | 정보데이터시스템</title>
+	<script type="text/javascript" src="/inc/lib/jquery/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/lib/jquery/jquery-ui-1.12.1.custom.min.css" />
+<script type="text/javascript" src="/inc/lib/jquery/jquery-ui-1.12.1.custom.min.js"></script>
+<script type="text/javascript" src="/inc/lib/scroll/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="/inc/lib/scroll/slimScrollHorizontal.js?v=20220108_2"></script>
+<script type="text/javascript" src="/inc/lib/lodash/lodash-3.10.1.min.js"></script>
+
+      <script type="text/javascript">
+      	if (!Object.assign) Object.assign = _.assign;
+      </script>
+      
+<script type="text/javascript" src="/WEB-APP/webponent/ci/agent.js"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/ci/util.js"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/ci/ui.js"></script>
+<!-- getDevice not defined --><script type="text/javascript" src="/inc/js/mdc.js?v=20231229_2 "></script>
+<script type="text/javascript" src="/inc/js/mdc.lang.js?v=20231229_2 "></script>
+<script type="text/javascript" src="/inc/js/mdc.module.js?v=20231229_2 "></script>
+<script type="text/javascript" src="/inc/js/mdc.util.js?v=20231229_2 "></script>
+<script type="text/javascript" src="/inc/js/mdc.layer.js?v=20231229_2 "></script>
+<script type="text/javascript" src="/inc/js/mdc.validate.js?v=20231229_2 "></script>
+
+      <script type="text/javascript">
+      	/*
+				if (ci.agent.isMobile) {
+					if (location.pathname.indexOf('/contents/MDC/') > -1) location.href='/contents/MMC/MAIN/main/index.cmd';
+				} else {
+					if (location.pathname.indexOf('/contents/MMC/') > -1) location.href='/contents/MDC/MAIN/main/index.cmd';
+				}
+				*/
+      	mdc.lang.setLocale(document.querySelector('html').lang);
+				mdc.lang.setResources();
+
+				if (!location.origin) {
+					location.origin = location.protocol + '//' + location.hostname;
+					if (location.port) location.origin += ':' + location.port;
+				}
+      </script>
+      
+ 
+	<link rel="stylesheet" type="text/css" href="/WEB-APP/webponent/dialog/dialog.css" />
+<link rel="stylesheet" type="text/css" href="/WEB-APP/webponent/dialog/layerlink.css" />
+<link rel="stylesheet" type="text/css" href="/templets/mdc_hard/css/common.css?v=20231229_2 " />
+<link rel="stylesheet" type="text/css" href="/templets/mdc_hard/css/dev.css?v=20231229_2 " />
+<link rel="stylesheet" type="text/css" href="/inc/lib/calendar/css/pc/calendar.css?v=20231229_2 " />
+<link rel="stylesheet" type="text/css" href="/WEB-APP/webponent/grid2.0/css/webponent.grid.css" />
+<link rel="stylesheet" type="text/css" href="/WEB-APP/webponent/grid2.0/css/webponent.grid.flat.css?v=20230707_5" />
+<link rel="stylesheet" type="text/css" href="/templets/mdc/css/grid.css?v=20230707_5" />
+<link rel="stylesheet" type="text/css" href="/WEB-APP/webponent/grid2.0/css/webponent.pagingUI.css" />
+<link rel="stylesheet" type="text/css" href="/WEB-APP/webponent/grid2.0/css/webponent.Tree.css" />
+<link rel="stylesheet" type="text/css" href="/inc/lib/ci-grid/css/ci-grid.css?v=20231229_2 " />
+<link rel="stylesheet" type="text/css" href="/WEB-APP/webponent/chart2.0/lib/chart/webponent.chart.css" />
+<link rel="stylesheet" type="text/css" href="/inc/lib/d3/custom-chart.css" />
+<link rel="stylesheet" type="text/css" href="/inc/lib/Nwagon/Nwagon.css" />
+<script type="text/javascript" src="/WEB-APP/webponent/dialog/dialog.js?v=20230707_5"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/dialog/layerlink.js"></script>
+<script type="text/javascript" src="/templets/mdc_hard/js/common.js?v=20231229_2 "></script>
+<script type="text/javascript" src="/inc/lib/calendar/calendar.js?v=20231229_2 "></script>
+<script type="text/javascript" src="/webponent.licenseKey.js?v=20230707_5"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/grid2.0/external/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/grid2.0/webponent.grid.js?v=20230707_5"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/grid2.0/external/webponent.pagingUI.js"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/grid2.0/webponent.grid.UIplugin.js"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/grid2.0/external/json2.min.js"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/grid2.0/external/lz-string.js"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/grid2.0/webponent.report.js"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/grid2.0/webponent.grid.AjaxTree.js"></script>
+<script type="text/javascript" src="/inc/lib/ci-grid/js/ci-grid-1.00.0.js?v=20231229_2 "></script>
+<script type="text/javascript" src="/webponent.licenseKey.js?v=20230707_5"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/comm/raphael.js"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/comm/webponent.comm.common.js"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/comm/webponent.comm.export.js"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/chart/webponent.chart.js?v=20230707_5"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/chart/webponent.chart.style.js?v=20230707_5"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/chart/webponent.chart.option.js?v=20230707_5"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/chart/webponent.chart.series.js"></script>
+<script type="text/javascript" src="/inc/lib/d3/d3.v3.min.js"></script>
+<script type="text/javascript" src="/inc/lib/d3/d3.v4.min.js"></script>
+<script type="text/javascript" src="/inc/lib/d3/queue.v1.min.js"></script>
+<script type="text/javascript" src="/inc/lib/d3/topojson.v1.min.js"></script>
+<script type="text/javascript" src="/inc/lib/Nwagon/Nwagon.js"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.horizon.js?v=20230707_5"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.korea.js?v=20230707_5"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.pie.js?v=20230707_5"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.scatterplot.js?v=20230707_5"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.treemap.js?v=20230707_5"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.radar.js?v=20230707_5"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.shaped.js?v=20230707_5"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.gauge.style.js?v=20230707_5"></script>
+<script type="text/javascript" src="/WEB-APP/webponent/chart2.0/lib/visual/webponent.visual.angular.js?v=20230707_5"></script>
+<script type="text/javascript" src="/inc/lib/atoh/atoh.js"></script>
+
+	
+
+	<style type="text/css">
+		.tab.type02_fix.scrolldown li {margin-right:1px;width:calc((100% - 6px)/5);}
+		.tab.type03.scrolldown li {width:calc((100% - 3px)/2);}
+	</style>
+</head>
+<body>
+<div class="wrap">
+	<header>
+		<h1><a href="/contents/MDC/HARD/hardController/MDCHARD001.cmd"><img src="/templets/mdc_hard/img/logo.png" alt=""></a></h1>
+		<div class="btnLang">
+			<button type="button" onclick="kor();" class="btn_lang on"><span>KOR</span></button>
+			<button type="button" onclick="eng();" class="btn_lang"><span>ENG</span></button>
+	    </div>
+		<form id="tempFrm" action="/contents/MDC/HARD/hardController/changeLanguage.cmd" method="post">
+			<input type="hidden" name="language" value=""/>
+		</form>
+		<script>
+		function eng(){
+			mdc.util.setCookie("lang","en",365);
+			$("#tempFrm input").val('en');
+			$("#tempFrm").submit();
+		}
+		function kor(){
+			$("#tempFrm input").val('ko');
+			mdc.util.setCookie("lang","ko_KR",365);
+			$("#tempFrm").submit();
+			
+		}
+		</script>
+		<button><img src="/templets/mdc_hard/img/menu_tit1.png" alt="전체메뉴 열기"><img src="/templets/mdc_hard/img/menu_tit2.png" alt="전체메뉴 닫기"></button>
+		<div class="header_toggles">
+			<div>
+				
+					
+						<h5>서비스 소개</h5>
+						<p>
+							
+								
+								
+								
+									
+									
+									
+									
+									
+									
+									
+									
+										<a href="/contents/MDC/INFO/informationController/MDCINFO001.cmd" target="_blank">정보데이터시스템 소개</a>
+									
+								
+							
+								
+								
+								
+									
+									
+									
+									
+									
+									
+									
+									
+										<a href="/contents/MDC/INFO/informationController/MDCINFO002.cmd" target="_blank">이용안내</a>
+									
+								
+							
+								
+								
+								
+									
+									
+									
+									
+									
+									
+									
+									
+										<a href="/contents/MDC/INFO/informationController/MDCINFO003.cmd" target="_blank">마켓데이터 이용약관</a>
+									
+								
+							
+								
+								
+								
+									
+									
+									
+									
+									
+									
+									
+									
+										<a href="http://open.krx.co.kr/contents/OPN/05/05000000/OPN05000000.jsp" target="_blank">보도자료</a>
+									
+								
+							
+								
+								
+								
+									
+									
+									
+									
+									
+									
+									
+									
+										<a href="/contents/MDC/COMS/board/MDCCOMS010_S1.cmd?boardId=MDCINFO004" target="_blank">공지사항</a>
+									
+								
+							
+						</p>
+					
+				
+					
+						<h5>통계</h5>
+						<p>
+							
+								
+								
+								
+									
+									
+										<a href="/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201" target="_blank">기본 통계</a>
+									
+									
+									
+									
+									
+									
+									
+								
+							
+								
+								
+								
+									
+									
+									
+										<a href="/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0202" target="_blank">이슈 통계</a>
+									
+									
+									
+									
+									
+									
+								
+							
+								
+								
+								
+									
+									
+									
+									
+										<a href="/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203" target="_blank">공매도 통계</a>
+									
+									
+									
+									
+									
+								
+							
+								
+								
+								
+									
+									
+									
+									
+									
+										<a href="/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0204" target="_blank">통계DB 정보</a>
+									
+									
+									
+									
+								
+							
+								
+								
+								
+									
+										<a href="javascript:window.open('/contents/MDC/STAT/dataDic/dictionary/index.cmd?menuId=MDC0205', 'MDC0205', 'width=1000,height=800,resizable=yes'); void(0);">정보데이터 종합사전</a>
+									
+									
+									
+									
+									
+									
+									
+									
+								
+							
+						</p>
+					
+				
+					
+						<h5>쉽게 보는 통계</h5>
+						<p>
+							
+								
+								
+								
+									
+									
+									
+									
+									
+									
+										<a href="/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0301" target="_blank">주요 통계</a>
+									
+									
+									
+								
+							
+								
+								
+								
+									
+									
+									
+									
+									
+									
+									
+										<a href="/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0302" target="_blank">순위 통계</a>
+									
+									
+								
+							
+								
+								
+								
+									
+									
+									
+									
+									
+									
+									
+									
+										<a href="/contents/MDC/EASY/visualController/MDCEASY001.cmd" target="_blank">시각화 통계</a>
+									
+								
+							
+						</p>
+					
+				
+					
+						<h5>깊이 있는 통계</h5>
+						<p>
+							
+								
+								
+								
+									
+									
+									
+									
+									
+									
+									
+									
+										<a href="/contents/MDC/HARD/hardController/MDCHARD002.cmd" target="_blank">기업분석보고서</a>
+									
+								
+							
+								
+								
+								
+									
+									
+									
+									
+									
+									
+									
+									
+										<a href="/contents/MDC/HARD/hardController/MDCHARD008.cmd" target="_blank">투자분석정보</a>
+									
+								
+							
+								
+								
+								
+									
+									
+									
+									
+									
+									
+									
+									
+										<a href="http://esgportal.kr" target="_blank">ESG 정보</a>
+									
+								
+							
+								
+								
+								
+									
+									
+									
+									
+									
+									
+									
+									
+										<a href="/contents/MDC/HARD/hardController/MDCHARD054.cmd" target="_blank">이용안내</a>
+									
+								
+							
+						</p>
+					
+				
+					
+						<h5>간행물</h5>
+						<p>
+							
+								
+								
+								
+									
+									
+									
+									
+									
+									
+									
+									
+										<a href="/contents/MDC/MGZN/publication/MDCMGZN001.cmd?menuId=MDCMGZN001" target="_blank">시장동향</a>
+									
+								
+							
+								
+								
+								
+									
+									
+									
+									
+									
+									
+									
+									
+										<a href="/contents/MDC/MGZN/publication/MDCMGZN001.cmd?menuId=MDCMGZN014" target="_blank">발간자료</a>
+									
+								
+							
+						</p>
+					
+				
+					
+						<h5>데이터 상품</h5>
+						<p>
+							
+								
+								
+								
+									
+									
+									
+									
+									
+									
+									
+									
+										<a href="/contents/MDC/DATA/datasale/index.cmd?viewNm=MDCDATA001" target="_blank">데이터 구입</a>
+									
+								
+							
+								
+								
+								
+									
+									
+									
+									
+									
+									
+									
+									
+										<a href="/contents/MDC/DATA/datasale/index.cmd?viewNm=MDCDATA400" target="_blank">데이터 분배</a>
+									
+								
+							
+								
+								
+								
+									
+									
+									
+									
+									
+									
+									
+									
+										<a href="/contents/MDC/DATA/datasale/index.cmd?viewNm=MDCDATA403" target="_blank">지수 라이센스</a>
+									
+								
+							
+						</p>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+			</div>
+		</div>
+		<ul class="jsDepth2">
+			
+				
+			
+				
+			
+				
+			
+				
+					
+						
+							
+								<li >
+									<a href="/contents/MDC/HARD/hardController/MDCHARD002.cmd">기업분석보고서</a>
+								</li>
+								
+							
+						
+							
+								<li class="on">
+									<a href="/contents/MDC/HARD/hardController/MDCHARD008.cmd">투자분석정보</a>
+								</li>
+								
+									
+									
+										
+									
+									
+								
+							
+						
+							
+								<li >
+									<a href="http://esgportal.kr">ESG 정보</a>
+								</li>
+								
+							
+						
+							
+								<li >
+									<a href="/contents/MDC/HARD/hardController/MDCHARD054.cmd">이용안내</a>
+								</li>
+								
+							
+						
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		</ul>
+
+		
+			
+		
+			
+		
+			
+		
+			
+				
+					
+						
+					
+						
+							
+								<div class="tab jsDepth3 type02_fix on">
+									<ol>
+										
+											
+												<li class="on">
+
+													<a href="/contents/MDC/HARD/hardController/MDCHARD008.cmd"  >가격정보
+														
+															
+														
+															
+																<span>수익률 상관관계</span>
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													</a>
+												</li>
+											
+										
+											
+												<li >
+
+													<a href="/contents/MDC/HARD/hardController/MDCHARD023.cmd"  >거래정보
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													</a>
+												</li>
+											
+										
+											
+												<li >
+
+													<a href="/contents/MDC/HARD/hardController/MDCHARD028.cmd"  >추세정보
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													</a>
+												</li>
+											
+										
+											
+												<li >
+
+													<a href="/contents/MDC/HARD/hardController/MDCHARD036.cmd"  >기업정보
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													</a>
+												</li>
+											
+										
+											
+												<li >
+
+													<a href="/contents/MDC/HARD/hardController/MDCHARD046.cmd"  >참고정보
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													</a>
+												</li>
+											
+										
+										
+											
+											
+												
+													
+														
+															
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													
+												
+													
+												
+													
+												
+													
+												
+													
+												
+											
+										
+									</ol>
+								</div>
+							
+						
+					
+						
+					
+						
+					
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+
+
+		<div class="tab type02">
+			<ol>
+				
+					
+				
+					
+				
+					
+				
+					
+						
+							
+								
+									
+								
+							
+								
+									
+										
+											
+												<li class="on">
+													<a href="/contents/MDC/HARD/hardController/MDCHARD008.cmd">가격정보
+														
+															
+														
+															
+																<span>수익률 상관관계</span>
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													</a>
+													<div>
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD008.cmd">가격 유사도 분석</a></p>
+															
+														
+															
+																<p class="on"><a href="/contents/MDC/HARD/hardController/MDCHARD011.cmd">수익률 상관관계</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD014.cmd">상대가격 평균 회귀</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD017.cmd">VWAP</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD020.cmd">최우선매수(매도)호가 상승(하락) 비율</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD021.cmd">체결가 상향(하향) 비율</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD022.cmd">최종최우선매도(매수)호가 상승(하락) 비율</a></p>
+															
+														
+													</div>
+												</li>
+											
+										
+											
+												<li >
+													<a href="/contents/MDC/HARD/hardController/MDCHARD023.cmd">거래정보
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													</a>
+													<div>
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD023.cmd">거래빈도·거래규모</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD024.cmd">수정 거래회전율</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD025.cmd">거래대금·시가총액비율</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD026.cmd">매수·매도불균형</a></p>
+															
+														
+													</div>
+												</li>
+											
+										
+											
+												<li >
+													<a href="/contents/MDC/HARD/hardController/MDCHARD028.cmd">추세정보
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													</a>
+													<div>
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD028.cmd">모멘텀</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD029.cmd">단기·장기반전</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD031.cmd">맥클레란 오실레이터</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD032.cmd">트린지수</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD033.cmd">계절효과</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD034.cmd">폭(Breadth)</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD035.cmd">코팍커브</a></p>
+															
+														
+													</div>
+												</li>
+											
+										
+											
+												<li >
+													<a href="/contents/MDC/HARD/hardController/MDCHARD036.cmd">기업정보
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													</a>
+													<div>
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD036.cmd">실적개선랭킹</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD038.cmd">초과이익 지속성</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD039.cmd">매출액이익 변동성</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD040.cmd">총자산이익 변동성</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD041.cmd">성장성 측정지표</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD042.cmd">규모 측정지표</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD043.cmd">수익성 측정지표</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD044.cmd">잠재력 측정지표</a></p>
+															
+														
+													</div>
+												</li>
+											
+										
+											
+												<li >
+													<a href="/contents/MDC/HARD/hardController/MDCHARD046.cmd">참고정보
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													</a>
+													<div>
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD046.cmd">Treemap</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD047.cmd">이벤트 효과분석</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD048.cmd">기업 주요 변동사항</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD049.cmd">종목별 시장경보 지정 정보</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD050.cmd">ESG 평가 등급</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD051.cmd">샤프비율</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD052.cmd">투자심리선</a></p>
+															
+														
+															
+																<p ><a href="/contents/MDC/HARD/hardController/MDCHARD053.cmd">종목별 외국인 국적 분류</a></p>
+															
+														
+													</div>
+												</li>
+											
+										
+									
+								
+							
+								
+									
+								
+							
+								
+									
+								
+							
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+			</ol>
+		</div>
+	</header>
+
+	<section class="title">
+		<h3><span>수익률 상관관계<button></button></span></h3>
+		<p>
+			<img src="/templets/mdc_hard/img/ico_home.png" alt="">
+			
+				
+			
+				
+			
+				
+			
+				
+					
+						
+					
+						
+							투자분석정보
+							
+								
+									&nbsp;/&nbsp;
+									가격정보
+									
+									
+										
+									
+										
+											&nbsp;/&nbsp;<em>수익률 상관관계</em>
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+					
+						
+					
+						
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		</p>
+	</section>
+	 
+	 
+	
+		<div class="describe ">
+			
+			 
+				<div>
+					<span>수익률 상관관계</span>
+					<p>조회 대상 종목과 여타 종목간의 과거 수익률 상관관계를 산출하여 상관관계가 높은 종목을 표출합니다.<br>수치가 1에 가까울수록 유사한 패턴을 나타내며, 수치가 0에 가까울수록 상이한 패턴을 지닙니다.</p>
+				</div>
+			
+
+		</div>
+	
+
+	
+
+
+
+
+
+
+
+
+ 
+ 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="list_arrow jsPdfHide">
+  
     
-    .ddCombobox .ddChild li:hover { background-color: rgba(204, 153, 100, 0.7); }
-
-   
-        .DUBU_Board_u200921001001 span.ico_proceeding { background-color: hsl(40, 72%, 73%); }
-    .DUBU_Board_u200921001001 span.proceeding_0 { background-color: hsl(40, 72%, 57%); }
-    .DUBU_Board_u200921001001 span.proceeding_4 { background-color: hsl(40, 72%, 30%); }
-    .board_page span.ico_proceeding { background-color: hsl(40, 72%, 73%); }
-    .board_page span.proceeding_0 { background-color: hsl(40, 72%, 57%); }
-    .board_page span.proceeding_4 { background-color: hsl(40, 72%, 30%); }
-
-    </style>
-    <link rel="stylesheet" type="text/css" id="webfont_sheet" href="https://fonts.dubuplus.com/css?family=Noto Sans KR,Nanum Gothic">
-<link rel="stylesheet" type="text/css" href="/template/s171127001001/layout/main/layout-latest.css?1684093964">
-<link rel="stylesheet" type="text/css" href="/template/s171127001001/layout/main/application-latest.css?1684093964">
+  
+    
+  
+    
+  
+    
+      
         
-    <script type="text/javascript" src="/inc/js/external.min.js"></script>
+          
+        
+          
+            
+              
+                
+                  
+                    
+                      
+                    
+                      
+                        
+                          
+                            
+                              <li class="on"><a href="/contents/MDC/HARD/hardController/MDCHARD011.cmd">상위종목</a></li>
+                            
+                          
+                            
+                              <li ><a href="/contents/MDC/HARD/hardController/MDCHARD012.cmd">차트</a></li>
+                            
+                          
+                            
+                              <li ><a href="/contents/MDC/HARD/hardController/MDCHARD013.cmd">종목비교</a></li>
+                            
+                          
+                        
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                  
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            
+          
+        
+          
+        
+          
+        
+      
     
-            <script type="text/javascript" src="/inc/plugins/NuriMedia/js/nurimedia.js"></script>
-            <script type="text/javascript" src="/inc/js/common.js"></script>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</ul>
 
-    <script type="text/javascript" src="/inc/application/dubu_board/js/main.min.js"></script>
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="/inc/external/html5shiv.js"></script>
-    <script type="text/javascript" src="/inc/external/respond.min.js"></script>
-    <![endif]-->
 
-    </head>
-<body >
-<div class="mobile_wrap body_point_bg">
-	<div class="mobile_wrap_overlay"></div>
-	<div id="mobile_hmenu" class="module mobile_hmenu point_bg">    <div class="tit_m_hmenu">        <button type="button" class="bth_m_hmenu point_bg">닫기</button>        <div class="txt_m_hmenu">MY MENU</div>    </div>        <ul class="box_mobile_hmenu">        <li class="link_home">            <a href="javascript:goHome();">Home</a>        </li>        <li class="link_login" style="display:none;">            <a href="/login">로그인</a>        </li>        <li class="link_join" style="display:none;">            <a href="/join">회원가입</a>        </li>        <li class="link_mydues" style="display:none;">            <a href="/mypage/mydues">납부내역</a>        </li>        <li class="link_sitemap" style="display:none;">            <a href="/sitemap">사이트맵</a>        </li>        <li class="link_cus1635473257">            <a href="/20">공지사항</a>        </li>        <li class="link_cus1635473269">            <a href="mailto:crinoid@dgu.ac.kr">E-mail</a>        </li>        <li class="link_admin">            <a href="/admin" target="_parent">관리자</a>        </li>    </ul></div>	
+
+
+
+
+
+  <section class="content type02">
+
+    
+
+
+
+
+
+
+
+
+
+
+<form class="CI-MDI-COMPONENT-WRAP" name="MDCHARD011_FORM" id="MDCHARD011_FORM" action="null" method="post" onsubmit="return false;">
+	<input type="hidden" name="locale" value="ko_KR"/>
+  
+
+
+        <div class="list_search_term">
+          <table>
+            <colgroup>
+              <col style="width:90px;">
+              <col>
+            </colgroup>
+            <tr>
+              <th scope="col"><span>종목명</span></th>
+              <td>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="searchBoxWrap">
+  <div class="search">
+    <p>
+      <input type="text" id="tboxisuCd_finder_stkisu0" name="tboxisuCd_finder_stkisu0" style="width: 350px;" autocomplete="off" value="005930/삼성전자" title="주식 종목 검색"  >
+      <img name="btnisuCd_finder_stkisu0" id="btnisuCd_finder_stkisu0" src="/pub/img/btn_dbg.png" alt="검색팝업">
+    </p>
+  </div>
+  
+</div>
+<input type="hidden" name="isuCd" id="isuCd_finder_stkisu0" value="KR7005930003" />
+<input type="hidden" name="isuCd2" id="isuCd_finder_stkisu02" value="KR7005930003" />
+<input type="hidden" name="codeNmisuCd_finder_stkisu0" id="codeNmisuCd_finder_stkisu0" value="삼성전자" />
+<input type="hidden" name="param1isuCd_finder_stkisu0" id="param1isuCd_finder_stkisu0" value="ALL" />
+<input type="hidden" name="" id="" value="" />
+
+<script type="text/javascript">
+  mdc.module.setModule({
+    name: 'FINDER_COMPONENT_isuCd_finder_stkisu0',
+    init: 'init',
+    mdi: {
+      name: mdc.module.getMdiModuleName()
+    },
+    function: function (self, api) {
+      var $content = api.getModuleNode();
+      var $sel = $content.select;
+	    var locale = "ko_KR";
+
+      self.init = function () {
+        
+      };
+
+      
+
+      $sel('#btnisuCd_finder_stkisu0').on('click', function () {
+
+        if($sel('#tboxisuCd_finder_stkisu0').val()==""){
+          self.openFinder(false);
+        }else{
+          self.openFinder(true);
+        }
+
+      });
+
+      $sel('#tboxisuCd_finder_stkisu0').on('keydown', function (e) {
+        if (13 == e.keyCode) {
+          if($sel('#tboxisuCd_finder_stkisu0').val()==""){
+            self.openFinder(false);
+          }else{
+            self.openFinder(true);
+          }
+
+        }
+      });
+
+      self.openFinder = function (isKeyDown) {
+        var s_tboxNmVal = '';
+
+        //검색텍스트박스값의 변경이 없을 경우 검색어 안넘어가도록 (전체 검색 개념)
+        var s_defaultVal = '005930/삼성전자';
+        var input = {
+          lang: 'ko_KR',
+          finderCd: 'finder_stkisu',
+          typeNo: '0'
+        };
+        var s_tbox = api.util.getFinderStorage(input);
+
+        if(s_tbox.tbox !== $sel('#tboxisuCd_finder_stkisu0').val() && s_defaultVal !== $sel('#tboxisuCd_finder_stkisu0').val()){
+          s_tboxNmVal = $sel('#tboxisuCd_finder_stkisu0').val();
+        }
+
+        var params = {
+          finderNo: '_finder_stkisu0',
+          finderCd: 'finder_stkisu',
+          typeNo: '0',
+          compValue: '',
+          param1 : $sel('#param1isuCd_finder_stkisu0').val(),
+          tboxId : 'tboxisuCd_finder_stkisu0',
+          tboxNm : s_tboxNmVal,
+          codeValId : 'isuCd_finder_stkisu0',
+          codeNmId : 'codeNmisuCd_finder_stkisu0',
+          pnlid : '',
+          disableCompValue: '',
+          initSearch: 'false'
+        };
+
+        if(!isKeyDown){
+          params.tboxNm = '';
+        }
+
+        if(mdc.validate.checkSearchText(params.tboxNm)){
+          //= (20201120, 김정삼) 자동검색 목록을 선택목록 엔터키 입력 시 검색기 팝업 하지 않는다.
+          //  >>> 개발담당자 로직 확인하자
+          var $searchAuto = $sel('.search-auto');
+          var visble = $searchAuto.is(':visible');
+          // 목록에 1개 있을 때 enter 키인시 선택
+          if ( visble && $searchAuto.find('li').length == 1 ) {
+            $searchAuto.find('li').addClass('on');
+          }
+          var $selLi = $searchAuto.find('li.on');
+
+          if ( visble && $selLi.length ) {
+            $('a', $selLi).click();
+
+            
+
+            return false;
+          }
+          //=/
+					
+					if(params.finderCd == "finder_drvetcidx"){
+	          mdc.layer.openModal({
+	              appendTo: $content.getNode(),
+	              className: 'pop_opened pop_opened1',
+	              id: 'jsLayer_finder_stkisu0',
+	              title: '주식 종목 검색',
+	              width: 563,
+	              height: 530,
+	              url: '/comm/finder/finder_stkisu.jsp',
+	              useCloseButton: false,
+	              ajaxOption: {data: params},
+	              focus: $(this),
+	              afterAppend: function () {
+	                api.module.getModule('FINDER_LAYER__finder_stkisu0').procInit();
+	              }
+                
+	            });
+					} else {          
+	          mdc.layer.openModal({
+	            appendTo: $content.getNode(),
+	            className: 'pop_opened pop_opened1',
+	            id: 'jsLayer_finder_stkisu0',
+	            title: '주식 종목 검색',
+	            width: 548,
+	            height: 'auto',
+	            url: '/comm/finder/finder_stkisu.jsp',
+	            useCloseButton: false,
+	            ajaxOption: {data: params},
+	            focus: $(this),
+	            afterAppend: function () {
+	              api.module.getModule('FINDER_LAYER__finder_stkisu0').procInit();
+	            }
+              
+	          });
+					}
+        }
+      };
+
+      
+      
+      var isEmptyCodeVal = false;
+      $sel('#tboxisuCd_finder_stkisu0').on('keyup', function (e) {
+        if ( e.keyCode != 13 && !isEmptyCodeVal) {
+
+          var s_defaultVal = '005930/삼성전자';
+          var input = {
+            lang: 'ko_KR',
+            finderCd: 'finder_stkisu',
+            typeNo: '0'
+          };
+          var s_tbox = api.util.getFinderStorage(input);
+
+          if(s_tbox.tbox === '' && s_defaultVal === ''){
+            isEmptyCodeVal = true;
+          }
+          else {
+            if(s_tbox.tbox !== $sel('#tboxisuCd_finder_stkisu0').val() && s_defaultVal !== $sel('#tboxisuCd_finder_stkisu0').val()){
+              $sel('#isuCd_finder_stkisu0').val("");
+              $sel('#isuCd_finder_stkisu02').val("");
+              isEmptyCodeVal = true;
+            }
+          }
+
+        }
+      });
+      
+    }
+  });
+
+
+
+  
+  $.fn.defaultAutocomplete = $.fn.autocomplete;
+
+  $.fn.autocomplete = function (options) {
+
+    var _this = this;
+    var isMouseUnder = false;
+
+    var config = {
+      'contextName' : 'output',
+      'viewCount' : 7,
+      'bldPath' : '',
+      'submit' : undefined,
+      'listFn' : undefined,
+      'className' : 'search-auto',
+      'submitClear' :  true,
+      'searchCookie' : false,
+      'searchCookieType' : '',
+      'enterSubmit' : false,
+      'param' : { }
+    };
+
+    if (options != null && options !== undefined) {
+      $.extend(config, options);
+    }
+
+    var $searchAuto = $('<div></div>', {
+      'class' : config.className,
+      'css' : {
+        'display' : 'none'
+      }
+    });
+
+    $(_this).after($searchAuto);
+
+    var submit = function (obj) {
+      if (config.submit) {
+        config.submit(obj);
+      }
+      $searchAuto.html('');
+      $searchAuto.hide();
+      if (config.submitClear) {
+        $(_this).val('');
+      }
+    };
+
+    $(_this).focusout(function () {
+      if (!isMouseUnder) {
+        $searchAuto.hide();
+      }
+    });
+
+    $(_this).keyup(function (e) {
+      if ((47 < e.keyCode && e.keyCode < 106) || (185 < e.keyCode && e.keyCode < 223) || (105 < e.keyCode && e.keyCode < 112) || 8 == e.keyCode || 46 == e.keyCode){
+        if (!config.searchCookie){
+          getSearchList();
+        }
+      }
+
+      if (13 == e.keyCode && config.enterSubmit) {
+        submit($searchAuto.find('li[data-selected=true]'));
+      }
+
+    });
+
+    $(_this).keydown(function (e) {
+      if(e.keyCode == 40) {
+        var selected = $searchAuto.find('li[data-selected=true]');
+        if (selected.length == 1) {
+          selected.removeAttr('data-selected');
+          selected.removeClass('on');
+
+          var next = selected.next();
+          next.attr('data-selected', 'true');
+          next.addClass('on');
+          $(_this).val(next.children('a').text());
+        } else {
+          var first = $searchAuto.find('li:first');
+          first.attr('data-selected', 'true');
+          first.addClass('on');
+          $(_this).val(first.children('a').text());
+        }
+      }else if(e.keyCode == 38){
+        var selected = $searchAuto.find('li[data-selected=true]');
+        if (selected.length == 1) {
+          selected.removeAttr('data-selected');
+          selected.removeClass('on');
+
+          var prev = selected.prev();
+          prev.attr('data-selected', 'true');
+          prev.addClass('on');
+          $(_this).val(prev.children('a').text());
+        } else {
+          var last = $searchAuto.find('li:last');
+          last.attr('data-selected', 'true');
+          last.addClass('on');
+          $(_this).val(last.children('a').text());
+        }
+      }
+    }).click(function(e){
+      if (config.searchCookie){
+        if(Cookies.get(config.searchCookieType) != undefined){
+          var schSaveData = Cookies.getJSON(config.searchCookieType);
+          $ul = $('<ul/>');
+          $.each(schSaveData, function(i, item){
+            $ul.append('<li data-cd=\"'+ item.keyCd +'\" data-fcd=\"'+ item.KeyFullCd +'\" data-nm=\"'+ item.codNm +'\"><a href=\"#\">'+item.title+'</a></li>');
+          });
+          $searchAuto.html($ul);
+          attachListEvent();
+          $searchAuto.show();
+        }
+      }
+    });
+
+    var attachListEvent = function () {
+      var li = $searchAuto.find('li');
+      li.find('a').click(function () {
+        submit($(this).parent());
+        return false;
+      });
+
+      li.find('a').focusout(function () {
+        $searchAuto.hide();
+      });
+
+      li.find('a').focus(function () {
+        $searchAuto.show();
+      });
+
+      $searchAuto.find('ul').mouseleave(function () {
+        isMouseUnder = false;
+      });
+
+      li.mouseenter(function () {
+        li.removeAttr('data-selected');
+        li.removeClass('on');
+        var t = $(this);
+        t.addClass('on');
+        t.attr('data-selected', 'true');
+        $(_this).val(t.children('a').text());
+        isMouseUnder = true;
+      });
+    };
+
+    var getSearchList = function () {
+      var data = {
+        'contextName' : config.contextName,
+        'value' : encodeURIComponent($(_this).val()),
+        'viewCount' : config.viewCount,
+        'bldPath' : config.bldPath
+      };
+      $.extend(data, config.param);
+      $.ajax({
+        'url' : '/comm/finder/autocomplete.jspx',
+        'data' : data,
+        'success' : function (html) {
+          if (html == '') {
+            $searchAuto.hide();
+          } else {
+            var ul = '<ul>'+html+'</ul>';
+            $searchAuto.html(ul);
+            if (config.listFn) {
+              config.listFn($searchAuto);
+            }
+            attachListEvent();
+            $searchAuto.show();
+          }
+        }
+      });
+    };
+  };
+
+  $('#tboxisuCd_finder_stkisu0').autocomplete({
+    'contextName' : 'finder_stkisu',
+    'bldPath' : '/dbms/comm/finder/finder_stkisu_autocomplete',
+    'viewCount' : 5,
+    'submit' : function (li) {
+      var shotCd = li.attr('data-tp');
+      var fullCd = li.attr('data-cd');
+      var codeNm = li.attr('data-nm');
+      var mktNm = 'ALL';
+
+      $('#codeNmisuCd_finder_stkisu0').val(li.attr('data-nm'));
+      $('#isuCd_finder_stkisu0').val(li.attr('data-cd'));
+      $('#isuCd_finder_stkisu02').val(li.attr('data-tp'));
+
+      // 지수면 명칭만
+      if ( 'ISU' === 'IDX' ) {
+        $('#tboxisuCd_finder_stkisu0').val(li.attr('data-nm'));
+      }
+      // 회사면 발행기관 코드
+      else if ( 'ISU' === 'COM' ) {
+        $('#tboxisuCd_finder_stkisu0').val(li.attr('data-cd')+'/'+li.attr('data-nm'));
+      }
+      // 그외 코드/명칭
+      else {
+        $('#tboxisuCd_finder_stkisu0').val(li.attr('data-tp')+'/'+li.attr('data-nm'));
+      }
+
+      var input = {
+        lang: 'ko_KR',
+        finderCd: 'finder_stkisu',
+        tbox: shotCd +'/'+ codeNm,
+        codeNm: codeNm,
+        codeVal: fullCd,
+        codeVal2: fullCd,
+        typeNo: '',
+        param1: mktNm
+      };
+
+      //= (20201202, 김정삼)
+      if ( 'ISU' === 'IDX' ) {//지수
+        input.tbox = codeNm;
+        input.codeVal2 = shotCd;
+      }
+      //=/
+      mdc.util.setFinderStorage(input);
+
+      return false;
+    },
+    'submitClear' : false
+  });
+  
+</script>
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#none" class="btn_search_tr null" name="search" id="jsSearchButton">조회</a>
+
+
+<script type="text/javascript">
+  mdc.module.setModule({
+    name: 'SEARCH_COMPONENT__061940477',
+    mdi: {
+      name: mdc.module.getMdiModuleName()
+    },
+    function: function (self, api) {
+      var $content = api.getModuleNode();
+      var $element = $content.select('[name="search"]');
+
+      
+
+      
+
+      
+        $element.on('click', function () {
+          mdc.module.getModule('MDCHARD011')['getList']($element);
+        });
+      
+
+      
+    }
+  });
+</script>
+
+
+              </td>
+            </tr>
+            <tr>
+              <th scope="col"><span>비교시장</span></th>
+              <td>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="radiowrap"><label for="marketGubun_0"><input type="radio" name="marketGubun" id="marketGubun_0" value="ALL"><span>전체</span><span></span></label></span><span class="radiowrap"><label for="marketGubun_1"><input type="radio" name="marketGubun" id="marketGubun_1" value="STK" checked><span>KOSPI</span><span></span></label></span><span class="radiowrap"><label for="marketGubun_2"><input type="radio" name="marketGubun" id="marketGubun_2" value="KSQ"><span>KOSDAQ</span><span></span></label></span><span class="radiowrap"><label for="marketGubun_3"><input type="radio" name="marketGubun" id="marketGubun_3" value="KNX"><span>KONEX</span><span></span></label></span>
+
+
+
+              </td>
+            </tr>
+            <tr>
+              <th scope="col"><span>표출결과</span></th>
+              <td>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<select class="selectbox search_select" name="rsltCnt" id="rsltCnt"><option value="20">20위</option><option value="50" selected>50위</option><option value="100">100위</option><option value="200">200위</option></select>
+
+
+
+              </td>
+            </tr>
+          </table>
+        </div>
+      
+
+
+
+
+
+
+
+
+
+<div class="foldupdown jsPdfHide">
+
+	
+		<button><span>검색조건 닫기</span><span>검색조건 열기</span></button>
 	
 	
 
-<nav id="mobile_mainmenu" class="module mo_mclose">
-    <div class="gnb point_bg">
-        <ul>
-
-            <li class="depth1 depth1_01">
-                <a href="#" class="depth_arrow" title="학회소개" target="_self">학회소개<span></span></a>
-                <div class="depth2">
-                    <a class="depth_back">back</a>
-                    <h3 class="point_bg"><a href="#" title="학회소개" target="_self">학회소개</a></h3>
-                    <ul>
-                        <li class="first">
-                            <a href="/17" class="" title="학회소개" target="_self">학회소개<span></span></a>
-                            
-                        </li>
-                        <li class="">
-                            <a href="/43" class="" title="회장 인사말" target="_self">회장 인사말<span></span></a>
-                            
-                        </li>
-                        <li class="">
-                            <a href="/18" class="" title="연혁" target="_self">연혁<span></span></a>
-                            
-                        </li>
-                        <li class="">
-                            <a href="/44" class="" title="역대 회장단" target="_self">역대 회장단<span></span></a>
-                            
-                        </li>
-                        <li class="last">
-                            <a href="/19" class="" title="임원진" target="_self">임원진<span></span></a>
-                            
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="depth1 depth1_02">
-                <a href="#" class="depth_arrow" title="학회규정" target="_self">학회규정<span></span></a>
-                <div class="depth2">
-                    <a class="depth_back">back</a>
-                    <h3 class="point_bg"><a href="#" title="학회규정" target="_self">학회규정</a></h3>
-                    <ul>
-                        <li class="first">
-                            <a href="/21" class="" title="학회회칙" target="_self">학회회칙<span></span></a>
-                            
-                        </li>
-                        <li class="">
-                            <a href="/22" class="" title="학술상 규정" target="_self">학술상 규정<span></span></a>
-                            
-                        </li>
-                        <li class="">
-                            <a href="/23" class="" title="연구윤리규정" target="_self">연구윤리규정<span></span></a>
-                            
-                        </li>
-                        <li class="last">
-                            <a href="/37" class="" title="월례발표회 규정" target="_self">월례발표회 규정<span></span></a>
-                            
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="depth1 depth1_03">
-                <a href="#" class="depth_arrow" title="학술지/투고" target="_self">학술지/투고<span></span></a>
-                <div class="depth2">
-                    <a class="depth_back">back</a>
-                    <h3 class="point_bg"><a href="#" title="학술지/투고" target="_self">학술지/투고</a></h3>
-                    <ul>
-                        <li class="first">
-                            <a href="/24" class="" title="논문투고규정" target="_self">논문투고규정<span></span></a>
-                            
-                        </li>
-                        <li class="">
-                            <a href="/38" class="" title="논문심사규정" target="_self">논문심사규정<span></span></a>
-                            
-                        </li>
-                        <li class="">
-                            <a href="#" class="" title="온라인논문투고신청" target="_self">온라인논문투고신청<span></span></a>
-                            
-                        </li>
-                        <li class="">
-                            <a href="http://submit.dbpia.co.kr/" class="" title="구)온라인논문투고" target="_blank">구)온라인논문투고<span></span></a>
-                            
-                        </li>
-                        <li class="">
-                            <a href="#" class="" title="온라인논문심사" target="_self">온라인논문심사<span></span></a>
-                            
-                        </li>
-                        <li class="last">
-                            <a href="/26" class="" title="한일관계사연구 원문검색" target="_self">한일관계사연구 원문검색<span></span></a>
-                            
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="depth1 depth1_04">
-                <a href="#" class="depth_arrow" title="학술활동" target="_self">학술활동<span></span></a>
-                <div class="depth2">
-                    <a class="depth_back">back</a>
-                    <h3 class="point_bg"><a href="#" title="학술활동" target="_self">학술활동</a></h3>
-                    <ul>
-                        <li class="first">
-                            <a href="/27" class="" title="월례발표회 및 학술대회" target="_self">월례발표회 및 학술대회<span></span></a>
-                            
-                        </li>
-                        <li class="">
-                            <a href="/28" class="" title="경인한일관계총서" target="_self">경인한일관계총서<span></span></a>
-                            
-                        </li>
-                        <li class="">
-                            <a href="/29" class="" title="신간서적 안내" target="_self">신간서적 안내<span></span></a>
-                            
-                        </li>
-                        <li class="last">
-                            <a href="/40" class="" title="학술대회자료집" target="_self">학술대회자료집<span></span></a>
-                            
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="depth1 depth1_05">
-                <a href="#" class="depth_arrow" title="학회소식" target="_self">학회소식<span></span></a>
-                <div class="depth2">
-                    <a class="depth_back">back</a>
-                    <h3 class="point_bg"><a href="#" title="학회소식" target="_self">학회소식</a></h3>
-                    <ul>
-                        <li class="first">
-                            <a href="/20" class="" title="공지사항" target="_self">공지사항<span></span></a>
-                            
-                        </li>
-                        <li class="">
-                            <a href="/30" class="" title="자유게시판" target="_self">자유게시판<span></span></a>
-                            
-                        </li>
-                        <li class="">
-                            <a href="/45" class="" title="회원동정" target="_self">회원동정<span></span></a>
-                            
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="depth1 depth1_06">
-                <a href="/32" class="" title="갤러리" target="_self">갤러리<span></span></a>
-            </li>
-            <li class="depth1 depth1_07">
-                <a href="#" class="depth_arrow" title="회원가입" target="_self">회원가입<span></span></a>
-                <div class="depth2">
-                    <a class="depth_back">back</a>
-                    <h3 class="point_bg"><a href="#" title="회원가입" target="_self">회원가입</a></h3>
-                    <ul>
-                        <li class="first">
-                            <a href="/34" class="" title="회원가입 및 회비납부 안내" target="_self">회원가입 및 회비납부 안내<span></span></a>
-                            
-                        </li>
-                        <li class="">
-                            <a href="#" class="" title="회원가입신청" target="_self">회원가입신청<span></span></a>
-                            
-                        </li>
-                        <li class="last">
-                            <a href="#" class="" title="회원정보수정" target="_self">회원정보수정<span></span></a>
-                            
-                        </li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </div>
-</nav>	<div class="wrap"> <header id="mobile_header" class="header_point_bg hidden-md hidden-lg ">    <button type="button" class="link_mohmenu">MY MENU</button>    <button type="button" class="link_mobasket">BASKET</button>    <button type="button" class="link_momenu point_bg">MENU</button>    <div class="link_mologo"><a href="/"><img src="/template/s171127001001/images/logo_header.jpg" alt=""></a></div></header>		<div class="hidden-xs section" id="section_1629435940">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="col_1635837696"> 
-
-<ul id="header_menu" class="module"  >
-
-    <li class="link_home">
-        <a  class="point_bg point_bd" href="javascript:goHome();">Home</a>
-    </li>
-
-    <li class="link_login" style="display:none;">
-        <a  href="/login">로그인</a>
-    </li>
-
-    <li class="link_join" style="display:none;">
-        <a  href="/join">회원가입</a>
-    </li>
-
-    <li class="link_mydues" style="display:none;">
-        <a  href="/mypage/mydues">납부내역</a>
-    </li>
-
-    <li class="link_sitemap" style="display:none;">
-        <a  href="/sitemap">사이트맵</a>
-    </li>
-
-    <li class="link_cus1635473257">
-        <a  href="/20">공지사항</a>
-    </li>
-
-    <li class="link_cus1635473269">
-        <a  href="mailto:crinoid@dgu.ac.kr">E-mail</a>
-    </li>
-
-    <li class="link_admin">
-        <a  href="/admin">관리자</a>
-    </li>
-
-</ul></div>
-				</div>
-			</div>
-		</div>
-		<header id="header" class="hidden-xs header_point_bg">
-			<div class="container">
-				<div id="row_1391759269" class="row">
-					<div id="col_1391759277" class="col-md-3"> <div id="logo" class="module"  ><a href="javascript:goHome();"><img src="/template/s171127001001/images/logo_header.jpg" alt=""></a></div> </div>
-					<div class="col-md-9"> 
-
-<nav id="main_menu" class="module"  >
-    <button type="button" class="btn_main_menu point_bg">MENU</button>
-    <ul class="gnb" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
-        
-        <li class="depth1 point_hover_bg depth1_01" itemprop="name">
-            <a itemprop="url" class="point_hover_txt" href="#" title="학회소개" target="_self">학회소개</a>
-            <ul class="depth2 point_bd point_nav_bg">
-                <li class="point_section_bd point_hover_bg first" itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/17" title="학회소개" target="_self">학회소개</a>
-                </li>
-                <li class="point_section_bd point_hover_bg " itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/43" title="회장 인사말" target="_self">회장 인사말</a>
-                </li>
-                <li class="point_section_bd point_hover_bg " itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/18" title="연혁" target="_self">연혁</a>
-                </li>
-                <li class="point_section_bd point_hover_bg " itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/44" title="역대 회장단" target="_self">역대 회장단</a>
-                </li>
-                <li class="point_section_bd point_hover_bg last" itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/19" title="임원진" target="_self">임원진</a>
-                </li>
-            </ul>
-        </li>
-        <li class="depth1 point_hover_bg depth1_02" itemprop="name">
-            <a itemprop="url" class="point_hover_txt" href="#" title="학회규정" target="_self">학회규정</a>
-            <ul class="depth2 point_bd point_nav_bg">
-                <li class="point_section_bd point_hover_bg first" itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/21" title="학회회칙" target="_self">학회회칙</a>
-                </li>
-                <li class="point_section_bd point_hover_bg " itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/22" title="학술상 규정" target="_self">학술상 규정</a>
-                </li>
-                <li class="point_section_bd point_hover_bg " itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/23" title="연구윤리규정" target="_self">연구윤리규정</a>
-                </li>
-                <li class="point_section_bd point_hover_bg last" itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/37" title="월례발표회 규정" target="_self">월례발표회 규정</a>
-                </li>
-            </ul>
-        </li>
-        <li class="depth1 point_hover_bg depth1_03" itemprop="name">
-            <a itemprop="url" class="point_hover_txt" href="#" title="학술지/투고" target="_self">학술지/투고</a>
-            <ul class="depth2 point_bd point_nav_bg">
-                <li class="point_section_bd point_hover_bg first" itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/24" title="논문투고규정" target="_self">논문투고규정</a>
-                </li>
-                <li class="point_section_bd point_hover_bg " itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/38" title="논문심사규정" target="_self">논문심사규정</a>
-                </li>
-                <li class="point_section_bd point_hover_bg " itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="#" title="온라인논문투고신청" target="_self">온라인논문투고신청</a>
-                </li>
-                <li class="point_section_bd point_hover_bg " itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="http://submit.dbpia.co.kr/" title="구)온라인논문투고" target="_blank">구)온라인논문투고</a>
-                </li>
-                <li class="point_section_bd point_hover_bg " itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="#" title="온라인논문심사" target="_self">온라인논문심사</a>
-                </li>
-                <li class="point_section_bd point_hover_bg last" itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/26" title="한일관계사연구 원문검색" target="_self">한일관계사연구 원문검색</a>
-                </li>
-            </ul>
-        </li>
-        <li class="depth1 point_hover_bg depth1_04" itemprop="name">
-            <a itemprop="url" class="point_hover_txt" href="#" title="학술활동" target="_self">학술활동</a>
-            <ul class="depth2 point_bd point_nav_bg">
-                <li class="point_section_bd point_hover_bg first" itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/27" title="월례발표회 및 학술대회" target="_self">월례발표회 및 학술대회</a>
-                </li>
-                <li class="point_section_bd point_hover_bg " itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/28" title="경인한일관계총서" target="_self">경인한일관계총서</a>
-                </li>
-                <li class="point_section_bd point_hover_bg " itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/29" title="신간서적 안내" target="_self">신간서적 안내</a>
-                </li>
-                <li class="point_section_bd point_hover_bg last" itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/40" title="학술대회자료집" target="_self">학술대회자료집</a>
-                </li>
-            </ul>
-        </li>
-        <li class="depth1 point_hover_bg depth1_05" itemprop="name">
-            <a itemprop="url" class="point_hover_txt" href="#" title="학회소식" target="_self">학회소식</a>
-            <ul class="depth2 point_bd point_nav_bg">
-                <li class="point_section_bd point_hover_bg first" itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/20" title="공지사항" target="_self">공지사항</a>
-                </li>
-                <li class="point_section_bd point_hover_bg " itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/30" title="자유게시판" target="_self">자유게시판</a>
-                </li>
-                <li class="point_section_bd point_hover_bg " itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/45" title="회원동정" target="_self">회원동정</a>
-                </li>
-            </ul>
-        </li>
-        <li class="depth1 point_hover_bg depth1_06" itemprop="name">
-            <a itemprop="url" class="point_hover_txt" href="/32" title="갤러리" target="_self">갤러리</a>
-        </li>
-        <li class="depth1 point_hover_bg depth1_07" itemprop="name">
-            <a itemprop="url" class="point_hover_txt" href="#" title="회원가입" target="_self">회원가입</a>
-            <ul class="depth2 point_bd point_nav_bg">
-                <li class="point_section_bd point_hover_bg first" itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="/34" title="회원가입 및 회비납부 안내" target="_self">회원가입 및 회비납부 안내</a>
-                </li>
-                <li class="point_section_bd point_hover_bg " itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="#" title="회원가입신청" target="_self">회원가입신청</a>
-                </li>
-                <li class="point_section_bd point_hover_bg last" itemprop="name">
-                    <a itemprop="url" class="point_hover_txt" href="#" title="회원정보수정" target="_self">회원정보수정</a>
-                </li>
-            </ul>
-        </li>    </ul>
-</nav> </div>
-				</div>
-			</div>
-		</header>
-		<div id="section_1391755408" class="section">
-			<div class="container fullsize">
-				<div class="row" id="row_1635484967">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="col_1635484972"><div id="app_1635484988" class="DUBU_Slideshow module"  ><link rel="stylesheet" href="https://fonts.dubuplus.com/css?family=noto_sans_kr">
-<link rel="stylesheet" type="text/css" href="/inc/application/dubu_slideshow/skin/slideshow.css">
-<link rel="stylesheet" href="/app/dubu_slideshow/docs/slideshow_1635409221006/slideshow.css?v=1684093286" data-media>
-<div id="slideshow_1635409221006" class="slideshow skin_type3" slide-animation="slide" slide-autoplay=1 slide-dots="1" slide-nav="0" slide-interval=3000 slide-duration=1000>
-    <div class="slides" id="slide_1635409957928" style=""><div class="slide_items text" item-type="text" link-href="" link-type="url" video-src="" id="slide_items_1637279822613" unselectable="on"><h1 style="text-align: left;"><span style="font-family:Noto Sans KR;">한일관계사학회<br></span></h1></div><div class="slide_items text" item-type="text" link-href="" link-type="url" video-src="" id="slide_items_1637279824658" unselectable="on"><p style="text-align: center;">The Korea-Japan Historical Society</p></div></div><div class="slides" id="slide_1637123509871"><div class="slide_items text" item-type="text" link-href="" link-type="url" video-src="" id="slide_items_1641358871078" unselectable="on"><h1 style="text-align: left;"><span style="font-family:Noto Sans KR;">한일관계사학회<br></span></h1></div><div class="slide_items text" item-type="text" link-href="" link-type="url" video-src="" id="slide_items_1641358875358" unselectable="on"><p style="text-align: center;">The Korea-Japan Historical Society</p></div></div><div class="slides" id="slide_1637295785511"><div class="slide_items text" item-type="text" link-href="" link-type="url" video-src="" id="slide_items_1641358871525" unselectable="on"><h1 style="text-align: left;"><span style="font-family:Noto Sans KR;">한일관계사학회<br></span></h1></div><div class="slide_items text" item-type="text" link-href="" link-type="url" video-src="" id="slide_items_1641358875766" unselectable="on"><p style="text-align: center;">The Korea-Japan Historical Society</p></div></div><div class="slides" id="slide_1635409885952" style=""><div class="slide_items text" item-type="text" link-href="" link-type="url" video-src="" id="slide_items_1641358872365" unselectable="on"><h1 style="text-align: left;"><span style="font-family:Noto Sans KR;">한일관계사학회<br></span></h1></div><div class="slide_items text" item-type="text" link-href="" link-type="url" video-src="" id="slide_items_1641358876438" unselectable="on"><p style="text-align: center;">The Korea-Japan Historical Society</p></div></div><div class="slides hidden_slide" id="slide_1667785998803"></div><div class="slides hidden_slide" id="slide_1667786022590"></div>
 </div>
-<script type="text/javascript" src="/inc/application/dubu_slideshow/js/jquery.carousel.js"></script>
-<script type="text/javascript" src="/inc/application/dubu_slideshow/js/slideshow.js"></script>
-</div></div>
-				</div>
-			</div>
-		</div>
-		<div id="content" class="">
-			<div class="container">
-				<div class="row" id="row_1424139034">
-					<div class="col-md-6"><div id="app_1635473213" class="DUBU_Board DUBU_Board_s150319001001 module"  ><div id="dubu_board_main_17045724072830" class="board_main">
-    <div class="board_main_header">
-        <div class="tit_board_main">
-            <h3>공지사항</h3>
-            <a href="/20" class="btn_more" title="더보기"><span class="ico_more"></span>더보기</a>
-        </div>
-    </div>
-    <div class="board_main_content tab_info_content">
-        <table id="board_content_16378_" class="tab_content active">
-            <thead>
-            <tr>
-                <th class="col_subject">제목</th>
-                <th class="col_date">작성일</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="col_subject">
-                    <a href="/20/12151564" class="txt_subject">
-                        <span class="tit_content">한일관계사학회 제210회 월례발표회(2023.12.09) 논문집</span>
-                        <span class="ico_comm ico_file">첨부파일</span>
-                    </a>
-                </td>
-                <td class="col_date"><span class="txt_date">2024.01.04</span></td>
-            </tr>
-            <tr>
-                <td class="col_subject">
-                    <a href="/20/12060444" class="txt_subject">
-                        <span class="tit_content">한일관계사학회 제209회 월례발표회(2023.11.11) 논문집</span>
-                        <span class="ico_comm ico_file">첨부파일</span>
-                    </a>
-                </td>
-                <td class="col_date"><span class="txt_date">2023.11.21</span></td>
-            </tr>
-            <tr>
-                <td class="col_subject">
-                    <a href="/20/12026672" class="txt_subject">
-                        <span class="tit_content">10월 학술대회(한일관계사학회-전북대 이재연구소 공동개최) 자료집</span>
-                        <span class="ico_comm ico_file">첨부파일</span>
-                    </a>
-                </td>
-                <td class="col_date"><span class="txt_date">2023.10.30</span></td>
-            </tr>
-            <tr>
-                <td class="col_subject">
-                    <a href="/20/11938625" class="txt_subject">
-                        <span class="tit_content">한일관계사학회 8월, 9월 학술회의 자료</span>
-                        <span class="ico_comm ico_file">첨부파일</span>
-                    </a>
-                </td>
-                <td class="col_date"><span class="txt_date">2023.09.08</span></td>
-            </tr>
-            <tr>
-                <td class="col_subject">
-                    <a href="/20/11830020" class="txt_subject">
-                        <span class="tit_content">한일관계사학회 제208회 월례발표회(2023.06.10) 논문집</span>
-                        <span class="ico_comm ico_file">첨부파일</span>
-                    </a>
-                </td>
-                <td class="col_date"><span class="txt_date">2023.06.09</span></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+
+<script>
+  $(function () {
+    $(".foldupdown").bind('click', function () {
+      $('.list_search_term').toggle();
+      $(".foldupdown").toggleClass('on');
+    });
+
+    $('.search').each(function (index, item) {
+      $(item).children().addClass('search_input');
+      $(item).find('img').hide().wrap('<button></button>');
+
+      $(item).find('button').off('mousedown').on('mousedown', function () {
+        $(this).find('img').trigger('click');
+      });
+    });
+
+  });
+
+</script>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="CI-MDI-UNIT-WRAP" id="UNIT-WRAP0">
+  <div class="time CI-MDI-UNIT"  data-view-sequence="0">
+    
+    <p class="CI-MDI-UNIT-TIME"></p>
+    
+    
+    <p>
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<select class="CI-MDI-UNIT-SHARE" name="share" disabled style="display: none;"><option value="1" selected>주</option><option value="2">천주</option><option value="3">백만주</option></select>
+
+
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<select class="CI-MDI-UNIT-MONEY" name="money" disabled style="display: none;"><option value="1" selected>원</option><option value="2">천원</option><option value="3">백만원</option><option value="4">십억원</option></select>
+
+
+
+      
+      
+      
+      
+      <button type="button" class="CI-MDI-UNIT-FILTER"
+       style="display: none;"><img src="/templets/mdc/img/btn_time2.png" title="
+      컬럼필터 팝업" /></button>
+      <button type="button" class="CI-MDI-UNIT-DOWNLOAD"><img src="/templets/mdc/img/btn_time1.png" title="
+      다운로드 팝업" /></button>
+    </p>
+  </div>
 </div>
-<script type="text/javascript" src="/inc/js/ui/jquery.tab.js"></script>
+
 <script type="text/javascript">
-    (function(){
-        loadDubuBoardMain('dubu_board_main_17045724072830', {
-            type: '0'
-        });
-    })();
-</script></div></div>
-					<div class="clearfix visible-sm"></div>
-					<div class="clearfix visible-xs"></div>
-					<div class="col-md-6">
-						<div class="row" id="row_1629685024">
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="col_1635498187" data-link-href="javascript:open_dbpia(0)" data-link-target="_self">
-								<div class="dpl_element module" data-element="codecell" id="element_1629428773"><a class="mainban ban4" href="javascript:open_dbpia(0)" title="온라인논문투고신청">
-									<div class="mainban_txtbox">
-										<h4 class="mainban_tit">온라인 논문투고</h4>
-										<span class="mainban_tit2">Online Submission</span> </div>
-									<img class="mainban_img_bg" src="/template/s171127001001/images/togo.jpg" alt="온라인논문투고"> </a></div>
-							</div>
-							<div class="clearfix visible-xs"></div>
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="col_1635498203" data-link-target="_blank">
-								<div class="dpl_element module" data-element="codecell" id="element_1426134629"><a class="mainban ban1" href="/34" title="회비납부안내">
-									<div class="mainban_txtbox"> <img class="mainban_img_icon" src="/template/s150319001001/images/card_icon.png" alt="회비납부안내아이콘">
-										<h5 class="mainban_h5">&lt;회비납부 안내&gt;</h5>
-										<p class="mainban_p_size">국민은행 <br>
-											217002-04-676500 </p>
-										<p class="mainban_p_size">예금주 : 조인희</p>
-										<p class="mainban_p">회비납입 확인 후 등업됩니다</p>
-									</div>
-									</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row" id="row_1424153230">
-					<div class="col-md-6" id="col_1424151767"><div id="app_1635473214" class="DUBU_Board DUBU_Board_s150319001001 module"  ><div id="dubu_board_main_17045724074963" class="board_main">
-    <div class="board_main_header">
-        <div class="tit_board_main">
-            <h3>월례발표회 및 학술대회</h3>
-            <a href="/27" class="btn_more" title="더보기"><span class="ico_more"></span>더보기</a>
-        </div>
-    </div>
-    <div class="board_main_content tab_info_content">
-        <table id="board_content_16379_" class="tab_content active">
-            <thead>
-            <tr>
-                <th class="col_subject">제목</th>
-                <th class="col_date">작성일</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="col_subject">
-                    <a href="/27/12092495" class="txt_subject">
-                        <span class="tit_content">한일관계사학회 제210회 월례발표회(2023.12.09)</span>
-                    </a>
-                </td>
-                <td class="col_date"><span class="txt_date">2023.12.07</span></td>
-            </tr>
-            <tr>
-                <td class="col_subject">
-                    <a href="/27/12035750" class="txt_subject">
-                        <span class="tit_content">한일관계사학회 제209회 월례발표회(2023.11.11) </span>
-                    </a>
-                </td>
-                <td class="col_date"><span class="txt_date">2023.11.06</span></td>
-            </tr>
-            <tr>
-                <td class="col_subject">
-                    <a href="/27/11879118" class="txt_subject">
-                        <span class="tit_content">[한일관계사학회-부경역사연구소]  공동개최 학술대회 안내(2023.08.05(토) 부산 국립해양박물관 13:00~18:00)</span>
-                    </a>
-                </td>
-                <td class="col_date"><span class="txt_date">2023.07.27</span></td>
-            </tr>
-            <tr>
-                <td class="col_subject">
-                    <a href="/27/11816940" class="txt_subject">
-                        <span class="tit_content">한일관계사학회 제208회 월례발표회(2023.06.10)</span>
-                    </a>
-                </td>
-                <td class="col_date"><span class="txt_date">2023.05.31</span></td>
-            </tr>
-            <tr>
-                <td class="col_subject">
-                    <a href="/27/11783503" class="txt_subject">
-                        <span class="tit_content">한일관계사학회 제207회 월례발표회(2023.05.13)</span>
-                    </a>
-                </td>
-                <td class="col_date"><span class="txt_date">2023.05.03</span></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-<script type="text/javascript" src="/inc/js/ui/jquery.tab.js"></script>
-<script type="text/javascript">
-    (function(){
-        loadDubuBoardMain('dubu_board_main_17045724074963', {
-            type: '0'
-        });
-    })();
-</script></div></div>
-					<div class="col-md-6" id="col_1424157567">
-						<div class="row" id="row_1629685034">
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="col_1629428778">
-								<div class="dpl_element module" data-element="codecell" id="element_1635491777">
-									<div class="mainban3">
-										<div class="login_area"> <div id="app_1635827072" class="DUBU_Members DUBU_Members_i170213001001 module"  ><div class="login_page">
-    <div class="login">
-        <form name="frm_login" method="post" onsubmit="return false">
-            <div class="box_info_cont">
-                <div class="input_info">
-                    <div class="login_id">
-                        <label for="tf_id" class="txt_id">아이디</label>
-                        <div class="box_id">
-                            <input type="text" id="tf_id" name="user_id" value="" class="tf_comm">
-                            <span class="msg_id txt_placeholder">아이디 입력</span>
-                        </div>
-                    </div>
-                    <div class="login_pwd">
-                        <label for="tf_pwd" class="txt_pwd">비밀번호</label>
-                        <div class="box_pwd">
-                            <input type="password" id="tf_pwd" name="user_pwd" value="" class="tf_comm">
-                            <span class="msg_pwd txt_placeholder">비밀번호 입력</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cont_check">
-                    <label class="design_checkbox lab_check">
-                        <input type="checkbox" name="auto_login" value="Y"><span class="txt_lab">로그인 상태 유지</span>
-                    </label>
-                    <button type="submit" class="btn_comm btn_primary btn_login point_btn">로그인</button>
-                </div>
-            </div>
-            <input type="hidden" name="return_url" value="">
-            <input type="hidden" name="site_id" value="38009">
-            <p class="msg_error">입력하신 아이디 또는 비밀번호가 일치하지 않습니다.</p>
-        </form>
+(function(mdc, $) {
+  var $sel = $('#UNIT-WRAP0 select[name="otherUnit"].CI-MDI-UNIT-MONEY');
+  if ( $('option',$sel).length <= 1 ) { $sel.addClass('bg_none'); }
 
+  var $money = $('#UNIT-WRAP0 select[name="money"].CI-MDI-UNIT-MONEY');
+  if ( $('option',$money).length <= 1 ) { $money.addClass('bg_none'); }
+}(window.mdc, jQuery));
+</script>
+
+    
+</form>
+
+
+
+    <table id="jsListTable" class="table_pink mb20">
+      <colgroup>
+        <col style="width:250px;">
+        <col style="width:120px;">
+        <col style="width:100px;">
+        <col style="width:100px;">
+        <col style="width:120px;">
+        <col style="width:120px;">
+        <col style="width:120px;">
+        <col style="width:200px;">
+        <col>
+      </colgroup>
+      <thead>
+      <tr>
+        <th scope="col">종목명</th>
+        <th scope="col">현재가</th>
+        <th scope="col">대비</th>
+        <th scope="col">등락률(%)</th>
+        <th scope="col">시가</th>
+        <th scope="col">고가</th>
+        <th scope="col">저가</th>
+        <th scope="col">거래량(주)</th>
+        <th scope="col">거래대금(원)</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr style="height: 28px;">
+        <td name="ISU_ABBRV" data-bind="ISU_ABBRV"></td>
+        <td name="ISU_CUR_PR" data-bind="ISU_CUR_PR"></td>
+        <td name="CMPR_RT" data-bind="CMPR_RT"></td>
+        <td name="UPDN_RATE" data-bind="UPDN_RATE"></td>
+        <td name="ISU_OPN_PR" data-bind="ISU_OPN_PR"></td>
+        <td name="ISU_HG_PR" data-bind="ISU_HG_PR"></td>
+        <td name="ISU_LW_PR" data-bind="ISU_LW_PR"></td>
+        <td name="ISU_TR_VL" data-bind="ISU_TR_VL"></td>
+        <td name="ISU_TR_AMT" data-bind="ISU_TR_AMT"></td>
+      </tr>
+      </tbody>
+    </table>
+
+
+    <div id="jsGrid_MDCHARD011_0" class="COMPST-INFO-GRID">
+      <table id="jsTable_MDCHARD011_0" data-grid="{databind: true, emptyData: true, scroll: true}" summary="수익률 상관관계">
+        <colgroup>
+          <col style="width:60px;">
+          <col style="width:100px;">
+          <col style="width:100px;">
+          <col style="width:100px;">
+          <col style="width:100px;">
+          <col style="width:100px;">
+          <col style="width:100px;">
+          <col style="width:100px;">
+          <col style="width:100px;">
+        </colgroup>
+        <thead>
+        <tr>
+          <th scope="col" name="RN" rowspan="2">순위</th>
+          <th scope="col" name="day10" colspan="2">10일</th>
+          <th scope="col" name="day20" colspan="2">20일</th>
+          <th scope="col" name="day50" colspan="2">50일</th>
+          <th scope="col" name="day100" colspan="2">100일</th>
+        </tr>
+        <tr>
+          <th scope="col" parent="day10" name="CMP_ISU_NM_10">종목명</th>
+          <th scope="col" parent="day10" name="CORR_VAL_10">수치</th>
+          <th scope="col" parent="day20" name="CMP_ISU_NM_20">종목명</th>
+          <th scope="col" parent="day20" name="CORR_VAL_20">수치</th>
+          <th scope="col" parent="day50" name="CMP_ISU_NM_50">종목명</th>
+          <th scope="col" parent="day50" name="CORR_VAL_50">수치</th>
+          <th scope="col" parent="day100" name="CMP_ISU_NM_100">종목명</th>
+          <th scope="col" parent="day100" name="CORR_VAL_100">수치</th>
+        </tr>
+        </thead>
+        <tbody data-keepdata="true">
+        <tr>
+          <td class="tac" name="RN" data-bind="RN"></td>
+          <td name="CMP_ISU_NM_10" data-bind="CMP_ISU_NM_10"></td>
+          <td class="tar" name="CORR_VAL_10" data-bind="CORR_VAL_10"></td>
+          <td name="CMP_ISU_NM_20" data-bind="CMP_ISU_NM_20"></td>
+          <td class="tar" name="CORR_VAL_20" data-bind="CORR_VAL_20"></td>
+          <td name="CMP_ISU_NM_50" data-bind="CMP_ISU_NM_50"></td>
+          <td class="tar" name="CORR_VAL_50" data-bind="CORR_VAL_50"></td>
+          <td name="CMP_ISU_NM_100" data-bind="CMP_ISU_NM_100"></td>
+          <td class="tar" name="CORR_VAL_100" data-bind="CORR_VAL_100"></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="txt_pink">본 정보는 투자자 편의 제고를 위한 투자 참고 사항으로 , 한국거래소는 제공된 정보에 의한 투자결과에 대하여 법적 책임을 지지 않습니다. 결과 산출에 이용된 재무관련 데이터는 NICE평가정보(주)의 제공 자료에 기반하였습니다.</p>
+
+
+
+
+  </section>
+
+
+
+<script type="text/javascript">
+  mdc.module.setModule({
+    name: 'MDCHARD011',
+    init: 'init',
+    function: function (self, api) {
+      var $f = $('#MDCHARD011_FORM');
+      var $gridTable = $('#jsTable_MDCHARD011_0');
+      var $grid;
+      self.init = function () {
+        self.grid = api.util.grid.init({
+          node: api.getModuleNode().getNode(),
+          form: $f,
+          layout: 'mdc_hard',
+          gridHeight: $(window).height() - 100 - $('.txt_pink').outerHeight(),
+          grid: [
+            {
+              // template: $('#jsGrid_MDCHARD011_0'),
+              // bld: 'dbms/MDC/HARD/MDCHARD01101',
+              // bldDataKey: 'block1',
+              menuIdForPdf: 'MDCHARD011'
+            }
+          ]
+        });
+
+        $grid = $gridTable.initGrid({
+          message: {
+            emptyData: api.lang.getMessage('MD002') // 데이터가 없습니다.
+          },
+          scroll: {
+            maxRowCount: 28,
+            autoHeight: true
+          }
+        });
 
         
-        <div class="links_area">
-            <div class="member_links">
-                <a href="/login/login_info" class="link_find_id" title="아이디 찾기">아이디 찾기</a>
-                <a href="/login/login_info" class="link_find_pwd" title="비밀번호 찾기">비밀번호 찾기</a>
-                <a href="/join" class="link_join" title="회원가입하기">회원가입하기</a>
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript" src="https://auth.dubuplus.com/user/js/sdk.js"></script>
-    <script type="text/javascript" src="/inc/application/dubu_members/js/common.js"></script>
+        
+        
+
+        self.getList();
+
+        $(window).resize(function () {
+          $('.CI-TBODY-WRAPPER').css('height',$(window).height() - 170 - $('.txt_pink').outerHeight());
+        });
+      };
+
+      self.getList = function () {
+        self.isuNm = $('#codeNmisuCd_finder_stkisu0').val();
+        api.util.submitAjax({
+          url: '/comm/bldAttendant/getJsonData.cmd?bld=dbms/MDC/HARD/MDCHARD01101',
+          data: $f.serialize(),
+            showLoading: true,
+            success: function (resp) {
+              var data = resp['block1'];
+              data = {result: data};
+              $grid.databind(data, 'result');
+              $('.CI-MDI-UNIT-TIME').html(api.util.getDateTimeFormat(resp['CURRENT_DATETIME']));
+
+            $grid.$table.find('tbody tr').each(function (index, item) {
+              if ($(item).hasClass('CI-EMPTY-ROW')) {
+                return false;
+              }
+              cmpIsuPopup(item, 1);
+              cmpIsuPopup(item, 3);
+              cmpIsuPopup(item, 5);
+              cmpIsuPopup(item, 7);
+            });
+
+            if ('mdc_hard'.indexOf('pdf') === -1) $('.CI-TBODY-WRAPPER').css('height',$(window).height() - 170 - $('.txt_pink').outerHeight());
+          }
+        });
+
+        api.util.submitAjax({
+          url: '/comm/bldAttendant/getJsonData.cmd?bld=dbms/MDC/HARD/MDCHARD00001',
+          data: $f.serialize(),
+          success: function (data) {
+            $('#jsListTable [name=CMPR_RT], #jsListTable [name=UPDN_RATE]').removeClass();
+
+            if(data.CMPR_RT !== '-') data.CMPR_RT = data.CMPR_RT.replace('-', '');
+
+            mdc.util.singleDatabind($('#jsListTable'), data);
+            if (data.UPDN_TYP === '1') {
+              $('#jsListTable [name=CMPR_RT], #jsListTable [name=UPDN_RATE]').addClass('up');
+              $('#jsListTable [name=CMPR_RT]').prepend('▲ ');
+              $('#jsListTable [name=UPDN_RATE]').prepend('+');
+            } else if (data.UPDN_TYP === '2') {
+              $('#jsListTable [name=CMPR_RT], #jsListTable [name=UPDN_RATE]').addClass('down');
+              $('#jsListTable [name=CMPR_RT]').prepend('▼ ');
+            }
+          }
+        });
+      }
+
+      var cmpIsuPopup = function (item, index) {
+        item.children[index].innerHTML = '<span class="jsCmpIsu">' + item.children[index].innerHTML + '</span>';
+        $(item).find('.jsCmpIsu').on('click', function () {
+          self.selRow = this;
+          var $bigChartLayerWrap = $('<DIV>', {
+            class: 'ci-dialog-content bigChartLayerWrap'
+          }).append($('<DIV>', {
+            id: 'chart_cls_big',
+            class: 'chart_cls_big'
+          }));
+
+          api.layer.openModal({
+            width: '822',
+            height: '592',
+            id: 'bigChartLayer',
+            title: api.lang.getWord('WS015'), //시세 비교 차트
+            dom: $bigChartLayerWrap,
+            afterAppend: function () {
+              var cmpDate = $(self.selRow).closest('td').attr('name').substr(-2) === '00' ? 100 : $(self.selRow).closest('td').attr('name').substr(-2);
+              var chart_option = webponent.chart.options.multiLine;
+              chart_option.func.tip = function (tipElement, data, rect) {
+                var date = data.xaxis;
+                var tip = '<div class="text">'+
+                  '<p class="tooltip_head">'+date+'</p>'+
+                  '<p class="tooltip_body">'+ //WE001(좌축), WE002(우축)
+                  self.isuNm + api.lang.getWord('WE001')+' : ' + String(data.data.DATA1).format().trim()+'<br>'+
+                  self.selRow.textContent + api.lang.getWord('WE002')+' : ' + String(data.data.DATA2).format()+
+                  '</p>'+
+                  '</div>';
+
+                tipElement.html(tip).show();
+                webponent.chart.options.tip.common(tipElement, rect);
+              };
+              chart_option.use.multiYAxis = true;
+              var chart_style = webponent.chart.styles.multiLine_bar;
+              chart_style.main.xAxis.text.size = 12;
+              chart_style.main.layout.paddingBottom = 20;
+              var chart_series = { //차트 형태 및 X,Y축 기준 설정
+                main: {
+                  s1: {series: 'line', xaxis: 'TRD_DD', yaxis: 'DATA1', yaxisid: 's1'},
+                  s3_r: {series: 'line', xaxis: 'TRD_DD', yaxis: 'DATA2', yaxisid: 's3_r'}
+                }
+              }
+              api.util.submitAjax({
+                url: '/comm/bldAttendant/getJsonData.cmd?bld=dbms/MDC/HARD/MDCHARD00004',
+                data: {isuCd: $(self.selRow).closest('tr')[0]["rowData"]["ISU_CD"],
+                  cmpIsuCd: $(self.selRow).closest('tr')[0]["rowData"]["CMP_ISU_CD_"+cmpDate],
+                  periodVal: '-'+cmpDate},
+                async: false,
+                success: function (resp) {
+                  var data = {};
+                  data.data = resp['block1'];
+                  chart_option.data = data;
+                }
+              });
+
+              webponent.chart.init($('#chart_cls_big'), chart_option, chart_style, chart_series);
+
+              var markupList = $('<UL>',{class: 'result_bottomlist2'});
+              markupList.append(
+                $('<LI>').append(
+                  $('<SPAN>', {class: 'color_tp1'})
+                ).append(
+                  $('<SPAN>').append(self.isuNm + api.lang.getWord('WE001')) //(좌축)
+                )
+              );
+              markupList.append(
+                $('<LI>').append(
+                  $('<SPAN>', {class: 'color_tp3'})
+                ).append(
+                  $('<SPAN>').append(self.selRow.textContent + api.lang.getWord('WE002')) //(우축) 
+                )
+              );
+              $('#chart_cls_big').append(markupList);
+
+            },
+            focus: $(this)
+          });
+        })
+      }
+
+    }
+  });
+</script>
+
+
+	<button class="jsTopBtn"></button>
 </div>
 
-</div> </div>
-										<div class="ban_list"> <a href="/29" class="mainban_new"> <img src="/template/s171127001001/images/book_icon.png" alt="책 두권">
-											<p>신간서적 안내</p>
-											</a> <a href="/26" class="mainban_search"> <img src="/template/s171127001001/images/glasses_icon.png" alt="돋보기">
-											<p>한일관계사연구 원문검색</p>
-											</a> </div>
-									</div>
-								</div>
-							</div>
-							<div class="clearfix visible-xs"></div>
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="col_1635489515">
-								<div class="dpl_element module" data-element="codecell" id="element_1426134662"><a class="mainban ban4 mainban2" href="/32" title="갤러리">
-									<div class="mainban_txtbox">
-										<h4 class="mainban_tit">갤러리</h4>
-										<span class="mainban_tit2">Gallery</span> </div>
-									<img class="mainban_img_bg mainban_img_bg2" src="/template/s171127001001/images/gallery.jpg" alt="갤러리"> </a> <a href="https://youtu.be/3IAWpXuWIjw" target="_blank" class="video_btn">30주년 역대 회장 간담회</a> <a href="https://youtu.be/AHwK4iO1Nfg" target="_blank" class="video_btn">창립30주년 기념 학술회의 영상</a>
-									<style>
-.mainban2{height:115px !important;}
-.mainban_img_bg2{width:110% !important;}
-.video_btn{display: block;background-color:#b48a5b;color:#ffffff;font-size:16px;text-align: center;margin-top:10px;padding:11.5px 0}
-.video_btn:hover{opacity: 0.8;}
-</style>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row" id="row_1630480322">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<div class="dpl_element module" data-element="codecell" id="element_1630480271">
-							<div class="banners">
-								<iframe src="/banner" frameborder="0" style="width: 100%; height: 60px;" width="100%" height="100%" scrolling="no"></iframe>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="section" id="section_1629429003">
-			<div class="container">
-				<div class="row" id="row_1635757554">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="col_1635485781"> 
-
-<ul id="footer_menu" class="module"  >
-    <li class="link_aboutus" style="display:none;">
-        <a href="#">회사소개</a>
-    </li>
-    <li class="link_useguide" style="display:none;">
-        <a href="#">이용안내</a>
-    </li>
-    <li class="link_service">
-        <a href="/terms_of_use">이용약관</a>
-    </li>
-    <li class="link_privacy">
-        <a href="/privacy">개인정보취급방침</a>
-    </li>
-    <li class="link_nospam">
-        <a href="/email_security">이메일주소무단수집거부</a>
-    </li>
-    <li class="link_cus1635485841">
-        <a href="/login/login_info">아이디찾기</a>
-    </li>
-    <li class="link_cus1635485870">
-        <a href="/login/login_info">비밀번호 재설정</a>
-    </li>
-    <li class="link_cus1635485899">
-        <a href="/join/join_certify">회원가입하기</a>
-    </li>
-</ul></div>
-				</div>
-			</div>
-		</div>
-		<footer id="footer" class="">
-			<div class="container">
-				<div class="row" id="row_1635487144">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<div class="dpl_element module" data-element="codecell" id="element_1635487058">
-							<div class="footer_txt">
-								<h3>한일관계사학회</h3>
-								<p> <b>회장 나행주</b> 05029 서울시 광진구 능동로 120 건국대학교 인문학관 연구동 109호 사학과 / <a href="tel:010-4079-5585">010-4079-5585</a><br>
-									<b>총무이사 조인희</b> 36605 경상북도 안동시 도산면 퇴계로 1997 한국국학진흥원 207호 / <a href="mailto:hanilhis1992@naver.com" target="_blank">hanilhis1992@naver.com</a> / <a href="tel:010-3837-6091">010-3837-6091</a></p>
-							</div>
-						</div>
-						<div class="dpl_element module" data-element="paragraph" id="element_1629428524">
-							<p>COPYRIGHT (C)2021. 이 웹사이트의 저작권은 한일관계사학회에 있습니다.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-</div>
-<a href="#" class="scrollup point_bg">Top</a> 
-<!-- 지우지 마세요 --> 
-<script type="text/javascript" src="/inc/js/ui/jquery.multipushmenu.js"></script> 
-<script src="/template/s171127001001/js/common.js"></script> 
 <script type="text/javascript">
-$(function(){
-    $('#mobile_mainmenu').multiPushMenu();
-});
-</script><script type="text/javascript" src="/inc/application/dubu_popup/js/popup.js"></script>
-<link rel="stylesheet" href="https://fonts.dubuplus.com/css?family=">
-<link rel="stylesheet" href="/inc/application/dubu_popup/skin/popup.css">
+	mdc.module.setModule({
+		name: 'TEMPLET_MODULE',
+		function: function (self, api) {
+			self.init = function () {
+				if("en"==""){
+					mdc.util.setCookie("lang","en",365);					
+				}else if("ko_KR"==""){
+					mdc.util.setCookie("lang","ko_KR",365);
+				}
+			};
+			$('.jsTopBtn').on('click', function () {
+				window.scrollTo(0,0);
+				$('.jsTopBtn').css({opacity:0});
+			});
 
+			$(window).scroll(function () {
+				if ($(window).scrollTop() > 100) {
+					$('.jsTopBtn').css({opacity:1});
+				} else {
+					$('.jsTopBtn').css({opacity:0});
+				}
+			});
+		}
+	});
+</script>
 </body>
 </html>

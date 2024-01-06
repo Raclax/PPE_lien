@@ -8,7 +8,6 @@ https://korean.dict.naver.com/koendict/#/entry/koen/31b2639fe46c459bade624efa2b2
 https://music.bugs.co.kr/track/6202207?wl_ref=list_tr_08
 https://help.tableau.com/current/pro/desktop/ko-kr/datasource_relationships_learnmorepage.htm
 https://efamily.scourt.go.kr/index.jsp
-https://ko.bab.la/%EC%82%AC%EC%A0%84/%ED%95%9C%EA%B5%AD%EC%96%B4-%EC%98%81%EC%96%B4/%EA%B4%80%EA%B3%84
 https://support.microsoft.com/ko-kr/office/%EA%B4%80%EA%B3%84-%EB%A7%8C%EB%93%A4%EA%B8%B0-%ED%8E%B8%EC%A7%91-%EB%98%90%EB%8A%94-%EC%82%AD%EC%A0%9C-dfa453a7-0b6d-4c34-a128-fdebc7e686af
 https://developer.android.com/training/data-storage/room/relationships?hl=ko
 http://www.kafr.or.kr/
@@ -18,7 +17,6 @@ https://www.appier.com/ko-kr/blog/relationship-marketing-how-to-build-a-lifelong
 https://www.kli.re.kr/menu.es?mid=a10507010000
 https://support.klac.or.kr/front/contents/06/03003-01.do
 https://www.kmou.ac.kr/ic/main.do
-https://hanilhis.or.kr/
 http://data.krx.co.kr/contents/MDC/HARD/hardController/MDCHARD011.cmd
 https://sydkorea.um.dk/ko/korean-bilateral-relations/bilateral
 https://hanmaths.tistory.com/50
@@ -54,5 +52,3 @@ https://lazypazy.tistory.com/37
 https://www.dongascience.com/news.php?idx=9522
 https://kormedi.com/1614666/%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84-%ED%9E%98%EB%93%A0-%EC%82%AC%EB%9E%8C%EC%9D%B4%EB%9D%BC%EB%A9%B4-%EA%BC%AD-%EC%A7%80%EC%BC%9C%EC%95%BC-%ED%95%A0-3%EA%B0%80%EC%A7%80/
 https://dbr.donga.com/article/view/1303/article_no/6894/ac/magazine
-https://help.salesforce.com/s/articleView?id=sf.overview_of_custom_object_relationships.htm&type=5
-https://www.hani.co.kr/arti/politics/defense/1122439.html
