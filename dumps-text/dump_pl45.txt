@@ -34,29 +34,24 @@ Definicja związek "jest"
 
    Czym jest Jest Związek znaczenie w Słownik definicji Z .
 
-   Co znaczy Zdjęcie:
-          Porównanie struktura danych przechowująca pewien chwilowy stan
-          obiektów, stan zmiennych programu albo stan bazy danych.
-          Przeważnie zdjęcie jest kopią bazy danych albo pewnego jej
-          fragmentu (perspektywy związek "jest" co znaczy.
+   Co znaczy Znacz I Zamiataj:
+          Porównanie mechanizmach zbierania nieużytków. Zakłada się, iż
+          każdy przedmiot jest zaopatrzony w jednobitowy znacznik. W
+          pierwszej fazie (znacz) następuje wyzerowanie wszystkich
+          znaczników i w dalszym ciągu związek "jest" co znaczy.
 
-   Krzyżówka Zdarzenie:
-          Dlaczego występujące w metodykach analizy i projektowania i w
-          nie wszystkich językach programowania) oznaczające rejestrowaln�
-          zmianę stanu otoczenia albo środowiska (na przykład nadejście
-          partii towaru związek "jest" krzyżówka.
+   Krzyżówka Złączenie Nawigacyjne:
+          Dlaczego Zobacz: zależne złączenie związek "jest" krzyżówka.
 
-   Co to jest Zakres Dynamiczny:
-          Jak lepiej zakresem dynamicznym dana nazwa jest widoczna poza
-          tekstem sąsiadującym z jej pojęciem, na przykład jest widoczna
-          wewnątrz procedur wywoływanych z danej procedury, gdzie jest
-          zdefiniowana ta nazwa związek "jest" co to jest.
+   Co to jest Zasada Relatywizmu:
+          Jak lepiej część pewnego bytu semantycznego powinna mieć takie
+          same ogólne własności jak całość. Relatywizm obiektów znaczy, iż
+          dowolny przedmiot złożona jest także z obiektów (podobiektów);
+          definicja atrybutu związek "jest" co to jest.
 
-   Słownik Ziarnistość:
-          Kiedy rodzaj jednostki danych będącej obiektem pewnych
-          specjalnych mechanizmów działających na bazie danych. Rozróżnia
-          się ziarnistość blokowania (locking granularity) oznaczając�
-          najmniejszą jednostkę związek "jest" słownik.
+   Słownik Związek Dwukierunkowy:
+          Kiedy Związek pozwalający na przechodzenie (nawigację) od jednej
+          klasy do drugiej klasy, i odwrotnie związek "jest" słownik.
 
      * Dodano: 30 czerwca 2021
      * Autor: Redaktor naczelny Redaktor naczelny

@@ -34,7 +34,7 @@ do
         iconv -f "$CODE" -t "UTF-8" -o "/tmp/reencodage_$N.html"  "../aspirations/aspiration_pl$N.html"
 		mv "/tmp/reencodage_$N.html" "./aspirations/aspiration_pl$N.html"
     fi
-	lynx --assume-charset=UTF-8 --display-charset=UTF-8 -dump -nolist "$URL" > "../dumps-text/dump_pl$N.txt"
+	lynx --assume-charset=UTF-8 --display-charset=UTF-8 -dump -nolist "$URL" > "../dumps-text/dump_pl$N.txt" | iconv -c -f UTF-8 -t UTF-8  > "../dumps-text/dump_pl$N.txt"
 	# for file in "../dumps-text/dump_pl$N.txt"; do
     # iconv -f "MACROMAN" -t "UTF-8" "$file" > "dump_temp_pl_$N.txt"
     # mv "dump_temp_pl_$N.txt" "../dumps-text/dump_pl$N.txt"
