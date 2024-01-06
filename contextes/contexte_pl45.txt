@@ -26,20 +26,25 @@ Definicja związek "jest"
 
    Czym jest Jest Związek znaczenie w Słownik definicji Z .
 
-   Co znaczy Zerwanie Transakcji:
-          Porównanie Zobacz: zerwanie związek "jest" co znaczy.
+   Co znaczy Zasada Otwarte/Zamknięte:
+          Porównanie przy konstrukcji obiektowych języków programowania,
+          odpowiednio z którą klasa jest otwarta na rozszerzenia
+          (specjalizacje), ale jest zamknięta na modyfikacje. Konsekwencj�
+          tej zasady jest zasada związek "jest" co znaczy.
 
-   Krzyżówka Zanurzone Zapytanie:
-          Dlaczego Zobacz: pytanie zanurzone związek "jest" krzyżówka.
+   Krzyżówka Zachowanie:
+          Dlaczego Zbiór metod i innych abstrakcji proceduralnych
+          przypisany do (klasy) obiektów. Przeciwieństwo: behawior związek
+          "jest" krzyżówka.
 
-   Co to jest Złączenie Zależne:
-          Jak lepiej Zobacz: zależne złączenie związek "jest" co to jest.
+   Co to jest Zapis:
+          Jak lepiej wielu starszych językach i systemach na oznaczenia
+          zestawu nazwanych wartości. Synonimem zapisu w rodzinie języków
+          C/C++ jest struktura, w systemach relacyjnych jest nim krotka
+          albo wiersz, zaś w związek "jest" co to jest.
 
-   Słownik Związek:
-          Kiedy związek, powiązanie asocjacyjne między encjami, na
-          przykład powiązanie PracujeW między encją Pracownik i encj�
-          Spółka. W modelach obiektowych związek taki nosi nazwę asocjacji
-          (association związek "jest" słownik.
+   Słownik Złożony Obiekt:
+          Kiedy Zobacz: przedmiot złożony związek "jest" słownik.
 
      * Dodano: 30 czerwca 2021
      * Autor: Redaktor naczelny Redaktor naczelny
