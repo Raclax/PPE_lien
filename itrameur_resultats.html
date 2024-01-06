@@ -6,12 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>link | związek | 관계</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="index.js"></script>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .content {
+            max-width: 800px;
+            text-align: justify;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .navbar-item {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 150px;
+        }
+    </style>
 </head>
+
 <body>
     <nav class="navbar is-dark">
         <div class="navbar-brand">
@@ -31,9 +67,9 @@
                     Accueil
                 </a>
                 <a class="navbar-item nav-link" href="./qui_sommes_nous.html">
-                    Qui sommes-nous 
+                    Qui sommes-nous
                 </a>
-                <a class="navbar-item nav-link" href="./notre_sujet.html" >
+                <a class="navbar-item nav-link" href="./notre_sujet.html">
                     Notre sujet
                 </a>
                 <a class="navbar-item nav-link" href="./tableaux_projet.html">
@@ -42,9 +78,83 @@
                 <a class="navbar-item nav-link" href="./itrameur_resultats.html">
                     Résultats d'iTrameur
                 </a>
-             </div>
+            </div>
         </div>
     </nav>
+    <div class="container">
+        <div class="content">
+            <h1>Analyse iTrameur</h1>
+            <p>
+                Pour effectuer l'analyse linguistique du mot choisi, j'ai utilisé iTrameur, un logiciel conçu pour
+                extraire
+                des données contextuelles autour d'un mot analysé, générer des concordances et élaborer un dictionnaire
+                du
+                corpus incluant les fréquences associées.
+            </p>
+            <h2>Polonais</h2>
+            <p>
+                Le mot cible de mon analyse était "lien" - en polonais, "związek". Le terme "związek" a des
+                significations
+                variées en polonais, dépendant du contexte dans lequel il est utilisé. Il peut se référer aux liens
+                entre
+                les personnes, les organisations ou les choses, ainsi qu'aux relations entre idées ou phénomènes. Dans
+                le
+                contexte social, "związek" peut signifier une proximité émotionnelle entre les individus, des relations
+                partenariales ou l'appartenance à une organisation ou à un syndicat. Quant au contexte scientifique ou
+                logique, "związek" peut concerner des liens de cause à effet, des interdépendances ou la structure
+                logique
+                entre différents éléments. En bref, le mot "związek" est polyvalent et acquiert sa pleine signification
+                en
+                fonction du contexte dans lequel il est utilisé.
+            </p>
+            <h3>Dictionnaire</h3>
+            <img src="./extra/pl2.png" alt="Dictionnaire polonais">
+            <p>
+                Lors de l'analyse avec le dictionnaire, nous constatons que même si le mot cible est "związek", il ne
+                figure
+                pas parmi les mots les plus fréquents du corpus. Ce qui est intéressant, c'est que le mot "w" fait
+                partie
+                d'une collocation "w związku". Cela peut expliquer sa fréquence élevée d'apparition. De plus, nous
+                observons
+                371 occurrences du mot "związek" au cas nominal, qui est le plus fréquent dans la langue polonaise.
+            </p>
+            <img src="./extra/pl1.png" alt="Dictionnaire polonais">
+            <h3>Concordances</h3>
+            <img src="./extra/pl3.png" alt="Concordances polonais">
+            <p>
+                En examinant les concordances, nous remarquons que le mot "związek" est souvent utilisé avec les termes
+                "partnerski" - de deux partenaires, "dwóch osób" - de deux personnes, "mężczyzny i kobiety" et "męża i
+                żony"
+                - d'un homme et d'une femme. Toutes ces collocations décrivent une relation émotionnelle entre les
+                humains.
+            </p>
+            <h3>Cooccurrents</h3>
+            <img src="./extra/pl4.png" alt="Cooccurrents polonais">
+            <p>
+                En examinant les cooccurrences, nous remarquons que le mot cible apparaît fréquemment avec des termes
+                tels
+                que "partnerski" (polonais pour de deux partenaires), "małżeński" (polonais pour mariage), "organiczny"
+                (polonais pour organique), "frazeologiczny" (polonais pour phraséologique) et "dwóch" (polonais pour de
+                deux). Bien que dans ce cas, il existe également des collocations scientifiques provenant des
+                dictionnaires,
+                telles que "związek organiczny" ou encore "związek frazeologiczny", nous pouvons constater que les
+                collocations les plus populaires sont toujours liées aux relations entre deux individus.
+            </p>
+            <img src="./extra/pl5.png" alt="le nœud des cooccurrences polonais">
+            <p>
+                À travers le nœud des cooccurrences et après avoir réduit l'indice de spécificité à 10, nous retrouvons
+                les
+                mots d'apparition les plus fréquents. De nouveaux mots apparaissent, tels que "formalny" (formel en
+                polonais) et "zawodowy" (professionnel en polonais). Le mot "związek" fait partie de la colocation
+                "związek
+                zawodowy", qui signifie un syndicat en français. Bien que de nouveaux mots soient identifiés, cela
+                confirme
+                encore une fois que le mot "związek" en polonais est utilisé surtout dans le contexte d'une relation
+                entre
+                deux personnes.
+            </p>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="content has-text-centered" id="contact">
@@ -54,4 +164,5 @@
 
 
 </body>
+
 </html>
