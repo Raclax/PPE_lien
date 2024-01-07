@@ -99,4 +99,8 @@ reste plus qu'à attendre la fin des analyses en cours et à déposer notre trav
 des derniers jours. J'ai donc tout arrangé. J'ai ensuite fait ma partie sur iTRameur, les PALS 
 et mon nuage de mot et j'ai ajouté mes informations et ma photos sur la partie "qui sommes nous" 
 de notre site.
-
+Itrameur : j'ai eu un problème de chemin de fichiers, j'avais mis ../ pour indiquer le dossier 
+parent mais ça ne fonctionnait pas, donc comme dans le message d'erreur j'avais l'impression
+d'être déjà dans le dossier parent j'ai changé par : 
+bash itrameur/make_itrameur_corpus_1.sh ./dumps-text/ ./contextes kor
+(et c'était bon)
