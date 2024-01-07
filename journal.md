@@ -103,4 +103,4 @@ Itrameur : j'ai eu un problème de chemin de fichiers, j'avais mis ../ pour indi
 parent mais ça ne fonctionnait pas, donc comme dans le message d'erreur j'avais l'impression
 d'être déjà dans le dossier parent j'ai changé par : 
 bash itrameur/make_itrameur_corpus_1.sh ./dumps-text/ ./contextes kor
-(et c'était bon)
+(et c'était bon) mon chat s'est mit sur mon clavier et ça a tout cassé (pause câlin)
