@@ -18,14 +18,22 @@ Usage : $0 \"../URLs/liens_gwangye.txt\""
 	fi
 fi
 
-echo "<table>" 
 echo "<html>
 	<head>
-		<meta charset= \"UTF-8\">
-	</head>
-	<body>"
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>związek | link | 관계</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulmaswatch.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/pulse/bulmaswatch.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulmaswatch.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="index.js"></script>
+        </head>
+        <body>"
 
-echo "  <table>
+echo "  <table class="table is-bordered">
             <tr><th>Numéro</th>
 			<th>URLs</th>
 			<th>encodage HTTP</th>
