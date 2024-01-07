@@ -39,4 +39,4 @@ do
 done
 echo "</LANG>" >> "$output_contextes"
 
-# ./dumps-text ./contextes kor
+# bash itrameur/make_itrameur_corpus_1.sh ./dumps-text/ ./contextes kor

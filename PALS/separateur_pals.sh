@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$#" -ne 2 ]; then
-  echo "Utilisation : $0 fichier_input dump_pals_LANG.txt"
+  echo "Utilisation : $0 ../itrameur/dump_LANG.txt dump_pals_LANG.txt"
   exit 1
 fi
 
@@ -18,7 +18,7 @@ cat "$fichier_input" | tr -cs "[:alpha:]." "\n" | sed "s/\./\n/g"  > "$fichier_o
 
 echo "Mots séparés avec succès. Le résultat a été enregistré dans $fichier_output"
 
-# python3 ./programmes/korean.py ./PALS/dump_pals_kor.txt   --target "관계" --match-mode regex -N 10 --tool-emulation itrameur > ./PALS/resultats_pals_kor.txt
+# python3 ./programmes/korean.py ./PALS/dump_pals_kor.txt   --target "관계" --match-mode regex -N 10 --tool-emulation itrameur > ./PALS/RESULTATS/resultats_pals_kor.txt
 
 
 # #!/usr/bin/env bash
