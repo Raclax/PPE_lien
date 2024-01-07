@@ -61,7 +61,7 @@ La gestion appropriée de l'encodage des fichiers dump générés par Lynx étai
 J'ai rencontré des problèmes liés à l'utilisation de grep avec l'option -P. Certains systèmes ne la prennent pas en charge, donc j'ai ajusté le script pour utiliser l'option -E là où nécessaire.
 
 # 06/01
-(Maria) Aujourd'hui, j'ai rencontré un problème persistant d'encodage lié aux fichiers de dumps, mais finalement, j'ai réussi à le résoudre. J'ai également terminé l'analyse sur iTrameur et ajouté les captures d'écran de mes résultats. À présent, j'attends les analyses de Clara et de Débora pour compléter cette section et effectuer les modifications nécessaires sur le site HTML. De plus, j'ai ajouté un dossier dédié aux images et à la modification avec Bulma. Finalement, j'ai modifié le site HTML avec Bulma pour le rendre plus visible, j'ai ajouté une page pour les nuages de mots t j'ai créé une image de nuages de mots pour le polonais.
+(Maria) Aujourd'hui, j'ai rencontré un problème persistant d'encodage lié aux fichiers de dumps, mais finalement, j'ai réussi à le résoudre. J'ai également terminé l'analyse sur iTrameur et ajouté les captures d'écran de mes résultats. À présent, j'attends les analyses de Clara et de Débora pour compléter cette section et effectuer les modifications nécessaires sur le site HTML. De plus, j'ai ajouté un dossier dédié aux images et à la modification avec Bulma. Finalement, j'ai modifié le site HTML avec Bulma pour le rendre plus visible, j'ai ajouté une page pour les nuages de mots et j'ai créé une image de nuages de mots pour le polonais.
 
 (Clara) Tous les tableaux ont une colonne concordancier avec des liens qui mènent effectivement vers une page html, si 
 le site n'a pas d'errreur de type 400. Le script que j'avais fait focntionnait pour l'anglais mais pas pour le 
@@ -76,8 +76,14 @@ renseigner sur le site de Bulma.
 
 # 07/01
 
-(Clara) Il ne reste du travail pour aujourd'hui mais rien de sorcier. Je n'vais pas encore fait l'analyse iTRameur de l'anglais donc je l'ai faite, pris des captures d'écrans et l'ai intégré à la page "analyse". Maria avait déjà fait sa partie avec la présentation HTML donc j'ai en partie repris la disposition de ses images et textes. J'ai également fait la partie PALS pour l'anglais, ainsi que le nuage de mots.
-Il ne reste désormais plus qu'à faire une courte introduction à notre proket sur la page principale et à attendre que Déboré finisse sa partir iTrameur et son nuage de mots. Il n'y a pas eu de problèmes particuliers puis qu'il s'est surtout sagit de récupérer des résultats, les analyser et les présenter sur la page.
+(Clara) Il ne reste du travail pour aujourd'hui mais rien de sorcier. Je n'vais pas encore fait 
+l'analyse iTRameur de l'anglais donc je l'ai faite, pris des captures d'écrans et l'ai intégré à 
+la page "analyse". Maria avait déjà fait sa partie avec la présentation HTML donc j'ai en partie 
+repris la disposition de ses images et textes. J'ai également fait la partie PALS pour l'anglais, 
+ainsi que le nuage de mots. Il ne reste désormais plus qu'à faire une courte introduction à notre 
+proket sur la page principale et à attendre que Déboré finisse sa partir iTrameur et son nuage de 
+mots. Il n'y a pas eu de problèmes particuliers puis qu'il s'est surtout sagit de récupérer des 
+résultats, les analyser et les présenter sur la page.
+- Updates : J'ai terminé de rédiger la courte intruducion sur la page d'accueil de notre site, et ai modififié le style du tableau pour le rendre plus lisible et l'accorder au reste du site, sur le modèle choisi par Maria. Je l'ai également fait pour le tableau en coréen. Je pense que ma part du travail est finie!
 
-(Maria) Aujourd'hui, ma to-do list étant plutôt légère, j'en ai profité pour peaufiner le site HTML. J'ai pris le temps de traquer et de corriger les petites erreurs qui s'étaient glissées dans le code, ajusté la taille du contenu des images pour une meilleure esthétique, et poussé l'analyse un peu plus loin en utilisant les scripts Python de PALS. En parallèle, j'ai affiné les transitions sur le site pour garantir une expérience utilisateur fluide.
-Maintenant, il ne nous reste plus qu'à finaliser toutes les analyses en cours et à déposer notre travail.
+(Maria) Aujourd'hui, ma to-do list était plutôt légère, donc j'en ai profité pour modifier le site HTML. J'ai pris le temps de traquer et de corriger les petites erreurs qui s'étaient glissées dans le code, ajusté la taille du contenu des images pour une meilleure esthétique, et poussé l'analyse un peu plus loin en utilisant les scripts Python de PALS. En parallèle, j'ai modifié les transitions sur le site pour garantir une expérience utilisateur fluide. Maintenant, il ne me reste plus qu'à attendre la fin des analyses en cours et à déposer notre travail. 
