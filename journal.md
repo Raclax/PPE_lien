@@ -98,7 +98,8 @@ reste plus qu'à attendre la fin des analyses en cours et à déposer notre trav
 (Débora) Suite à un commit qui a divergé, je n'avais pas vu mais j'ai perdu toutes mes avancées 
 des derniers jours. J'ai donc tout arrangé. J'ai ensuite fait ma partie sur iTRameur, les PALS 
 et mon nuage de mot et j'ai ajouté mes informations et ma photos sur la partie "qui sommes nous" 
-de notre site.
+de notre site. A part ça, j'ai eu énormément de problèmes de divergence des branches, comme nous
+faisions le travail en même temps, c'était très compliqué de savoir qui avait push à chaque fois. 
 Itrameur : j'ai eu un problème de chemin de fichiers, j'avais mis ../ pour indiquer le dossier 
 parent mais ça ne fonctionnait pas, donc comme dans le message d'erreur j'avais l'impression
 d'être déjà dans le dossier parent j'ai changé par : 
@@ -107,4 +108,9 @@ bash itrameur/make_itrameur_corpus_1.sh ./dumps-text/ ./contextes kor
 PALS : en comparant mes résulats avec Maria et Clara je me rend compte qu'il y a un petit 
 problème. J'ai creusé un peu et c'est le concordancier qui n'est pas bon. Avec le prof on avait
 regardé pour séparer les mots et on avait créé le script korean.py, mais il semblerait que 
-quelque chose d'autre n'aille pas.
+quelque chose d'autre n'aille pas. En fin de compte, j'ai eu le même problème que Maria pour
+les fichiers dumps, dans le dossier itrameur le fichier est corrompu au niveau de l'encodage.
+Wordcloud : c'est grâce à ça que j'ai vu le problème d'encodage. Mêmeen essayant la méthode de
+Maria ça ne fonctionne pas et j'ai aussi essayé deux trois trucs sans succès. Je vais donc faire
+un cat dump_kor*.txt > dump_kor_all.txt pour le wordcloud car là il n'y a pas de problème.
+

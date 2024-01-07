@@ -51,11 +51,11 @@ do
 
 	if [ $reponse == "200" ]
 	then
-		if [ ! $encodage == "UTF-8" ]
-		then
-			iconv -f "$encodage" -t "UTF-8" -o "/tmp/reencodage_${lineno}.html" "../aspirations/kor$N.html"
-			mv "/tmp/reencodage_${lineno}.html" "../aspirations/kor$N.html"
-		fi
+#		if [ ! $encodage == "UTF-8" ]
+#		then
+#			iconv -f "$encodage" -t "UTF-8" -o "/tmp/reencodage_${lineno}.html" "../aspirations/kor$N.html"
+#			mv "/tmp/reencodage_${lineno}.html" "../aspirations/kor$N.html"
+#		fi
 
 		lynx -assume-charset=UTF-8 -display-charset=UTF-8 -dump -nolist "$urls" | iconv -c -f "$encodage" -t UTF-8 >"../dumps-text/dump_kor$N.txt"
     		compte=$(cat "../dumps-text/dump_kor$N.txt" | egrep -i -o "관계"  | wc -w)

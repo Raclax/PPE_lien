@@ -154,9 +154,9 @@ Tag
 
 Tag
 
-   bayes' formula, probability measure, σ-field, disjoint, 수열, 양성반응,
-   field, 실제병에걸린확률, 확률, 집합, probability function, 확률 함수, sigma field, 수열의
-   극한, 조건부 확률, 확률 측도, 수열의 수렴, 베이즈 공식, 태그를 입력해 주세요., 서로소,
+   disjoint, 집합, probability function, 수열의 극한, probability measure, 확률,
+   σ-field, 실제병에걸린확률, 수열, 서로소, 태그를 입력해 주세요., 조건부 확률, bayes' formula,
+   field, 확률 함수, 수열의 수렴, 베이즈 공식, 양성반응, sigma field, 확률 측도,
 
 최근글과 인기글
 
@@ -182,8 +182,8 @@ Tag
 
 방문자수Total
 
-   541,424
-     * Today : 15
+   541,426
+     * Today : 17
      * Yesterday : 48
 
    블로그 내 검색 ____________________

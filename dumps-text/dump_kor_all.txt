@@ -1,6 +1,4 @@
-<LANG="kor">
-<page="kor10.txt">
-<text>   본문 바로가기 주메뉴 바로가기
+   본문 바로가기 주메뉴 바로가기
      * ENGLISH
      * 中國語
      * 日本語
@@ -472,10 +470,8 @@
      * 원격지원
 
    Copyright©Supreme Court of Korea. All Rights reserved.
-     (사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크) (신)인증현황 목록 새창</text>
-</page> §
-<page="kor11.txt">
-<text>   주 콘텐츠로 건너뛰기
+     (사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크) (신)인증현황 목록 새창
+   주 콘텐츠로 건너뛰기
    (BUTTON) (BUTTON) Microsoft
    (BUTTON) Support (BUTTON)
    Support
@@ -500,9 +496,9 @@
           + PC Gaming
           + HoloLens
           + Hardware warranties
-     * (BUTTON) Account  billing
+     * (BUTTON) Account & billing
           + Account
-          + Microsoft Store  billing
+          + Microsoft Store & billing
      * (BUTTON) Resources
           + What's new
           + Community forums
@@ -1175,10 +1171,8 @@
      * 광고 정보
      * © Microsoft 2023
 
-   IFRAME: iframeOP</text>
-</page> §
-<page="kor12.txt">
-<text>   #Android Developers alternate alternate alternate alternate alternate
+   IFRAME: iframeOP
+   #Android Developers alternate alternate alternate alternate alternate
    alternate alternate alternate alternate alternate alternate alternate
    alternate alternate
 
@@ -1256,38 +1250,38 @@
                     # 유형 더보기
           + 앱 매니페스트 파일
                o 앱 매니페스트 정보
-               o action
-               o activity
-               o activity-alias
-               o application
-               o category
-               o compatible-screens
-               o data
-               o grant-uri-permission
-               o instrumentation
-               o intent-filter
-               o layout
-               o manifest
-               o meta-data
-               o path-permission
-               o permission
-               o permission-group
-               o permission-tree
-               o profileable
-               o property
-               o provider
-               o queries
-               o receiver
-               o service
-               o supports-gl-texture
-               o supports-screens
-               o uses-configuration
-               o uses-feature
-               o uses-library
-               o uses-native-library
-               o uses-permission
-               o uses-permission-sdk-23
-               o uses-sdk
+               o <action>
+               o <activity>
+               o <activity-alias>
+               o <application>
+               o <category>
+               o <compatible-screens>
+               o <data>
+               o <grant-uri-permission>
+               o <instrumentation>
+               o <intent-filter>
+               o <layout>
+               o <manifest>
+               o <meta-data>
+               o <path-permission>
+               o <permission>
+               o <permission-group>
+               o <permission-tree>
+               o <profileable>
+               o <property>
+               o <provider>
+               o <queries>
+               o <receiver>
+               o <service>
+               o <supports-gl-texture>
+               o <supports-screens>
+               o <uses-configuration>
+               o <uses-feature>
+               o <uses-library>
+               o <uses-native-library>
+               o <uses-permission>
+               o <uses-permission-sdk-23>
+               o <uses-sdk>
      * 기기
           + 기기 호환성
                o 기기 호환성 정보
@@ -2900,7 +2894,7 @@ interface UserBookDao {
         "FROM user, book " +
         "WHERE user.id = book.user_id"
     )
-    fun loadUserAndBookNames(): LiveDataListUserBook
+    fun loadUserAndBookNames(): LiveData<List<UserBook>>
 }
 
 data class UserBook(val userName: String?, val bookName: String?)
@@ -2912,7 +2906,7 @@ public interface UserBookDao {
    @Query("SELECT user.name AS userName, book.name AS bookName " +
           "FROM user, book " +
           "WHERE user.id = book.user_id")
-   public LiveDataListUserBook loadUserAndBookNames();
+   public LiveData<List<UserBook>> loadUserAndBookNames();
 }
 
 public class UserBook {
@@ -2936,7 +2930,7 @@ Kotlin
     "SELECT * FROM user" +
     "JOIN book ON user.id = book.user_id"
 )
-fun loadUserAndBookNames(): MapUser, ListBook
+fun loadUserAndBookNames(): Map<User, List<Book>>
 
 Java
 
@@ -2944,7 +2938,7 @@ Java
     "SELECT * FROM user" +
     "JOIN book ON user.id = book.user_id"
 )
-public MapUser, ListBook loadUserAndBookNames();
+public Map<User, List<Book>> loadUserAndBookNames();
 
 
 접근 방식 선택
@@ -3090,13 +3084,13 @@ Kotlin
 
 @Transaction
 @Query("SELECT * FROM User")
-fun getUsersAndLibraries(): ListUserAndLibrary
+fun getUsersAndLibraries(): List<UserAndLibrary>
 
 Java
 
 @Transaction
 @Query("SELECT * FROM User")
-public ListUserAndLibrary getUsersAndLibraries();
+public List<UserAndLibrary> getUsersAndLibraries();
 
 일대다 관계 정의
 
@@ -3155,7 +3149,7 @@ data class UserWithPlaylists(
           parentColumn = "userId",
           entityColumn = "userCreatorId"
     )
-    val playlists: ListPlaylist
+    val playlists: List<Playlist>
 )
 
 Java
@@ -3166,7 +3160,7 @@ public class UserWithPlaylists {
          parentColumn = "userId",
          entityColumn = "userCreatorId"
     )
-    public ListPlaylist playlists;
+    public List<Playlist> playlists;
 }
 
    마지막으로 상위 항목과 하위 항목을 쌍으로 묶는 데이터 클래스의 모든 인스턴스를 반환하는 메서드를 DAO 클래스에 추가합니다.
@@ -3177,13 +3171,13 @@ Kotlin
 
 @Transaction
 @Query("SELECT * FROM User")
-fun getUsersWithPlaylists(): ListUserWithPlaylists
+fun getUsersWithPlaylists(): List<UserWithPlaylists>
 
 Java
 
 @Transaction
 @Query("SELECT * FROM User")
-public ListUserWithPlaylists getUsersWithPlaylists();
+public List<UserWithPlaylists> getUsersWithPlaylists();
 
 다대다 관계 정의
 
@@ -3259,7 +3253,7 @@ data class PlaylistWithSongs(
          entityColumn = "songId",
          associateBy = Junction(PlaylistSongCrossRef::class)
     )
-    val songs: ListSong
+    val songs: List<Song>
 )
 
 data class SongWithPlaylists(
@@ -3269,7 +3263,7 @@ data class SongWithPlaylists(
          entityColumn = "playlistId",
          associateBy = Junction(PlaylistSongCrossRef::class)
     )
-    val playlists: ListPlaylist
+    val playlists: List<Playlist>
 )
 
 Java
@@ -3281,7 +3275,7 @@ public class PlaylistWithSongs {
          entityColumn = "songId",
          associateBy = @Junction(PlaylistSongCrossref.class)
     )
-    public ListSong songs;
+    public List<Song> songs;
 }
 
 public class SongWithPlaylists {
@@ -3291,7 +3285,7 @@ public class SongWithPlaylists {
          entityColumn = "playlistId",
          associateBy = @Junction(PlaylistSongCrossref.class)
     )
-    public ListPlaylist playlists;
+    public List<Playlist> playlists;
 }
 
    마지막으로 DAO 클래스에 메서드를 추가하여 앱에 필요한 쿼리 기능을 노출합니다.
@@ -3307,21 +3301,21 @@ Kotlin
 
 @Transaction
 @Query("SELECT * FROM Playlist")
-fun getPlaylistsWithSongs(): ListPlaylistWithSongs
+fun getPlaylistsWithSongs(): List<PlaylistWithSongs>
 
 @Transaction
 @Query("SELECT * FROM Song")
-fun getSongsWithPlaylists(): ListSongWithPlaylists
+fun getSongsWithPlaylists(): List<SongWithPlaylists>
 
 Java
 
 @Transaction
 @Query("SELECT * FROM Playlist")
-public ListPlaylistWithSongs getPlaylistsWithSongs();
+public List<PlaylistWithSongs> getPlaylistsWithSongs();
 
 @Transaction
 @Query("SELECT * FROM Song")
-public ListSongWithPlaylists getSongsWithPlaylists();
+public List<SongWithPlaylists> getSongsWithPlaylists();
 
    참고: @Relation 주석이 특정 사용 사례를 충족하지 않으면 SQL 쿼리에서 JOIN 키워드를 사용하여 적절한 관계를
    수동으로 정의해야 할 수 있습니다. 여러 테이블을 수동으로 쿼리하는 방법에 관한 자세한 내용은 Room DAO를 사용하여 데이터
@@ -3408,7 +3402,7 @@ data class PlaylistWithSongs(
          entityColumn = "songId",
          associateBy = Junction(PlaylistSongCrossRef::class)
     )
-    val songs: ListSong
+    val songs: List<Song>
 )
 
 Java
@@ -3420,7 +3414,7 @@ public class PlaylistWithSongs {
          entityColumn = "songId",
          associateBy = Junction(PlaylistSongCrossRef.class)
     )
-    public ListSong songs;
+    public List<Song> songs;
 }
 
    이 관계를 나타내는 데이터 클래스를 정의한 후 집합의 다른 테이블과 첫 번째 관계 클래스 간의 관계를 모델링하여 새 관계 내부에
@@ -3436,7 +3430,7 @@ data class UserWithPlaylistsAndSongs(
         parentColumn = "userId",
         entityColumn = "userCreatorId"
     )
-    val playlists: ListPlaylistWithSongs
+    val playlists: List<PlaylistWithSongs>
 )
 
 Java
@@ -3448,7 +3442,7 @@ public class UserWithPlaylistsAndSongs {
         parentColumn = "userId",
         entityColumn = "userCreatorId"
     )
-    public ListPlaylistWithSongs playlists;
+    public List<PlaylistWithSongs> playlists;
 }
 
    UserWithPlaylistsAndSongs 클래스는 세 가지의 모든 항목 클래스(User, Playlist, Song) 간의
@@ -3469,13 +3463,13 @@ Kotlin
 
 @Transaction
 @Query("SELECT * FROM User")
-fun getUsersWithPlaylistsAndSongs(): ListUserWithPlaylistsAndSongs
+fun getUsersWithPlaylistsAndSongs(): List<UserWithPlaylistsAndSongs>
 
 Java
 
 @Transaction
 @Query("SELECT * FROM User")
-public ListUserWithPlaylistsAndSongs getUsersWithPlaylistsAndSongs();
+public List<UserWithPlaylistsAndSongs> getUsersWithPlaylistsAndSongs();
 
 추가 리소스
 
@@ -3586,10 +3580,8 @@ public ListUserWithPlaylistsAndSongs getUsersWithPlaylistsAndSongs();
      * 中文 – 简体
      * 中文 – 繁體
      * 日本語
-     * 한국어</text>
-</page> §
-<page="kor13.txt">
-<text>   #alternate alternate alternate Ambasciata d'Italia Seoul » 피드
+     * 한국어
+   #alternate alternate alternate Ambasciata d'Italia Seoul » 피드
    Ambasciata d'Italia Seoul » 댓글 피드 alternate alternate alternate
 
    이 사이트는 기술, 분석 및 타사 쿠키를 사용합니다.
@@ -3631,8 +3623,8 @@ Ricerca sito live
 
    ____________________ (BUTTON) 사이트에서 검색 사이트에서 검색
 
-    1. 집
-    2. 이탈리아와 한국
+    1. 집>
+    2. 이탈리아와 한국>
     3. 북한과의 수교관계
 
    공유페이스 북에 공유트위터에서 Whatsapp에서 공유
@@ -3776,10 +3768,8 @@ Ambasciata d'Italia Seoul
      * Privacy e cookie policy
      * Dichiarazione di Accessibilità
 
-     * 2024 저작권 외교부 및 국제협력부</text>
-</page> §
-<page="kor14.txt">
-<text>Think Tank Journal FOCUS
+     * 2024 저작권 외교부 및 국제협력부
+Think Tank Journal FOCUS
 
      * 포커스칼럼
           + 편집인 생각
@@ -3997,10 +3987,8 @@ Ambasciata d'Italia Seoul
      * KDI국제정책대학원
      * 육아정책연구소
 
-   Logger Script</text>
-</page> §
-<page="kor15.txt">
-<text>   #alternate alternate alternate
+   Logger Script
+   #alternate alternate alternate
 
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-TQ23HJ
 
@@ -4035,7 +4023,7 @@ Ambasciata d'Italia Seoul
      *
           + 이커머스
           + 리테일
-          + 금융  보험
+          + 금융 & 보험
           + 게임
           + 자동차
 
@@ -4089,7 +4077,7 @@ Ambasciata d'Italia Seoul
      *
           + 이커머스
           + 리테일
-          + 금융  보험
+          + 금융 & 보험
           + 게임
           + 자동차
 
@@ -4115,7 +4103,7 @@ Ambasciata d'Italia Seoul
    블로그
      * 캠페인 최적화
      * 고객 경험
-     * 데이터 사이언스  AI
+     * 데이터 사이언스 & AI
      * 디지털 광고
      * 마케팅 자동화
      * 개인화
@@ -4123,7 +4111,7 @@ Ambasciata d'Italia Seoul
    (BUTTON)
      * 캠페인 최적화
      * 고객 경험
-     * 데이터 사이언스  AI
+     * 데이터 사이언스 & AI
      * 디지털 광고
      * 마케팅 자동화
      * 개인화
@@ -4258,7 +4246,7 @@ Ambasciata d'Italia Seoul
      * 산업별
      * 이커머스
      * 리테일
-     * 금융  보험
+     * 금융 & 보험
      * 게임
      * 자동차
 
@@ -4278,10 +4266,8 @@ Ambasciata d'Italia Seoul
 
    © 2023 Appier Inc. All Rights Reserved.
    PRIVACY POLICY Do Not Sell/Share My Personal Information Limit the Use
-   of My Sensitive Personal Information</text>
-</page> §
-<page="kor16.txt">
-<text>송무자료
+   of My Sensitive Personal Information
+송무자료
 
      * 소송의 준비
           + 민사소송의 개념 및 절차
@@ -4453,7 +4439,7 @@ Ambasciata d'Italia Seoul
                o └ 보전처분
                o └ 강제집행
 
-친생자관계 존부 확인  요건사실
+친생자관계 존부 확인 > 요건사실
 
      * 요건사실
      * 기타사항
@@ -4538,10 +4524,8 @@ Ambasciata d'Italia Seoul
 
      * 혈액형이 서로 다른 경우 등
      * 남편의 생식불능, 혈액형의 검사, 유전자감정 등 개별적이고도 구체적인 검사를 통해서만 친생자여부를 판단할 수 있는
-       경우에도 친생추정을 부인하고 친생자관계부존재확인소송을 제기할 수 있다는 견해와 판례가 있음</text>
-</page> §
-<page="kor17.txt">
-<text>   이미지 없음
+       경우에도 친생추정을 부인하고 친생자관계부존재확인소송을 제기할 수 있다는 견해와 판례가 있음
+   이미지 없음
 
    메인메뉴 바로가기 본문으로 바로가기
 
@@ -4567,7 +4551,7 @@ Ambasciata d'Italia Seoul
           + 박용수 교수님게시판
           + 최성일 교수님게시판
           + 차경자 교수님게시판
-     * 입학 QA
+     * 입학 Q&A
 
    메뉴닫기
      * 홈
@@ -4587,7 +4571,7 @@ Ambasciata d'Italia Seoul
           + 박용수 교수님게시판
           + 최성일 교수님게시판
           + 차경자 교수님게시판
-     * 입학 QA
+     * 입학 Q&A
 
    한국해양대학교 국제관계학과
    메뉴열기
@@ -4808,11 +4792,9 @@ Ambasciata d'Italia Seoul
 
     (49112) 부산광역시 영도구 태종로 727(동삼동) 한국해양대학교 051-410-4455
 
-   Copyright (c) NATIONAL Korea Maritime  Ocean University. All rights
-   reserved.</text>
-</page> §
-<page="kor18.txt">
-<text>     * 뉴스
+   Copyright (c) NATIONAL Korea Maritime & Ocean University. All rights
+   reserved.
+     * 뉴스
      * 연락처
      * 세계속의 덴마크
      * English
@@ -5255,10 +5237,8 @@ Ambasciata d'Italia Seoul
    T: 051 244 9697
    F: 051 244 4484 (국제: +82 51 244 9697)
    E: [email protected]
-   W: http://www.pusanlaw.com</text>
-</page> §
-<page="kor19.txt">
-<text>   #한수학
+   W: http://www.pusanlaw.com
+   #한수학
 
 한수학
 
@@ -5359,7 +5339,7 @@ Ambasciata d'Italia Seoul
    a는 b의 남자친구이다 라고 보면 됩니다.
 
 
-   즉 R은 (남자친구,여자친구)  = 이렇게 되는 순서쌍의 집합이 되는것이죠
+   즉 R은 (남자친구,여자친구)  <= 이렇게 되는 순서쌍의 집합이 되는것이죠
 
 
 
@@ -5455,10 +5435,8 @@ Tag
 
 티스토리툴바
 
-   IFRAME: //hanmaths.tistory.com/api</text>
-</page> §
-<page="kor1.txt">
-<text>   #alternate 편집 위키낱말사전 (ko) 위키낱말사전 아톰 피드
+   IFRAME: //hanmaths.tistory.com/api
+   #alternate 편집 위키낱말사전 (ko) 위키낱말사전 아톰 피드
 
    본문으로 이동
 
@@ -5584,7 +5562,7 @@ Tag
      * 중국어(zh):
      * 프랑스어(fr):
 
-   원본 주소 "https://ko.wiktionary.org/w/index.php?title=관계oldid=3992356"
+   원본 주소 "https://ko.wiktionary.org/w/index.php?title=관계&oldid=3992356"
    분류:
      * 한국어 자립명사
      * 한국어 단일어명사
@@ -5606,10 +5584,8 @@ Tag
      * Wikimedia Foundation
      * Powered by MediaWiki
 
-     * (BUTTON) 내용 폭 제한 전환</text>
-</page> §
-<page="kor20.txt">
-<text>   주요서비스 바로가기 본문 바로가기 매체정보 바로가기 로그인 바로가기 기사검색 바로가기 전체서비스 바로가기
+     * (BUTTON) 내용 폭 제한 전환
+   주요서비스 바로가기 본문 바로가기 매체정보 바로가기 로그인 바로가기 기사검색 바로가기 전체서비스 바로가기
 
 상단영역
 
@@ -5632,7 +5608,7 @@ SPN 서울평양뉴스
           + 군사
           + 경제/산업
           + 사회/문화/체육
-     * 서울
+     * 서울&
           + 대통령실/총리실
           + 통일
           + 외교
@@ -5675,7 +5651,7 @@ SPN 서울평양뉴스
 현재위치
 
      *  홈
-     * 서울
+     * 서울&
      * 통일
 
 "北, 남북관계의 '국가관계' 설정은 '핵무기 실전화'와 연동된 것"
@@ -5931,7 +5907,7 @@ SNS 기사보내기
           + 경제/산업
           + 사회/문화/체육
           + 종합
-     * 서울
+     * 서울&
           + 전체
           + 대통령실/총리실
           + 통일
@@ -5963,10 +5939,8 @@ SNS 기사보내기
      * 평양 사이언스
      * 최일 함장의 잠수함 리얼리티
 
-   (BUTTON) 전체메뉴닫기</text>
-</page> §
-<page="kor21.txt">
-<text>   (BUTTON) ×
+   (BUTTON) 전체메뉴닫기
+   (BUTTON) ×
      * SNS세상
      * 뉴스
           + 전체
@@ -6338,7 +6312,7 @@ SNS 기사보내기
    충족되어야 하는 조건)으로 네 가지 ‘진정성, 수용, 공감, 나눔’이 순차적으로 이어져야 한다.
 
    오스트리아의 정신의학자로 ‘개인 심리학’을 수립한 알프레트 아들러는 ‘인간관계를 모든 행복의 근원이자 고민의 근원’이라고 말
-   하였고 ‘가족관계- 친구나 연인 관계- 비즈니스 관계 등 순서대로 가면 갈수록 인간관계의 어려움을 크게 느껴가게 된다.’고
+   하였고 ‘가족관계-> 친구나 연인 관계-> 비즈니스 관계 등 순서대로 가면 갈수록 인간관계의 어려움을 크게 느껴가게 된다.’고
    덧붙였다. 명언 중에는 미국의 저술가 리즈 카펜터는 ‘대부분의 사람들은 내편도 아니고 내 적도 아니다. 또한 무슨 일을 하거나
    자신을 좋아하지 않는 사람은 있기 마련이다. 모두가 자신을 좋아하기를 바라는 것은 지나친 기대이다.’고 말 했으며, 공자님의
    말씀 ‘사람은 서로의 입장과 처지를 바꿔 생각해야 한다.’는 역지사지(易地思之)의 중요성을 강조한 것이다.
@@ -6527,10 +6501,8 @@ SNS 기사보내기
 
    ND소프트
 
-   (BUTTON) 위로</text>
-</page> §
-<page="kor22.txt">
-<text>   #가즈아
+   (BUTTON) 위로
+   #가즈아
 
    샨샨
    가즈아
@@ -6545,7 +6517,7 @@ SNS 기사보내기
 
      * 전체보기 (48)
           + ੈ✩‧₊˚유학 Life (0)
-          + ੈ✩‧₊˚Daily  Review (14)
+          + ੈ✩‧₊˚Daily & Review (14)
           + ੈ✩‧₊˚Computer Science (30)
                o 컴퓨터구조 (15)
                o 컴퓨터비전 (5)
@@ -6578,9 +6550,9 @@ SNS 기사보내기
      * [컴퓨터구조] 부동 소수점 연산(Floating point⋯
        2020.11.22
        [컴퓨터구조] 부동 소수점 연산(Floating point⋯
-     * [내돈내산] 미국 장기렌트카 플렉스카 찐후기  장단점 ⋯
+     * [내돈내산] 미국 장기렌트카 플렉스카 찐후기 & 장단점 &⋯
        2023.02.15
-       [내돈내산] 미국 장기렌트카 플렉스카 찐후기  장단점 ⋯
+       [내돈내산] 미국 장기렌트카 플렉스카 찐후기 & 장단점 &⋯
 
    반응형
    [INS: :INS]
@@ -6635,15 +6607,15 @@ SNS 기사보내기
 
      * [내돈내산/꿀팁] 미국 유학생 Italki 찐 후기! (장⋯
        2023.10.30
-     * [내돈내산] 미국 장기렌트카 플렉스카 찐후기  장단점 ⋯
+     * [내돈내산] 미국 장기렌트카 플렉스카 찐후기 & 장단점 &⋯
        2023.02.15
-       [내돈내산] 미국 장기렌트카 플렉스카 찐후기  장단점 ⋯
+       [내돈내산] 미국 장기렌트카 플렉스카 찐후기 & 장단점 &⋯
      * ✈️ 대한항공 애틀랜타(ATL) → 인천/서울(ICN) 탑⋯
        2022.12.05
        ✈️ 대한항공 애틀랜타(ATL) → 인천/서울(ICN) 탑⋯
-     * Grammer in use 책 후기  소개 :: 대학생 ⋯
+     * Grammer in use 책 후기 & 소개 :: 대학생 ⋯
        2022.12.02
-       Grammer in use 책 후기  소개 :: 대학생 ⋯
+       Grammer in use 책 후기 & 소개 :: 대학생 ⋯
      * [안보면후회] 캐나다 어학연수 유학원 상담 솔직후기!! ✨⋯
        2022.12.02
        [안보면후회] 캐나다 어학연수 유학원 상담 솔직후기!! ✨⋯
@@ -6779,7 +6751,7 @@ relation의 종류
    (BUTTON) 구독하기가즈아
    저작자표시
 
-'ੈ✩‧₊˚Computer Science  이산수학' 카테고리의 다른 글
+'ੈ✩‧₊˚Computer Science > 이산수학' 카테고리의 다른 글
 
    동치관계(equivalence relation)/동치류(Equivalence Class)  (0) 2020.11.29
             관계의 표현(representing relations)  (0)           2020.11.25
@@ -6814,13 +6786,9 @@ relation의 종류
 
 티스토리툴바
 
-   IFRAME: //jesus-never-fail.tistory.com/api</text>
-</page> §
-<page="kor23.txt">
-<text>   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-WNX23JV</text>
-</page> §
-<page="kor24.txt">
-<text>   본문 바로가기
+   IFRAME: //jesus-never-fail.tistory.com/api
+   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-WNX23JV
+   본문 바로가기
 
 𝒪𝒹𝑒𝓃𝑔'𝓈 𝒮𝓉𝓊𝒹𝓎𝑅𝑜𝑜𝓂
 
@@ -6832,7 +6800,7 @@ relation의 종류
           + 𝓡𝓸𝓸𝓶2:𝒜𝐼, 𝑀𝐿 (2)
                o 𝓡𝟤𝟢𝟣: 𝒜𝐼, 𝑀𝐿 (2)
           + 𝓡𝓸𝓸𝓶3:𝐹𝓇𝑜𝓃𝓉𝑒𝓃𝒹 (5)
-               o 𝓡𝟥𝟢𝟣:𝐻𝒯𝑀𝐿𝒞𝒮𝒮 (3)
+               o 𝓡𝟥𝟢𝟣:𝐻𝒯𝑀𝐿&𝒞𝒮𝒮 (3)
                o 𝓡𝟥𝟢𝟤:𝑅𝑒𝒶𝒸𝓉 (2)
           + 𝓡𝓸𝓸𝓶4: 𝐵𝒶𝒸𝓀𝑒𝓃𝒹 (9)
                o 𝓡𝟦𝟢𝟣:𝒟𝒿𝒶𝓃𝑔𝑜 (8)
@@ -6933,7 +6901,7 @@ relation의 종류
 
         ex) (x, y) in R (y는 x로 나누어 떨어지고, x와 y는 양의 정수)
 
-            -- (5, 10), (5, 15), (5, 20), (10, 20)
+            --> (5, 10), (5, 15), (5, 20), (10, 20)
 
          - 모든 양의 정수는 자기 자신으로 나누어 떨어지므로 reflexive
 
@@ -6959,7 +6927,7 @@ relation의 종류
 
    - Inverse of a relation
 
-     : 주어진 relation R이 X-Y 였다면, 그것의 inverse인 R^(-1)은 Y-X인 relation이다.
+     : 주어진 relation R이 X->Y 였다면, 그것의 inverse인 R^(-1)은 Y-X인 relation이다.
 
       R^(-1) = { (y, x) | (x, y)∈R }
 
@@ -6974,7 +6942,7 @@ relation의 종류
 
       R2ºR1 (composition of R1 and R2) : relation from X to Z
 
-     -  R2ºR1 = { (x, z) | (x, y)∈R1 and (y,z)∈R2 for some y∈Y}
+     ->  R2ºR1 = { (x, z) | (x, y)∈R1 and (y,z)∈R2 for some y∈Y}
 
 
    2. Equivalence Relations
@@ -6983,9 +6951,9 @@ relation의 종류
    transitive하다
 
 
-   ex) X를 정수라고 하고, R을 X에 대한 relation이라고 하자. xRy = x-y = 5k (k는 정수)
+   ex) X를 정수라고 하고, R을 X에 대한 relation이라고 하자. xRy <=> x-y = 5k (k는 정수)
 
-    == R is and equivalence relation
+    ==> R is and equivalence relation
 
    { ..., (10, 5), (11, 6), (5, 5), (6, 11), (5, 10) ,... }
 
@@ -7001,7 +6969,7 @@ relation의 종류
 
        A1∪A2∪A3∪A4∪...∪An=X
 
-       단, 1=j, k=n이고 서로 다른 모든 j, k에 대해 Aj ∩ Ak = ø
+       단, 1<=j, k<=n이고 서로 다른 모든 j, k에 대해 Aj ∩ Ak = ø
 
 
        ex) X= {정수} , E = {짝수), O = {홀수} 이면 S = { E, O } 는 X의 partition
@@ -7067,7 +7035,7 @@ relation의 종류
      이 때, 곱한 값이 0이 아니면 1, 0이면 0이다. 이걸 언제 쓰냐?
 
 
-   - R2ºR1 (composed relation)을 계산할 때 쓴다.
+   -> R2ºR1 (composed relation)을 계산할 때 쓴다.
 
 
 
@@ -7086,7 +7054,7 @@ relation의 종류
    (BUTTON) 게시글 관리
    (BUTTON) 구독하기𝒪𝒹𝑒𝓃𝑔'𝓈 𝒮𝓉𝓊𝒹𝓎𝑅𝑜𝑜𝓂
 
-'𝓡𝓸𝓸𝓶5: 𝒦𝑜𝓇𝑒𝒶 𝒰𝓃𝒾𝓋  Discrete mathematics' 카테고리의 다른 글
+'𝓡𝓸𝓸𝓶5: 𝒦𝑜𝓇𝑒𝒶 𝒰𝓃𝒾𝓋 > Discrete mathematics' 카테고리의 다른 글
 
    [이산수학] Chapter 1. Logic and proofs  (0) 2021.05.03
    [이산수학] Chapter 6. Counting methods and the pigeonhole principle  (0)
@@ -7117,10 +7085,8 @@ relation의 종류
 
 티스토리툴바
 
-   IFRAME: //0o0deng.tistory.com/api</text>
-</page> §
-<page="kor25.txt">
-<text>   NAVER 블로그
+   IFRAME: //0o0deng.tistory.com/api
+   NAVER 블로그
    게임학과
 
    블로그 검색
@@ -7752,10 +7718,8 @@ relation의 종류
    블로그 마켓 탈퇴가
    완료되었습니다.
    문의사항은 블로그 마켓 고객센터로 연락주세요.
-   (BUTTON) 확인</text>
-</page> §
-<page="kor26.txt">
-<text>크레마클럽
+   (BUTTON) 확인
+크레마클럽
 
    분야
           분야 전체
@@ -7963,7 +7927,7 @@ relation의 종류
 
                     # 그래픽/멀티미디어
                     # 오피스활용도서
-                    # 웹/컴퓨터 입문활용
+                    # 웹/컴퓨터 입문&활용
                     # 컴퓨터수험서
                     # IT 전문서
 
@@ -8066,7 +8030,7 @@ relation의 종류
      *  eBook 한줄평 (4건)
 
    분야
-          인문  심리/정신분석
+          인문 > 심리/정신분석
 
    파일정보
           EPUB(DRM) 50.87MB
@@ -8169,7 +8133,7 @@ relation의 종류
    자가치유를 꿈꾸도록 적정심리상담을 진행하고 있으며, 치유와 긍정, 지지와 격려의 힘이 이웃 공동체에 어떤 선한 영향력을 미칠 수
    있는지 몸소 실천하고 있습니다. 현재 심리상담센터 대표로 심리상담과 기업체 임직원 대상으로 활발하게 강의를 이어가고 있습니다.
    저서로는 《상처 주는 것들과의 이별》, 《나는 엄마와 거리를 두는 중입니다》, 《뒤엉킨 관계의 끈을 푸는 기술》, 《오늘도 상처
-   입으며 일한 당신에게》, 《그때 알았더라면 내 사랑이 조금은 달라졌을까》, 《감성 비우고 채워라가 있습니다.
+   입으며 일한 당신에게》, 《그때 알았더라면 내 사랑이 조금은 달라졌을까》, 《감성 비우고 채워라>가 있습니다.
    홈페이지 sostoryedu.com
    인스타그램 son.sostory
    펼쳐보기접어보기
@@ -8273,7 +8237,7 @@ relation의 종류
           알림 도착 시간은 작품의 등록 시간과 차이가 있을 수 있습니다.
 
    신청 내역을 확인 또는 취소 하려면?
-          ‘마이페이지정보 내역알림 신청 내역크레마클럽’에서 확인 또는 취소 할 수 있습니다.
+          ‘마이페이지>정보 내역>알림 신청 내역>크레마클럽’에서 확인 또는 취소 할 수 있습니다.
 
    창 닫기
 
@@ -8306,10 +8270,8 @@ relation의 종류
    크레마클럽
    공지사항 이용안내 개인정보처리방침 FAQ 대량/법인 문의 인스타그램
    예스24 크레마클럽공유 페이스북 공유하기 트위터 공유하기 URL복사
-   ⓒ YES24 Corp.</text>
-</page> §
-<page="kor27.txt">
-<text>   (BUTTON) 메뉴
+   ⓒ YES24 Corp.
+   (BUTTON) 메뉴
 
 brunch
 
@@ -8451,7 +8413,7 @@ brunch
 
  이제 두 사람의 손에는 믿음의 끈이 들려있지 않다. 이것은 관계의 끝을 의미한다. 여기서도 똑같은 우를 범할 수 있어서 한 번 더
 첨언한다. 우리는 4번 그림에 무심코 "부정적인 이미지"를 가지면 안 된다. 관계가 끊어졌다는 것 자체에는 아무런 의미가 없다. 지난 글
-가치의 다름을 이해하기.의 서론에서 말한 것처럼, 존재와 사실 자체에는 아무런 가치가 없기 때문이다.
+<가치의 다름을 이해하기.>의 서론에서 말한 것처럼, 존재와 사실 자체에는 아무런 가치가 없기 때문이다.
 
  의미는 사람들이 그 사실에 부여하는 것이다. 4번 그림이 내포하고 있는 객관적 사실은 "관계의 끊어짐"이다. 단어를 바꾸면 "관계의
 소멸", "관계의 종료"로도 얼마든지 쓸 수 있다. 이 그림에 '긍정' 혹은 '부정'이라는 감정을 매겨버리는 순간 우리는 주관적으로 관계를
@@ -8492,8 +8454,8 @@ brunch
 젖듯 자연스럽게 친해졌는데 말이다. 그래서 필자는 새로 알게 된 사람과 믿음의 끈 2번 모형처럼 둘 사이의 유대가 깊어지고 튼튼해지는 것은
 굉장히 어려운 일이라고 생각하는 편이다.
 
- 믿음의 끈은 긍정성과 부정성을 동시에 가지고 있다. 하나의 개념을 정하고 싶어 "믿음"이라는 어휘를 썼지만, 이 끈이 믿음의 끈 일지
-의심의 끈 일지는 정확히 알 수 없다. 여태껏 알게 된 수많은 사람들을 리플레이해보자. 누군가와의 관계는 자동차의 안전벨트처럼
+ 믿음의 끈은 긍정성과 부정성을 동시에 가지고 있다. 하나의 개념을 정하고 싶어 "믿음"이라는 어휘를 썼지만, 이 끈이 <믿음의 끈> 일지
+<의심의 끈> 일지는 정확히 알 수 없다. 여태껏 알게 된 수많은 사람들을 리플레이해보자. 누군가와의 관계는 자동차의 안전벨트처럼
 소중하지만, 다른 누군가와의 관계에서는 사슬처럼 느껴지는 순간이 있지 않던가?
 
  모든 사람이 1번 모형으로 시작하지만, 그 관계가 시간이 지나 2번이 될지, 4번 모형이 될지는 그 누구도 예측할 수 없다. 때로는
@@ -8507,7 +8469,7 @@ brunch
 내용도 인간관계를 해석하는 하나의 이론일 뿐이지, 정확한 법칙은 아니라는 점을 늘 염두에 두기를 바란다.
      __________________________________________________________________
 
-이전 글: 가치의 다름을 이해하기.
+이전 글: <가치의 다름을 이해하기.>
 
 다음화 미리 보기
 
@@ -8539,7 +8501,7 @@ brunch
 건강한 관계라고는 단정할 수 없다는 말입니다. 따라서 "좋아 보일수록 좋은 관계다."는 문장은 성립될 수 없습니다. 우리가 매기는 겉보기
 값은 실제 가치와는 다르기 때문이죠. 그리고 실제 가치는 누구도 매길 수가 없습니다.
 
- 아래에는 믿음의 끈과는 다른 느낌의 고찰 내용을 수록합니다. 혼자 생각하다가 간단한 미적분 식을 이용해 인간관계를 표현해보았습니다.
+ 아래에는 <믿음의 끈>과는 다른 느낌의 고찰 내용을 수록합니다. 혼자 생각하다가 간단한 미적분 식을 이용해 인간관계를 표현해보았습니다.
 정리된 글이 아니고 혼자 기록했던 글이므로 재미로, 감상하는 정도로만 보시기를 권합니다. (정제된 글이 아닙니다.)
 
 "저 사람을 알아간다"에 대한 고찰, 앎의 정리(K)
@@ -8566,10 +8528,8 @@ brunch
 
    댓글 쓰기 허용 [ ] afliean
 
-   브런치는 최신 브라우저에 최적화 되어있습니다. IE chrome safari</text>
-</page> §
-<page="kor28.txt">
-<text>   IFRAME: /www.googletagmanager.com/ns.html?id=GTM-MPWXNZ
+   브런치는 최신 브라우저에 최적화 되어있습니다. IE chrome safari
+   IFRAME: /www.googletagmanager.com/ns.html?id=GTM-MPWXNZ
 
    Skip to navigation Skip to content
 
@@ -8618,7 +8578,7 @@ Cancer types
             Anal cancer
             Bile duct cancer
             Bladder cancer
-            View all cancer types 
+            View all cancer types >
 
 More information
             Cancer Statistics NSW
@@ -8640,7 +8600,7 @@ Cancer and COVID-19
                o Anal cancer
                o Bile duct cancer
                o Bladder cancer
-               o View all cancer types 
+               o View all cancer types >
           + More information
                o Cancer Statistics NSW
                o NSW Cancer Plan
@@ -9028,10 +8988,8 @@ My notes:
 
    Copyright © 2022
 
-   expand_less</text>
-</page> §
-<page="kor29.txt">
-<text>   #alternate
+   expand_less
+   #alternate
 
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-5F475C5
 
@@ -9284,7 +9242,7 @@ My notes:
      * °¡¼ö °â ¹è¿ì 40´ë, ¾ռ± Â÷·® µéÀ̹ްí =ÁÖÃød °źÎ, À԰Ç
        1. 가수 겸 배우 40대, 앞선 차량 들이받고 음주측정 거부, 입건
      * 2. "3년 뒤 AI가 30% 대체"…비상 걸린 이 직종은?
-     * em class='emp_01'[¼Ӻ¸]/em±迩d ¡°Æ÷»ç°Ý ¾ƴÑ Æø¾ࡦÇѱ¹±º ¼ӾÆ ³Ѿ¡±
+     * <em class='emp_01'>[¼Ӻ¸]</em>±迩d ¡°Æ÷»ç°Ý ¾ƴÑ Æø¾ࡦÇѱ¹±º ¼ӾÆ ³Ѿ¡±
        3. [속보]김여정 “포사격 아닌 폭약…한국군 속아 넘어가”
      * ÀÌÀç¸í ½0ݹü ´çÀû °ø°³ ¾ȵǳª¡¦°æÂû d´ç¹ý ±ٰŷÎ ¡®°ø°³ ºҰ¡¡¯ ±â¿î µí
        4. 이재명 습격범 당적 공개 안되나…경찰 정당법 근거로 ‘공개 불가’ 기운 듯
@@ -9308,7 +9266,7 @@ My notes:
        北 노동신문 “‘적대적 두 국가’ 깊이 학습…철저히 무장”
 
    IFRAME:
-   https://ad.adinc.kr/cgi-bin/PelicanC.dll?impr?pageid=091oout=iframe
+   https://ad.adinc.kr/cgi-bin/PelicanC.dll?impr?pageid=091o&out=iframe
 
    댓글 많은 뉴스
      * ÀÌÀç¸í ½0ݹü ´çÀû °ø°³ ¾ȵǳª¡¦°æÂû d´ç¹ý ±ٰŷÎ ¡®°ø°³ ºҰ¡¡¯ ±â¿î µí
@@ -9376,10 +9334,8 @@ My notes:
 
    맨위로
 
-   모바일 화면으로 돌아가기</text>
-</page> §
-<page="kor2.txt">
-<text>   #나무위키 copyright
+   모바일 화면으로 돌아가기
+   #나무위키 copyright
 
      * 최근 변경
      * 최근 토론
@@ -9463,450 +9419,450 @@ My notes:
    틀:논리학 · 틀:이산수학 · 틀:이론 컴퓨터 과학 · 철학 관련 정보 · 논리학 관련 정보 · 수학 관련 정보
 
    어떤 집합
-   [MATH: semanticsmrowmiG/mi/mrowannotation
-   encoding="application/x-tex"G/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>G</mi></mrow><annotation
+   encoding="application/x-tex">G</annotation></semantics> :MATH]
    G가 집합
-   [MATH: semanticsmrowmsubmiX/mimn1/mn/msubmo
-   separator="true",/momsubmiX/mimn2/mn/msubmo
-   separator="true",/momo⋯/momtext /mtextmo
-   separator="true",/momsubmiX/mimin/mi/msub/mrowannotat
-   ion encoding="application/x-tex"X_1, X_2, \cdots, X_n
-   /annotation/semantics :MATH]
+   [MATH: <semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo
+   separator="true">,</mo><msub><mi>X</mi><mn>2</mn></msub><mo
+   separator="true">,</mo><mo>⋯</mo><mtext> </mtext><mo
+   separator="true">,</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><annotat
+   ion encoding="application/x-tex">X_1, X_2, \cdots, X_n
+   </annotation></semantics> :MATH]
    X1​,X2​,⋯,Xn​의 곱집합(Cartesian Product)
-   [MATH: semanticsmrowmstyle scriptlevel="0"
-   displaystyle="true"munderovermo∏/momrowmii/mimo=/momn
-   1/mn/mrowmin/mi/munderovermsubmiX/mimii/mi/msub
-   mo=/momsubmiX/mimn1/mn/msubmo×/momsubmiX/mimn
-   2/mn/msubmo×/momo⋯/momo×/momsubmiX/mimin/mi
-   /msubmo=/momo stretchy="false"{/momo
-   stretchy="false"(/momsubmix/mimn1/mn/msubmo
-   separator="true",/momsubmix/mimn2/mn/msubmo
-   separator="true",/momo⋯/momtext /mtextmo
-   separator="true",/momsubmix/mimin/mi/msubmo
-   stretchy="false")/momi
-   mathvariant="normal"∣/mimsubmix/mimn1/mn/msubmo∈/mo
-   msubmiX/mimn1/mn/msubmo
-   separator="true",/momsubmix/mimn2/mn/msubmo∈/momsub
-   miX/mimn2/mn/msubmo
-   separator="true",/momo⋯/momtext /mtextmo
-   separator="true",/momsubmix/mimin/mi/msubmo∈/momsub
-   miX/mimin/mi/msubmo
-   stretchy="false"}/mo/mstyle/mrowannotation
-   encoding="application/x-tex"\displaystyle \prod_{i=1}^{n} X_i = X_1
+   [MATH: <semantics><mrow><mstyle scriptlevel="0"
+   displaystyle="true"><munderover><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn
+   >1</mn></mrow><mi>n</mi></munderover><msub><mi>X</mi><mi>i</mi></msub><
+   mo>=</mo><msub><mi>X</mi><mn>1</mn></msub><mo>×</mo><msub><mi>X</mi><mn
+   >2</mn></msub><mo>×</mo><mo>⋯</mo><mo>×</mo><msub><mi>X</mi><mi>n</mi><
+   /msub><mo>=</mo><mo stretchy="false">{</mo><mo
+   stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo
+   separator="true">,</mo><msub><mi>x</mi><mn>2</mn></msub><mo
+   separator="true">,</mo><mo>⋯</mo><mtext> </mtext><mo
+   separator="true">,</mo><msub><mi>x</mi><mi>n</mi></msub><mo
+   stretchy="false">)</mo><mi
+   mathvariant="normal">∣</mi><msub><mi>x</mi><mn>1</mn></msub><mo>∈</mo><
+   msub><mi>X</mi><mn>1</mn></msub><mo
+   separator="true">,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>∈</mo><msub
+   ><mi>X</mi><mn>2</mn></msub><mo
+   separator="true">,</mo><mo>⋯</mo><mtext> </mtext><mo
+   separator="true">,</mo><msub><mi>x</mi><mi>n</mi></msub><mo>∈</mo><msub
+   ><mi>X</mi><mi>n</mi></msub><mo
+   stretchy="false">}</mo></mstyle></mrow><annotation
+   encoding="application/x-tex">\displaystyle \prod_{i=1}^{n} X_i = X_1
    \times X_2 \times \cdots \times X_n = \{(x_1,x_2, \cdots, x_n)|x_1 \in
-   X_1, x_2 \in X_2, \cdots, x_n \in X_n \} /annotation/semantics
+   X_1, x_2 \in X_2, \cdots, x_n \in X_n \} </annotation></semantics>
    :MATH]
    i=1∏n​Xi​=X1​×X2​×⋯×Xn​={(x1​,x2​,⋯,xn​)∣x1​∈X1​,x2​∈X2​,⋯,xn​∈Xn​}의
    부분집합이라고 하자. 즉
-   [MATH: semanticsmrowmstyle scriptlevel="0"
-   displaystyle="true"miG/mimo⊂/momunderovermo∏/momrowmi
-   i/mimo=/momn1/mn/mrowmin/mi/munderovermsubmiX/m
-   imii/mi/msub/mstyle/mrowannotation
-   encoding="application/x-tex"\displaystyle G \subset \prod_{i=1}^{n}
-   X_i/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mstyle scriptlevel="0"
+   displaystyle="true"><mi>G</mi><mo>⊂</mo><munderover><mo>∏</mo><mrow><mi
+   >i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>X</m
+   i><mi>i</mi></msub></mstyle></mrow><annotation
+   encoding="application/x-tex">\displaystyle G \subset \prod_{i=1}^{n}
+   X_i</annotation></semantics> :MATH]
    G⊂i=1∏n​Xi​라고 하자. 이때 "
-   [MATH: semanticsmrowmsubmiX/mimn1/mn/msubmo
-   separator="true",/momsubmiX/mimn2/mn/msubmo
-   separator="true",/momo⋯/momtext /mtextmo
-   separator="true",/momsubmiX/mimin/mi/msub/mrowannotat
-   ion encoding="application/x-tex"X_1, X_2, \cdots, X_n
-   /annotation/semantics :MATH]
+   [MATH: <semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo
+   separator="true">,</mo><msub><mi>X</mi><mn>2</mn></msub><mo
+   separator="true">,</mo><mo>⋯</mo><mtext> </mtext><mo
+   separator="true">,</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><annotat
+   ion encoding="application/x-tex">X_1, X_2, \cdots, X_n
+   </annotation></semantics> :MATH]
    X1​,X2​,⋯,Xn​ 위의 관계
-   [MATH: semanticsmrowmiR/mi/mrowannotation
-   encoding="application/x-tex"R/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>R</mi></mrow><annotation
+   encoding="application/x-tex">R</annotation></semantics> :MATH]
    R"은
-   [MATH: semanticsmrowmo
-   stretchy="false"(/momin/mimo+/momn1/mnmo
-   stretchy="false")/mo/mrowannotation
-   encoding="application/x-tex"(n+1)/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mo
+   stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo
+   stretchy="false">)</mo></mrow><annotation
+   encoding="application/x-tex">(n+1)</annotation></semantics> :MATH]
    (n+1) 튜플
-   [MATH: semanticsmrowmo
-   stretchy="false"(/momsubmiX/mimn1/mn/msubmo
-   separator="true",/momsubmiX/mimn2/mn/msubmo
-   separator="true",/momo⋯/momtext /mtextmo
-   separator="true",/momsubmiX/mimin/mi/msubmo
-   separator="true",/momiG/mimo
-   stretchy="false")/mo/mrowannotation encoding="application/x-tex"
-   (X_1, X_2, \cdots, X_n, G)/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mo
+   stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo
+   separator="true">,</mo><msub><mi>X</mi><mn>2</mn></msub><mo
+   separator="true">,</mo><mo>⋯</mo><mtext> </mtext><mo
+   separator="true">,</mo><msub><mi>X</mi><mi>n</mi></msub><mo
+   separator="true">,</mo><mi>G</mi><mo
+   stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">
+   (X_1, X_2, \cdots, X_n, G)</annotation></semantics> :MATH]
    (X1​,X2​,⋯,Xn​,G)로 정의하며,
-   [MATH: semanticsmrowmiG/mi/mrowannotation
-   encoding="application/x-tex"G/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>G</mi></mrow><annotation
+   encoding="application/x-tex">G</annotation></semantics> :MATH]
    G는 "관계
-   [MATH: semanticsmrowmiR/mi/mrowannotation
-   encoding="application/x-tex"R/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>R</mi></mrow><annotation
+   encoding="application/x-tex">R</annotation></semantics> :MATH]
    R의 그래프"라고 부른다.
    하지만 경우에 따라서는 "
-   [MATH: semanticsmrowmsubmiX/mimn1/mn/msubmo
-   separator="true",/momsubmiX/mimn2/mn/msubmo
-   separator="true",/momo⋯/momtext /mtextmo
-   separator="true",/momsubmiX/mimin/mi/msub/mrowannotat
-   ion encoding="application/x-tex"X_1, X_2, \cdots, X_n
-   /annotation/semantics :MATH]
+   [MATH: <semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo
+   separator="true">,</mo><msub><mi>X</mi><mn>2</mn></msub><mo
+   separator="true">,</mo><mo>⋯</mo><mtext> </mtext><mo
+   separator="true">,</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><annotat
+   ion encoding="application/x-tex">X_1, X_2, \cdots, X_n
+   </annotation></semantics> :MATH]
    X1​,X2​,⋯,Xn​ 위의 관계
-   [MATH: semanticsmrowmiR/mi/mrowannotation
-   encoding="application/x-tex"R/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>R</mi></mrow><annotation
+   encoding="application/x-tex">R</annotation></semantics> :MATH]
    R"은 그냥
    [MATH:
-   semanticsmrowmiR/mimo=/momiG/mi/mrowannotation
-   encoding="application/x-tex"R=G/annotation/semantics :MATH]
+   <semantics><mrow><mi>R</mi><mo>=</mo><mi>G</mi></mrow><annotation
+   encoding="application/x-tex">R=G</annotation></semantics> :MATH]
    R=G라고 정의되기도 한다. 이 경우
-   [MATH: semanticsmrowmin/mi/mrowannotation
-   encoding="application/x-tex"n/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>n</mi></mrow><annotation
+   encoding="application/x-tex">n</annotation></semantics> :MATH]
    n항 술어
-   [MATH: semanticsmrowmiR/mi/mrowannotation
-   encoding="application/x-tex"R/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>R</mi></mrow><annotation
+   encoding="application/x-tex">R</annotation></semantics> :MATH]
    R는 단순히 집합
-   [MATH: semanticsmrowmsubmiX/mimn1/mn/msubmo
-   separator="true",/momsubmiX/mimn2/mn/msubmo
-   separator="true",/momi mathvariant="normal"./mimi
-   mathvariant="normal"./mimi mathvariant="normal"./mimo
-   separator="true",/momsubmiX/mimin/mi/msub/mrowannotat
-   ion encoding="application/x-tex"X_1, X_2,..., X_n
-   /annotation/semantics :MATH]
+   [MATH: <semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo
+   separator="true">,</mo><msub><mi>X</mi><mn>2</mn></msub><mo
+   separator="true">,</mo><mi mathvariant="normal">.</mi><mi
+   mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo
+   separator="true">,</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><annotat
+   ion encoding="application/x-tex">X_1, X_2,..., X_n
+   </annotation></semantics> :MATH]
    X1​,X2​,...,Xn​ 각각의 임의의 원소들로 이루어진
-   [MATH: semanticsmrowmin/mi/mrowannotation
-   encoding="application/x-tex"n/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>n</mi></mrow><annotation
+   encoding="application/x-tex">n</annotation></semantics> :MATH]
    n 튜플의 집합으로 정의된다.
    위 두 정의 가운데 어떤 것을 취하든,
-   [MATH: semanticsmrowmin/mi/mrowannotation
-   encoding="application/x-tex"n/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>n</mi></mrow><annotation
+   encoding="application/x-tex">n</annotation></semantics> :MATH]
    n개의 집합
-   [MATH: semanticsmrowmsubmiX/mimn1/mn/msubmo
-   separator="true",/momsubmiX/mimn2/mn/msubmo
-   separator="true",/momo⋯/momtext /mtextmo
-   separator="true",/momsubmiX/mimin/mi/msub/mrowannotat
-   ion encoding="application/x-tex"X_1, X_2, \cdots,
-   X_n/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo
+   separator="true">,</mo><msub><mi>X</mi><mn>2</mn></msub><mo
+   separator="true">,</mo><mo>⋯</mo><mtext> </mtext><mo
+   separator="true">,</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><annotat
+   ion encoding="application/x-tex">X_1, X_2, \cdots,
+   X_n</annotation></semantics> :MATH]
    X1​,X2​,⋯,Xn​ 각각의 임의의 원소
-   [MATH: semanticsmrowmsubmix/mimn1/mn/msubmo
-   separator="true",/momsubmix/mimn2/mn/msubmo
-   separator="true",/momi mathvariant="normal"./mimi
-   mathvariant="normal"./mimi mathvariant="normal"./mimo
-   separator="true",/momsubmix/mimin/mi/msub/mrowannotat
-   ion encoding="application/x-tex"x_1, x_2,..., x_n
-   /annotation/semantics :MATH]
+   [MATH: <semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo
+   separator="true">,</mo><msub><mi>x</mi><mn>2</mn></msub><mo
+   separator="true">,</mo><mi mathvariant="normal">.</mi><mi
+   mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo
+   separator="true">,</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><annotat
+   ion encoding="application/x-tex">x_1, x_2,..., x_n
+   </annotation></semantics> :MATH]
    x1​,x2​,...,xn​에 대해
-   [MATH: semanticsmrowmo
-   stretchy="false"(/momsubmix/mimn1/mn/msubmo
-   separator="true",/momsubmix/mimn2/mn/msubmo
-   separator="true",/momo⋯/momtext /mtextmo
-   separator="true",/momsubmix/mimin/mi/msubmo
-   stretchy="false")/momo∈/momiG/mi/mrowannotation
-   encoding="application/x-tex"(x_1, x_2, \cdots, x_n) \in
-   G/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mo
+   stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo
+   separator="true">,</mo><msub><mi>x</mi><mn>2</mn></msub><mo
+   separator="true">,</mo><mo>⋯</mo><mtext> </mtext><mo
+   separator="true">,</mo><msub><mi>x</mi><mi>n</mi></msub><mo
+   stretchy="false">)</mo><mo>∈</mo><mi>G</mi></mrow><annotation
+   encoding="application/x-tex">(x_1, x_2, \cdots, x_n) \in
+   G</annotation></semantics> :MATH]
    (x1​,x2​,⋯,xn​)∈G이 성립하는 것을 두고 "
    [MATH:
-   semanticsmrowmiR/mimsubmix/mimn1/mn/msubmsubmix
-   /mimn2/mn/msubmo⋯/momsubmix/mimin/mi/msub/mrow
-   annotation encoding="application/x-tex"R x_1 x_2 \cdots
-   x_n/annotation/semantics :MATH]
+   <semantics><mrow><mi>R</mi><msub><mi>x</mi><mn>1</mn></msub><msub><mi>x
+   </mi><mn>2</mn></msub><mo>⋯</mo><msub><mi>x</mi><mi>n</mi></msub></mrow
+   ><annotation encoding="application/x-tex">R x_1 x_2 \cdots
+   x_n</annotation></semantics> :MATH]
    Rx1​x2​⋯xn​"라고 정의한다. 이는 일상어에서 "
-   [MATH: semanticsmrowmsubmix/mimn1/mn/msubmo
-   separator="true",/momsubmix/mimn2/mn/msubmo
-   separator="true",/momo⋯/momtext /mtextmo
-   separator="true",/momsubmix/mimin/mi/msub/mrowannotat
-   ion encoding="application/x-tex"x_1, x_2, \cdots,
-   x_n/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo
+   separator="true">,</mo><msub><mi>x</mi><mn>2</mn></msub><mo
+   separator="true">,</mo><mo>⋯</mo><mtext> </mtext><mo
+   separator="true">,</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><annotat
+   ion encoding="application/x-tex">x_1, x_2, \cdots,
+   x_n</annotation></semantics> :MATH]
    x1​,x2​,⋯,xn​이 관계
-   [MATH: semanticsmrowmiR/mi/mrowannotation
-   encoding="application/x-tex"R/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>R</mi></mrow><annotation
+   encoding="application/x-tex">R</annotation></semantics> :MATH]
    R을 맺는다"라고 말하는 것에 대응한다.
    달리 사상(map)이라고도 표현하며, 집합 간의 관계를 나타내는 기호는 한쪽 끝이 막혀 있는 화살표(
-   [MATH: semanticsmrowmo↦/mo/mrowannotation
-   encoding="application/x-tex"\mapsto/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mo>↦</mo></mrow><annotation
+   encoding="application/x-tex">\mapsto</annotation></semantics> :MATH]
    ↦)로 표기한다.
 
 3.1. 이항 관계[편집]
 
    이항 관계(Binary Relation, 二項關係)란 위 정의를 따르되 다만
    [MATH:
-   semanticsmrowmin/mimo=/momn2/mn/mrowannotation
-   encoding="application/x-tex"n=2/annotation/semantics :MATH]
+   <semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><annotation
+   encoding="application/x-tex">n=2</annotation></semantics> :MATH]
    n=2인 경우에 해당한다. 즉 집합
-   [MATH: semanticsmrowmiX/mimo
-   separator="true",/momiY/mi/mrowannotation
-   encoding="application/x-tex"X, Y/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>X</mi><mo
+   separator="true">,</mo><mi>Y</mi></mrow><annotation
+   encoding="application/x-tex">X, Y</annotation></semantics> :MATH]
    X,Y와 사이의 이항 관계
-   [MATH: semanticsmrowmiR/mi/mrowannotation
-   encoding="application/x-tex"R/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>R</mi></mrow><annotation
+   encoding="application/x-tex">R</annotation></semantics> :MATH]
    R는 곱집합
    [MATH:
-   semanticsmrowmiX/mimo×/momiY/mimo=/momrowmo
-   fence="true"{/momrowmo fence="true"(/momix/mimo
-   separator="true",/momiy/mimo fence="true")/mo/mrowmi
-   mathvariant="normal"∣/mimix/mimo∈/momiX/mimo
-   separator="true",/momiy/mimo∈/momiY/mimo
-   fence="true"}/mo/mrow/mrowannotation
-   encoding="application/x-tex"X\times Y=\left\{\left(x, y\right)|x\in X,
-   y\in Y\right\}/annotation/semantics :MATH]
+   <semantics><mrow><mi>X</mi><mo>×</mo><mi>Y</mi><mo>=</mo><mrow><mo
+   fence="true">{</mo><mrow><mo fence="true">(</mo><mi>x</mi><mo
+   separator="true">,</mo><mi>y</mi><mo fence="true">)</mo></mrow><mi
+   mathvariant="normal">∣</mi><mi>x</mi><mo>∈</mo><mi>X</mi><mo
+   separator="true">,</mo><mi>y</mi><mo>∈</mo><mi>Y</mi><mo
+   fence="true">}</mo></mrow></mrow><annotation
+   encoding="application/x-tex">X\times Y=\left\{\left(x, y\right)|x\in X,
+   y\in Y\right\}</annotation></semantics> :MATH]
    X×Y={(x,y)∣x∈X,y∈Y}의 부분집합
-   [MATH: semanticsmrowmiG/mi/mrowannotation
-   encoding="application/x-tex"G/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>G</mi></mrow><annotation
+   encoding="application/x-tex">G</annotation></semantics> :MATH]
    G에 대해 순서 3중체
-   [MATH: semanticsmrowmo fence="true"(/momiX/mimo
-   separator="true",/momiY/mimo
-   separator="true",/momiG/mimo
-   fence="true")/mo/mrowannotation
-   encoding="application/x-tex"\left(X, Y,
-   G\right)/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mo fence="true">(</mo><mi>X</mi><mo
+   separator="true">,</mo><mi>Y</mi><mo
+   separator="true">,</mo><mi>G</mi><mo
+   fence="true">)</mo></mrow><annotation
+   encoding="application/x-tex">\left(X, Y,
+   G\right)</annotation></semantics> :MATH]
    (X,Y,G)로 정의되거나, 혹은
-   [MATH: semanticsmrowmiG/mi/mrowannotation
-   encoding="application/x-tex"G/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>G</mi></mrow><annotation
+   encoding="application/x-tex">G</annotation></semantics> :MATH]
    G로 정의된다. 후자의 경우
-   [MATH: semanticsmrowmiR/mi/mrowannotation
-   encoding="application/x-tex"R/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>R</mi></mrow><annotation
+   encoding="application/x-tex">R</annotation></semantics> :MATH]
    R은 집합
-   [MATH: semanticsmrowmiX/mimo
-   separator="true",/momiY/mi/mrowannotation
-   encoding="application/x-tex"X, Y/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>X</mi><mo
+   separator="true">,</mo><mi>Y</mi></mrow><annotation
+   encoding="application/x-tex">X, Y</annotation></semantics> :MATH]
    X,Y 각각의 원소로 이루어진 순서 2중체, 즉 순서쌍들의 집합으로 정의되는 것이다.
    그리고 이항 관계에 한하여
-   [MATH: semanticsmrowmiX/mimo
-   separator="true",/momiY/mi/mrowannotation
-   encoding="application/x-tex"X, Y/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>X</mi><mo
+   separator="true">,</mo><mi>Y</mi></mrow><annotation
+   encoding="application/x-tex">X, Y</annotation></semantics> :MATH]
    X,Y 각각의 어떤 원소
-   [MATH: semanticsmrowmix/mimo
-   separator="true",/momiy/mi/mrowannotation
-   encoding="application/x-tex"x, y/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>x</mi><mo
+   separator="true">,</mo><mi>y</mi></mrow><annotation
+   encoding="application/x-tex">x, y</annotation></semantics> :MATH]
    x,y가
-   [MATH: semanticsmrowmrowmo fence="true"(/momix/mimo
-   separator="true",/momiy/mimo
-   fence="true")/mo/mrowmo∈/momiG/mi/mrowannotation
-   encoding="application/x-tex"\left(x, y\right)\in
-   G/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mrow><mo fence="true">(</mo><mi>x</mi><mo
+   separator="true">,</mo><mi>y</mi><mo
+   fence="true">)</mo></mrow><mo>∈</mo><mi>G</mi></mrow><annotation
+   encoding="application/x-tex">\left(x, y\right)\in
+   G</annotation></semantics> :MATH]
    (x,y)∈G를 만족하는 것을 관례상 "
    [MATH:
-   semanticsmrowmiR/mimix/mimiy/mi/mrowannotation
-   encoding="application/x-tex"Rxy/annotation/semantics :MATH]
+   <semantics><mrow><mi>R</mi><mi>x</mi><mi>y</mi></mrow><annotation
+   encoding="application/x-tex">Rxy</annotation></semantics> :MATH]
    Rxy" 뿐 아니라 "
    [MATH:
-   semanticsmrowmix/mimiR/mimiy/mi/mrowannotation
-   encoding="application/x-tex"xRy/annotation/semantics :MATH]
+   <semantics><mrow><mi>x</mi><mi>R</mi><mi>y</mi></mrow><annotation
+   encoding="application/x-tex">xRy</annotation></semantics> :MATH]
    xRy"라고 쓰기도 한다.
    이항 관계
-   [MATH: semanticsmrowmiR/mi/mrowannotation
-   encoding="application/x-tex"R/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>R</mi></mrow><annotation
+   encoding="application/x-tex">R</annotation></semantics> :MATH]
    R의 정의역(domain), 치역(range), 역(field)은 다음과 같이 정의된다.
      * 정의역: (
-       [MATH: semanticsmrowmiG/mi/mrowannotation
-       encoding="application/x-tex"G/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mi>G</mi></mrow><annotation
+       encoding="application/x-tex">G</annotation></semantics> :MATH]
        G의 원소들의 왼쪽 성분의 집합) =
-       [MATH: semanticsmrowmrowmo
-       fence="true"{/momix/mimo∈/momiX/mimi
-       mathvariant="normal"∣/mimi
-       mathvariant="normal"∃/mimiy/mimo∈/momiY/mimo:/mo
-       mix/mimiR/mimiy/mimo
-       fence="true"}/mo/mrowmo=/momtextdom/mtextmtext /mte
-       xtmiR/mi/mrowannotation
-       encoding="application/x-tex"\left\{x\in X| \exists y\in Y :
-       xRy\right\}=\text{dom} \,R/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mrow><mo
+       fence="true">{</mo><mi>x</mi><mo>∈</mo><mi>X</mi><mi
+       mathvariant="normal">∣</mi><mi
+       mathvariant="normal">∃</mi><mi>y</mi><mo>∈</mo><mi>Y</mi><mo>:</mo>
+       <mi>x</mi><mi>R</mi><mi>y</mi><mo
+       fence="true">}</mo></mrow><mo>=</mo><mtext>dom</mtext><mtext> </mte
+       xt><mi>R</mi></mrow><annotation
+       encoding="application/x-tex">\left\{x\in X| \exists y\in Y :
+       xRy\right\}=\text{dom} \,R</annotation></semantics> :MATH]
        {x∈X∣∃y∈Y:xRy}=domR
      * 치역: (
-       [MATH: semanticsmrowmiG/mi/mrowannotation
-       encoding="application/x-tex"G/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mi>G</mi></mrow><annotation
+       encoding="application/x-tex">G</annotation></semantics> :MATH]
        G의 원소들의 오른쪽 성분의 집합) =
-       [MATH: semanticsmrowmrowmo
-       fence="true"{/momiy/mimo∈/momiY/mimi
-       mathvariant="normal"∣/mimi
-       mathvariant="normal"∃/mimix/mimo∈/momiX/mimo:/mo
-       mix/mimiR/mimiy/mimo
-       fence="true"}/mo/mrowmo=/momtextran/mtextmtext /mte
-       xtmiR/mi/mrowannotation
-       encoding="application/x-tex"\left\{y\in Y| \exists x\in X :
-       xRy\right\}=\text{ran} \,R/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mrow><mo
+       fence="true">{</mo><mi>y</mi><mo>∈</mo><mi>Y</mi><mi
+       mathvariant="normal">∣</mi><mi
+       mathvariant="normal">∃</mi><mi>x</mi><mo>∈</mo><mi>X</mi><mo>:</mo>
+       <mi>x</mi><mi>R</mi><mi>y</mi><mo
+       fence="true">}</mo></mrow><mo>=</mo><mtext>ran</mtext><mtext> </mte
+       xt><mi>R</mi></mrow><annotation
+       encoding="application/x-tex">\left\{y\in Y| \exists x\in X :
+       xRy\right\}=\text{ran} \,R</annotation></semantics> :MATH]
        {y∈Y∣∃x∈X:xRy}=ranR
      * 역: (정의역과 치역의 합집합)=
        [MATH:
-       semanticsmrowmtextdom/mtextmtext /mtextmiR/mimo∪
-       /momtextran/mtextmtext /mtextmiR/mimo=/momtextfl
-       d/mtextmtext /mtextmiR/mi/mrowannotation
-       encoding="application/x-tex"\text{dom} \,R \cup \text{ran}
-       \,R=\text{fld} \, R/annotation/semantics :MATH]
+       <semantics><mrow><mtext>dom</mtext><mtext> </mtext><mi>R</mi><mo>∪<
+       /mo><mtext>ran</mtext><mtext> </mtext><mi>R</mi><mo>=</mo><mtext>fl
+       d</mtext><mtext> </mtext><mi>R</mi></mrow><annotation
+       encoding="application/x-tex">\text{dom} \,R \cup \text{ran}
+       \,R=\text{fld} \, R</annotation></semantics> :MATH]
        domR∪ranR=fldR
 
    이항 관계
-   [MATH: semanticsmrowmiR/mi/mrowannotation
-   encoding="application/x-tex"R/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>R</mi></mrow><annotation
+   encoding="application/x-tex">R</annotation></semantics> :MATH]
    R의 역관계
    [MATH:
-   semanticsmrowmsupmiR/mimrowmo−/momn1/mn/mrow/msu
-   p/mrowannotation
-   encoding="application/x-tex"R^{-1}/annotation/semantics :MATH]
+   <semantics><mrow><msup><mi>R</mi><mrow><mo>−</mo><mn>1</mn></mrow></msu
+   p></mrow><annotation
+   encoding="application/x-tex">R^{-1}</annotation></semantics> :MATH]
    R−1는
-   [MATH: semanticsmrowmiG/mi/mrowannotation
-   encoding="application/x-tex"G/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>G</mi></mrow><annotation
+   encoding="application/x-tex">G</annotation></semantics> :MATH]
    G의 모든 원소들을 좌우 순서를 바꾼 집합
-   [MATH: semanticsmrowmsupmiG/mimo mathvariant="normal"
-   lspace="0em" rspace="0em"′/mo/msupmo=/momrowmo
-   fence="true"{/momrowmo fence="true"(/momiy/mimo
-   separator="true",/momix/mimo fence="true")/mo/mrowmi
-   mathvariant="normal"∣/mimrowmo fence="true"(/momix/mimo
-   separator="true",/momiy/mimo
-   fence="true")/mo/mrowmo∈/momiG/mimo
-   fence="true"}/mo/mrow/mrowannotation
-   encoding="application/x-tex"G'=\left\{\left(y, x\right)| \left(x,
-   y\right)\in G\right\}/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><msup><mi>G</mi><mo mathvariant="normal"
+   lspace="0em" rspace="0em">′</mo></msup><mo>=</mo><mrow><mo
+   fence="true">{</mo><mrow><mo fence="true">(</mo><mi>y</mi><mo
+   separator="true">,</mo><mi>x</mi><mo fence="true">)</mo></mrow><mi
+   mathvariant="normal">∣</mi><mrow><mo fence="true">(</mo><mi>x</mi><mo
+   separator="true">,</mo><mi>y</mi><mo
+   fence="true">)</mo></mrow><mo>∈</mo><mi>G</mi><mo
+   fence="true">}</mo></mrow></mrow><annotation
+   encoding="application/x-tex">G'=\left\{\left(y, x\right)| \left(x,
+   y\right)\in G\right\}</annotation></semantics> :MATH]
    G′={(y,x)∣(x,y)∈G}에 대하여 순서 3중체
-   [MATH: semanticsmrowmo fence="true"(/momiY/mimo
-   separator="true",/momiX/mimo
-   separator="true",/momsupmiG/mimo mathvariant="normal"
-   lspace="0em" rspace="0em"′/mo/msupmo
-   fence="true")/mo/mrowannotation
-   encoding="application/x-tex"\left(Y, X,
-   G'\right)/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mo fence="true">(</mo><mi>Y</mi><mo
+   separator="true">,</mo><mi>X</mi><mo
+   separator="true">,</mo><msup><mi>G</mi><mo mathvariant="normal"
+   lspace="0em" rspace="0em">′</mo></msup><mo
+   fence="true">)</mo></mrow><annotation
+   encoding="application/x-tex">\left(Y, X,
+   G'\right)</annotation></semantics> :MATH]
    (Y,X,G′), 혹은
-   [MATH: semanticsmrowmsupmiG/mimo mathvariant="normal"
-   lspace="0em" rspace="0em"′/mo/msup/mrowannotation
-   encoding="application/x-tex"G'/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><msup><mi>G</mi><mo mathvariant="normal"
+   lspace="0em" rspace="0em">′</mo></msup></mrow><annotation
+   encoding="application/x-tex">G'</annotation></semantics> :MATH]
    G′를 말한다.
-   [MATH: semanticsmrowmiX/mi/mrowannotation
-   encoding="application/x-tex"X/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>X</mi></mrow><annotation
+   encoding="application/x-tex">X</annotation></semantics> :MATH]
    X와
-   [MATH: semanticsmrowmiY/mi/mrowannotation
-   encoding="application/x-tex"Y/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>Y</mi></mrow><annotation
+   encoding="application/x-tex">Y</annotation></semantics> :MATH]
    Y 사이의 이항 관계
-   [MATH: semanticsmrowmiR/mi/mrowannotation
-   encoding="application/x-tex"R/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>R</mi></mrow><annotation
+   encoding="application/x-tex">R</annotation></semantics> :MATH]
    R이 있고,
-   [MATH: semanticsmrowmiY/mi/mrowannotation
-   encoding="application/x-tex"Y/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>Y</mi></mrow><annotation
+   encoding="application/x-tex">Y</annotation></semantics> :MATH]
    Y와
-   [MATH: semanticsmrowmiZ/mi/mrowannotation
-   encoding="application/x-tex"Z/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>Z</mi></mrow><annotation
+   encoding="application/x-tex">Z</annotation></semantics> :MATH]
    Z 사이의 이항 관계
-   [MATH: semanticsmrowmiS/mi/mrowannotation
-   encoding="application/x-tex"S/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>S</mi></mrow><annotation
+   encoding="application/x-tex">S</annotation></semantics> :MATH]
    S가 있다고 할 때, 합성 이항 관계
    [MATH:
-   semanticsmrowmiS/mimo∘/momiR/mi/mrowannotation
-   encoding="application/x-tex"S\circ R/annotation/semantics :MATH]
+   <semantics><mrow><mi>S</mi><mo>∘</mo><mi>R</mi></mrow><annotation
+   encoding="application/x-tex">S\circ R</annotation></semantics> :MATH]
    S∘R는
-   [MATH: semanticsmrowmiH/mimo=/momrowmo
-   fence="true"{/momrowmo fence="true"(/momix/mimo
-   separator="true",/momiz/mimo fence="true")/mo/mrowmi
-   mathvariant="normal"∣/mimi
-   mathvariant="normal"∃/mimiy/mimo∈/momiY/mimo:/momi
-   x/mimiR/mimiy/mimtext /mtextmtext and/mtextmtext /
-   mtextmtext /mtextmiy/mimiS/mimiz/mimo
-   fence="true"}/mo/mrow/mrowannotation
-   encoding="application/x-tex"H=\left\{\left(x, z\right)|\exists y \in Y
-   : xRy \,\ \text{and} \,\ ySz\right\}/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>H</mi><mo>=</mo><mrow><mo
+   fence="true">{</mo><mrow><mo fence="true">(</mo><mi>x</mi><mo
+   separator="true">,</mo><mi>z</mi><mo fence="true">)</mo></mrow><mi
+   mathvariant="normal">∣</mi><mi
+   mathvariant="normal">∃</mi><mi>y</mi><mo>∈</mo><mi>Y</mi><mo>:</mo><mi>
+   x</mi><mi>R</mi><mi>y</mi><mtext> </mtext><mtext> and</mtext><mtext> </
+   mtext><mtext> </mtext><mi>y</mi><mi>S</mi><mi>z</mi><mo
+   fence="true">}</mo></mrow></mrow><annotation
+   encoding="application/x-tex">H=\left\{\left(x, z\right)|\exists y \in Y
+   : xRy \,\ \text{and} \,\ ySz\right\}</annotation></semantics> :MATH]
    H={(x,z)∣∃y∈Y:xRy and ySz}에 대하여 순서모음
-   [MATH: semanticsmrowmo fence="true"(/momiX/mimo
-   separator="true",/momiZ/mimo
-   separator="true",/momiH/mimo
-   fence="true")/mo/mrowannotation
-   encoding="application/x-tex"\left(X, Z,
-   H\right)/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mo fence="true">(</mo><mi>X</mi><mo
+   separator="true">,</mo><mi>Z</mi><mo
+   separator="true">,</mo><mi>H</mi><mo
+   fence="true">)</mo></mrow><annotation
+   encoding="application/x-tex">\left(X, Z,
+   H\right)</annotation></semantics> :MATH]
    (X,Z,H), 혹은
-   [MATH: semanticsmrowmsupmiH/mimo mathvariant="normal"
-   lspace="0em" rspace="0em"′/mo/msup/mrowannotation
-   encoding="application/x-tex"H'/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><msup><mi>H</mi><mo mathvariant="normal"
+   lspace="0em" rspace="0em">′</mo></msup></mrow><annotation
+   encoding="application/x-tex">H'</annotation></semantics> :MATH]
    H′로 정의된다.
    [MATH:
-   semanticsmrowmiX/mimo=/momiY/mi/mrowannotation
-   encoding="application/x-tex"X=Y/annotation/semantics :MATH]
+   <semantics><mrow><mi>X</mi><mo>=</mo><mi>Y</mi></mrow><annotation
+   encoding="application/x-tex">X=Y</annotation></semantics> :MATH]
    X=Y인 경우, 즉 출발 집합과 도착 집합이 모두
-   [MATH: semanticsmrowmiX/mi/mrowannotation
-   encoding="application/x-tex"X/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>X</mi></mrow><annotation
+   encoding="application/x-tex">X</annotation></semantics> :MATH]
    X로 같은 이항 관계를
-   [MATH: semanticsmrowmiX/mi/mrowannotation
-   encoding="application/x-tex"X/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>X</mi></mrow><annotation
+   encoding="application/x-tex">X</annotation></semantics> :MATH]
    X에서의 이항 관계라 한다.
 
 3.1.1. 이항 관계의 대표적인 특성들[편집]
 
    집합
-   [MATH: semanticsmrowmiX/mi/mrowannotation
-   encoding="application/x-tex"X/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>X</mi></mrow><annotation
+   encoding="application/x-tex">X</annotation></semantics> :MATH]
    X 위의 이항 관계
-   [MATH: semanticsmrowmiR/mi/mrowannotation
-   encoding="application/x-tex"R/annotation/semantics :MATH]
+   [MATH: <semantics><mrow><mi>R</mi></mrow><annotation
+   encoding="application/x-tex">R</annotation></semantics> :MATH]
    R이 띨 수 있는 대표적인 성질들은 다음과 같다:
      * 반사성(or 재귀성; reflexivity):
-       [MATH: semanticsmrowmi
-       mathvariant="normal"∀/mimix/mimo∈/momiX/mimo:/mo
-       mix/mimiR/mimix/mi/mrowannotation
-       encoding="application/x-tex"\forall x \in X:
-       xRx/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mi
+       mathvariant="normal">∀</mi><mi>x</mi><mo>∈</mo><mi>X</mi><mo>:</mo>
+       <mi>x</mi><mi>R</mi><mi>x</mi></mrow><annotation
+       encoding="application/x-tex">\forall x \in X:
+       xRx</annotation></semantics> :MATH]
        ∀x∈X:xRx
      * 대칭성(symmetricity):
-       [MATH: semanticsmrowmi
-       mathvariant="normal"∀/mimix/mimo
-       separator="true",/momiy/mimo∈/momiX/mimo:/momi
-       x/mimiR/mimiy/mimo→/momiy/mimiR/mimix/mi
-       /mrowannotation encoding="application/x-tex"\forall x,y \in X:
-       xRy \to yRx/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mi
+       mathvariant="normal">∀</mi><mi>x</mi><mo
+       separator="true">,</mo><mi>y</mi><mo>∈</mo><mi>X</mi><mo>:</mo><mi>
+       x</mi><mi>R</mi><mi>y</mi><mo>→</mo><mi>y</mi><mi>R</mi><mi>x</mi><
+       /mrow><annotation encoding="application/x-tex">\forall x,y \in X:
+       xRy \to yRx</annotation></semantics> :MATH]
        ∀x,y∈X:xRy→yRx
      * 비대칭성(asymmetricity):
-       [MATH: semanticsmrowmi
-       mathvariant="normal"∀/mimix/mimo
-       separator="true",/momiy/mimo∈/momiX/mimo:/momi
-       x/mimiR/mimiy/mimo→/momi
-       mathvariant="normal"¬/mimiy/mimiR/mimix/mi/mrowan
-       notation encoding="application/x-tex"\forall x,y \in X: xRy \to
-       \neg yRx/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mi
+       mathvariant="normal">∀</mi><mi>x</mi><mo
+       separator="true">,</mo><mi>y</mi><mo>∈</mo><mi>X</mi><mo>:</mo><mi>
+       x</mi><mi>R</mi><mi>y</mi><mo>→</mo><mi
+       mathvariant="normal">¬</mi><mi>y</mi><mi>R</mi><mi>x</mi></mrow><an
+       notation encoding="application/x-tex">\forall x,y \in X: xRy \to
+       \neg yRx</annotation></semantics> :MATH]
        ∀x,y∈X:xRy→¬yRx
      * 반대칭성(antisymmetricity):
-       [MATH: semanticsmrowmi
-       mathvariant="normal"∀/mimix/mimo
-       separator="true",/momiy/mimo∈/momiX/mimo:/momo
-       stretchy="false"(/momix/mimiR/mimiy/mimo∧/momi
-       y/mimiR/mimix/mimo stretchy="false")/momo→/momo
-       stretchy="false"(/momix/mimo=/momiy/mimo
-       stretchy="false")/mo/mrowannotation
-       encoding="application/x-tex"\forall x,y \in X: (xRy \wedge yRx)
-       \to (x=y)/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mi
+       mathvariant="normal">∀</mi><mi>x</mi><mo
+       separator="true">,</mo><mi>y</mi><mo>∈</mo><mi>X</mi><mo>:</mo><mo
+       stretchy="false">(</mo><mi>x</mi><mi>R</mi><mi>y</mi><mo>∧</mo><mi>
+       y</mi><mi>R</mi><mi>x</mi><mo stretchy="false">)</mo><mo>→</mo><mo
+       stretchy="false">(</mo><mi>x</mi><mo>=</mo><mi>y</mi><mo
+       stretchy="false">)</mo></mrow><annotation
+       encoding="application/x-tex">\forall x,y \in X: (xRy \wedge yRx)
+       \to (x=y)</annotation></semantics> :MATH]
        ∀x,y∈X:(xRy∧yRx)→(x=y)
      * 전이성(추이성, 이행성, transitivity):
-       [MATH: semanticsmrowmi
-       mathvariant="normal"∀/mimix/mimo
-       separator="true",/momiy/mimo
-       separator="true",/momiz/mimo∈/momiX/mimo:/momo
-       stretchy="false"(/momix/mimiR/mimiy/mimo∧/momi
-       y/mimiR/mimiz/mimo stretchy="false")/momo→/momo
-       stretchy="false"(/momix/mimiR/mimiz/mimo
-       stretchy="false")/mo/mrowannotation
-       encoding="application/x-tex"\forall x,y,z \in X: (xRy \wedge yRz)
-       \to (xRz)/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mi
+       mathvariant="normal">∀</mi><mi>x</mi><mo
+       separator="true">,</mo><mi>y</mi><mo
+       separator="true">,</mo><mi>z</mi><mo>∈</mo><mi>X</mi><mo>:</mo><mo
+       stretchy="false">(</mo><mi>x</mi><mi>R</mi><mi>y</mi><mo>∧</mo><mi>
+       y</mi><mi>R</mi><mi>z</mi><mo stretchy="false">)</mo><mo>→</mo><mo
+       stretchy="false">(</mo><mi>x</mi><mi>R</mi><mi>z</mi><mo
+       stretchy="false">)</mo></mrow><annotation
+       encoding="application/x-tex">\forall x,y,z \in X: (xRy \wedge yRz)
+       \to (xRz)</annotation></semantics> :MATH]
        ∀x,y,z∈X:(xRy∧yRz)→(xRz)
      * 동치관계:
-       [MATH: semanticsmrowmiR/mi/mrowannotation
-       encoding="application/x-tex"R/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mi>R</mi></mrow><annotation
+       encoding="application/x-tex">R</annotation></semantics> :MATH]
        R이 반사성, 대칭성, 전이성을 모두 만족시키는 경우.
      * 부분순서관계:
-       [MATH: semanticsmrowmiR/mi/mrowannotation
-       encoding="application/x-tex"R/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mi>R</mi></mrow><annotation
+       encoding="application/x-tex">R</annotation></semantics> :MATH]
        R이 반사성, 반대칭성, 전이성을 모두 만족시키는 경우.[1]
 
 3.2. 예시[편집]
 
      * 함수는 대표적인 이항 관계의 예이다. 함수
        [MATH:
-       semanticsmrowmif/mimo:/momiX/mimo↦/momiY/mi
-       /mrowannotation encoding="application/x-tex"f:X\mapsto
-       Y/annotation/semantics :MATH]
+       <semantics><mrow><mi>f</mi><mo>:</mo><mi>X</mi><mo>↦</mo><mi>Y</mi>
+       </mrow><annotation encoding="application/x-tex">f:X\mapsto
+       Y</annotation></semantics> :MATH]
        f:X↦Y는 정의역이
-       [MATH: semanticsmrowmiX/mi/mrowannotation
-       encoding="application/x-tex"X/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mi>X</mi></mrow><annotation
+       encoding="application/x-tex">X</annotation></semantics> :MATH]
        X이고 정의역의 임의의 원소
-       [MATH: semanticsmrowmix/mi/mrowannotation
-       encoding="application/x-tex"x/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mi>x</mi></mrow><annotation
+       encoding="application/x-tex">x</annotation></semantics> :MATH]
        x에 대하여
        [MATH:
-       semanticsmrowmix/mimiR/mimiy/mi/mrowannotation
-       encoding="application/x-tex"xRy/annotation/semantics :MATH]
+       <semantics><mrow><mi>x</mi><mi>R</mi><mi>y</mi></mrow><annotation
+       encoding="application/x-tex">xRy</annotation></semantics> :MATH]
        xRy가 성립하는
        [MATH:
-       semanticsmrowmiy/mimo∈/momiY/mi/mrowannotation
-       encoding="application/x-tex"y\in Y/annotation/semantics :MATH]
+       <semantics><mrow><mi>y</mi><mo>∈</mo><mi>Y</mi></mrow><annotation
+       encoding="application/x-tex">y\in Y</annotation></semantics> :MATH]
        y∈Y가 유일하게 존재하는
-       [MATH: semanticsmrowmiX/mimo
-       separator="true",/momiY/mi/mrowannotation
-       encoding="application/x-tex"X, Y/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mi>X</mi><mo
+       separator="true">,</mo><mi>Y</mi></mrow><annotation
+       encoding="application/x-tex">X, Y</annotation></semantics> :MATH]
        X,Y사이의 이항 관계
-       [MATH: semanticsmrowmiR/mi/mrowannotation
-       encoding="application/x-tex"R/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mi>R</mi></mrow><annotation
+       encoding="application/x-tex">R</annotation></semantics> :MATH]
        R와 같다.
 
 4. 순서론[편집]
@@ -9915,27 +9871,27 @@ My notes:
    순열(permutation 또는 porting)과 정렬(monotonic order 또는 sorting)을 가능하게 한다.
      * 비교 가능성(comparability)
        부분순서집합
-       [MATH: semanticsmrowmo fence="true"(/momiA/mimo
-       separator="true",/momo≤/momo
-       fence="true")/mo/mrowannotation
-       encoding="application/x-tex"\left(A, \leq
-       \right)/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mo fence="true">(</mo><mi>A</mi><mo
+       separator="true">,</mo><mo>≤</mo><mo
+       fence="true">)</mo></mrow><annotation
+       encoding="application/x-tex">\left(A, \leq
+       \right)</annotation></semantics> :MATH]
        (A,≤)가 주어졌을 때, 집합
-       [MATH: semanticsmrowmiA/mi/mrowannotation
-       encoding="application/x-tex"A/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mi>A</mi></mrow><annotation
+       encoding="application/x-tex">A</annotation></semantics> :MATH]
        A의 두 원소
-       [MATH: semanticsmrowmia/mimo
-       separator="true",/momib/mi/mrowannotation
-       encoding="application/x-tex"a, b/annotation/semantics :MATH]
+       [MATH: <semantics><mrow><mi>a</mi><mo
+       separator="true">,</mo><mi>b</mi></mrow><annotation
+       encoding="application/x-tex">a, b</annotation></semantics> :MATH]
        a,b가
        [MATH:
-       semanticsmrowmia/mimo≤/momib/mi/mrowannotation
-       encoding="application/x-tex"a \leq b/annotation/semantics
+       <semantics><mrow><mi>a</mi><mo>≤</mo><mi>b</mi></mrow><annotation
+       encoding="application/x-tex">a \leq b</annotation></semantics>
        :MATH]
        a≤b이거나
        [MATH:
-       semanticsmrowmib/mimo≤/momia/mi/mrowannotation
-       encoding="application/x-tex"b \leq a/annotation/semantics
+       <semantics><mrow><mi>b</mi><mo>≤</mo><mi>a</mi></mrow><annotation
+       encoding="application/x-tex">b \leq a</annotation></semantics>
        :MATH]
        b≤a이면 a와 b는 비교 가능하다(comparable)고 하며, 그렇지 않으면 a와 b는 비교
        불가능하다(incomparable)고 한다.
@@ -10024,7 +9980,7 @@ My notes:
      * App Store
 
    namu.wikiContáctenosTérminos de usoOperado por umanle S.R.L.Hecho con
-   3 en Asunción, República del Paraguay
+   <3 en Asunción, República del Paraguay
 
    Su zona horaria es GMTImpulsado por the seed engine
 
@@ -10034,10 +9990,8 @@ My notes:
    Service apply.
      *
      *
-     *</text>
-</page> §
-<page="kor30.txt">
-<text>   서울대학교병원 링크 배너
+     *
+   서울대학교병원 링크 배너
 
    본문으로 바로가기
 
@@ -10195,7 +10149,7 @@ My notes:
        모집하고 있습니다.
 
    (BUTTON) 전체 검색 레이어 열기
-   현재 위치: HOME 
+   현재 위치: HOME >
    건강정보 (BUTTON) 주 메뉴 목록 열기
      * 진료안내
      * 이용안내
@@ -10203,7 +10157,7 @@ My notes:
      * 고객참여
      * 병원소개
 
-   
+   >
    N의학정보 (BUTTON) 서브 메뉴 목록 열기
      * 건강TV
      * FOCUS
@@ -10212,7 +10166,7 @@ My notes:
      * 자가진단서비스
      * 의료기기정보
 
-   
+   >
      * 진료예약
      * 예약조회
 
@@ -10643,10 +10597,8 @@ N 의학정보
      * #자원봉사
      * #입찰정보
 
-   (BUTTON) 전체 검색 레이어 닫기</text>
-</page> §
-<page="kor31.txt">
-<text>   (BUTTON) 메뉴
+   (BUTTON) 전체 검색 레이어 닫기
+   (BUTTON) 메뉴
 
 brunch
 
@@ -10692,7 +10644,7 @@ brunch
 
    - 정의를 분별해주는 기준은 인간의 사회관계에 이득을 주는 것이다. 단순히 법적으로 정해진 것은 정의가 아니다. 또한 개별적
    행동은 과거에는 정의롭다가 나중에 정의롭지 않게 될 수도 있지만, 그것은 "과거에 사회적 이득에 기여했다"는 점에서 정의롭다.
-   쾌락(문학과 지성사)23쪽
+   <쾌락>(문학과 지성사)23쪽
 
    사회관계에 이득을 주는 것이 정의라고 말한다. 요즘 뉴스를 장식하는 기사들은 사회관계를 무너뜨리는 기사가 너무 많이 나온다.
    검사장 출신 변호사가 나오고, 재벌들의 도덕적 해이가 만든 부실기업을 노동자들이 떠안게 만들고 있고 국민의 세금을 쏟아 부어야
@@ -10705,14 +10657,14 @@ brunch
    사회적 관계가 무너지는 이유로 심리학자들은 애착관계를 말한다.
 
    ‘갓난아이 떼 관계를 맺을 기회를 잃으면, 신경성 거울 장치의 발달은 물론 기능마저 해를 입게 된다. 그러면 결국 자존심이
-   온전하게 형성되지 않을뿐더러 관계를 맺고 능력을 습득하는 데도 결함이 생긴다.’ 공감의 심리학(127쪽) (요아힘 바우어
+   온전하게 형성되지 않을뿐더러 관계를 맺고 능력을 습득하는 데도 결함이 생긴다.’ <공감의 심리학>(127쪽) (요아힘 바우어
    지음, 이미옥 옮김, 에코라브르 출판)
 
    ‘다른 사람과 잘 어울리고, 자신의 주장을 펼치며, 타협을 아는 것은 장기적으로 아이의 성공가능성을 높여준다. 이는 학업
    성취보다 훨씬 더 중요한 문제다. 아이가 성장해 갈수록 부모와 아이의 관계는 이러한 생존 기술을 익힐 수 있는 가장 기본적인
    훈련장이 되어야 한다.‘
 
-   엄마가 모르는 아이의 발달 단계 146쪽 (린다 블래어, 김세영 역, 푸른육아)
+   <엄마가 모르는 아이의 발달 단계> 146쪽 (린다 블래어, 김세영 역, 푸른육아)
 
    어려서부터 애착관계가 형성되지 않았기 때문에 사회적 관계를 맺는데 많은 비용이 들어간다는 것이다.
 
@@ -10742,10 +10694,8 @@ brunch
 
    댓글 쓰기 허용 [ ] afliean
 
-   브런치는 최신 브라우저에 최적화 되어있습니다. IE chrome safari</text>
-</page> §
-<page="kor32.txt">
-<text>   #alternate
+   브런치는 최신 브라우저에 최적화 되어있습니다. IE chrome safari
+   #alternate
 
    실시간뉴스
    명의 빌려준 ‘바지사장’에 소득세 부과...法 “처분 무효 아냐”
@@ -10830,7 +10780,7 @@ brunch
    제약·바이오
           다크호스
           리포트
-          UPDOWN
+          UP&DOWN
           지금업계는
 
    부동산
@@ -11124,7 +11074,7 @@ brunch
    IFRAME: //io1.innorame.com/imp/yvD0YbmXGnZq.iframe
 
    IFRAME:
-   //ad.adjw.co.kr/cgi-bin/PelicanC.dll?impr?pageid=02oWout=iframe
+   //ad.adjw.co.kr/cgi-bin/PelicanC.dll?impr?pageid=02oW&out=iframe
 
    바이오 투자 길라잡이 팜이데일리
    왼쪽 오른쪽
@@ -11216,13 +11166,13 @@ brunch
      * 나이스 샤아앗~ㅣ골프in
           +
 
-              [포토]박인비 apos;새해 복 많이 받으세요apos;
+              [포토]박인비 &apos;새해 복 많이 받으세요&apos;
                       [포토]박인비 ʼ새해 복 많이 받으세요ʼ
 
      * 당신의 드림카는?ㅣ오토in
           +
 
-              르케쉐 부진 속…BWM·벤츠, 3년 연속 국내 판매 apos;3·4위apos; 차지
+              르케쉐 부진 속…BWM·벤츠, 3년 연속 국내 판매 &apos;3·4위&apos; 차지
                       르케쉐 부진 속…BWM·벤츠, 3년 연속 국내 판매 ʼ3·4위ʼ 차지
 
    왼쪽 오른쪽
@@ -11257,7 +11207,7 @@ brunch
                       개미 표심잡기 나선 尹…공매도·양도세 이어 금투세 정조준
 
    IFRAME:
-   //ad.adjw.co.kr/cgi-bin/PelicanC.dll?impr?pageid=05fmout=iframe
+   //ad.adjw.co.kr/cgi-bin/PelicanC.dll?impr?pageid=05fm&out=iframe
 
    알립니다
    [마감] 2023년 이데일리 자본시장 경력기자 모집
@@ -11293,10 +11243,8 @@ brunch
      * 저작권보호
      * 오류제보
      * 기사제보
-     * 개인정보처리방침</text>
-</page> §
-<page="kor33.txt">
-<text>   #alternate 편집 위키백과 (ko) 위키백과 아톰 피드
+     * 개인정보처리방침
+   #alternate 편집 위키백과 (ko) 위키백과 아톰 피드
 
    본문으로 이동
 
@@ -11614,8 +11562,8 @@ brunch
        ename%3D17%25C8%25F1%25B8%25C1%25C7%25B0%25B1%25B3%25BD%25C7%2520%2
        5C1%25F8%25C7%25E0%25C0%25DA%25BF%25EB(%25C0%25A5%25B4%25D9%25BF%25
        EE%25B7%25CE%25B5%25E5%25BF%25EB).pdf%26file%3D/2017/03/20170314101
-       334758022_1.pdf%26board_id%3DSNMH_BOARD%26seq%3D8110%26idx%3D3+cd=
-       2hl=koct=clnkgl=kr
+       334758022_1.pdf%26board_id%3DSNMH_BOARD%26seq%3D8110%26idx%3D3+&cd=
+       2&hl=ko&ct=clnk&gl=kr
 
 참고자료[편집]
 
@@ -11731,7 +11679,7 @@ brunch
      * 일본
      * 체코
 
-   원본 주소 "https://ko.wikipedia.org/w/index.php?title=인간_관계oldid=33143311"
+   원본 주소 "https://ko.wikipedia.org/w/index.php?title=인간_관계&oldid=33143311"
 
    분류:
      * 인간 관계
@@ -11777,10 +11725,8 @@ brunch
      * Wikimedia Foundation
      * Powered by MediaWiki
 
-     * (BUTTON) 내용 폭 제한 전환</text>
-</page> §
-<page="kor34.txt">
-<text>   (BUTTON) 메뉴
+     * (BUTTON) 내용 폭 제한 전환
+   (BUTTON) 메뉴
 
 brunch
 
@@ -11810,7 +11756,7 @@ brunch
 
 사람들은 인간관계에 관심이 많다
 
-   전에 인간관계를 주제로 썼던  인간관계가 나쁜 사람들의 3가지 특징이 꽤 높은 조회수를 기록하고 다음 메인에 까지
+   전에 인간관계를 주제로 썼던  <인간관계가 나쁜 사람들의 3가지 특징>이 꽤 높은 조회수를 기록하고 다음 메인에 까지
    올라갔다. 아마 편집자분께서 글 열심히 쓰라고 당근을 던져주신게 아닐까싶다. 그래도 관심이 있는 주제가 아니라면 독자분들께서
    많이 안 읽으셨을 탠데, 인간관계가 이런 주제는 아니었던 것 같다.
 
@@ -11829,14 +11775,14 @@ brunch
    만들어지는게 아니다. 좋은 쪽으로 나아가려면 더 많이 알아야 한다. 행동하겠다는 꾸준한 노력도 필요하다. 모래성을 쌓는 과정과
    같다. 시간을 들여야 좋은 사람이 될 수 있다.
 
-   이제 인간관계가 좋은 사람들은 어떤 특징을 가지고 있는지 알아보려 한다. 개인적으로 카네기 인간관계론을 참고하여 알아낸
+   이제 인간관계가 좋은 사람들은 어떤 특징을 가지고 있는지 알아보려 한다. 개인적으로 <카네기 인간관계론>을 참고하여 알아낸
    특징이다.
      __________________________________________________________________
 
 다른 사람한테 순수한 관심을 기울인다.
 
       다른 사람들에게 관심이 없는 사람은 인생을 사는 데 굉장히 어려움을 겪게 되고, 다른 사람들에게도 해를 끼치게 된다.
-     카네기 인간관계론, (p.103)
+     <카네기 인간관계론>, (p.103)
 
    인간관계가 좋은 사람들은 다른 사람들한테 관심을 가진다. 역으로 생각해보자. 다른 사람이 나한테 먼저 관심 가져준다면, 내가 그
    사람을 싫어하지 않고서야 그 사람에게 자연스레 관심을 가지게 된다. 인간관계가 좋은 사람들은 이런 과정을 안다. 그래서 먼저
@@ -11856,7 +11802,7 @@ brunch
 
       다른 사람의 관심사를 화제로 삼는 것은 쌍방 모두에게 이익을 준다. … 다른 이들로부터 다양한 관심사에 대해서 알게 될
      뿐만 아니라 그의 인생을 다채롭게 해주는 데 도움이 된다.
-     카네기 인간관계론, (p.163)
+     <카네기 인간관계론>, (p.163)
 
    상대방한테 순수한 관심을 가지기 시작하면, 여러 궁금증들이 추가적으로 생긴다. 예를 들어보자. '이 사람은 야구를 즐겨 본다고
    했지, 그럼 어디 팀을 좋아할까?'이런 식으로 말이다. 궁금증이 생겼으면 물어보자. 상대가 야구를 즐겨 본다고 했으니, 어디
@@ -11876,7 +11822,7 @@ brunch
       당사자들에게는 자신의 이름이 그 어떤 것보다도 기분 좋고 중요한 말임을 명심하라. 사람의 이름을 기억하고 자주 불러라.
      그러면 당신은 많은 찬사를 받을 것이다.
 
-     카네기 인간관계론, (p.141)
+     <카네기 인간관계론>, (p.141)
 
    인간관계에 도움되는 것 중 하나는 친숙한 웃음이다. 나 또한 웃는 모습이 이쁜 사람한테 큰 친근감을 느낀다. 내가
    예전에 테마파크 아르바이트를 했을 때 이야기다. 직원 교육으로 배운 것 중 하나가 이쁘게 웃는 법이었다. 덕분에 그때 '개구리
@@ -11896,7 +11842,7 @@ brunch
 
      실제로 나는 잠자코 듣기만 하면서 그에게 말을 많이 하도록 했을 뿐인데도 그는 나를 말재주가 좋은 사람이라고 생각했던
      것이다. … 상대방의 이야기에 주의력을 집중하는 것이 매우 중요하다. 어떠한 찬사도 이만한 효과는 없다.
-     카네기 인간관계론 p.145
+     <카네기 인간관계론> p.145
 
    인간관계가 좋은 사람들은 경청을 중요시한다. 물론 경청이 쉽지는 않다. 우리도 할 말이 많기 때문이다. 우리도 말을 하고 싶기
    때문에 상대방의 말을 계속 들어주기가 쉽지 않다. 쉽지 않은 건 알지만 이럴 때마다 계속 호응해주자. 상대방의 말을 끊고 하고
@@ -11911,7 +11857,7 @@ brunch
 
      어떤 사람이 당신 생각이 틀렸다고 말하더라도, 또 실제로 틀린 말을 하더라도 "제 생각이 틀렸을지도 모릅니다. 가끔
      이러니까요. 다시 생각해 봐야겠습니다."
-     카네기 인간관계론 p.198
+     <카네기 인간관계론> p.198
 
    인간관계가 좋은 사람들은 논쟁에서 굳이 승리하려고 들지 않는다. 논쟁에서 상대방의 자존심을 짓밟을 필요가 없기 때문이다. 의견
    차이에서 상대방의 자존심을 건드려 '내가 너보다 나은 사람이다!'라고 한껏 뽐내면 그 당시 기분은 좋다. 하지만 우리 안의
@@ -11924,10 +11870,10 @@ brunch
      __________________________________________________________________
 
    나는 '누군가와 친해지지는 않더라도 최소한 갈등은 빚지 말자는 주의'다. 인간관계가 좋다는 건 누구와도 친해질 수 있다는 뜻일
-   수도 있지만, 누구와도 갈등이 없다는 것도 있다고 생각하기 때문이다. 책 카네기 인간관계론은 나의 인간관계 가치관에 맞게
+   수도 있지만, 누구와도 갈등이 없다는 것도 있다고 생각하기 때문이다. 책 <카네기 인간관계론>은 나의 인간관계 가치관에 맞게
    행동했는지 생각해보는 계기가 되었다.
 
-   이 글에서 소개된 특징들 말고도 인간관계에 대해서 깊게 알아보고 싶다면 카네기 인간관계론을 꼭 읽어 보는 것을 추천한다.
+   이 글에서 소개된 특징들 말고도 인간관계에 대해서 깊게 알아보고 싶다면 <카네기 인간관계론>을 꼭 읽어 보는 것을 추천한다.
    괜히 이 책에 '인간관계의 바이블'이란 수식어가 붙은 게 아니다.
 
    인간관계와 관련된 글을 읽고 나면 나 자신은 어떤 사람인지 생각해보게 된다. 이 글을 쓸 때도 마찬가지다. 내가 이런 특징들을
@@ -11938,7 +11884,7 @@ brunch
 
 ※ 책
 
-   카네기 인간관계론 - 데일 카네기
+   <카네기 인간관계론> - 데일 카네기
 
 ※ 인간관계 연관 글
 
@@ -11980,10 +11926,8 @@ brunch
 
    댓글 쓰기 허용 [ ] afliean
 
-   브런치는 최신 브라우저에 최적화 되어있습니다. IE chrome safari</text>
-</page> §
-<page="kor35.txt">
-<text>   주요서비스 바로가기 본문 바로가기 매체정보 바로가기 로그인 바로가기 기사검색 바로가기 전체서비스 바로가기
+   브런치는 최신 브라우저에 최적화 되어있습니다. IE chrome safari
+   주요서비스 바로가기 본문 바로가기 매체정보 바로가기 로그인 바로가기 기사검색 바로가기 전체서비스 바로가기
 
 상단영역
 
@@ -12317,10 +12261,8 @@ SNS 기사보내기
      * 알립니다
      * 이벤트
 
-   (BUTTON) 전체메뉴닫기</text>
-</page> §
-<page="kor36.txt">
-<text>   [tr?id=1683553561964244ev=PageViewnoscript=1]
+   (BUTTON) 전체메뉴닫기
+   [tr?id=1683553561964244&ev=PageView&noscript=1]
 
      * DBR 2023 연말패키지
 
@@ -12477,7 +12419,7 @@ DBR의 교육솔루션
           + 이벤트
             이벤트 당첨자공지
           + 고객센터
-            공지사항 FAQ 1:1문의 제휴광고문의 이용권/상품권 인증 구독인증
+            공지사항 FAQ 1:1문의 제휴&광고문의 이용권/상품권 인증 구독인증
           + DBR SNS
             Facebook 카카오톡 블로그
           + 결제내역
@@ -12500,7 +12442,7 @@ DBR의 교육솔루션
           + 이벤트
             이벤트 북세통 당첨자공지
           + 고객센터
-            공지사항 FAQ 1:1문의 제휴광고문 이용권/상품권인증 비즈런 수강권인증 구독인증
+            공지사항 FAQ 1:1문의 제휴&광고문 이용권/상품권인증 비즈런 수강권인증 구독인증
           + DBR SNS
             Facebook 카카오톡 블로그
      * 공유
@@ -12548,7 +12490,7 @@ DBR의 교육솔루션
    나눈다’는 말을 하듯 정서적인 측면에서도 마찬가지로 인간관계는 중요하다. 가족이나 말을 터놓을 친구가 없는 것은 매우 불행한
    일이다. 사람들과의 관계 속에서 서로 배려하고 사랑하는 정(情)이 있기 때문에 마음은 따뜻해지고 정서적 안정과 행복감을 얻는다.
    인간관계는 바로 행복의 원천이다.
-   베스트셀러 미움받을 용기로 유명해진 정신의학자 알프레드 아들러의 “모든 고민은 인간관계에서 시작된다”는 말처럼 인간관계
+   베스트셀러 <미움받을 용기>로 유명해진 정신의학자 알프레드 아들러의 “모든 고민은 인간관계에서 시작된다”는 말처럼 인간관계
    중에는 성가시고 괴로운 관계도 있게 마련이다. 물질적으로나 정신적으로 손해가 되는 인간관계도 있을 것이며 나에게 괴롭거나 위협이
    되는 관계도 있을 것이다. 가만히 따져보면 도움이 되고 편안한 관계보다는 불편하고 피하고 싶은 관계가 더 많은 것 같다.
    배우자나 직장상사를 욕하고 비난하는 말들은 넘쳐나는 반면 그들에게 감사나 존경을 표현하는 말은 들어보기 힘든 것이 오늘날의
@@ -12606,10 +12548,8 @@ DBR의 교육솔루션
 
    TEL: 02-6380-7236
    Copyright ⒸDONGAMEDIAN Inc. All Rights Reserved
-   Good Content Service kocca</text>
-</page> §
-<page="kor37.txt">
-<text>   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-KW3B576
+   Good Content Service kocca
+   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-KW3B576
 
    (BUTTON) 닫기
    전체기사 최신뉴스 GAM 라씨로
@@ -12744,7 +12684,7 @@ DBR의 교육솔루션
      * 출판
      * 종교
      * 미디어
-     * 드라마·예능쇼
+     * 드라마·예능&쇼
      * 영화
      * 가요
      * 패션뷰티
@@ -12944,7 +12884,7 @@ DBR의 교육솔루션
      * 출판
      * 종교
      * 미디어
-     * 드라마·예능쇼
+     * 드라마·예능&쇼
      * 영화
      * 가요
      * 패션뷰티
@@ -13058,10 +12998,10 @@ GAM - 해외주식 투자 도우미
    HBM 장비 성장 기대"
 
    IFRAME:
-   //ad.adjw.co.kr/cgi-bin/PelicanC.dll?impr?pageid=05Ywout=iframe
+   //ad.adjw.co.kr/cgi-bin/PelicanC.dll?impr?pageid=05Yw&out=iframe
 
    IFRAME:
-   //ad.adjw.co.kr/cgi-bin/PelicanC.dll?impr?pageid=05Yxout=iframe
+   //ad.adjw.co.kr/cgi-bin/PelicanC.dll?impr?pageid=05Yx&out=iframe
 
 [뉴스핌 베스트 기사]
 
@@ -13085,9 +13025,9 @@ GAM - 해외주식 투자 도우미
    SK 회장과 정의선 현대차 회장이 CES에 직접 참석해 세계적 기술 트렌드를 직접 확인한다. 최태원 SK그룹 회장은 지난달 말
    대한상공회의소 송년 기자간담회에서 "CES는 저도 가게 되지 않을까 생각한다"면서 "가게 되면 어젠다는 크게 환경과 AI
    2개"라고 말했다. 최 회장은 지난해에도 CES에 참석했다. 올해 CES에는 SK에서 최재원 SK온 수석부회장을 비롯해 박상규
-   SK이노베이션 총괄사장, 곽노정 SK하이닉스 사장, 유영상 SK텔레콤 사장, 추형욱 SK ES 사장, 박경일 SK에코플랜트
+   SK이노베이션 총괄사장, 곽노정 SK하이닉스 사장, 유영상 SK텔레콤 사장, 추형욱 SK E&S 사장, 박경일 SK에코플랜트
    사장, 박원철 SKC 사장 등 주요 계열사 CEO들이 최 회장과 동행할 전망이다. 최태원 SK그룹 회장. [사진=뉴스핌DB]
-   SK그룹은 CES에 SK(주), SK이노베이션, SK하이닉스, SK텔레콤, SK ES, SK에코플랜트, SKC 등 총 7개
+   SK그룹은 CES에 SK(주), SK이노베이션, SK하이닉스, SK텔레콤, SK E&S, SK에코플랜트, SKC 등 총 7개
    계열사가 공동전시관을 꾸린다. 지난해 탄소감축(넷제로)을 전시 주제로 내세운 SK그룹은 올해 CES에서도 탄소 감축 기술과
    사업으로 기후위기가 사라진 청사진을 제시한다. 기업의 탄소 절감에 대한 화두는 ESG 경영과 맞물려 SK뿐 아니라 글로벌
    기업들의 공통으로 안고 가는 중요한 주제이기도 하다. 이에 국내외 주요기업들은 탄소 감축과 친환경 에너지 관련 제품과 플랫폼을
@@ -13140,12 +13080,12 @@ GAM - 해외주식 투자 도우미
    [rassiro_view_bottomv2.jpg]
 
    IFRAME:
-   //ad.adjw.co.kr/cgi-bin/PelicanC.dll?impr?pageid=02IBout=iframe
+   //ad.adjw.co.kr/cgi-bin/PelicanC.dll?impr?pageid=02IB&out=iframe
 
    [gam_view_right.gif]
 
    IFRAME:
-   //ad.adjw.co.kr/cgi-bin/PelicanC.dll?impr?pageid=02dYout=iframe
+   //ad.adjw.co.kr/cgi-bin/PelicanC.dll?impr?pageid=02dY&out=iframe
 
 뉴스핌TV
 
@@ -13188,10 +13128,8 @@ GAM - 해외주식 투자 도우미
    뉴스핌등록번호 : 서울아00194등록일자 및 발행일자 : 2006.4.26
    COPYRIGHT©NEWSPIM CO., LTD. ALL RIGHTS RESERVED.
 
-   Top으로 이동</text>
-</page> §
-<page="kor38.txt">
-<text>   logo-meditation-life
+   Top으로 이동
+   logo-meditation-life
 
    logo-meditation-life
    [nav-close.gif]
@@ -13213,7 +13151,7 @@ GAM - 해외주식 투자 도우미
    [contact-btn-sc.gif] [contact-btn-rsv.gif] [contact-btn-faq.gif]
    [contact-btn-email.gif] [contact-call.gif]
 
-   블로그홈마음 솔루션마음수련  명상마음 엔터테인먼트공지사항
+   블로그홈마음 솔루션마음수련 & 명상마음 엔터테인먼트공지사항
 
 인간관계 좋은 사람 특징 8가지
 
@@ -13397,10 +13335,8 @@ GAM - 해외주식 투자 도우미
    고객센터 1588-7245
    평일, 주말 모두 오전 9시 ~ 저녁 7시
 
-   전화문의 무료상담 예약</text>
-</page> §
-<page="kor39.txt">
-<text>   [tr?id=1683553561964244ev=PageViewnoscript=1]
+   전화문의 무료상담 예약
+   [tr?id=1683553561964244&ev=PageView&noscript=1]
 
      * DBR 2023 연말패키지
 
@@ -13558,7 +13494,7 @@ DBR의 교육솔루션
           + 이벤트
             이벤트 당첨자공지
           + 고객센터
-            공지사항 FAQ 1:1문의 제휴광고문의 이용권/상품권 인증 구독인증
+            공지사항 FAQ 1:1문의 제휴&광고문의 이용권/상품권 인증 구독인증
           + DBR SNS
             Facebook 카카오톡 블로그
           + 결제내역
@@ -13581,7 +13517,7 @@ DBR의 교육솔루션
           + 이벤트
             이벤트 북세통 당첨자공지
           + 고객센터
-            공지사항 FAQ 1:1문의 제휴광고문 이용권/상품권인증 비즈런 수강권인증 구독인증
+            공지사항 FAQ 1:1문의 제휴&광고문 이용권/상품권인증 비즈런 수강권인증 구독인증
           + DBR SNS
             Facebook 카카오톡 블로그
      * 공유
@@ -13695,7 +13631,7 @@ DBR의 교육솔루션
    위해서는 자기 감정이 어떤지를 읽을 수 있어야 한다. 쉬운 일이 아니다. 아기들은 자기 감정을 잘 읽고 거기에 따라 행동한다.
    배고프면 울고, 좋으면 웃고, 맘에 들지 않으면 짜증을 낸다. 어른으로 성장하면 자기 감정대로 행동하는 것이 위험하다는 것을
    깨닫고 감정과 다른 행동을 하게 된다. 시간이 더 지나면 아예 자신의 감정을 무시하기도 한다. 그래서 중년 남성 중에는 자기
-   감정을 읽을 줄 모르는 감정 문맹이 많다. 참으로 위험한 일이다. 착한 여자는 왜 살이 찔까의 저자 캐런 쾨닝은 자기 감정을
+   감정을 읽을 줄 모르는 감정 문맹이 많다. 참으로 위험한 일이다. <착한 여자는 왜 살이 찔까>의 저자 캐런 쾨닝은 자기 감정을
    다스릴 줄 알아야 다이어트에 성공한다고 주장한다. 그녀가 정의한 착한 여자란 ‘다른 사람의 인정에 굶주려 있는 버려진 내면의
    아이’다. 다른 사람의 인정을 받는 데 신경 쓰다 보니 정작 자기 감정이 어떤지 생각하지 못하고 사는 것이다. 그러다 보니 살이
    찐다. 일리가 있는 주장이다. 행복하게 사는 최선의 방법은 생긴 대로 사는 것이다. 생긴 대로 산다는 것은 전문용어로 자아
@@ -13831,10 +13767,8 @@ DBR의 교육솔루션
 
    TEL: 02-6380-7236
    Copyright ⒸDONGAMEDIAN Inc. All Rights Reserved
-   Good Content Service kocca</text>
-</page> §
-<page="kor3.txt">
-<text>   #alternate 편집 위키백과 (ko) 위키백과 아톰 피드
+   Good Content Service kocca
+   #alternate 편집 위키백과 (ko) 위키백과 아톰 피드
 
    본문으로 이동
 
@@ -13966,7 +13900,7 @@ TV 드라마[편집]
 
    Disambiguation icon 이 문서는 명칭은 같지만 대상이 다를 때에 쓰이는 동음이의어 문서입니다.
    어떤 링크가 이 문서를 가리키고 있다면, 그 링크를 알맞게 고쳐 주세요.
-   원본 주소 "https://ko.wikipedia.org/w/index.php?title=관계oldid=35818272"
+   원본 주소 "https://ko.wikipedia.org/w/index.php?title=관계&oldid=35818272"
    분류:
      * 동음이의어 문서
      * 동음이의어 작품
@@ -13993,10 +13927,8 @@ TV 드라마[편집]
      * Wikimedia Foundation
      * Powered by MediaWiki
 
-     * (BUTTON) 내용 폭 제한 전환</text>
-</page> §
-<page="kor40.txt">
-<text>   공감언론뉴시스
+     * (BUTTON) 내용 폭 제한 전환
+   공감언론뉴시스
 
    (BUTTON) 전체메뉴
 
@@ -14125,7 +14057,7 @@ TV 드라마[편집]
    (BUTTON) 공유하기 닫기
    (BUTTON) 아주작게 (BUTTON) 작게 (BUTTON) 보통 (BUTTON) 크게 (BUTTON) 아주크게
 
-     *  본문기사보기
+     * < 본문기사보기
 
    추가 자구안 없는 태영…채권단 "거래관계 재검토" 초강수
 
@@ -14148,7 +14080,7 @@ TV 드라마[편집]
      *
 
        IFRAME:
-       //ad.mrab.co.kr/cgi-bin/PelicanC.dll?impr?pageid=04prout=iframe
+       //ad.mrab.co.kr/cgi-bin/PelicanC.dll?impr?pageid=04pr&out=iframe
 
      *
 
@@ -14282,7 +14214,7 @@ TV 드라마[편집]
      *
 
        IFRAME:
-       //ad.mrab.co.kr/cgi-bin/PelicanC.dll?impr?pageid=04prout=iframe
+       //ad.mrab.co.kr/cgi-bin/PelicanC.dll?impr?pageid=04pr&out=iframe
 
      *
 
@@ -14386,7 +14318,7 @@ TV 드라마[편집]
      *
 
        IFRAME:
-       //ad.mrab.co.kr/cgi-bin/PelicanC.dll?impr?pageid=04prout=iframe
+       //ad.mrab.co.kr/cgi-bin/PelicanC.dll?impr?pageid=04pr&out=iframe
 
 많이 본 기사
 
@@ -14465,7 +14397,7 @@ TV 드라마[편집]
      *
 
        IFRAME:
-       //ad.mrab.co.kr/cgi-bin/PelicanC.dll?impr?pageid=04prout=iframe
+       //ad.mrab.co.kr/cgi-bin/PelicanC.dll?impr?pageid=04pr&out=iframe
 
      *
 
@@ -14558,10 +14490,8 @@ TV 드라마[편집]
           + 경남
           + 제주
      * 그래픽 뉴스
-     * PC버전 바로가기</text>
-</page> §
-<page="kor41.txt">
-<text>   #alternate
+     * PC버전 바로가기
+   #alternate
 
    []
 
@@ -14903,22 +14833,20 @@ TV 드라마[편집]
        2007.11.05(노컷TV)
      * 발행·편집인 : 박상용 | 청소년보호책임자 : 조태훈 | ISSN : 2636-0373
      * 노컷뉴스의 모든 콘텐츠는 저작권법의 보호를 받은 바, 무단전재, 복사, 배포 등을 금합니다.
-     * © 2003 CBS MC, 노컷뉴스 all rights reserved.
+     * © 2003 CBS M&C, 노컷뉴스 all rights reserved.
 
      * 서울시 양천구 목동서로 159-1 7층 (주)씨비에스미디어캐스트 ☎02-2650-0500 | 사업자번호 :
        117-81-28867 | 노컷스포츠 | 인터넷신문 등록번호 : 서울 아04480 | 등록일자 : 2017.04.20
      * 발행·편집인 : 박상용 | 청소년보호책임자 : 조태훈
      * 노컷스포츠의 모든 콘텐츠는 저작권법의 보호를 받은 바, 무단전재, 복사, 배포 등을 금합니다.
-     * © 2003 CBS MC, 노컷스포츠 all rights reserved.
+     * © 2003 CBS M&C, 노컷스포츠 all rights reserved.
 
      * 서울시 양천구 목동서로 159-1 7층 (주)씨비에스미디어캐스트 ☎02-2650-0500 | 사업자번호 :
        117-81-28867 | 노컷연예 | 인터넷신문 등록번호 : 서울 아04479 | 등록일자 : 2017.04.20
      * 발행·편집인 : 박상용 | 청소년보호책임자 : 조태훈
      * 노컷연예의 모든 콘텐츠는 저작권법의 보호를 받은 바, 무단전재, 복사, 배포 등을 금합니다.
-     * © 2017 by CBS MC, 노컷연예 all rights reserved.</text>
-</page> §
-<page="kor42.txt">
-<text>   [tr?id=1278682068838779ev=PageViewnoscript=1]
+     * © 2017 by CBS M&C, 노컷연예 all rights reserved.
+   [tr?id=1278682068838779&ev=PageView&noscript=1]
 
    Open Ads
    콘텐츠 인사이터 상품 오드리책방
@@ -15153,10 +15081,8 @@ TV 드라마[편집]
 
    Copyright NHN AD. All right reserved
    [Ico_Facebook_24px.png] [Ico_Insta_24px.png]
-   테스트 하러가기</text>
-</page> §
-<page="kor43.txt">
-<text>   본문 바로가기
+   테스트 하러가기
+   본문 바로가기
 
    페이지 스크롤 진행률
 
@@ -15309,11 +15235,11 @@ Premium Contents
 
    김도연
 
-   심리학 박사이자 한국보건산업진흥원 RD 평가위원이다. 또한 마인드플니스 심리상담연구소와 한국데이트폭력연구소의 대표이다.
+   심리학 박사이자 한국보건산업진흥원 R&D 평가위원이다. 또한 마인드플니스 심리상담연구소와 한국데이트폭력연구소의 대표이다.
    심리치료와 심리상담, 연구와 집필, 교육 강연에 전념하고 있다. 가톨릭대 성모병원 정신건강의학과 Clinical
-   Psychologist  Supervisor를 역임했다. 그간 미래의 나에게 주는 선물, 내 마음에 상처주지 않는
-   습관, 변증법적 행동치료 기술워크북, 복합외상의 치료, 마음챙김에 기반한 인지치료, 정신적 외상극복을 위한
-   마음챙김 외 다수의 책을 출간했다.
+   Psychologist & Supervisor를 역임했다. 그간 <미래의 나에게 주는 선물>, <내 마음에 상처주지 않는
+   습관>, <변증법적 행동치료 기술워크북>, <복합외상의 치료>, <마음챙김에 기반한 인지치료>, <정신적 외상극복을 위한
+   마음챙김> 외 다수의 책을 출간했다.
      __________________________________________________________________
 
    ​
@@ -15388,10 +15314,8 @@ Premium Contents
    개인정보처리방침
    고객센터
    로그인 전체서비스
-   Premium Contentsⓒ NAVER Corp.</text>
-</page> §
-<page="kor44.txt">
-<text>   (BUTTON) menu 경기일보로고
+   Premium Contentsⓒ NAVER Corp.
+   (BUTTON) menu 경기일보로고
    직장인 45% “올해 정리해고·임금 삭감 등 고용관계 우려”
    ____________________ search
      * 오피니언
@@ -15616,10 +15540,8 @@ Premium Contents
    5. 읽는 이로 하여금 수치심, 공포감, 혐오감 등을 느끼게 하는 글
    6. 타인을 사칭하거나 아이디 도용, 차용 등 개인정보와 사생활을 침해한 글
    위의 내용에 명시되어 있지 않더라도 불법적인 내용이거나 공익에 반하는 경우,
-   작성자의 동의없이 선 삭제조치 됩니다.</text>
-</page> §
-<page="kor45.txt">
-<text>   #한국리서치 정기조사 여론속의 여론 » 피드 한국리서치 정기조사 여론속의 여론 » 댓글 피드 alternate alternate
+   작성자의 동의없이 선 삭제조치 됩니다.
+   #한국리서치 정기조사 여론속의 여론 » 피드 한국리서치 정기조사 여론속의 여론 » 댓글 피드 alternate alternate
    alternate
 
    콘텐츠로 건너뛰기
@@ -15728,7 +15650,7 @@ Premium Contents
    조사(https://hrcopinion.co.kr/archives/18330)에 따르면 부유층과 서민(91%), 진보와
    보수(88%), 기성세대와 젊은 세대(76%), 남성과 여성(66%) 등 주요 집단별 갈등이 크다는 응답이 높은 수준이다.
 
-   서로를 만나기도 어렵고 갈등의 골도 깊은 한국사회 현 시점에서, 한국리서치 여론 속의 여론 팀은 우리나라 사람들이 어떤
+   서로를 만나기도 어렵고 갈등의 골도 깊은 한국사회 현 시점에서, 한국리서치 <여론 속의 여론> 팀은 우리나라 사람들이 어떤
    인간관계를 맺고 사는지를 살펴보았다. 인간관계가 다양한 정도가 개인의 행복도에 영향을 주는지, 그리고 관계에 따라 우리 사회
    현안에 대한 인식에 어떤 차이가 있는지도 확인해보았다. 본 조사는 2021년 10월 29일부터 31일까지 3일 동안 전국 성인
    남녀 1,000명을 대상으로 실시했다.
@@ -17570,10 +17492,8 @@ Family Site
 
    페이지 로드 링크
 
-   Go to Top</text>
-</page> §
-<page="kor46.txt">
-<text>   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-TMCQPLQ
+   Go to Top
+   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-TMCQPLQ
 
    (BUTTON)
    (BUTTON) (BUTTON)
@@ -17674,7 +17594,7 @@ Family Site
    처리되었습니다. 이 문서의 참고 문헌은 신뢰성이 있으며 학문적 또는 과학적으로 정확합니다.
      __________________________________________________________________
 
-     * Milicic, N.  Arón, A.M (2017). Climas sociales tóxicos y climas
+     * Milicic, N. & Arón, A.M (2017). Climas sociales tóxicos y climas
        sociales nutritivos para el desarrollo personal en el contexto
        escolar. Universidad Católica de Chile.
      __________________________________________________________________
@@ -17735,10 +17655,8 @@ Family Site
      * 편집 정책
      * 전문가팀
      * 웹사이트 소개
-     * 연락하다</text>
-</page> §
-<page="kor47.txt">
-<text>   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-NGNNXZW
+     * 연락하다
+   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-NGNNXZW
 
    JMP | Statistical Discovery.™ From SAS.
    무료 온라인 통계 과정
@@ -17819,7 +17737,7 @@ p-값이란 무엇인가요?
 
    효과가 없는지(귀무가설의 경우) 확인하고 있는 데이터를 가져오는 우도를 나타냅니다. 야영지 데이터의 경우 이것은 고도와 온도
    간에 선형 관계가 없다는 가설이 됩니다. p-값을 사용하여 결과를 통계적으로 유의한 것으로 설명하는 경우, 이는 대립가설을 위해
-   귀무가설을 기각하는 지점에 해당 값이 사전 정의된 경계(예: p .05 또는 p .01) 미만으로 떨어짐을 의미합니다(야영지
+   귀무가설을 기각하는 지점에 해당 값이 사전 정의된 경계(예: p <.05 또는 p <.01) 미만으로 떨어짐을 의미합니다(야영지
    데이터의 경우 고도와 온도 간에 관계가 있음을 의미).
 
    유의한 상관관계를 구한 후 해당 강도를 살펴볼 수 있습니다. 완벽한 양의 상관관계에는 값 1이 포함되며 완벽한 음의 상관관계에는
@@ -17886,10 +17804,8 @@ Mac 및 Windows용 데이터 분석 소프트웨어
      * 개인 정보 보호 정책 준칙
      * 연락처 안내
 
-   Back to Top</text>
-</page> §
-<page="kor48.txt">
-<text>   #Cozy's Devlog
+   Back to Top
+   #Cozy's Devlog
 
 Cozy's Devlog
 
@@ -17950,7 +17866,7 @@ Cozy's Devlog
 👨‍👩‍👧‍👦 인간관계의 분류
 
 
-1) 일차적 관계와 이차적 관계 - 형성요인
+1) 일차적 관계와 이차적 관계 -> 형성요인
 
 
    일차적 인간관계: 부모, 형제자매, 친척, 동문, 혈연, 지연, 학연 등
@@ -17964,7 +17880,7 @@ Cozy's Devlog
    일시적일 수도 있으나 개인의 잠재력을 실현하고 폭넓은 사회적 관계를 형성하는 중요한 관계이기도 하다.
 
 
-2) 수직적 관계와 수평적 관계 - 구성원의 동등성 여부
+2) 수직적 관계와 수평적 관계 -> 구성원의 동등성 여부
 
 
    수직적 인간관계: 부모와 자녀관계, 스승과 제자관계, 선배와 후배관계, 상사와 부하관계
@@ -17973,7 +17889,7 @@ Cozy's Devlog
    수평적 인간관계: 부부관계, 연인관계, 교우관계
 
 
-3) 애정중심 관계와 업무중심 관계 - 얻고자 하는 목적 및 유지 요인
+3) 애정중심 관계와 업무중심 관계 -> 얻고자 하는 목적 및 유지 요인
 
 
    애정중심 관계: 연인관계, 부부관계
@@ -17988,7 +17904,7 @@ Cozy's Devlog
 
    스승과 제자는 상황에 따라 다름
 
-4) 공유적 관계와 교환적 관계 - 클라크가 나눔
+4) 공유적 관계와 교환적 관계 -> 클라크가 나눔
 
    공유적 관계: 상대방의 행복과 불행 공유, 상호의존적 존재, 친밀한 친구, 가족, 연인
 
@@ -18009,7 +17925,7 @@ Cozy's Devlog
    (BUTTON) 구독하기Cozy's Devlog
    저작자표시
 
-'Culture  인간관계론' 카테고리의 다른 글
+'Culture > 인간관계론' 카테고리의 다른 글
 
     [인간관계론] 교류분석 - 에릭 번  (0)   2022.06.07
    [인간관계론] 대인신념의 변화 - 엘리스  (0) 2022.06.07
@@ -18135,10 +18051,8 @@ Calendar
 
    (BUTTON) Cozy's Devlog구독하기
 
-   IFRAME: //lazypazy.tistory.com/api</text>
-</page> §
-<page="kor49.txt">
-<text>   메뉴바로가기본문바로가기
+   IFRAME: //lazypazy.tistory.com/api
+   메뉴바로가기본문바로가기
 
    동아사이언스 디라이브러리 DS스토어 팝콘플래닛
    가입/로그인
@@ -18278,8 +18192,8 @@ Calendar
 정책 TOP5
          1. 1
 
-              올해 대·중견기업 RD·연구원 채용 줄어든다
-              올해 대·중견기업 RD·연구원 채용 줄어든다
+              올해 대·중견기업 R&D·연구원 채용 줄어든다
+              올해 대·중견기업 R&D·연구원 채용 줄어든다
 
          2. 2
 
@@ -18288,8 +18202,8 @@ Calendar
 
          3. 3
 
-              연구 카르텔 혁파한다더니 '상피제' 폐지…RD 종합시행계획 확정
-              연구 카르텔 혁파한다더니 '상피제' 폐지…RD 종합시행계획 확정
+              연구 카르텔 혁파한다더니 '상피제' 폐지…R&D 종합시행계획 확정
+              연구 카르텔 혁파한다더니 '상피제' 폐지…R&D 종합시행계획 확정
 
          4. 4
 
@@ -18298,8 +18212,8 @@ Calendar
 
          5. 5
 
-              尹대통령 “나도 과학자 꿈꿨다…혁신적 RD 전폭 지원할 것”
-              尹대통령 “나도 과학자 꿈꿨다…혁신적 RD 전폭 지원할 것”
+              尹대통령 “나도 과학자 꿈꿨다…혁신적 R&D 전폭 지원할 것”
+              尹대통령 “나도 과학자 꿈꿨다…혁신적 R&D 전폭 지원할 것”
 
      * 하이테크 기업
 
@@ -18389,7 +18303,7 @@ Calendar
      * CES
      * 이덕환의 과학세상
      * 혁신 중기벤처
-     * 뉴스페이스뉴디펜스
+     * 뉴스페이스&뉴디펜스
      * 동아사이언스 비디오
      * IBS 코로나19 리포트
      * 게놈과 인류사
@@ -18452,8 +18366,8 @@ Calendar
 
    [INS: :INS]
    [publish.json?nurl=http%3A%2F%2Fwww.dongascience.com%2Fnews.php%3Fidx%3
-   D9522xml_url=http%3A%2F%2Fwww.dongascience.com%2FHTML%2Fdaum_search%2F
-   2016%2F01%2F04%2F2016010415062700100000009522.xmlchannel=science]
+   D9522&xml_url=http%3A%2F%2Fwww.dongascience.com%2FHTML%2Fdaum_search%2F
+   2016%2F01%2F04%2F2016010415062700100000009522.xml&channel=science]
 
 “인간관계 좋은 사람 고혈압 위험도 낮다”
 
@@ -18779,10 +18693,8 @@ SNS 공유된 기사
      * Copyright © Dongascience. All right reserved.
 
      * 폴리매스 문제는 2019년도 정부의 재원으로 한국과학창의재단의 지원을 받아 수행된 성과물입니다.
-     * ☎문의 02-6749-3911</text>
-</page> §
-<page="kor4.txt">
-<text>    #DATA ON-AIR » KBoard 통합 피드 DATA ON-AIR » 피드 DATA ON-AIR » 댓글 피드
+     * ☎문의 02-6749-3911
+    #DATA ON-AIR » KBoard 통합 피드 DATA ON-AIR » 피드 DATA ON-AIR » 댓글 피드
    alternate alternate alternate
 
                       DATA ON-AIR DATA ON-AIR DATA ON-AIR
@@ -19069,10 +18981,8 @@ SQL
             바로가기
      * 회원가입
      * 로그인
-     * 통합 검색 바로가기</text>
-</page> §
-<page="kor50.txt">
-<text>    #코메디닷컴 » 피드 코메디닷컴 » 댓글 피드 코메디닷컴 » ﻿인간관계 힘든 사람이라면 꼭 지켜야 할 3가지 댓글 피드
+     * 통합 검색 바로가기
+    #코메디닷컴 » 피드 코메디닷컴 » 댓글 피드 코메디닷컴 » ﻿인간관계 힘든 사람이라면 꼭 지켜야 할 3가지 댓글 피드
    alternate alternate
 
    헬스케어기업 비용절감 도와드려요
@@ -19285,10 +19195,8 @@ SQL
      * 오늘의 퀴즈
      * 헬스스낵
      * 베닥
-     * 속삭닷컴</text>
-</page> §
-<page="kor51.txt">
-<text>   [tr?id=1683553561964244ev=PageViewnoscript=1]
+     * 속삭닷컴
+   [tr?id=1683553561964244&ev=PageView&noscript=1]
 
      * DBR 2023 연말패키지
 
@@ -19446,7 +19354,7 @@ DBR의 교육솔루션
           + 이벤트
             이벤트 당첨자공지
           + 고객센터
-            공지사항 FAQ 1:1문의 제휴광고문의 이용권/상품권 인증 구독인증
+            공지사항 FAQ 1:1문의 제휴&광고문의 이용권/상품권 인증 구독인증
           + DBR SNS
             Facebook 카카오톡 블로그
           + 결제내역
@@ -19469,7 +19377,7 @@ DBR의 교육솔루션
           + 이벤트
             이벤트 북세통 당첨자공지
           + 고객센터
-            공지사항 FAQ 1:1문의 제휴광고문 이용권/상품권인증 비즈런 수강권인증 구독인증
+            공지사항 FAQ 1:1문의 제휴&광고문 이용권/상품권인증 비즈런 수강권인증 구독인증
           + DBR SNS
             Facebook 카카오톡 블로그
      * 공유
@@ -19578,8 +19486,8 @@ DBR의 교육솔루션
 
 
 
-   1) 이 글에 제시되는 사례들은 필자의 졸저 우리가 정말 알아야할 통계상식 백가지(현암사, 1996)와 괴짜
-   통계학(한국경제신문, 2008)을 참조.
+   1) 이 글에 제시되는 사례들은 필자의 졸저 <우리가 정말 알아야할 통계상식 백가지(현암사, 1996)>와 <괴짜
+   통계학(한국경제신문, 2008)>을 참조.
 
    2) 상관계수는 선형(線形: linear) 상관만 측정하므로 상관계수가 0이라는 말은 선형관계가 존재하지 않는다는 의미와 같다.
 
@@ -19666,7 +19574,7 @@ DBR의 교육솔루션
 
    4) 여기서부터 언급되는 상관관계는 모두 통계적으로 유의한(significant) 상관관계를 말한다.
 
-   5) Huff, Darrell(1954), How to Lie with Statistics, New York: Norton 
+   5) Huff, Darrell(1954), How to Lie with Statistics, New York: Norton &
    Company Inc., 87쪽.
 
 
@@ -19838,7 +19746,7 @@ DBR의 교육솔루션
 
    서울대 경영대학을 졸업하고 펜실베이니아대(Wharton School)에서 경영학 석사와 박사 학위를 받았다(통계학 부전공).
    사회와 기업의 다양한 문제들을 계량 분석적으로 접근하는 연구를 주로 했다. 개인의 분석능력을 키워주는 교육프로그램을 개발해 여러
-   기업에서 운영하기도 했다. 최근 저서는 말로만 말고 숫자를 대 봐(엠지엠티북스) 등이 있으며 역서에는 빅데이터@워크가
+   기업에서 운영하기도 했다. 최근 저서는 <말로만 말고 숫자를 대 봐(엠지엠티북스)> 등이 있으며 역서에는 <빅데이터@워크>가
    있다.
 
 
@@ -19880,10 +19788,8 @@ DBR의 교육솔루션
 
    TEL: 02-6380-7236
    Copyright ⒸDONGAMEDIAN Inc. All Rights Reserved
-   Good Content Service kocca</text>
-</page> §
-<page="kor5.txt">
-<text>   #alternate 편집 위키백과 (ko) 위키백과 아톰 피드
+   Good Content Service kocca
+   #alternate 편집 위키백과 (ko) 위키백과 아톰 피드
 
    본문으로 이동
 
@@ -20029,268 +19935,268 @@ DBR의 교육솔루션
 정의[편집]
 
    집합족
-   [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-   displaystyle="true" scriptlevel="0" mo fence="false"
-   stretchy="false"{/mo msub miX/mi mrow
-   class="MJX-TeXAtom-ORD" mii/mi /mrow /msub msub mo
-   fence="false" stretchy="false"}/mo mrow class="MJX-TeXAtom-ORD"
-   mii/mi mo∈/mo miI/mi /mrow /msub /mstyle /mrow
-   annotation encoding="application/x-tex"{\displaystyle \{X_{i}\}_{i\in
-   I}}/annotation /semantics :MATH]
+   [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+   displaystyle="true" scriptlevel="0"> <mo fence="false"
+   stretchy="false">{</mo> <msub> <mi>X</mi> <mrow
+   class="MJX-TeXAtom-ORD"> <mi>i</mi> </mrow> </msub> <msub> <mo
+   fence="false" stretchy="false">}</mo> <mrow class="MJX-TeXAtom-ORD">
+   <mi>i</mi> <mo>∈</mo> <mi>I</mi> </mrow> </msub> </mstyle> </mrow>
+   <annotation encoding="application/x-tex">{\displaystyle \{X_{i}\}_{i\in
+   I}}</annotation> </semantics> :MATH]
    \{X_{i}\}_{{i\in I}} 위의 관계는 곱집합의 부분 집합
 
-          [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-          displaystyle="true" scriptlevel="0" mstyle
-          displaystyle="false" scriptlevel="0" miR/mi mo⊆/mo
-          munder mo∏/mo mrow class="MJX-TeXAtom-ORD" mii/mi
-          mo∈/mo miI/mi /mrow /munder msub miX/mi mrow
-          class="MJX-TeXAtom-ORD" mii/mi /mrow /msub /mstyle
-          /mstyle /mrow annotation
-          encoding="application/x-tex"{\displaystyle \textstyle
-          R\subseteq \prod _{i\in I}X_{i}}/annotation /semantics
+          [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+          displaystyle="true" scriptlevel="0"> <mstyle
+          displaystyle="false" scriptlevel="0"> <mi>R</mi> <mo>⊆</mo>
+          <munder> <mo>∏</mo> <mrow class="MJX-TeXAtom-ORD"> <mi>i</mi>
+          <mo>∈</mo> <mi>I</mi> </mrow> </munder> <msub> <mi>X</mi> <mrow
+          class="MJX-TeXAtom-ORD"> <mi>i</mi> </mrow> </msub> </mstyle>
+          </mstyle> </mrow> <annotation
+          encoding="application/x-tex">{\displaystyle \textstyle
+          R\subseteq \prod _{i\in I}X_{i}}</annotation> </semantics>
           :MATH]
           {\displaystyle \textstyle R\subseteq \prod _{i\in I}X_{i}}
 
    이다. 특히, 순서수
-   [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-   displaystyle="true" scriptlevel="0" miα/mi /mstyle /mrow
-   annotation encoding="application/x-tex"{\displaystyle \alpha
-   }/annotation /semantics :MATH]
+   [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+   displaystyle="true" scriptlevel="0"> <mi>α</mi> </mstyle> </mrow>
+   <annotation encoding="application/x-tex">{\displaystyle \alpha
+   }</annotation> </semantics> :MATH]
    \alpha 에 대하여, 집합
-   [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-   displaystyle="true" scriptlevel="0" miX/mi /mstyle /mrow
-   annotation encoding="application/x-tex"{\displaystyle X}/annotation
-   /semantics :MATH]
+   [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+   displaystyle="true" scriptlevel="0"> <mi>X</mi> </mstyle> </mrow>
+   <annotation encoding="application/x-tex">{\displaystyle X}</annotation>
+   </semantics> :MATH]
    X 위의
-   [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-   displaystyle="true" scriptlevel="0" miα/mi /mstyle /mrow
-   annotation encoding="application/x-tex"{\displaystyle \alpha
-   }/annotation /semantics :MATH]
+   [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+   displaystyle="true" scriptlevel="0"> <mi>α</mi> </mstyle> </mrow>
+   <annotation encoding="application/x-tex">{\displaystyle \alpha
+   }</annotation> </semantics> :MATH]
    \alpha 항 관계(영어:
-   [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-   displaystyle="true" scriptlevel="0" miα/mi /mstyle /mrow
-   annotation encoding="application/x-tex"{\displaystyle \alpha
-   }/annotation /semantics :MATH]
+   [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+   displaystyle="true" scriptlevel="0"> <mi>α</mi> </mstyle> </mrow>
+   <annotation encoding="application/x-tex">{\displaystyle \alpha
+   }</annotation> </semantics> :MATH]
    \alpha -ary relation)는 거듭제곱 집합의 부분 집합
 
-          [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-          displaystyle="true" scriptlevel="0" miR/mi mo⊆/mo
-          msup miX/mi mrow class="MJX-TeXAtom-ORD" mo×/mo
-          miα/mi /mrow /msup /mstyle /mrow annotation
-          encoding="application/x-tex"{\displaystyle R\subseteq X^{\times
-          \alpha }}/annotation /semantics :MATH]
+          [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+          displaystyle="true" scriptlevel="0"> <mi>R</mi> <mo>⊆</mo>
+          <msup> <mi>X</mi> <mrow class="MJX-TeXAtom-ORD"> <mo>×</mo>
+          <mi>α</mi> </mrow> </msup> </mstyle> </mrow> <annotation
+          encoding="application/x-tex">{\displaystyle R\subseteq X^{\times
+          \alpha }}</annotation> </semantics> :MATH]
           {\displaystyle R\subseteq X^{\times \alpha }}
 
    이다. 특히 항수에 따라 다음과 같은 특수한 경우들을 생각할 수 있다.
      *
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" miX/mi /mstyle /mrow
-       annotation encoding="application/x-tex"{\displaystyle
-       X}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>X</mi> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       X}</annotation> </semantics> :MATH]
        X 위의 영항 관계(零項關係, 영어: nullary relation)
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" miR/mi mo⊆/mo mo
-       fence="false" stretchy="false"{/mo mo∙/mo mo fence="false"
-       stretchy="false"}/mo /mstyle /mrow annotation
-       encoding="application/x-tex"{\displaystyle R\subseteq \{\bullet
-       \}}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>R</mi> <mo>⊆</mo> <mo
+       fence="false" stretchy="false">{</mo> <mo>∙</mo> <mo fence="false"
+       stretchy="false">}</mo> </mstyle> </mrow> <annotation
+       encoding="application/x-tex">{\displaystyle R\subseteq \{\bullet
+       \}}</annotation> </semantics> :MATH]
        {\displaystyle R\subseteq \{\bullet \}} . 즉,
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" miR/mi mo=/mo mi
-       class="MJX-variant"∅/mi /mstyle /mrow annotation
-       encoding="application/x-tex"{\displaystyle R=\varnothing
-       }/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>R</mi> <mo>=</mo> <mi
+       class="MJX-variant">∅</mi> </mstyle> </mrow> <annotation
+       encoding="application/x-tex">{\displaystyle R=\varnothing
+       }</annotation> </semantics> :MATH]
        {\displaystyle R=\varnothing } 또는
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" miR/mi mo=/mo mo
-       fence="false" stretchy="false"{/mo mo∙/mo mo fence="false"
-       stretchy="false"}/mo /mstyle /mrow annotation
-       encoding="application/x-tex"{\displaystyle R=\{\bullet
-       \}}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>R</mi> <mo>=</mo> <mo
+       fence="false" stretchy="false">{</mo> <mo>∙</mo> <mo fence="false"
+       stretchy="false">}</mo> </mstyle> </mrow> <annotation
+       encoding="application/x-tex">{\displaystyle R=\{\bullet
+       \}}</annotation> </semantics> :MATH]
        {\displaystyle R=\{\bullet \}} .
      *
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" miX/mi /mstyle /mrow
-       annotation encoding="application/x-tex"{\displaystyle
-       X}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>X</mi> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       X}</annotation> </semantics> :MATH]
        X 위의 단항 관계(單項關係, 영어: unary relation)
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" miR/mi mo⊆/mo
-       miX/mi /mstyle /mrow annotation
-       encoding="application/x-tex"{\displaystyle R\subseteq
-       X}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>R</mi> <mo>⊆</mo>
+       <mi>X</mi> </mstyle> </mrow> <annotation
+       encoding="application/x-tex">{\displaystyle R\subseteq
+       X}</annotation> </semantics> :MATH]
        {\displaystyle R\subseteq X}
      *
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" miX/mi /mstyle /mrow
-       annotation encoding="application/x-tex"{\displaystyle
-       X}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>X</mi> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       X}</annotation> </semantics> :MATH]
        X 위의 이항 관계(二項關係, 영어: binary relation)
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" miR/mi mo⊆/mo
-       miX/mi mo×/mo miX/mi /mstyle /mrow annotation
-       encoding="application/x-tex"{\displaystyle R\subseteq X\times
-       X}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>R</mi> <mo>⊆</mo>
+       <mi>X</mi> <mo>×</mo> <mi>X</mi> </mstyle> </mrow> <annotation
+       encoding="application/x-tex">{\displaystyle R\subseteq X\times
+       X}</annotation> </semantics> :MATH]
        {\displaystyle R\subseteq X\times X} . 이 경우,
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" mo stretchy="false"(/mo
-       mix/mi mo,/mo miy/mi mo stretchy="false")/mo
-       mo∈/mo miR/mi /mstyle /mrow annotation
-       encoding="application/x-tex"{\displaystyle (x,y)\in
-       R}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mo stretchy="false">(</mo>
+       <mi>x</mi> <mo>,</mo> <mi>y</mi> <mo stretchy="false">)</mo>
+       <mo>∈</mo> <mi>R</mi> </mstyle> </mrow> <annotation
+       encoding="application/x-tex">{\displaystyle (x,y)\in
+       R}</annotation> </semantics> :MATH]
        {\displaystyle (x,y)\in R} 를
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" mix/mi miR/mi
-       miy/mi /mstyle /mrow annotation
-       encoding="application/x-tex"{\displaystyle xRy}/annotation
-       /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>x</mi> <mi>R</mi>
+       <mi>y</mi> </mstyle> </mrow> <annotation
+       encoding="application/x-tex">{\displaystyle xRy}</annotation>
+       </semantics> :MATH]
        xRy 와 같이 표기하기도 한다.
      *
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" miX/mi /mstyle /mrow
-       annotation encoding="application/x-tex"{\displaystyle
-       X}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>X</mi> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       X}</annotation> </semantics> :MATH]
        X 위의 삼항 관계(三項關係, 영어: ternary relation)
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" miR/mi mo⊆/mo
-       miX/mi mo×/mo miX/mi mo×/mo miX/mi /mstyle
-       /mrow annotation encoding="application/x-tex"{\displaystyle
-       R\subseteq X\times X\times X}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>R</mi> <mo>⊆</mo>
+       <mi>X</mi> <mo>×</mo> <mi>X</mi> <mo>×</mo> <mi>X</mi> </mstyle>
+       </mrow> <annotation encoding="application/x-tex">{\displaystyle
+       R\subseteq X\times X\times X}</annotation> </semantics> :MATH]
        {\displaystyle R\subseteq X\times X\times X} .
      *
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" miX/mi /mstyle /mrow
-       annotation encoding="application/x-tex"{\displaystyle
-       X}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>X</mi> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       X}</annotation> </semantics> :MATH]
        X 위의
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" min/mi /mstyle /mrow
-       annotation encoding="application/x-tex"{\displaystyle
-       n}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>n</mi> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       n}</annotation> </semantics> :MATH]
        n 항 관계(-項關係, 영어: n-ary relation)
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" miR/mi mo⊆/mo msup
-       miX/mi mrow class="MJX-TeXAtom-ORD" mo×/mo min/mi
-       /mrow /msup /mstyle /mrow annotation
-       encoding="application/x-tex"{\displaystyle R\subseteq X^{\times
-       n}}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>R</mi> <mo>⊆</mo> <msup>
+       <mi>X</mi> <mrow class="MJX-TeXAtom-ORD"> <mo>×</mo> <mi>n</mi>
+       </mrow> </msup> </mstyle> </mrow> <annotation
+       encoding="application/x-tex">{\displaystyle R\subseteq X^{\times
+       n}}</annotation> </semantics> :MATH]
        {\displaystyle R\subseteq X^{\times n}} . 이 경우,
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" mo stretchy="false"(/mo
-       msub mix/mi mrow class="MJX-TeXAtom-ORD" mn1/mn /mrow
-       /msub mo,/mo mo…/mo mo,/mo msub mix/mi mrow
-       class="MJX-TeXAtom-ORD" min/mi /mrow /msub mo
-       stretchy="false")/mo mo∈/mo miR/mi /mstyle /mrow
-       annotation encoding="application/x-tex"{\displaystyle
-       (x_{1},\dots ,x_{n})\in R}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mo stretchy="false">(</mo>
+       <msub> <mi>x</mi> <mrow class="MJX-TeXAtom-ORD"> <mn>1</mn> </mrow>
+       </msub> <mo>,</mo> <mo>…</mo> <mo>,</mo> <msub> <mi>x</mi> <mrow
+       class="MJX-TeXAtom-ORD"> <mi>n</mi> </mrow> </msub> <mo
+       stretchy="false">)</mo> <mo>∈</mo> <mi>R</mi> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       (x_{1},\dots ,x_{n})\in R}</annotation> </semantics> :MATH]
        {\displaystyle (x_{1},\dots ,x_{n})\in R} 를
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" miR/mi mo
-       stretchy="false"(/mo msub mix/mi mrow
-       class="MJX-TeXAtom-ORD" mn1/mn /mrow /msub mo,/mo
-       mo…/mo mo,/mo msub mix/mi mrow
-       class="MJX-TeXAtom-ORD" min/mi /mrow /msub mo
-       stretchy="false")/mo /mstyle /mrow annotation
-       encoding="application/x-tex"{\displaystyle R(x_{1},\dots
-       ,x_{n})}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>R</mi> <mo
+       stretchy="false">(</mo> <msub> <mi>x</mi> <mrow
+       class="MJX-TeXAtom-ORD"> <mn>1</mn> </mrow> </msub> <mo>,</mo>
+       <mo>…</mo> <mo>,</mo> <msub> <mi>x</mi> <mrow
+       class="MJX-TeXAtom-ORD"> <mi>n</mi> </mrow> </msub> <mo
+       stretchy="false">)</mo> </mstyle> </mrow> <annotation
+       encoding="application/x-tex">{\displaystyle R(x_{1},\dots
+       ,x_{n})}</annotation> </semantics> :MATH]
        {\displaystyle R(x_{1},\dots ,x_{n})} 와 같이 표기하기도 한다.
 
 예[편집]
 
      * 공선점 관계는 공간 속의 점들에 대한 삼항 관계이다.
      * 여러 가지 이항 관계: 여기서는 집합
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" miX/mi /mstyle /mrow
-       annotation encoding="application/x-tex"{\displaystyle
-       X}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>X</mi> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       X}</annotation> </semantics> :MATH]
        X 상의 이항 관계
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" miR/mi /mstyle /mrow
-       annotation encoding="application/x-tex"{\displaystyle
-       R}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>R</mi> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       R}</annotation> </semantics> :MATH]
        R 에 관해서 생각하자.
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" mi
-       mathvariant="normal"∀/mi mix/mi mo∈/mo miX/mi mo
-       stretchy="false"(/mo mix/mi miR/mi mix/mi mo
-       stretchy="false")/mo /mstyle /mrow annotation
-       encoding="application/x-tex"{\displaystyle \forall x\in
-       X(xRx)}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi
+       mathvariant="normal">∀</mi> <mi>x</mi> <mo>∈</mo> <mi>X</mi> <mo
+       stretchy="false">(</mo> <mi>x</mi> <mi>R</mi> <mi>x</mi> <mo
+       stretchy="false">)</mo> </mstyle> </mrow> <annotation
+       encoding="application/x-tex">{\displaystyle \forall x\in
+       X(xRx)}</annotation> </semantics> :MATH]
        {\displaystyle \forall x\in X(xRx)} 를 반사성(reflexivity)라 한다.
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" mi
-       mathvariant="normal"∀/mi mix/mi mo,/mo miy/mi
-       mo∈/mo miX/mi mo stretchy="false"(/mo mix/mi
-       miR/mi miy/mi mo stretchy="false"→/mo miy/mi
-       miR/mi mix/mi mo stretchy="false")/mo /mstyle /mrow
-       annotation encoding="application/x-tex"{\displaystyle \forall
-       x,y\in X(xRy\rightarrow yRx)}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi
+       mathvariant="normal">∀</mi> <mi>x</mi> <mo>,</mo> <mi>y</mi>
+       <mo>∈</mo> <mi>X</mi> <mo stretchy="false">(</mo> <mi>x</mi>
+       <mi>R</mi> <mi>y</mi> <mo stretchy="false">→</mo> <mi>y</mi>
+       <mi>R</mi> <mi>x</mi> <mo stretchy="false">)</mo> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle \forall
+       x,y\in X(xRy\rightarrow yRx)}</annotation> </semantics> :MATH]
        {\displaystyle \forall x,y\in X(xRy\rightarrow yRx)} 를
        대칭성(symmetricity)라 한다.
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" mi
-       mathvariant="normal"∀/mi mix/mi mo,/mo miy/mi
-       mo∈/mo miX/mi mo stretchy="false"(/mo mix/mi
-       miR/mi miy/mi mo∧/mo miy/mi miR/mi mix/mi
-       mo stretchy="false"→/mo mix/mi mo=/mo miy/mi mo
-       stretchy="false")/mo /mstyle /mrow annotation
-       encoding="application/x-tex"{\displaystyle \forall x,y\in
-       X(xRy\wedge yRx\rightarrow x=y)}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi
+       mathvariant="normal">∀</mi> <mi>x</mi> <mo>,</mo> <mi>y</mi>
+       <mo>∈</mo> <mi>X</mi> <mo stretchy="false">(</mo> <mi>x</mi>
+       <mi>R</mi> <mi>y</mi> <mo>∧</mo> <mi>y</mi> <mi>R</mi> <mi>x</mi>
+       <mo stretchy="false">→</mo> <mi>x</mi> <mo>=</mo> <mi>y</mi> <mo
+       stretchy="false">)</mo> </mstyle> </mrow> <annotation
+       encoding="application/x-tex">{\displaystyle \forall x,y\in
+       X(xRy\wedge yRx\rightarrow x=y)}</annotation> </semantics> :MATH]
        {\displaystyle \forall x,y\in X(xRy\wedge yRx\rightarrow x=y)} 를
        반대칭성(antisymmetricity),
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" mi
-       mathvariant="normal"∀/mi mix/mi mo,/mo miy/mi
-       mo∈/mo miX/mi mo stretchy="false"(/mo mix/mi
-       miR/mi miy/mi mo stretchy="false"→/mo mi
-       mathvariant="normal"¬/mi miy/mi miR/mi mix/mi mo
-       stretchy="false")/mo /mstyle /mrow annotation
-       encoding="application/x-tex"{\displaystyle \forall x,y\in
-       X(xRy\rightarrow \neg yRx)}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi
+       mathvariant="normal">∀</mi> <mi>x</mi> <mo>,</mo> <mi>y</mi>
+       <mo>∈</mo> <mi>X</mi> <mo stretchy="false">(</mo> <mi>x</mi>
+       <mi>R</mi> <mi>y</mi> <mo stretchy="false">→</mo> <mi
+       mathvariant="normal">¬</mi> <mi>y</mi> <mi>R</mi> <mi>x</mi> <mo
+       stretchy="false">)</mo> </mstyle> </mrow> <annotation
+       encoding="application/x-tex">{\displaystyle \forall x,y\in
+       X(xRy\rightarrow \neg yRx)}</annotation> </semantics> :MATH]
        {\displaystyle \forall x,y\in X(xRy\rightarrow \neg yRx)} 를
        비대칭성(asymmetricity)이라 한다.
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" mi
-       mathvariant="normal"∀/mi mix/mi mo,/mo miy/mi
-       mo,/mo miz/mi mo∈/mo miX/mi mo
-       stretchy="false"(/mo mix/mi miR/mi miy/mi mo∧/mo
-       miy/mi miR/mi miz/mi mo stretchy="false"→/mo
-       mix/mi miR/mi miz/mi mo stretchy="false")/mo
-       /mstyle /mrow annotation
-       encoding="application/x-tex"{\displaystyle \forall x,y,z\in
-       X(xRy\wedge yRz\rightarrow xRz)}/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi
+       mathvariant="normal">∀</mi> <mi>x</mi> <mo>,</mo> <mi>y</mi>
+       <mo>,</mo> <mi>z</mi> <mo>∈</mo> <mi>X</mi> <mo
+       stretchy="false">(</mo> <mi>x</mi> <mi>R</mi> <mi>y</mi> <mo>∧</mo>
+       <mi>y</mi> <mi>R</mi> <mi>z</mi> <mo stretchy="false">→</mo>
+       <mi>x</mi> <mi>R</mi> <mi>z</mi> <mo stretchy="false">)</mo>
+       </mstyle> </mrow> <annotation
+       encoding="application/x-tex">{\displaystyle \forall x,y,z\in
+       X(xRy\wedge yRz\rightarrow xRz)}</annotation> </semantics> :MATH]
        {\displaystyle \forall x,y,z\in X(xRy\wedge yRz\rightarrow xRz)} 를
        추이성이라 한다.
      * 반사적, 대칭적, 추이적인 관계를 동치 관계라 한다.
      * 반사적, 반대칭적, 추이적인 관계를 순서 관계라 하고 비대칭적, 추이적인 관계를 강 순서 관계라 한다. 그러면 관계
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" mo/mo /mstyle /mrow
-       annotation encoding="application/x-tex"{\displaystyle
-       }/annotation /semantics :MATH]
-        와 관계
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" mo≤/mo /mstyle /mrow
-       annotation encoding="application/x-tex"{\displaystyle \leq
-       }/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mo><</mo> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       <}</annotation> </semantics> :MATH]
+       < 와 관계
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mo>≤</mo> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle \leq
+       }</annotation> </semantics> :MATH]
        \le 에 대하여
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" mix/mi mo≤/mo
-       miy/mi mspace width="thickmathspace" / mo
-       stretchy="false"⟺/mo mspace width="thickmathspace" /
-       mix/mi mo/mo miy/mi mo∨/mo mix/mi mo=/mo
-       miy/mi /mstyle /mrow annotation
-       encoding="application/x-tex"{\displaystyle x\leq y\iff xy\vee
-       x=y}/annotation /semantics :MATH]
-       {\displaystyle x\leq y\iff xy\vee x=y} 가 성립할 때,
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" mo/mo /mstyle /mrow
-       annotation encoding="application/x-tex"{\displaystyle
-       }/annotation /semantics :MATH]
-        가 강 순서 관계일 조건과
-       [MATH: semantics mrow class="MJX-TeXAtom-ORD" mstyle
-       displaystyle="true" scriptlevel="0" mo≤/mo /mstyle /mrow
-       annotation encoding="application/x-tex"{\displaystyle \leq
-       }/annotation /semantics :MATH]
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>x</mi> <mo>≤</mo>
+       <mi>y</mi> <mspace width="thickmathspace" /> <mo
+       stretchy="false">⟺</mo> <mspace width="thickmathspace" />
+       <mi>x</mi> <mo><</mo> <mi>y</mi> <mo>∨</mo> <mi>x</mi> <mo>=</mo>
+       <mi>y</mi> </mstyle> </mrow> <annotation
+       encoding="application/x-tex">{\displaystyle x\leq y\iff x<y\vee
+       x=y}</annotation> </semantics> :MATH]
+       {\displaystyle x\leq y\iff x<y\vee x=y} 가 성립할 때,
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mo><</mo> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       <}</annotation> </semantics> :MATH]
+       < 가 강 순서 관계일 조건과
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mo>≤</mo> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle \leq
+       }</annotation> </semantics> :MATH]
        \le 가 순서 관계일 조건은 서로 필요충분조건이다. 문맥에 따라 강 순서 관계를 그저 순서 관계로 할 수도 있으므로
        주의가 필요하다.
 
@@ -20315,7 +20221,7 @@ DBR의 교육솔루션
      * 독일
 
    원본 주소
-   "https://ko.wikipedia.org/w/index.php?title=관계_(수학)oldid=33176364"
+   "https://ko.wikipedia.org/w/index.php?title=관계_(수학)&oldid=33176364"
    분류:
      * 관계 (수학)
 
@@ -20344,10 +20250,8 @@ DBR의 교육솔루션
      * Wikimedia Foundation
      * Powered by MediaWiki
 
-     * (BUTTON) 내용 폭 제한 전환</text>
-</page> §
-<page="kor6.txt">
-<text>    [정보통신기술용어해설] _______________ (BUTTON) 검색
+     * (BUTTON) 내용 폭 제한 전환
+    [정보통신기술용어해설] _______________ (BUTTON) 검색
 
   Relation   관계 (Relation), 릴레이션
 
@@ -20442,7 +20346,7 @@ DBR의 교육솔루션
 5. [RDB]  관계 (Relation, 릴레이션) 이란?
 
   ※ ☞ 관계형 데이터베이스 (RDB), 관계 대수 참조
-     - 관계 : DB 내 저장된 데이터 개체들 간의 관계성 정보  = 테이블(Table)이나 뷰(View)
+     - 관계 : DB 내 저장된 데이터 개체들 간의 관계성 정보  => 테이블(Table)이나 뷰(View)
         . 2차원의 테이블 (스프레드 시트와 유사)
         . 각 테이블은, 튜플들의 집합으로 구성됨
      __________________________________________________________________
@@ -20462,10 +20366,8 @@ DBR의 교육솔루션
 
    Copyrightⓒ written by 차재복 (Cha Jae Bok)
    "본 웹사이트 내 모든 저작물은 원출처를 밝히는 한 자유롭게 사용(상업화포함) 가능합니다"
-     __________________________________________________________________</text>
-</page> §
-<page="kor7.txt">
-<text>   #alternate
+     __________________________________________________________________
+   #alternate
 
    BBC News, 코리아내용 보기
 
@@ -20625,17 +20527,15 @@ TOP 뉴스
      * 고객센터
      * Do not share or sell my info
 
-   © 2024 BBC. BBC는 외부 사이트 및 타사 콘텐츠에 대한 책임을 지지 않습니다 외부 링크에 대한 본사 정책 보기</text>
-</page> §
-<page="kor8.txt">
-<text>   #alternate
+   © 2024 BBC. BBC는 외부 사이트 및 타사 콘텐츠에 대한 책임을 지지 않습니다 외부 링크에 대한 본사 정책 보기
+   #alternate
 
    본문 바로가기 메뉴 바로가기 로그인 바로가기 하단 정보 바로가기
 
 안내
 
    음악을 재생할 플레이어를 선택해 주세요.
-   벅스 웹상단  플레이어 선택에서 플레이어를 변경할 수 있습니다.
+   벅스 웹상단 > 플레이어 선택에서 플레이어를 변경할 수 있습니다.
 
    (*) 웹 플레이어
    ( ) 벅스 플레이어 (프로그램 설치 필요)
@@ -20897,10 +20797,8 @@ TOP 뉴스
 
    (BUTTON) 저장 (BUTTON) 취소
 
-   (BUTTON) 닫기</text>
-</page> §
-<page="kor9.txt">
-<text>   주요서비스 바로가기 본문 바로가기 매체정보 바로가기 로그인 바로가기 기사검색 바로가기 전체서비스 바로가기
+   (BUTTON) 닫기
+   주요서비스 바로가기 본문 바로가기 매체정보 바로가기 로그인 바로가기 기사검색 바로가기 전체서비스 바로가기
 
 상단영역
 
@@ -20908,8 +20806,8 @@ TOP 뉴스
 
    IFRAME:
    //www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%
-   2Finfomaxnewssend=falselayout=button_countwidth=450show_faces=false
-   action=likecolorscheme=lightfontheight=21
+   2Finfomaxnews&send=false&layout=button_count&width=450&show_faces=false
+   &action=like&colorscheme=light&font&height=21
 
    회사소개
      * [ico_c1.png] 한국어
@@ -20939,7 +20837,7 @@ TOP 뉴스
 
    (BUTTON) 이전 기사보기 (BUTTON) 다음 기사보기
    연합인포맥스
-   "SP500 첫 5거래일 수익률, 연간 수익률과 양의 상관관계"
+   "S&P500 첫 5거래일 수익률, 연간 수익률과 양의 상관관계"
 
 SNS 기사보내기
 
@@ -20951,7 +20849,7 @@ SNS 기사보내기
      *  홈
      * 해외주식
 
-"SP500 첫 5거래일 수익률, 연간 수익률과 양의 상관관계"
+"S&P500 첫 5거래일 수익률, 연간 수익률과 양의 상관관계"
 
      * 기자명 김지연 기자
      * 입력 2024.01.07 17:49
@@ -20968,7 +20866,7 @@ SNS 기사보내기
    네이버블로그(으)로 기사보내기 (BUTTON) 핀터레스트(으)로 기사보내기 (BUTTON) URL복사(으)로 기사보내기
    (BUTTON) 닫기
 
-   (서울=연합인포맥스) 김지연 기자 = 스탠더드앤드푸어스(SP)500지수의 새해 첫 5거래일간의 수익률이 지수의 연간 수익률과
+   (서울=연합인포맥스) 김지연 기자 = 스탠더드앤드푸어스(S&P)500지수의 새해 첫 5거래일간의 수익률이 지수의 연간 수익률과
    높은 상관관계를 갖는다는 분석 결과가 나왔다.
 
 
@@ -20981,15 +20879,15 @@ SNS 기사보내기
    마켓워치는 "지난 12년간 8번 이러한 상관관계가 확인됐으며, 대선이 있던 해는 지난 16번 중 14번이 위와 같은 상관관계를
    보였다"고 설명했다.
 
-   매체는 그러면서 과거 데이터를 고려했을 때 올해 들어 SP500지수가 첫 주에 주간 기준 하락세를 보여 올해 증시가 연간
+   매체는 그러면서 과거 데이터를 고려했을 때 올해 들어 S&P500지수가 첫 주에 주간 기준 하락세를 보여 올해 증시가 연간
    기준으로 하락할 가능성이 크다고 경고했다.
 
-   팩트셋에 따르면 SP500지수는 시장이 휴장했던 지난 1일을 제외한 첫 주 4거래일간 약 1.8% 하락했다.
+   팩트셋에 따르면 S&P500지수는 시장이 휴장했던 지난 1일을 제외한 첫 주 4거래일간 약 1.8% 하락했다.
 
-   지수가 첫 주에 1% 이상 하락했던 지난 2022년 SP500지수는 연간 기준으로 19.44% 밀린 바 있으며, 1950년
+   지수가 첫 주에 1% 이상 하락했던 지난 2022년 S&P500지수는 연간 기준으로 19.44% 밀린 바 있으며, 1950년
    이후 역사적 데이터를 집계한 결과 첫 5거래일간 하락했을 경우의 연간 지수 상승률은 0.3%에 불과했다.
 
-   반면, SP500지수가 첫 5거래일간 상승했던 해의 경우 연간 기준 평균 수익률은 14.2%에 달해 큰 차이가 발생했다.
+   반면, S&P500지수가 첫 5거래일간 상승했던 해의 경우 연간 기준 평균 수익률은 14.2%에 달해 큰 차이가 발생했다.
 
    jykim@yna.co.kr
 
@@ -20998,7 +20896,7 @@ SNS 기사보내기
 
 관련기사
 
-     * "올해 SP500지수 4,850 전망…투자자들, 실망할 것"
+     * "올해 S&P500지수 4,850 전망…투자자들, 실망할 것"
      * [뉴욕증시-주간전망] 12월 CPI·실적에 조정 이어질까
 
    저작권자 © 연합인포맥스 무단전재 및 재배포 금지
@@ -21018,7 +20916,7 @@ SNS 기사보내기
      * 롯데쇼핑, 달러채 5천만달러어치 발행
      * JP모건 "美소비자, 팬데믹 기간 저축 다 소비해…주식 하락 전망"
      * [도쿄환시] 달러-엔, 잭슨홀 앞두고 145엔선 위에 안착
-     * SP500 선물, 저가매수세에 강보합
+     * S&P500 선물, 저가매수세에 강보합
      * BofA "1조달러 규모 美회사채, 잠재적 문제 될 수도"
      * 펀드스트랫 "주식시장 약세, 8월 계절적 요인 때문"
 
@@ -21150,6 +21048,4 @@ SNS 기사보내기
      * ad
      * 영상
 
-   (BUTTON) 전체메뉴닫기</text>
-</page> §
-</LANG>
+   (BUTTON) 전체메뉴닫기
