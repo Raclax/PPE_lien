@@ -28,6 +28,21 @@
             height: 100%;
         }
         
+        .hero {
+        opacity: 0;
+        animation: slideUpHero 1s forwards;
+    }
+
+    @keyframes slideUpHero {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
     </style>
 </head>
 

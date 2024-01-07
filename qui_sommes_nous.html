@@ -12,9 +12,24 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
     <style>
         body {
-            background-color: #a3cef1; 
+            background-color: #a3cef1;
         }
-        
+
+        .card {
+            opacity: 0;
+            animation: slideUp 1s forwards;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 

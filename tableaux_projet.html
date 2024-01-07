@@ -14,9 +14,24 @@
     <script src="index.js"></script>
     <style>
         body {
-            background-color: #a3cef1; 
+            background-color: #a3cef1;
         }
-        
+
+        .card {
+            opacity: 0;
+            animation: slideUp 1s forwards;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
         html, body {
             height: 100%;
@@ -81,14 +96,14 @@
                     <div class="media">
                         <div class="media-content">
                             <p class="title is-4">Tableau polonais</p>
-                            <a class="button is-rounded is-primary" href="./tableaux/tableau_pl.html">
+                            <a class="button is-rounded is-success" href="./tableaux/tableau_pl.html">
                                 Cliquez ici
                             </a>
                         </div>
                     </div>
                     <div class="content">
-                        <p>
-                            Le tableau contenant l'analyse du mot 'związek'
+                        <p>Le tableau contenant l'analyse du mot 'związek'
+
                         </p>
                     </div>
                     <div class="content">
@@ -108,7 +123,7 @@
                     <div class="media">
                         <div class="media-content">
                             <p class="title is-4">Tableau anglais</p>
-                            <a class="button is-rounded is-primary" href="./tableaux/tableau_ang.html">
+                            <a class="button is-rounded is-success" href="./tableaux/tableau_ang.html">
                                 Cliquez ici
                             </a>
                         </div>
@@ -133,7 +148,7 @@
                     <div class="media">
                         <div class="media-content">
                             <p class="title is-4">Tableau coréen</p>
-                            <a class="button is-rounded is-primary" href="./tableaux/tableau_kor.html">
+                            <a class="button is-rounded is-success" href="./tableaux/tableau_kor.html">
                                 Cliquez ici
                             </a>
                         </div>
