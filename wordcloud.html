@@ -25,11 +25,19 @@
         }
 
 
-        html,
-        body {
-            height: 100%;
+        .content {
+            max-width: 800px;
+            text-align: justify;
+            padding: 20px;
         }
         
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+        }
 
     </style>
 </head>
@@ -83,33 +91,28 @@
     </section> -->
 
     <div class="container is-centered">
-        <div class="card content">
+        <div class="card content has-text-centered">
             <h1>Polonais</h1>
-            <figure class="image is-2by1">
-                <img src="./extra/wordcloud_pl.png" alt="Polonais" style="width: 25%; height: auto;">
+            <figure>
+                <img src="./extra/wordcloud_pl.png" alt="Polonais" style="width: 75%; height: auto">
             </figure>
         </div>
     </div>
-
-
-
+    
     <div class="container is-centered">
-        <div class="card content">
+        <div class="card content has-text-centered">
             <h1>Anglais</h1>
             <figure class="image is-2by1">
-                <img src="." alt="Anglais" style="width: 25%; height: auto;">
+                <img src="." alt="Anglais" style="width: 75%; height: auto;">
             </figure>
         </div>
     </div>
-
-
-
-
+    
     <div class="container is-centered">
-        <div class="card content">
+        <div class="card content has-text-centered">
             <h1>Coréen</h1>
             <figure class="image is-2by1">
-                <img src="..." alt="Coréen" style="width: 25%; height: auto;">
+                <img src="..." alt="Coréen" style="width: 75%; height: auto;">
             </figure>
         </div>
     </div>
