@@ -3,7 +3,7 @@
 
 What are link aggregation and LACP and how can I use them in my network?
 
-   Was this article helpful?   Yes     No | 6 people found this helpful in
+   Was this article helpful?   Yes     No | 7 people found this helpful in
    last 30 days
 
 What is link aggregation?
