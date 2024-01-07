@@ -37,6 +37,9 @@ Mais, il reffuse de fonctionner et j'ai du mal à comprendre pourquoi. Finalemen
 s'agissait d'un problème de guillemets ("" au lien de ''). Il ne reste plus qu'à le tester sur les autres langues, 
 puisque j'ai travaillé dessus avec l'anglais, mais iil ne devrait pas y avoir de problème.
 
+(Maria) Je me suis concentrée sur la création de page HTML et j'ai réussi de créer les pages liées à la page index. 
+Cela m'a permis de bien voir la structure de notre site.
+
 # 03/01
 (Clara)Nous nous sommes dit que nous allions marquer une pause pendant les fêtes histoire de pouvoir profiter 
 pleinement de nos proches, et reprendre le travail sur le projet à partir d'aujourd'hui. Je me suis remise à trvailler 
