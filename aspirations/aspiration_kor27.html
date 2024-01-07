@@ -1,795 +1,1044 @@
-<!doctype html>
-<html lang="ko">
-                                                                                <head>
-                <script type="text/javascript">if (!window.T) { window.T = {} }
-window.T.config = {"TOP_SSL_URL":"https://www.tistory.com","PREVIEW":false,"ROLE":"guest","PREV_PAGE":"","NEXT_PAGE":"","BLOG":{"id":4055456,"name":"0o0deng","title":"𝒪𝒹𝑒𝓃𝑔'𝓈 𝒮𝓉𝓊𝒹𝓎𝑅𝑜𝑜𝓂","isDormancy":false,"nickName":"연혜슬","status":"open"},"NEED_COMMENT_LOGIN":false,"COMMENT_LOGIN_CONFIRM_MESSAGE":"","LOGIN_URL":"https://www.tistory.com/auth/login/?redirectUrl=https://0o0deng.tistory.com/entry/%25EC%259D%25B4%25EC%2582%25B0%25EC%2588%2598%25ED%2595%2599-Chapter-3-Relations","DEFAULT_URL":"https://0o0deng.tistory.com","USER":{"name":null,"homepage":null,"id":0,"profileImage":null},"SUBSCRIPTION":{"status":"none","isConnected":false,"isPending":false,"isWait":false,"isProcessing":false,"isNone":true},"IS_LOGIN":false,"HAS_BLOG":false,"IS_SUPPORT":false,"TOP_URL":"http://www.tistory.com","JOIN_URL":"https://www.tistory.com/member/join","ROLE_GROUP":"visitor"};
-window.appInfo = {"domain":"tistory.com","topUrl":"https://www.tistory.com","loginUrl":"https://www.tistory.com/auth/login","logoutUrl":"https://www.tistory.com/auth/logout"};
-window.initData = {};
 
-window.TistoryBlog = {
-    basePath: "",
-    url: "https://0o0deng.tistory.com",
-    tistoryUrl: "https://0o0deng.tistory.com",
-    manageUrl: "https://0o0deng.tistory.com/manage",
-    token: "mm1wTKe2X9CS/wC3g4mOs6fj9YD7GNZojFlUg2twoqU9KlNfGLG6URhMt6QPD8wZ"
-};
-var servicePath = "";
-var blogURL = "";</script>
 
-                
-                
-                
-                        <!-- BusinessLicenseInfo - START -->
-        
-            <link href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/plugin/BusinessLicenseInfo/style.css" rel="stylesheet" type="text/css"/>
 
-            <script>function switchFold(entryId) {
-    var businessLayer = document.getElementById("businessInfoLayer_" + entryId);
 
-    if (businessLayer) {
-        if (businessLayer.className.indexOf("unfold_license") > 0) {
-            businessLayer.className = "business_license_layer";
-        } else {
-            businessLayer.className = "business_license_layer unfold_license";
-        }
-    }
-}
-</script>
 
-        
-        <!-- BusinessLicenseInfo - END -->
-        <!-- DaumShow - START -->
-        <style type="text/css">#daumSearchBox {
-    height: 21px;
-    background-image: url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bg_search2_2.gif);
-    margin: 5px auto;
-    padding: 0;
-}
 
-#daumSearchBox input {
-    background: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
 
-#daumSearchBox #daumLogo {
-    width: 34px;
-    height: 21px;
-    float: left;
-    margin-right: 5px;
-    background-image: url(//i1.daumcdn.net/img-media/tistory/img/bg_search1_2_2010ci.gif);
-}
 
-#daumSearchBox #show_q {
-    background-color: transparent;
-    border: none;
-    font: 12px Gulim, Sans-serif;
-    color: #555;
-    margin-top: 4px;
-    margin-right: 15px;
-    float: left;
-}
 
-#daumSearchBox #show_btn {
-    background-image: url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bt_search_2.gif);
-    width: 37px;
-    height: 21px;
-    float: left;
-    margin: 0;
-    cursor: pointer;
-    text-indent: -1000em;
-}
-</style>
 
-        <!-- DaumShow - END -->
 
-<!-- System - START -->
 
-<!-- System - END -->
 
-        <!-- TistoryProfileLayer - START -->
-        <link href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/plugin/TistoryProfileLayer/style.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/plugin/TistoryProfileLayer/script.js"></script>
-
-        <!-- TistoryProfileLayer - END -->
-
-                
-                <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="format-detection" content="telephone=no">
-<script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script src="//t1.daumcdn.net/tistory_admin/lib/lightbox/js/lightbox-v2.10.0.min.js" defer></script>
-<script type="text/javascript" src="//t1.daumcdn.net/tiara/js/v1/tiara.min.js"></script><meta name="referrer" content="always"/>
-<meta name="google-adsense-platform-account" content="ca-host-pub-9691043933427338"/>
-<meta name="google-adsense-platform-domain" content="tistory.com"/>
-<meta name="description" content="1. Relations - 주어진 집합 X, Y에서 Cartesian product X x Y 를 하면 그 결과는 x∈X, y∈Y인 (x, y)의 모든 ordered paris 이다. X x Y = {(x,y) | x∈X and y∈Y} -Binary relation (이진 관계) : 두 집합의 원소 사이의 관계 집합 X 에서 집합 Y 로의 binary relation R은, Cartesian product X x Y 의 subset(부분집합)이다. Ex) X = { 1, 2, 3 } and Y = { a, b } R = {(1, a), (1, b), (2, b), (3, a)} 는 X와 Y 사이의 relation이다. - Domain : y∈Y인 y에 대하여 (x, y)가 relation R에 속할 때.."/>
-<meta property="og:type" content="article"/>
-<meta property="og:url" content="https://0o0deng.tistory.com/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-3-Relations"/>
-<meta property="og.article.author" content="연혜슬"/>
-<meta property="og:site_name" content="𝒪𝒹𝑒𝓃𝑔'𝓈 𝒮𝓉𝓊𝒹𝓎𝑅𝑜𝑜𝓂"/>
-<meta property="og:title" content="[이산수학] Chapter 3. Relations"/>
-<meta name="by" content="연혜슬"/>
-<meta property="og:description" content="1. Relations - 주어진 집합 X, Y에서 Cartesian product X x Y 를 하면 그 결과는 x∈X, y∈Y인 (x, y)의 모든 ordered paris 이다. X x Y = {(x,y) | x∈X and y∈Y} -Binary relation (이진 관계) : 두 집합의 원소 사이의 관계 집합 X 에서 집합 Y 로의 binary relation R은, Cartesian product X x Y 의 subset(부분집합)이다. Ex) X = { 1, 2, 3 } and Y = { a, b } R = {(1, a), (1, b), (2, b), (3, a)} 는 X와 Y 사이의 relation이다. - Domain : y∈Y인 y에 대하여 (x, y)가 relation R에 속할 때.."/>
-<meta property="og:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcinMev%2Fbtq1XlisV9b%2FG2yuPOrYnm6CveQfDhC65K%2Fimg.png"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:site" content="@TISTORY"/>
-<meta name="twitter:title" content="[이산수학] Chapter 3. Relations"/>
-<meta name="twitter:description" content="1. Relations - 주어진 집합 X, Y에서 Cartesian product X x Y 를 하면 그 결과는 x∈X, y∈Y인 (x, y)의 모든 ordered paris 이다. X x Y = {(x,y) | x∈X and y∈Y} -Binary relation (이진 관계) : 두 집합의 원소 사이의 관계 집합 X 에서 집합 Y 로의 binary relation R은, Cartesian product X x Y 의 subset(부분집합)이다. Ex) X = { 1, 2, 3 } and Y = { a, b } R = {(1, a), (1, b), (2, b), (3, a)} 는 X와 Y 사이의 relation이다. - Domain : y∈Y인 y에 대하여 (x, y)가 relation R에 속할 때.."/>
-<meta property="twitter:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcinMev%2Fbtq1XlisV9b%2FG2yuPOrYnm6CveQfDhC65K%2Fimg.png"/>
-<meta content="https://0o0deng.tistory.com/36" property="dg:plink" content="https://0o0deng.tistory.com/36"/>
-<meta name="plink"/>
-<meta name="title" content="[이산수학] Chapter 3. Relations"/>
-<meta name="article:media_name" content="𝒪𝒹𝑒𝓃𝑔'𝓈 𝒮𝓉𝓊𝒹𝓎𝑅𝑜𝑜𝓂"/>
-<meta property="article:mobile_url" content="https://0o0deng.tistory.com/m/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-3-Relations"/>
-<meta property="article:pc_url" content="https://0o0deng.tistory.com/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-3-Relations"/>
-<meta property="article:mobile_view_url" content="https://0o0deng.tistory.com/m/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-3-Relations"/>
-<meta property="article:pc_view_url" content="https://0o0deng.tistory.com/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-3-Relations"/>
-<meta property="article:talk_channel_view_url" content="https://0o0deng.tistory.com/m/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-3-Relations"/>
-<meta property="article:pc_service_home" content="https://www.tistory.com"/>
-<meta property="article:mobile_service_home" content="https://www.tistory.com/m"/>
-<meta property="article:txid" content="4055456_36"/>
-<meta property="article:published_time" content="2021-04-07T01:21:01+09:00"/>
-<meta property="og:regDate" content="20210406071124"/>
-<meta property="article:modified_time" content="2021-04-08T20:15:04+09:00"/>
-<link rel="icon" sizes="any" href="https://t1.daumcdn.net/tistory_admin/favicon/tistory_favicon_32x32.ico"/>
-<link rel="icon" type="image/svg+xml" href="https://t1.daumcdn.net/tistory_admin/top_v2/bi-tistory-favicon.svg"/>
-<link rel="apple-touch-icon" href="https://t1.daumcdn.net/tistory_admin/top_v2/tistory-apple-touch-favicon.png"/>
-<link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/lib/lightbox/css/lightbox.min.css"/>
-<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/style/font.css"/>
-<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/style/content.css"/>
-<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/style/uselessPMargin.css"/>
-<script type="text/javascript">(function() {
-    var tjQuery = jQuery.noConflict(true);
-    window.tjQuery = tjQuery;
-    window.orgjQuery = window.jQuery; window.jQuery = tjQuery;
-    window.jQuery = window.orgjQuery; delete window.orgjQuery;
-})()</script>
-<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/script/base.js"></script>
-<script type="text/javascript" src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-
-                
-<meta charset="UTF-8">
-<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
-<title>[이산수학] Chapter 3. Relations</title>
-<link rel="stylesheet" href="https://tistory1.daumcdn.net/tistory/4055456/skin/style.css?_version_=1594665083">
-<script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script>
-
-                
-                
-                <style type="text/css">.another_category {
-    border: 1px solid #E5E5E5;
-    padding: 10px 10px 5px;
-    margin: 10px 0;
-    clear: both;
-}
-
-.another_category h4 {
-    font-size: 12px !important;
-    margin: 0 !important;
-    border-bottom: 1px solid #E5E5E5 !important;
-    padding: 2px 0 6px !important;
-}
-
-.another_category h4 a {
-    font-weight: bold !important;
-}
-
-.another_category table {
-    table-layout: fixed;
-    border-collapse: collapse;
-    width: 100% !important;
-    margin-top: 10px !important;
-}
-
-* html .another_category table {
-    width: auto !important;
-}
-
-*:first-child + html .another_category table {
-    width: auto !important;
-}
-
-.another_category th, .another_category td {
-    padding: 0 0 4px !important;
-}
-
-.another_category th {
-    text-align: left;
-    font-size: 12px !important;
-    font-weight: normal;
-    word-break: break-all;
-    overflow: hidden;
-    line-height: 1.5;
-}
-
-.another_category td {
-    text-align: right;
-    width: 80px;
-    font-size: 11px;
-}
-
-.another_category th a {
-    font-weight: normal;
-    text-decoration: none;
-    border: none !important;
-}
-
-.another_category th a.current {
-    font-weight: bold;
-    text-decoration: none !important;
-    border-bottom: 1px solid !important;
-}
-
-.another_category th span {
-    font-weight: normal;
-    text-decoration: none;
-    font: 10px Tahoma, Sans-serif;
-    border: none !important;
-}
-
-.another_category_color_gray, .another_category_color_gray h4 {
-    border-color: #E5E5E5 !important;
-}
-
-.another_category_color_gray * {
-    color: #909090 !important;
-}
-
-.another_category_color_gray th a.current {
-    border-color: #909090 !important;
-}
-
-.another_category_color_gray h4, .another_category_color_gray h4 a {
-    color: #737373 !important;
-}
-
-.another_category_color_red, .another_category_color_red h4 {
-    border-color: #F6D4D3 !important;
-}
-
-.another_category_color_red * {
-    color: #E86869 !important;
-}
-
-.another_category_color_red th a.current {
-    border-color: #E86869 !important;
-}
-
-.another_category_color_red h4, .another_category_color_red h4 a {
-    color: #ED0908 !important;
-}
-
-.another_category_color_green, .another_category_color_green h4 {
-    border-color: #CCE7C8 !important;
-}
-
-.another_category_color_green * {
-    color: #64C05B !important;
-}
-
-.another_category_color_green th a.current {
-    border-color: #64C05B !important;
-}
-
-.another_category_color_green h4, .another_category_color_green h4 a {
-    color: #3EA731 !important;
-}
-
-.another_category_color_blue, .another_category_color_blue h4 {
-    border-color: #C8DAF2 !important;
-}
-
-.another_category_color_blue * {
-    color: #477FD6 !important;
-}
-
-.another_category_color_blue th a.current {
-    border-color: #477FD6 !important;
-}
-
-.another_category_color_blue h4, .another_category_color_blue h4 a {
-    color: #1960CA !important;
-}
-
-.another_category_color_violet, .another_category_color_violet h4 {
-    border-color: #E1CEEC !important;
-}
-
-.another_category_color_violet * {
-    color: #9D64C5 !important;
-}
-
-.another_category_color_violet th a.current {
-    border-color: #9D64C5 !important;
-}
-
-.another_category_color_violet h4, .another_category_color_violet h4 a {
-    color: #7E2CB5 !important;
-}
-</style>
-
-                
-                <link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/style/dialog.css"/>
-<link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/tistory_admin/www/style/top/font.css"/>
-<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/style/postBtn.css"/>
-<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/style/comment.css"/>
-<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/style/tistory.css"/>
-<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/style/revenue.css"/>
-<link rel="canonical" href="https://0o0deng.tistory.com/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-3-Relations"/>
-
-<!-- BEGIN STRUCTURED_DATA -->
-<script type="application/ld+json">
-    {"@context":"http://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@id":"https://0o0deng.tistory.com/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-3-Relations","name":null},"url":"https://0o0deng.tistory.com/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-3-Relations","headline":"[이산수학] Chapter 3. Relations","description":"1. Relations - 주어진 집합 X, Y에서 Cartesian product X x Y 를 하면 그 결과는 x&isin;X, y&isin;Y인 (x, y)의 모든 ordered paris 이다. X x Y = {(x,y) | x&isin;X and y&isin;Y} -Binary relation (이진 관계) : 두 집합의 원소 사이의 관계 집합 X 에서 집합 Y 로의 binary relation R은, Cartesian product X x Y 의 subset(부분집합)이다. Ex) X = { 1, 2, 3 } and Y = { a, b } R = {(1, a), (1, b), (2, b), (3, a)} 는 X와 Y 사이의 relation이다. - Domain : y&isin;Y인 y에 대하여 (x, y)가 relation R에 속할 때..","author":{"@type":"Person","name":"연혜슬","logo":null},"image":{"@type":"ImageObject","url":"https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcinMev%2Fbtq1XlisV9b%2FG2yuPOrYnm6CveQfDhC65K%2Fimg.png","width":"800px","height":"800px"},"datePublished":"20210407T01:21:01","dateModified":"20210408T20:15:04","publisher":{"@type":"Organization","name":"TISTORY","logo":{"@type":"ImageObject","url":"https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png","width":"800px","height":"800px"}}}
-</script>
-<!-- END STRUCTURED_DATA -->
-<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/script/common.js"></script>
-<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/script/comment.js" defer=""></script>
-
-                
-                </head>
-                                                <body id="tt-body-page" class="color-gray post-type-thumbnail paging-view-more">
-                
-                
-                
-
-<div id="acc-nav">
-	<a href="#content">본문 바로가기</a>
-</div>
-<div id="wrap">
-	<header id="header">
-		<h1><a href="https://0o0deng.tistory.com/">𝒪𝒹𝑒𝓃𝑔'𝓈 𝒮𝓉𝓊𝒹𝓎𝑅𝑜𝑜𝓂</a></h1>
-		<button type="button" class="mobile-menu"><span>메뉴</span></button>
-		<div class="menu">
-			<nav id="gnb">
-				<ul class="tt_category"><li class=""><a href="/category" class="link_tit"> 분류 전체보기 <span class="c_cnt">(116)</span> </a>
-  <ul class="category_list"><li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B6%F0%9D%9F%A3%3A%20%F0%9D%92%9C%F0%9D%93%81%F0%9D%91%94%F0%9D%91%9C%F0%9D%93%87%F0%9D%92%BE%F0%9D%93%89%F0%9D%92%BD%F0%9D%93%82" class="link_item"> 𝓡𝓸𝓸𝓶𝟣: 𝒜𝓁𝑔𝑜𝓇𝒾𝓉𝒽𝓂 <span class="c_cnt">(34)</span> </a>
-  <ul class="sub_category_list"><li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B6%F0%9D%9F%A3%3A%20%F0%9D%92%9C%F0%9D%93%81%F0%9D%91%94%F0%9D%91%9C%F0%9D%93%87%F0%9D%92%BE%F0%9D%93%89%F0%9D%92%BD%F0%9D%93%82/%F0%9D%93%A1%F0%9D%9F%A3%F0%9D%9F%A2%F0%9D%9F%A3%3A%20%20%F0%9D%92%9C%F0%9D%93%81%F0%9D%91%94%F0%9D%91%9C%F0%9D%93%87%F0%9D%92%BE%F0%9D%93%89%F0%9D%92%BD%F0%9D%93%82" class="link_sub_item"> 𝓡𝟣𝟢𝟣:  𝒜𝓁𝑔𝑜𝓇𝒾𝓉𝒽𝓂 <span class="c_cnt">(8)</span> </a></li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B6%F0%9D%9F%A3%3A%20%F0%9D%92%9C%F0%9D%93%81%F0%9D%91%94%F0%9D%91%9C%F0%9D%93%87%F0%9D%92%BE%F0%9D%93%89%F0%9D%92%BD%F0%9D%93%82/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4" class="link_sub_item"> 알고리즘 문제 풀이 <span class="c_cnt">(26)</span> </a></li>
-</ul>
-</li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B62%3A%F0%9D%92%9C%F0%9D%90%BC%2C%20%F0%9D%91%80%F0%9D%90%BF" class="link_item"> 𝓡𝓸𝓸𝓶2:𝒜𝐼, 𝑀𝐿 <span class="c_cnt">(2)</span> </a>
-  <ul class="sub_category_list"><li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B62%3A%F0%9D%92%9C%F0%9D%90%BC%2C%20%F0%9D%91%80%F0%9D%90%BF/%F0%9D%93%A1%F0%9D%9F%A4%F0%9D%9F%A2%F0%9D%9F%A3%3A%20%20%F0%9D%92%9C%F0%9D%90%BC%2C%20%F0%9D%91%80%F0%9D%90%BF" class="link_sub_item"> 𝓡𝟤𝟢𝟣:  𝒜𝐼, 𝑀𝐿 <span class="c_cnt">(2)</span> </a></li>
-</ul>
-</li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B63%3A%F0%9D%90%B9%F0%9D%93%87%F0%9D%91%9C%F0%9D%93%83%F0%9D%93%89%F0%9D%91%92%F0%9D%93%83%F0%9D%92%B9" class="link_item"> 𝓡𝓸𝓸𝓶3:𝐹𝓇𝑜𝓃𝓉𝑒𝓃𝒹 <span class="c_cnt">(5)</span> </a>
-  <ul class="sub_category_list"><li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B63%3A%F0%9D%90%B9%F0%9D%93%87%F0%9D%91%9C%F0%9D%93%83%F0%9D%93%89%F0%9D%91%92%F0%9D%93%83%F0%9D%92%B9/%F0%9D%93%A1%F0%9D%9F%A5%F0%9D%9F%A2%F0%9D%9F%A3%3A%F0%9D%90%BB%F0%9D%92%AF%F0%9D%91%80%F0%9D%90%BF%26%F0%9D%92%9E%F0%9D%92%AE%F0%9D%92%AE" class="link_sub_item"> 𝓡𝟥𝟢𝟣:𝐻𝒯𝑀𝐿&amp;𝒞𝒮𝒮 <span class="c_cnt">(3)</span> </a></li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B63%3A%F0%9D%90%B9%F0%9D%93%87%F0%9D%91%9C%F0%9D%93%83%F0%9D%93%89%F0%9D%91%92%F0%9D%93%83%F0%9D%92%B9/%F0%9D%93%A1%F0%9D%9F%A5%F0%9D%9F%A2%F0%9D%9F%A4%3A%F0%9D%91%85%F0%9D%91%92%F0%9D%92%B6%F0%9D%92%B8%F0%9D%93%89" class="link_sub_item"> 𝓡𝟥𝟢𝟤:𝑅𝑒𝒶𝒸𝓉 <span class="c_cnt">(2)</span> </a></li>
-</ul>
-</li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B64%3A%20%F0%9D%90%B5%F0%9D%92%B6%F0%9D%92%B8%F0%9D%93%80%F0%9D%91%92%F0%9D%93%83%F0%9D%92%B9" class="link_item"> 𝓡𝓸𝓸𝓶4: 𝐵𝒶𝒸𝓀𝑒𝓃𝒹 <span class="c_cnt">(9)</span> </a>
-  <ul class="sub_category_list"><li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B64%3A%20%F0%9D%90%B5%F0%9D%92%B6%F0%9D%92%B8%F0%9D%93%80%F0%9D%91%92%F0%9D%93%83%F0%9D%92%B9/%F0%9D%93%A1%F0%9D%9F%A6%F0%9D%9F%A2%F0%9D%9F%A3%3A%F0%9D%92%9F%F0%9D%92%BF%F0%9D%92%B6%F0%9D%93%83%F0%9D%91%94%F0%9D%91%9C" class="link_sub_item"> 𝓡𝟦𝟢𝟣:𝒟𝒿𝒶𝓃𝑔𝑜 <span class="c_cnt">(8)</span> </a></li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B64%3A%20%F0%9D%90%B5%F0%9D%92%B6%F0%9D%92%B8%F0%9D%93%80%F0%9D%91%92%F0%9D%93%83%F0%9D%92%B9/%F0%9D%93%A1%F0%9D%9F%A6%F0%9D%9F%A2%F0%9D%9F%A4%3A%F0%9D%92%A9%F0%9D%91%9C%F0%9D%92%B9%F0%9D%91%92%F0%9D%92%BF%F0%9D%93%88" class="link_sub_item"> 𝓡𝟦𝟢𝟤:𝒩𝑜𝒹𝑒𝒿𝓈 <span class="c_cnt">(1)</span> </a></li>
-</ul>
-</li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B65%3A%20%F0%9D%92%A6%F0%9D%91%9C%F0%9D%93%87%F0%9D%91%92%F0%9D%92%B6%20%F0%9D%92%B0%F0%9D%93%83%F0%9D%92%BE%F0%9D%93%8B" class="link_item"> 𝓡𝓸𝓸𝓶5: 𝒦𝑜𝓇𝑒𝒶 𝒰𝓃𝒾𝓋 <span class="c_cnt">(63)</span> </a>
-  <ul class="sub_category_list"><li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B65%3A%20%F0%9D%92%A6%F0%9D%91%9C%F0%9D%93%87%F0%9D%91%92%F0%9D%92%B6%20%F0%9D%92%B0%F0%9D%93%83%F0%9D%92%BE%F0%9D%93%8B/Discrete%20mathematics" class="link_sub_item"> Discrete mathematics <span class="c_cnt">(5)</span> </a></li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B65%3A%20%F0%9D%92%A6%F0%9D%91%9C%F0%9D%93%87%F0%9D%91%92%F0%9D%92%B6%20%F0%9D%92%B0%F0%9D%93%83%F0%9D%92%BE%F0%9D%93%8B/Artificial%20Intelligence%28COSE361%29" class="link_sub_item"> Artificial Intelligence(COS.. <span class="c_cnt">(17)</span> </a></li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B65%3A%20%F0%9D%92%A6%F0%9D%91%9C%F0%9D%93%87%F0%9D%91%92%F0%9D%92%B6%20%F0%9D%92%B0%F0%9D%93%83%F0%9D%92%BE%F0%9D%93%8B/%EB%85%BC%EB%A6%AC%EC%84%A4%EA%B3%84%20Digital%20Design%28COSE221%29" class="link_sub_item"> 논리설계 Digital Design(COSE221.. <span class="c_cnt">(3)</span> </a></li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B65%3A%20%F0%9D%92%A6%F0%9D%91%9C%F0%9D%93%87%F0%9D%91%92%F0%9D%92%B6%20%F0%9D%92%B0%F0%9D%93%83%F0%9D%92%BE%F0%9D%93%8B/Computer%20Network%28COSE342%29" class="link_sub_item"> Computer Network(COSE342) <span class="c_cnt">(7)</span> </a></li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B65%3A%20%F0%9D%92%A6%F0%9D%91%9C%F0%9D%93%87%F0%9D%91%92%F0%9D%92%B6%20%F0%9D%92%B0%F0%9D%93%83%F0%9D%92%BE%F0%9D%93%8B/Computer%20Architecture%28COSE222%29" class="link_sub_item"> Computer Architecture(COSE2.. <span class="c_cnt">(6)</span> </a></li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B65%3A%20%F0%9D%92%A6%F0%9D%91%9C%F0%9D%93%87%F0%9D%91%92%F0%9D%92%B6%20%F0%9D%92%B0%F0%9D%93%83%F0%9D%92%BE%F0%9D%93%8B/Database%28COSE371%29" class="link_sub_item"> Database(COSE371) <span class="c_cnt">(6)</span> </a></li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B65%3A%20%F0%9D%92%A6%F0%9D%91%9C%F0%9D%93%87%F0%9D%91%92%F0%9D%92%B6%20%F0%9D%92%B0%F0%9D%93%83%F0%9D%92%BE%F0%9D%93%8B/%EA%B2%BD%EC%98%81%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C%28BUSS215%29" class="link_sub_item"> 경영정보시스템(BUSS215) <span class="c_cnt">(3)</span> </a></li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B65%3A%20%F0%9D%92%A6%F0%9D%91%9C%F0%9D%93%87%F0%9D%91%92%F0%9D%92%B6%20%F0%9D%92%B0%F0%9D%93%83%F0%9D%92%BE%F0%9D%93%8B/%EA%B2%BD%EC%98%81%EC%A0%84%EB%9E%B5%20Management%20Strategy%28BUSS402%29" class="link_sub_item"> 경영전략 Management Strategy(BU.. <span class="c_cnt">(5)</span> </a></li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B65%3A%20%F0%9D%92%A6%F0%9D%91%9C%F0%9D%93%87%F0%9D%91%92%F0%9D%92%B6%20%F0%9D%92%B0%F0%9D%93%83%F0%9D%92%BE%F0%9D%93%8B/%EC%9E%AC%EB%AC%B4%EA%B4%80%EB%A6%AC%20Financial%20Management%28BUSS207%29" class="link_sub_item"> 재무관리 Financial Management(B.. <span class="c_cnt">(7)</span> </a></li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B65%3A%20%F0%9D%92%A6%F0%9D%91%9C%F0%9D%93%87%F0%9D%91%92%F0%9D%92%B6%20%F0%9D%92%B0%F0%9D%93%83%F0%9D%92%BE%F0%9D%93%8B/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%20Operating%20Systems%20%28COSE341%29" class="link_sub_item"> 운영체제 Operating Systems (COS.. <span class="c_cnt">(2)</span> </a></li>
-</ul>
-</li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B66%3A%20%F0%9D%92%AB%F0%9D%93%87%F0%9D%91%9C%F0%9D%92%BF%F0%9D%91%92%F0%9D%92%B8%F0%9D%93%89%F0%9D%93%88" class="link_item"> 𝓡𝓸𝓸𝓶6: 𝒫𝓇𝑜𝒿𝑒𝒸𝓉𝓈 <span class="c_cnt">(1)</span> </a>
-  <ul class="sub_category_list"><li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B66%3A%20%F0%9D%92%AB%F0%9D%93%87%F0%9D%91%9C%F0%9D%92%BF%F0%9D%91%92%F0%9D%92%B8%F0%9D%93%89%F0%9D%93%88/%F0%9D%93%A1%F0%9D%9F%A8%F0%9D%9F%A2%F0%9D%9F%A3%3A%20%F0%9D%92%9C%F0%9D%92%AB%F0%9D%92%AB" class="link_sub_item"> 𝓡𝟨𝟢𝟣: 𝒜𝒫𝒫 <span class="c_cnt">(0)</span> </a></li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B66%3A%20%F0%9D%92%AB%F0%9D%93%87%F0%9D%91%9C%F0%9D%92%BF%F0%9D%91%92%F0%9D%92%B8%F0%9D%93%89%F0%9D%93%88/%F0%9D%93%A1%F0%9D%9F%A8%F0%9D%9F%A2%F0%9D%9F%A4%3A%20%F0%9D%92%B2%F0%9D%90%B8%F0%9D%90%B5" class="link_sub_item"> 𝓡𝟨𝟢𝟤: 𝒲𝐸𝐵 <span class="c_cnt">(0)</span> </a></li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B66%3A%20%F0%9D%92%AB%F0%9D%93%87%F0%9D%91%9C%F0%9D%92%BF%F0%9D%91%92%F0%9D%92%B8%F0%9D%93%89%F0%9D%93%88/%F0%9D%93%A1%F0%9D%9F%A8%F0%9D%9F%A2%F0%9D%9F%A5%3A%20%F0%9D%92%A2%F0%9D%92%9C%F0%9D%91%80%F0%9D%90%B8" class="link_sub_item"> 𝓡𝟨𝟢𝟥: 𝒢𝒜𝑀𝐸 <span class="c_cnt">(1)</span> </a></li>
-<li class=""><a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B66%3A%20%F0%9D%92%AB%F0%9D%93%87%F0%9D%91%9C%F0%9D%92%BF%F0%9D%91%92%F0%9D%92%B8%F0%9D%93%89%F0%9D%93%88/%F0%9D%93%A1%F0%9D%9F%A8%F0%9D%9F%A2%F0%9D%9F%A6%3A%20%F0%9D%92%AB%F0%9D%93%87%F0%9D%91%9C%F0%9D%91%94%F0%9D%93%87%F0%9D%92%B6%F0%9D%93%82%F0%9D%92%BE%F0%9D%93%83%F0%9D%91%94" class="link_sub_item"> 𝓡𝟨𝟢𝟦: 𝒫𝓇𝑜𝑔𝓇𝒶𝓂𝒾𝓃𝑔 <span class="c_cnt">(0)</span> </a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-			</nav>
-			<div class="social-link">
-				
-				
-				
-				
-			</div>
-			<p>POWERED BY TISTORY</p>
-		</div>
-		<div class="search">
-			
-					<input type="text" name="search" value="" placeholder="검색내용을 입력하세요." onkeypress="if (event.keyCode == 13) { try {
-    window.location.href = '/search' + '/' + looseURIEncode(document.getElementsByName('search')[0].value);
-    document.getElementsByName('search')[0].value = '';
-    return false;
-} catch (e) {} }">
-					<button type="submit" onclick="try {
-    window.location.href = '/search' + '/' + looseURIEncode(document.getElementsByName('search')[0].value);
-    document.getElementsByName('search')[0].value = '';
-    return false;
-} catch (e) {}">검색</button>
-				
-		</div>
-	</header>
-	<hr>
-	<section class="container">
-		<article id="content">
-
-			
-
-			
-
-			
-
-			
-
-			<div class="inner">
-				
-
-				            
-                
-	
-	
-		<div class="hgroup">
-			<div class="category">𝓡𝓸𝓸𝓶5: 𝒦𝑜𝓇𝑒𝒶 𝒰𝓃𝒾𝓋/Discrete mathematics</div>
-			<h1>[이산수학] Chapter 3. Relations </h1>
-			<div class="post-meta">
-				<span class="author">연혜슬</span>
-				<span class="date">2021. 4. 7. 01:21</span>
-				
-			</div>
-		</div>
-		<div class="entry-content">
-			            <!-- System - START -->
-
-<!-- System - END -->
-
-            <div class="tt_article_useless_p_margin contents_style"><p>1. Relations</p>
-<p>&nbsp;</p>
-<p>- 주어진 집합 X, Y에서 Cartesian product X x Y 를 하면 그 결과는 x&isin;X, y<span style="color: #333333;">&isin;Y인 (</span>x, y)의 모든 ordered paris 이다.&nbsp;</p>
-<p>&nbsp;X x Y = {(x,y) | x<span style="color: #333333;">&isin;X and y<span style="color: #333333;">&isin;Y}</span></span></p>
-<p>&nbsp;</p>
-<p><span style="color: #333333;"><span style="color: #333333;">-Binary relation (이진 관계) : 두 집합의 원소 사이의 관계</span></span></p>
-<p>&nbsp;집합 X 에서 집합 Y 로의 binary relation R은, Cartesian product X x Y 의 subset(부분집합)이다.&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;Ex) X = { 1, 2, 3 } and Y = { a, b }</p>
-<p>&nbsp; &nbsp; &nbsp;R = {(1, a), (1, b), (2, b), (3, a)} 는 X와 Y 사이의 relation이다.&nbsp;</p>
-<p>&nbsp;</p>
-<p>- Domain : <span style="color: #333333;">y</span><span style="color: #333333;">&isin;Y인 y에 대하여 </span>(x, y)가 relation R에 속할 때,<span style="color: #333333;">&nbsp;x<span style="color: #333333;">&isin;X인 x를 Dom(R)이라고 한다.</span></span></p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dom(R) = { x<span style="color: #333333;">&isin;X | (x, y) <span style="color: #333333;">&isin; R for some y<span style="color: #333333;">&isin;Y }</span></span></span></p>
-<p>&nbsp; Range : <span style="color: #333333;"><span>&nbsp;</span></span><span style="color: #333333;">x</span><span style="color: #333333;">&isin;X인 x에 대하여<span>&nbsp;</span></span><span style="color: #333333;">(x, y)가 relation R에 속할 때,</span><span style="color: #333333;"> <span style="color: #333333;">y</span><span style="color: #333333;">&isin;Y</span><span style="color: #333333;">인 y를 Rng(R)이라고 한다.</span></span></p>
-<p><span style="color: #333333;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Rng(R) = { y</span><span style="color: #333333;">&isin;Y | (x, y)<span>&nbsp;</span><span style="color: #333333;">&isin; R for some x<span style="color: #333333;">&isin;X }</span></span></span></p>
-<p><span style="color: #333333;"><span style="color: #333333;"><span style="color: #333333;">쉽게 생각해 함수에서 정의역과 치역이라고 생각하면 된다. </span></span></span></p>
-<p><span style="color: #333333;"><span style="color: #333333;"><span style="color: #333333;">f(x)에서 x의 범위가 정의역, 그에 따른 y의 값의 범위가 치역이었던 것처럼 relation도 마찬가지!</span></span></span></p>
-<p>&nbsp;</p>
-<p><span style="color: #333333;"><span style="color: #333333;"><span style="color: #333333;">Ex) X={ 1, 2, 3 } , Y={ a, b }, R = { (1, a), (1, b), (2, b) }</span></span></span></p>
-<p><span style="color: #333333;"><span style="color: #333333;"><span style="color: #333333;">일 때 Dom(R) = { 1, 2 }, Rng(R) = { a, b }</span></span></span></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>- digraph of a relation : relation의 유향 그래프 <span style="color: #333333;">(방향이 있는 그래프)<span>&nbsp;</span></span></p>
-<p>&nbsp;</p>
-<p><figure class="imageblock alignCenter" data-origin-width="0" data-origin-height="0" width="629" height="NaN" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/cinMev/btq1XlisV9b/G2yuPOrYnm6CveQfDhC65K/img.png" data-lightbox="lightbox"><img src="https://blog.kakaocdn.net/dn/cinMev/btq1XlisV9b/G2yuPOrYnm6CveQfDhC65K/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcinMev%2Fbtq1XlisV9b%2FG2yuPOrYnm6CveQfDhC65K%2Fimg.png" data-origin-width="0" data-origin-height="0" width="629" height="NaN" data-ke-mobilestyle="widthContent" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';"/></span></figure>
-</p>
-<p>&nbsp;</p>
-<p>- Properties of relations</p>
-<p>&nbsp;1) Reflexive : 모든 x<span style="color: #333333;">&isin;X에 대해서 (x,x)<span style="color: #333333;">&isin;R인 relation,<span style="color: #333333;"> 즉<span style="color: #333333;"> 자기 자신을<span style="color: #333333;"> 항상 가리키는 relation</span></span></span></span></span></p>
-<p>&nbsp;2) Symmetric(대칭) : 모든 x, y가 (x, y)<span style="color: #333333;">&isin;R 이면 (y, x)<span style="color: #333333;">&isin;R인 relation</span></span></p>
-<p>&nbsp;3) transitive (전이(추이)관계) : (x, y)<span style="color: #333333;">&isin;R이고 (y, z)<span style="color: #333333;">&isin;R이면 (x, z)<span style="color: #333333;">&isin;R이 되는 relation</span></span></span></p>
-<p><span style="color: #333333;">&nbsp;4) antisymmetric (반대칭적) : x &ne; y일 때, (x, y)<span style="color: #333333;">&isin;R이</span><span style="color: #333333;">면 (y, x)는 relation에 속하지 않는 것.&nbsp;</span></span></p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;즉, (a, a)를 제외하고 (a, b)가 R에 속했으면 (b, a)는 속해있으면 안됨</p>
-<p>&nbsp;</p>
-<p>- Order relations</p>
-<p>&nbsp;</p>
-<p>&nbsp; 1) Partial order : R이 reflexive, antisymmetric, transitive하면 이 R은 partial order이다.&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp;ex) (x, y) in R (y는 x로 나누어 떨어지고, x와 y는 양의 정수)&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;--&gt; (5, 10), (5, 15), (5, 20), (10, 20)</p>
-<p>&nbsp; &nbsp; &nbsp; - 모든 양의 정수는 자기 자신으로 나누어 떨어지므로 reflexive</p>
-<p>&nbsp; &nbsp; &nbsp; - (a, n*a)가 성립할 경우 (n*a, a)는 성립할 수 없으므로 antisymmetric</p>
-<p>&nbsp; &nbsp; &nbsp; - (a, n*a)이고 (n*a, m*na)일 경우 (a, mna) 이므로 transitive</p>
-<p>&nbsp;</p>
-<p>&nbsp;2) Comparable : (x, y) or (y, x)가 R에 존재하면 x와 y는 comparable하다.</p>
-<p>&nbsp; &nbsp; Incomparable : (x, y)와 (y, x)가 둘 다 R에 있지 않으면 incomparable하다.</p>
-<p>&nbsp;</p>
-<p>3) Total order : X에 있는 elements의 모든 쌍이 comparable하면 R은 total order on X이다.&nbsp;</p>
-<p>&nbsp; &nbsp; 즉, X에 있는 모든 원소가 R에 존재할 경우 R은 X의 total order 이다. (모든 (x, y)가 포함되어 있되, 순서 바꿔서 겹치면 안된다(antisymmetric 해야하기 때문))</p>
-<p>&nbsp;</p>
-<p>&nbsp; &nbsp;ex) (x, y) in R ( x &le; y, x와 y는 양의 정수 )</p>
-<p>&nbsp;</p>
-<p>- Inverse of a relation</p>
-<p>&nbsp; : 주어진 relation R이 X-&gt;Y 였다면, 그것의 inverse인 R^(-1)은 Y-X인 relation이다.&nbsp;</p>
-<p>&nbsp; &nbsp;R^(-1) = { (y, x) | (x, y)<span style="color: #333333;">&isin;R }&nbsp;</span></p>
-<p><span style="color: #333333;">&nbsp; (그냥 역함수 생각하면 편하다)</span></p>
-<p>&nbsp;</p>
-<p><span style="color: #333333;">- Composition of relation</span></p>
-<p><span style="color: #333333;">&nbsp; : R1 : relation from X to Y</span></p>
-<p><span style="color: #333333;">&nbsp; &nbsp;R2 : relation from Y to Z</span></p>
-<p><span style="color: #333333;">&nbsp; &nbsp;R2&ordm;R1 (composition of R1 and R2) : relation from X to Z</span></p>
-<p><span style="color: #333333;"><span>&nbsp; -&gt; </span>&nbsp;R2&ordm;R1 = { (x, z) | (x, y)<span style="color: #333333;">&isin;R1<span style="color: #333333;"> and<span style="color: #333333;"> (y,z)<span style="color: #333333;">&isin;R2<span style="color: #333333;"> for <span style="color: #333333;">some<span style="color: #333333;"> y<span style="color: #333333;">&isin;Y}</span></span></span></span></span></span></span></span></span></p>
-<p>&nbsp;</p>
-<p>2. Equivalence Relations</p>
-<p>&nbsp;- Equivalence relation on X&nbsp; = R은 reflexive하고 symmetric 하고 transitive하다</p>
-<p>&nbsp;</p>
-<p>ex) X를 정수라고 하고, R을 X에 대한 relation이라고 하자. xRy &lt;=&gt; x-y = 5k (k는 정수)</p>
-<p>&nbsp;==&gt; R is and equivalence relation</p>
-<p>{ ..., (10, 5), (11, 6), (5, 5), (6, 11), (5, 10) ,... }</p>
-<p>&nbsp;</p>
-<p>&nbsp; x - y = 5k 면 y - x = -5k</p>
-<p>&nbsp; x = y 면 x - y = 0</p>
-<p>&nbsp; x3 - x2 = 5k1, x2 - x1 = 5k2 면 x3-x1 = 5(k1-k2)</p>
-<p>&nbsp;</p>
-<p>&nbsp; - Partition S : X를 이루는 부분집합들의 모임 {A1, A2 ,..., An}</p>
-<p>&nbsp; &nbsp; A1&cup;A2<span style="color: #333333;">&cup;</span><span style="color: #333333;">A3<span style="color: #333333;">&cup;A4<span style="color: #333333;">&cup;...<span style="color: #333333;">&cup;An=X</span></span></span></span></p>
-<p><span style="color: #333333;"><span style="color: #333333;"><span style="color: #333333;"><span style="color: #333333;">&nbsp; &nbsp; 단, 1&lt;=j, k&lt;=n이고 서로 다른 모든 j, k에 대해 Aj &cap; Ak = &oslash;&nbsp;</span></span></span></span></p>
-<p>&nbsp;</p>
-<p><span style="color: #333333;"><span style="color: #333333;"><span style="color: #333333;"><span style="color: #333333;">&nbsp; &nbsp; ex) X= {정수} , E = {짝수), O = {홀수} 이면 S = { E, O } 는 X의 partition </span></span></span></span></p>
-<p>&nbsp;</p>
-<p><span style="color: #333333;"><span style="color: #333333;"><span style="color: #333333;"><span style="color: #333333;">&nbsp;- Equivalence relation : S를 집합 X의 partition이라고 할 때, R을 xRy라는 relation으로 정의하자. R에서 x, y가 T<span style="color: #333333;">&isin;S인 T </span>집합에 속할 때, R은 X에 대해 equivalence relation이다.&nbsp;</span></span></span></span></p>
-<p>&nbsp;</p>
-<p>이게 대체 무슨 소린지 한참을 들여다 봤는데, 예를 들어보자.</p>
-<p>X의 partial S가 있다. 이 S는 A1, A2, A3의 부분집합들을 갖는다. 만약 어떤 relation xRy가 A1이라는 T 집합에만 속한 x, y를 전부 포함한 relation이라면 이 relation은 X의 equivalence relation인 것이다.&nbsp;</p>
-<p>왜냐?</p>
-<p>예를 들어 "x-y = 2k"라는 relation R이 있다.</p>
-<p>xRy는 만약 x와 y가 같은 partition(T= even or odd) 에 있을 때 true가 된다. (X의 partition S = Integer, S = E + O)</p>
-<p>이 때 이 R은 X의 equivalence relations 이 된다. 정리하면, 같은 partition 안의 요소끼리 relation을 만드는, 그래서 relation 안에 partition의 element가 전부 포함된 relation은&nbsp; equivalence relation인 것. (사실 이해 안하고 위에 reflexive, symmetric, transitive 특징 쓰는게 더 나을 듯 싶다..)&nbsp;&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp; - Equivalence classes : 집합 𝑨 에 대한 관계 𝑹 이 동치관계(Equivalence Relation) 일 때, 집합 𝑨 의 각 원소 𝒂 와 순서쌍을 이루는 원소들의 집합 [a]</p>
-<p>a, b <span style="color: #333333;">&isin; X 이면 [a] = [b] 이거나 [a] &cap; [b] = &oslash; 이다.&nbsp;</span></p>
-<p>ex) Even Integer : [2] = [4] = [10002]&nbsp;</p>
-<p>&nbsp;</p>
-<p>이것도 뭔소린가 했더니, 그냥 [a]라는 것이 있으면, [a]는 a라는 element가 속한 partition의 원소들의 집합, 즉 그 partition을 말하는 것이다. 그래서 [2]=[4]=[10002]는 전부 even integer라는 integer의 partition이라는 말씀.&nbsp;</p>
-<p>만약 a와 b가 둘 다 X에 속하게 되면 둘 다 같은 partition에 속해 [a]=[b]가 되거나, 서로 다른 partition에 속해 [a]와 [b]의 교집합이 존재하지 않게 된다.&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>3. Matrices of Relations</p>
-<p>&nbsp;: Relation을 Matrices로 표현해보자!</p>
-<p>&nbsp;- 행은 X의 elements로, 열은 Y의 elements로, Aij = 0 이면 not related, 1이면 related!</p>
-<p><figure class="imageblock alignCenter" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/mtUeB/btq11AeCi8b/kKlVF5H1kJfY948jrmKgK0/img.png" data-lightbox="lightbox" data-alt="뭐 대충 이런거 쉽지?"><img src="https://blog.kakaocdn.net/dn/mtUeB/btq11AeCi8b/kKlVF5H1kJfY948jrmKgK0/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FmtUeB%2Fbtq11AeCi8b%2FkKlVF5H1kJfY948jrmKgK0%2Fimg.png" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';"/></span><figcaption>뭐 대충 이런거 쉽지?</figcaption>
-</figure>
-</p>
-<p>&nbsp;</p>
-<p>- The Product of matrices ( 행렬의 곱 )</p>
-<p>&nbsp;: R1의 Matrix A(l x m)과 R2의 Matrix B(mxn)을 곱하면 ?</p>
-<p><figure class="imageblock alignCenter" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/wVuMo/btq1ZFHGv8w/BUdRoiQ8AcBqKx4NWdGbK1/img.png" data-lightbox="lightbox" data-alt="(설마 행렬곱을 시키겠어?)"><img src="https://blog.kakaocdn.net/dn/wVuMo/btq1ZFHGv8w/BUdRoiQ8AcBqKx4NWdGbK1/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FwVuMo%2Fbtq1ZFHGv8w%2FBUdRoiQ8AcBqKx4NWdGbK1%2Fimg.png" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';"/></span><figcaption>(설마 행렬곱을 시키겠어?)</figcaption>
-</figure>
-</p>
-<p>&nbsp; 이 때, 곱한 값이 0이 아니면 1, 0이면 0이다. 이걸 언제 쓰냐?</p>
-<p>&nbsp;</p>
-<p>-&gt; <span style="color: #333333;">R2&ordm;R1 (composed relation)을 계산할 때 쓴다.</span></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p><span style="color: #333333;">- Matrix로 알아보는 relation의 특징들</span></p>
-<p><span style="color: #333333;">&nbsp; 1) Reflexive : 모든 Aii의 값이 1이다</span></p>
-<p><span style="color: #333333;">&nbsp; 2) Symmetric : 모든 i, j에 대해 Aij = Aji 이다.</span></p>
-<p><span style="color: #333333;">&nbsp; 3) Transitive : C = A^2(=AxA)의 Cij가 0이 아니면, A의 aij도 0이 아니다.</span></p>
-<p><figure class="imageblock alignCenter" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"><span data-url="https://blog.kakaocdn.net/dn/mfNDo/btq1Xmu3h7a/gybA0ZbRt2ZWNCUDyrKin0/img.png" data-lightbox="lightbox"><img src="https://blog.kakaocdn.net/dn/mfNDo/btq1Xmu3h7a/gybA0ZbRt2ZWNCUDyrKin0/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FmfNDo%2Fbtq1Xmu3h7a%2FgybA0ZbRt2ZWNCUDyrKin0%2Fimg.png" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';"/></span></figure>
-</p>
-<p>4. Relational Database</p></div>
-            <!-- System - START -->
-
-<!-- System - END -->
-
-                    <div class="container_postbtn #post_button_group">
-  <div class="postbtn_like"><script>window.ReactionButtonType = 'reaction';
-window.ReactionApiUrl = '//0o0deng.tistory.com/reaction';
-window.ReactionReqBody = {
-    entryId: 36
-}</script>
-<div class="wrap_btn" id="reaction-36"></div>
-<script src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/script/reaction-button-container.min.js"></script><div class="wrap_btn wrap_btn_share"><button type="button" class="btn_post sns_btn btn_share" aria-expanded="false" data-thumbnail-url="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcinMev%2Fbtq1XlisV9b%2FG2yuPOrYnm6CveQfDhC65K%2Fimg.png" data-title="[이산수학] Chapter 3. Relations" data-description="1. Relations - 주어진 집합 X, Y에서 Cartesian product X x Y 를 하면 그 결과는 x∈X, y∈Y인 (x, y)의 모든 ordered paris 이다. X x Y = {(x,y) | x∈X and y∈Y} -Binary relation (이진 관계) : 두 집합의 원소 사이의 관계 집합 X 에서 집합 Y 로의 binary relation R은, Cartesian product X x Y 의 subset(부분집합)이다. Ex) X = { 1, 2, 3 } and Y = { a, b } R = {(1, a), (1, b), (2, b), (3, a)} 는 X와 Y 사이의 relation이다. - Domain : y∈Y인 y에 대하여 (x, y)가 relation R에 속할 때.." data-profile-image="https://tistory1.daumcdn.net/tistory/4055456/attach/b73d7571d064455db32f24f54a6767e0" data-profile-name="연혜슬" data-pc-url="https://0o0deng.tistory.com/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-3-Relations" data-relative-pc-url="/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-3-Relations" data-blog-title="𝒪𝒹𝑒𝓃𝑔'𝓈 𝒮𝓉𝓊𝒹𝓎𝑅𝑜𝑜𝓂"><span class="ico_postbtn ico_share">공유하기</span></button>
-  <div class="layer_post" id="tistorySnsLayer"></div>
-</div><div class="wrap_btn wrap_btn_etc" data-entry-id="36" data-entry-visibility="public" data-category-visibility="public"><button type="button" class="btn_post btn_etc2" aria-expanded="false"><span class="ico_postbtn ico_etc">게시글 관리</span></button>
-  <div class="layer_post" id="tistoryEtcLayer"></div>
-</div></div>
-<button type="button" class="btn_menu_toolbar btn_subscription  #subscribe" data-blog-id="4055456" data-url="https://0o0deng.tistory.com/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-3-Relations" data-device="web_pc"><em class="txt_state">구독하기</em><strong class="txt_tool_id">𝒪𝒹𝑒𝓃𝑔'𝓈 𝒮𝓉𝓊𝒹𝓎𝑅𝑜𝑜𝓂</strong><span class="img_common_tistory ico_check_type1"></span></button>  <div data-tistory-react-app="SupportButton"></div>
-</div>
-
-                    <!-- PostListinCategory - START -->
-<div class="another_category another_category_color_gray">
-  <h4>'<a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B65%3A%20%F0%9D%92%A6%F0%9D%91%9C%F0%9D%93%87%F0%9D%91%92%F0%9D%92%B6%20%F0%9D%92%B0%F0%9D%93%83%F0%9D%92%BE%F0%9D%93%8B">𝓡𝓸𝓸𝓶5: 𝒦𝑜𝓇𝑒𝒶 𝒰𝓃𝒾𝓋</a> &gt; <a href="/category/%F0%9D%93%A1%F0%9D%93%B8%F0%9D%93%B8%F0%9D%93%B65%3A%20%F0%9D%92%A6%F0%9D%91%9C%F0%9D%93%87%F0%9D%91%92%F0%9D%92%B6%20%F0%9D%92%B0%F0%9D%93%83%F0%9D%92%BE%F0%9D%93%8B/Discrete%20mathematics">Discrete mathematics</a>' 카테고리의 다른 글</h4>
-  <table>
-    <tr>
-      <th><a href="/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-1-Logic-and-proofs">[이산수학] Chapter 1. Logic and proofs</a>&nbsp;&nbsp;<span>(0)</span></th>
-      <td>2021.05.03</td>
-    </tr>
-    <tr>
-      <th><a href="/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-6-Counting-methods-and-the-pigeonhole-principle">[이산수학] Chapter 6. Counting methods and the pigeonhole principle</a>&nbsp;&nbsp;<span>(0)</span></th>
-      <td>2021.05.02</td>
-    </tr>
-    <tr>
-      <th><a href="/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-5-Introduction-to-Number-Theory">[이산수학] Chapter 5. Introduction to Number Theory</a>&nbsp;&nbsp;<span>(0)</span></th>
-      <td>2021.05.02</td>
-    </tr>
-    <tr>
-      <th><a href="/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-4-Algorithms">[이산수학] Chapter 4. Algorithms</a>&nbsp;&nbsp;<span>(0)</span></th>
-      <td>2021.04.07</td>
-    </tr>
-  </table>
-</div>
-
-<!-- PostListinCategory - END -->
-
-		</div>
-		
-
-		
-			<div class="related-articles">
-				<h2><strong>'𝓡𝓸𝓸𝓶5: 𝒦𝑜𝓇𝑒𝒶 𝒰𝓃𝒾𝓋/Discrete mathematics'</strong> Related Articles</h2>
-				<ul>
-					
-						<li>
-							<a href="/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-1-Logic-and-proofs?category=939522">
-								<span class="thum">
-									
-								</span>
-								<span class="title">[이산수학] Chapter 1. Logic and proofs</span>
-							</a>
-						</li>
-					
-						<li>
-							<a href="/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-6-Counting-methods-and-the-pigeonhole-principle?category=939522">
-								<span class="thum">
-									
-										<img src="//i1.daumcdn.net/thumb/C264x200/?fname=https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdeR5Xf%2Fbtq3UTEh08N%2FpWQYbJWyccUk4a70TQKVEK%2Fimg.png" alt="">
-									
-								</span>
-								<span class="title">[이산수학] Chapter 6. Counting methods and the pigeonhole principle</span>
-							</a>
-						</li>
-					
-						<li>
-							<a href="/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-5-Introduction-to-Number-Theory?category=939522">
-								<span class="thum">
-									
-										<img src="//i1.daumcdn.net/thumb/C264x200/?fname=https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fp1Gci%2Fbtq3VPgQwhF%2F4yG3N3LwRWKDJkEfWrE5WK%2Fimg.png" alt="">
-									
-								</span>
-								<span class="title">[이산수학] Chapter 5. Introduction to Number Theory</span>
-							</a>
-						</li>
-					
-						<li>
-							<a href="/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-4-Algorithms?category=939522">
-								<span class="thum">
-									
-										<img src="//i1.daumcdn.net/thumb/C264x200/?fname=https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcF4EBO%2Fbtq1ZEIMt2n%2Fb2QHQJ9Uc9TZek45ZPPtWK%2Fimg.png" alt="">
-									
-								</span>
-								<span class="title">[이산수학] Chapter 4. Algorithms</span>
-							</a>
-						</li>
-					
-				</ul>
-			</div>
-		
-
-		<div data-tistory-react-app="Namecard"></div><div id="entry36Comment">
-			<div class="comments">
-				
-					<div class="comment-list">
-						<ul>
-							            
-
-            <li id="none_display_division_for_comment_list_36" style="display: none;"></li>
-<script type="text/javascript">
-    setInitialEntryComments(36, 1704645843)
-</script>
-						</ul>
-					</div>
-				
-
-				        <form method="post" action="/comment/add/36" onsubmit="return false" style="margin: 0">
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
             
-	<div class="comment-form">
-		
-			<div class="field">
-				
-					<input type="text" name="name" value="" placeholder="이름">
-					<input type="password" name="password" value="" placeholder="암호">
-				
-				<div class="secret">
-					<input type="checkbox" name="secret" id="secret">
-					<label for="secret" tabindex="0">Secret</label>
+
+
+
+    
+
+
+
+<title>믿음의 끈.</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="믿음의 끈.">
+<meta name="referrer" content="always">
+<meta name="secureToken" value="igY/cq9dmbH/azCEuXGD1XaLsFODEXWsEg/DP09kC8EsjkBA8vl7P16HPSnN1QC7">
+<meta name="robots" content="max-image-preview:large">
+
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+
+            <meta name="description" content="모든 인간관계는 믿음의 끈으로 연결되어 있다. |  그렇다. 모든 인간관계는 믿음의 끈으로 연결되어 있다. 그 믿음의 끈이 헐거운지, 팽팽한지, 아니면 꽉 조여서 숨이 막히는지는 우리가 누구를 생각하고 있느냐에 따라 다르다. 가장 친한 베스트 프렌드와는 믿음의 끈이 튼튼할 것이고, 이제 막 알아가기 시작한 사람과는 믿음의 끈이 얇고 연약할 수도 있다. 그런데 한 가지 더 생각해야 할 것이 있다. 그것은 바">
+                <meta property="article:author" content="성장흐름">
+                <meta name="og:article:author" content="성장흐름">
+                <meta name="byl" content="성장흐름">
+                <meta property="og:type" content="article">
+                <meta property="og:site_name" content="Brunch Story">
+                <meta property="og:title" content="믿음의 끈.">
+                <meta property="og:description" content="모든 인간관계는 믿음의 끈으로 연결되어 있다. |  그렇다. 모든 인간관계는 믿음의 끈으로 연결되어 있다. 그 믿음의 끈이 헐거운지, 팽팽한지, 아니면 꽉 조여서 숨이 막히는지는 우리가 누구를 생각하고 있느냐에 따라 다르다. 가장 친한 베스트 프렌드와는 믿음의 끈이 튼튼할 것이고, 이제 막 알아가기 시작한 사람과는 믿음의 끈이 얇고 연약할 수도 있다. 그런데 한 가지 더 생각해야 할 것이 있다. 그것은 바">
+                <meta property="og:image" content="//img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/aUIc/image/6nJKygDl5hPOZW7x6laeja2QdL4.jpg">
+                <meta property="og:url" content="https://brunch.co.kr/@carly4779/68">
+        <meta name="twitter:card" content="summary">
+    <meta name="twitter:app:name:iphone" content="브런치스토리">
+    <meta name="twitter:app:id:iphone" content="1001388574">
+    <meta name="twitter:app:url:iphone" content="brunchapp://open">
+                    <meta name="twitter:image" content="https://img1.daumcdn.net/thumb/C500x500/?fname=http://t1.daumcdn.net/brunch/service/user/aUIc/image/6nJKygDl5hPOZW7x6laeja2QdL4.jpg">
+                <meta name="twitter:title" content="믿음의 끈.">
+                <meta name="twitter:description" content="모든 인간관계는 믿음의 끈으로 연결되어 있다. |  그렇다. 모든 인간관계는 믿음의 끈으로 연결되어 있다. 그 믿음의 끈이 헐거운지, 팽팽한지, 아니면 꽉 조여서 숨이 막히는지는 우리가 누구를 생각하고 있느냐에 따라 다르다. 가장 친한 베스트 프렌드와는 믿음의 끈이 튼튼할 것이고, 이제 막 알아가기 시작한 사람과는 믿음의 끈이 얇고 연약할 수도 있다. 그런데 한 가지 더 생각해야 할 것이 있다. 그것은 바">
+                    <meta property="fb:app_id" content="313683402170826">
+
+<link rel="SHORTCUT ICON" href="//t1.daumcdn.net/brunch/static/icon/favicon/brunchstory/favicon_20230406.ico"/>
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="//t1.daumcdn.net/brunch/static/icon/ios/brunchstory/ico_bi_180.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="//t1.daumcdn.net/brunch/static/icon/ios/brunchstory/ico_bi_152.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="//t1.daumcdn.net/brunch/static/icon/ios/brunchstory/ico_bi_120.png">
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover">
+
+                <link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/brunch/static/prod/202312271327/production/B.min.css">
+                    <link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/brunch/static/prod/202312271327/production/B.Message.min.css">
+    
+                        <link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/brunch/static/prod/202312271327/production/B.Font.min.css">
+        
+
+                        <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/libraries/js/jquery.min-3.6.4.js"></script>
+                                <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/libraries/js/jquery.cookie.min-1.4.1.js"></script>
+                                <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/libraries/js/jquery.xdomainrequest.min-1.0.4.js"></script>
+                                <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/libraries/js/jquery.word-break-keep-all.min-1.3.0.js"></script>
+                                <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/libraries/js/handlebars.runtime.min-v3.0.0.js"></script>
+                                <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/libraries/js/sentry.min.5.27.4.js?v=20221124"></script>
+                                <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/libraries/js/clipboard.min.js"></script>
+            
+
+<script type="text/javascript" src="//t1.daumcdn.net/tiara/js/v1/tiara.min.js"></script>
+
+<script>
+    window.Guard = {
+        hasError:  false,
+        excuteFunctionArray: [],
+        loadedJsHistory: [],
+
+        /*
+            kebana에 프론트 로그 발생 오류를 기록 한다.
+         */
+        fetchLog: function(message, extraJson) {
+            if (!window.fetch && !fetch) {
+                return '';
+            }
+            var csrfToken = document.querySelector('meta[name=secureToken]').attributes['value'].value;
+
+            fetch('https://api.brunch.co.kr/v1/front-log', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': csrfToken
+                },
+                credentials: 'include',
+                body : JSON.stringify({
+                    message: message,
+                    extras: extraJson
+                })
+            })
+        },
+
+        /*
+            js파일의 tenth2 fetch 결과를 Matrix에 기록.
+         */
+        checkTenth2JsStatus: function (jsFileName) {
+            var phase = '/';
+                            phase = '/production/'
+                        var jsUrl = '//t1.daumcdn.net/brunch/static/prod/202312271327' + phase + jsFileName;
+
+            if (!window.fetch && !fetch) {
+                return '';
+            }
+
+            fetch(jsUrl).then(function(response) {
+                Sentry.setTag('InitFail', 'FailLoadTenth2js');
+                Sentry.captureMessage('[BRUNCH] InitFail - Tenth2', {
+                    extra: {
+                        extra: {
+                            status: response.status,
+                            url: response.url,
+                            statusText: response.statusText,
+                        },
+                    },
+                });
+            }).catch(function(error) {
+                Sentry.captureMessage('[BRUNCH] InitFail - Tenth2', {
+                    extra: {
+                        extra: {
+                            url: jsUrl,
+                        },
+                    },
+                });
+            });
+        },
+
+        dynamicAppendJsLibraryTags: function(jsFileNameArray) {
+          for(var i=0; i<jsFileNameArray.length; i++) {
+              this.dynamicAppendJsLibraryTag(jsFileNameArray[i]);
+          }
+        },
+
+        dynamicAppendJsLibraryTag: function(jsFileName) {
+            this.createScriptTag('/static/libraries/js/', jsFileName);
+        },
+
+        /**
+         * 자바스크립트 동적 생성 함수
+         * @param {String} jsPath - 자바스크립트 파일 경로
+         * @param {String} jsFileName - 자바스크립트 파일 이름
+         * @param {Function} onLoadCallback - 스크립트 onLoad 이후 실행될 함수
+         */
+        createScriptTag: function(jsPath, jsFileName, onLoadCallback) {
+            this.loadedJsHistory.push(jsFileName);
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = jsPath + jsFileName;
+            if (onLoadCallback) {
+                script.onload = function() {
+                    onLoadCallback();
+                }
+            }
+            script.onerror = function(e) {
+                this.matrixLogging(e, 'Invalid Script src', jsPath + jsFileName);
+            }.bind(this)
+            script.async = false;
+            this.removeScriptTag(jsFileName);
+            document.getElementsByTagName('head')[0].appendChild(script);
+        },
+
+        /**
+         * dom 내에 존재하는 대상 스크립트를 찾아서 제거 하는 함수
+         * @param {String} targetSrc
+         */
+        removeScriptTag: function(targetSrc) {
+            for (var i=0; i<document.scripts.length; i++) {
+
+                if (document.scripts[i].src.indexOf(targetSrc) > -1) {
+                    document.scripts[i].remove();
+                }
+            }
+        },
+
+        /**
+         * 함수를 실행하고, 그 실행 내역을 Array에 저장
+         * @param {Function} func - 실행될 함수
+         */
+        executeAndSaveFunction: function(func) {
+            try {
+                this.excuteFunctionArray.push(func);
+                func();
+            } catch(e) {
+                if(!this.hasError) {
+                    this.fetchLog('script error occur', {});
+                }
+                this.hasError = true;
+            }
+        },
+
+        /**
+         * 글뷰 페이지를 복구 하기 위한 함수
+         * 1. libraries 태그 복원
+         * 2. 글뷰 통합 번들 파일 추가
+         * @param {boolean} isPc
+         */
+        restoreArticlePage: function(isPc) {
+            var scripts = [
+                "sentry.min.5.27.4.js",
+                "jquery.min-3.6.4.js",
+                "jquery.cookie.min-1.4.1.js",
+                "jquery.xdomainrequest.min-1.0.4.js",
+                "jquery.word-break-keep-all.min-1.3.0.js",
+                "handlebars.runtime.min-v3.0.0.js"
+            ];
+            this.dynamicAppendJsLibraryTags(scripts);
+            this.excuteFunctionArray.push(function() {
+                this.loggedIsArticleRestored(isPc);
+            }.bind(this));
+
+            if (isPc) {
+                this.createScriptTag('/static/production/', 'brunch.article.pc.min.js', this.doExcuteFunctionArray.bind(this));
+            } else {
+                this.createScriptTag('/static/production/', 'brunch.article.mobile.min.js', this.doExcuteFunctionArray.bind(this));
+            }
+        },
+
+        /**
+         * article 페이지 복구 여부에 대한 기록 함수
+         * PC .wrap_body_frame 존재 유무
+         * Mobile #articleMain display 속성 확인 (not none)
+         * @param isPc
+         */
+        loggedIsArticleRestored: function(isPc) {
+            var isRestored = false;
+
+            if (isPc) {
+                isRestored = document.querySelector('.wrap_body_frame') !== null
+            } else {
+                isRestored = window.getComputedStyle(document.querySelector('#articleMain')).display !== 'none';
+            }
+
+            var fetchMsg = 'restorePageFail';
+
+            if (isRestored) {
+                fetchMsg = 'restorePage';
+            }
+
+            this.fetchLog(fetchMsg, {
+                isPc: isPc
+            })
+        },
+
+        doExcuteFunctionArray: function() {
+            if (this.excuteFunctionArray.length > 0) {
+                for (var i = 0; i < this.excuteFunctionArray.length; i++) {
+                    var func = this.excuteFunctionArray[i];
+
+                    if (func && typeof func === 'function') {
+                        try {
+                            func();
+                        } catch(e) {
+                            this.fetchLog('failRestorePage', {
+                                error: e,
+                            })
+                        }
+                    }
+                }
+            }
+        },
+
+        matrixLogging: function(error, tagValue, data) {
+            // B.Util 스크립트도 로딩이 안된 경우가 있어 별도의 로깅을 진행 한다.
+            Sentry.addBreadcrumb({
+                type: 'error',
+                category: 'error',
+                level: 'error',
+                data: data
+            });
+            Sentry.setTag('Monitoring', tagValue);
+            Sentry.captureMessage('[BRUNCH] Article View Restore Fail');
+        }
+    };
+</script>
+
+<script type="text/javascript">
+        
+    window._platform = "unknown";
+
+    function sentryInit() {
+        Sentry.init({
+            dsn: 'https://82e056052bc34de9a6b32456d6f1f370@aem-kakao-collector.onkakao.net/1768',
+            release: '202312271327',
+            environment: 'prod',
+                        allowUrls: [
+                "brunch.co.kr",
+                "dev.onkakao.net",
+                "daumcdn.net"
+            ],
+        });
+        Sentry.setTag("ua.platform", window._platform);
+            }
+
+    Guard.executeAndSaveFunction(sentryInit);
+</script>
+
+<script>
+    if (typeof jQuery === 'undefined') {
+        var scripts = [
+            "sentry.min.5.27.4.js",
+            "jquery.min-3.6.4.js",
+            "jquery.cookie.min-1.4.1.js",
+            "jquery.xdomainrequest.min-1.0.4.js",
+            "jquery.word-break-keep-all.min-1.3.0.js",
+            "handlebars.runtime.min-v3.0.0.js"
+        ]
+        Guard.dynamicAppendJsLibraryTags(scripts);
+        Guard.fetchLog('libraries init', {});
+    }
+</script>                <link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/brunch/static/prod/202312271327/production/B.Article.min.css">
+                    <link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/brunch/static/prod/202312271327/production/B.SubscriptionLayer.min.css">
+                    <link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/brunch/static/prod/202312271327/production/pages/@{profileId}/{articleNo}/index.min.css">
+    
+    <!--[if lt ie 9]>
+    <link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/brunch/static/prod/202312271327/css/B.Article.Ie9lt.css"/>
+    <![endif]-->
+    <meta property="dg:plink" content="https://brunch.co.kr/@@aUIc/68" />
+<meta name="plink" content="https://brunch.co.kr/@@aUIc/68" />
+<meta property="article:mobile_url" content="https://brunch.co.kr/@@aUIc/68" />
+<meta property="article:pc_url" content="https://brunch.co.kr/@@aUIc/68" />
+<meta property="article:mobile_service_home" content="https://brunch.co.kr" />
+<meta property="article:pc_service_home" content="https://brunch.co.kr" />
+<meta property="article:mobile_view_url" content="https://brunch.co.kr/@@aUIc/68" />
+<meta property="article:pc_view_url" content="https://brunch.co.kr/@@aUIc/68" />
+<meta property="article:talk_channel_view_url" content="https://brunch.co.kr/@@aUIc/68" />
+<meta property="article:txid" content="aUIc_68" />
+
+    <meta property="article:published_time" content="2020-11-14T23:55+0900" />
+    <meta property="og:regDate" content="2020-11-14T23:55+0900" />
+
+<meta name="article:media_name" content="성장흐름" />
+<meta name="article:service_name" content="브런치" />
+
+    <meta property="ks:richscrap" content="{&quot;site_info&quot;:{&quot;name&quot;:&quot;브런치&quot;,&quot;image&quot;:&quot;https://t1.daumcdn.net/brunch/static/img/help/mw/ico_brunch_kakaostory_richscrap70x70.png&quot;,&quot;url&quot;:&quot;https://brunch.co.kr&quot;},&quot;header&quot;:{&quot;category_title&quot;:&quot;인간기저론&quot;,&quot;subtitle&quot;:&quot;모든 인간관계는 믿음의 끈으로 연결되어 있다.&quot;,&quot;title&quot;:&quot;믿음의 끈.&quot;,&quot;image&quot;:&quot;https://img1.daumcdn.net/thumb/R1280x0/?fname\u003dhttp://t1.daumcdn.net/brunch/service/user/aUIc/image/6nJKygDl5hPOZW7x6laeja2QdL4.jpg&quot;,&quot;date&quot;:&quot;2020.11.14&quot;},&quot;author&quot;:{&quot;name&quot;:&quot;성장흐름&quot;,&quot;image&quot;:&quot;http://t1.daumcdn.net/brunch/service/user/aUIc/image/WCtIntqNCKiR5iK43eC9S7k_-Bg&quot;,&quot;url&quot;:&quot;https://brunch.co.kr/@carly4779&quot;},&quot;cards&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;body&quot;:{&quot;content&quot;:&quot; &quot;,&quot;image&quot;:&quot;&quot;}},{&quot;type&quot;:&quot;text&quot;,&quot;body&quot;:{&quot;content&quot;:&quot; &quot;,&quot;image&quot;:&quot;&quot;}},{&quot;type&quot;:&quot;text&quot;,&quot;body&quot;:{&quot;content&quot;:&quot; 그렇다. 모든 인간관계는 믿음의 끈으로 연결되어 있다. 그 믿음의 끈이 헐거운지, 팽팽한지, 아니면 꽉 조여서 숨이 막히는지는 우리가 누구를 생각하고 있느냐에 따라 다르다. 가장 친한 베스트 프렌드와는 믿음의 끈이 튼튼할 것이고, 이제 막 알아가기 시작한 사람과는 믿음의 끈이 얇고 연약할 수도 있다. 그런데 한 가지 더 생각해야 할 것이 있다. 그것은 바로 우리는 믿음의 끈을 두 개씩 가지고 있다는 사실이다.&quot;,&quot;image&quot;:&quot;&quot;}},{&quot;type&quot;:&quot;text&quot;,&quot;body&quot;:{&quot;content&quot;:&quot; &quot;,&quot;image&quot;:&quot;&quot;}},{&quot;type&quot;:&quot;text&quot;,&quot;body&quot;:{&quot;content&quot;:&quot; &quot;,&quot;image&quot;:&quot;&quot;}},{&quot;type&quot;:&quot;text&quot;,&quot;body&quot;:{&quot;content&quot;:&quot; 요새 일주일에 두 번은 버스를 탄다. 가끔 프로젝트나 약속이 있는 주간이라면 더 많이 타기도 한다. 엇, 잠깐 시계를 보니 지금 버스를 타면 늦을 것 같다. 택시를 불러야 할 것 같다. 택시는 버스보다 빠르니깐.&quot;,&quot;image&quot;:&quot;&quot;}},{&quot;type&quot;:&quot;text&quot;,&quot;body&quot;:{&quot;content&quot;:&quot; &quot;,&quot;image&quot;:&quot;&quot;}},{&quot;type&quot;:&quot;text&quot;,&quot;body&quot;:{&quot;content&quot;:&quot; 실제로 나는 대학생이 된 첫 주에 지각을 면하기 위해 택시를 잡아 학교까지 간 적이 있다. 1교시인데 내가 강의실에 들어간 건 9시 20분, 시간표 상 명백한 지각이었다. 하지만 출석을 체크하는 교과 조교가 나보다 5분을 더 늦는 바람에 나는 택시비만 날린 셈이 되었다.&quot;,&quot;image&quot;:&quot;&quot;}},{&quot;type&quot;:&quot;text&quot;,&quot;body&quot;:{&quot;content&quot;:&quot; &quot;,&quot;image&quot;:&quot;&quot;}},{&quot;type&quot;:&quot;text&quot;,&quot;body&quot;:{&quot;content&quot;:&quot; 택시 이야기로 돌아오자. 택시에 타고 좀 있으니 나이가 지긋하신 기사님께서 말을 붙여온다. 기분이 좋은 택시 기사님들은 꼭 수다쟁이가 된다. 그에 질세라, 나도 기분이 좀 괜찮으면 처음 보는 사이인데도 이것저것 말하게 된다. 오버하면 개인 정보까지 흘릴 정도로 대화하게 된다.&quot;,&quot;image&quot;:&quot;&quot;}}]}">
+
+    </head>
+<body>
+    <tiara-page t-name="글뷰 > 페이지뷰" t-section="article" t-page="articleview" t-action-kind="ViewContent"
+                data-tiara-id="68"
+                data-tiara-type="publish"
+                data-tiara-name="믿음의 끈."
+                data-tiara-category="성장흐름"
+                data-tiara-category_id="carly4779"
+                data-tiara-author=""
+                data-tiara-author_id="@@aUIc"
+                data-tiara-series="&#51064;&#44036;&#44592;&#51200;&#47200;"
+                data-tiara-series_id="88873"
+                                    data-tiara-image="http://t1.daumcdn.net/brunch/service/user/aUIc/image/6nJKygDl5hPOZW7x6laeja2QdL4.jpg"
+                                data-tiara-tags="생각,인간관계,믿음"
+    >
+    </tiara-page>
+
+    <tiara-usage t-target=".wrap_body.finish_txt"></tiara-usage>
+
+    <tiara-area t-name="cover" t-target=".wrap_cover.cover_type_text"></tiara-area>
+    <tiara-area t-name="body" t-target=".wrap_body.finish_txt"></tiara-area>
+    <tiara-area t-name="brunchbook_article" t-target=".wrap_body_info"></tiara-area>
+    <tiara-area t-name="profile" t-target=".wrap_author"></tiara-area>
+    <tiara-area t-name="recommended_article" t-target=".wrap_related_article"></tiara-area>
+    <tiara-area t-name="banner" t-target=".wrap_article_footer_banner"></tiara-area>
+
+    <input id="articleShareUrl" type="hidden" value="https://brunch.co.kr/@carly4779/68">
+    <input id="articleShareTitle" type="hidden" value="믿음의 끈.">
+    <input id="articleShareContentSummary" type="hidden" value=" 그렇다. 모든 인간관계는 믿음의 끈으로 연결되어 있다. 그 믿음의 끈이 헐거운지, 팽팽한지, 아니면 꽉 조여서 숨이 막히는지는 우리가 누구를 생각하고 있느냐에 따라 다르다. 가장 친한 베스트 프렌드와는 믿음의 끈이 튼튼할 것이고, 이제 막 알아가기 시작한 사람과는 믿음의 끈이 얇고 연약할 수도 있다. 그런데 한 가지 더 생각해야 할 것이 있다. 그것은 바">
+
+    
+            <input id="articleShareImageUrl" type="hidden" value="http://t1.daumcdn.net/brunch/service/user/aUIc/image/6nJKygDl5hPOZW7x6laeja2QdL4.jpg">
+    
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="service_header article #post_toolbar" data-tiara-layer="gnb">
+            <div class="progress-container">
+            <div class="progress-bar" id="progressBar" style="width: 0%;"></div>
+        </div>
+    
+    <div class="wrap_inner  ">
+        <div class="f_l">
+                                                <button id="btnServiceMenu" type="button" class="f_l text_hide btn_menu img_ico #sidebar ">메뉴</button>
+                
+                                    <h1 class="f_l">
+                        <a href="/"  class="logo_service text_hide" title="brunch">brunch</a>
+                    </h1>
+
+                    
+                                                                                            
+                    </div>
+
+                        
+        
+                                            
+                <div class="wrap_cover_type">
+                    <span class="txt_article">매거진</span>
+                    <a href="/magazine/humanbasis"
+                       class="link_type
+                             #post_toolbar#p_magazine_title
+                                                    ">
+                        <span class="tit_type">&#51064;&#44036;&#44592;&#51200;&#47200;</span>
+                                            </a>
+                </div>
+                    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="f_r">
+                            <div class="wrap_action_article">
+                                            <button id="btnToggleArticleMoreAction" type="button" class="f_r img_ico text_hide ico_action #more">실행</button>
+                                        <div class="more_action_wrap f_r ">
+                                                    <button class="reportArticle f_l more_action text_hide img_ico img_ico_single ico_report requireLogin #report">신고</button>
+                                            </div>
+                    <div class="default_action_wrap f_r">
+                                                                                                            <a href="#likeit" class="default_action headerLikeBtn img_ico_wrap #likeit">
+                                                                                                                                                                        <span class="f_l text_hide img_ico img_ico_with_text ico_likeit_like #like">라이킷</span>
+                                <span class="f_l text_like_count text_default text_with_img_ico ico_likeit_like #like">10</span>
+                            </a>
+                                                        <a href="#comments" class="default_action img_ico_wrap comment #comment">
+                                <span class="f_l text_hide img_ico img_ico_with_text ico_comment">댓글</span>
+                                <span class="f_l text_comment_count text_default text_with_img_ico"></span>
+                            </a>
+                                                                                        <span class="wrapButtonSocialShare f_l default_action img_ico_wrap #share">
+                                    <span class="f_l text_hide img_ico img_ico_with_text ico_share" style="cursor:pointer">공유</span>
+
+                                    <span id="social-share-btn" class="wrap_share_gnb wrap_share_common">
+                                    </span>
+
+                                </span>
+                                                                        </div>
+                </div>
+                    </div>
+
+            </div>
+</div>
+            
+
+<div id="wrapSideMenu">
+    <main>
+        <button type="button" id="btnCloseSideMenu" class="btn_close_side_menu img_side_menu ico_close f_r text_hide">닫기</button>
+                    <div class="wrap_side_profile logout">
+                <div class="logo_service"></div>
+                <p class="slogan">You can make anything<br>by writing</p>
+                <p class="slogan_writer">C.S.Lewis</p>
+                <a href="#" class="#side_request btn_apply_author article"
+                                          id="brunchSigninButton"
+                                      data-tiara-action-name="메뉴 > 시작하기 버튼 클릭"
+                   data-tiara-layer="login"><button class="btn_request">브런치스토리 시작하기</button></a>
+            </div>
+        
+                    <div class="wrap_side_service_menu">
+                    <ul>
+                                    <li>
+                        <a class="menu_word7 #side_brunch" href="/"
+                           data-tiara-action-name="메뉴 > 브런치 홈 버튼 클릭"
+                           data-tiara-layer="top"><span class="bar_left"></span>브런치스토리 홈<span class="bar_right"></span></a>
+                    </li>
+                    <li>
+                        <a class="menu_word8 #side_now brunchNowLink" href="/now"
+                           data-tiara-action-name="메뉴 > 브런치 나우 버튼 클릭"
+                           data-tiara-layer="now"><span class="bar_left"></span>브런치스토리 나우<span class="bar_right"></span></a>
+                    </li>
+                    <li>
+                        <a class="menu_word8 #side_publish brunchPublishLink" href="/publish"
+                           data-tiara-action-name="메뉴 > 브런치 책방 버튼 클릭"
+                           data-tiara-layer="bookshop"><span class="bar_left"></span>브런치스토리 책방<span class="bar_right"></span></a>
+                    </li>
+                            </ul>
+
+                            <div class="wrap_side_setting wrap_find_user">
+                    <div class="menu_side_banner" style="padding-bottom: 40px;">
+    
+    <a class="#side_project" href="/special/list" data-tiara-action-name="메뉴 > 작가 지원 프로젝트 버튼 클릭" data-tiara-layer="projectlist">
+        <img style="width:168px" src="//i1.daumcdn.net/thumb/R336x0/?fname=http://t1.daumcdn.net/brunch/static/img/help/pc/top/side_banner_20221221.png" alt="프로젝트 리스트 바로가기" />
+    </a>
+</div>                    <a href="/signin/find_account" class="find_user"
+                       data-tiara-action-name="메뉴 > 계정 찾기 버튼 클릭"
+                       data-tiara-layer="find_accounts">계정을 잊어버리셨나요?</a>
+                </div>
+                    </div>
+    </main>
+</div>
+
+    
+    <div class="service_contents article_contents #post_view">
+        <input id="articleProfileId" type="hidden" value="carly4779">
+        <input id="articleUserId" type="hidden" value="aUIc">
+        <input id="articleNo" type="hidden" value="68">
+        <input id="articleStatus" type="hidden" value="publish">
+        <input id="articleMagazineNo" type="hidden" value="88873">
+        <input id="articleCommentWritable" type="hidden" value="true">
+        <input id="blockedUser" type="hidden" value="false">
+        <input id="blockingUser" type="hidden" value="false">
+
+        <input id="tiaraEventMeta" type="hidden"
+            data-article-no="68"
+            data-title="믿음의 끈."
+            data-user-id="aUIc"
+            data-user-name="성장흐름">
+
+                                
+        <div class="wrap_view_article wrap_article article_view_disable_selection">
+                        <div id="wrapArticleInfo" t-area="Writer">
+                <span class="f_l ico_by">by</span>
+                <span class="f_l text_author #author">
+                    <a href="https://brunch.co.kr/@carly4779"
+                       data-tiara-action-name="글뷰 > 커버 > 작가명 클릭"
+                       data-tiara-layer="cover profile"
+                    >성장흐름</a>
+                </span>
+                <span class="f_l ico_dot_middle"></span>
+                                    <span class="f_l date">Nov 14. 2020</span>
+                            </div>
+
+            <div class="wrap_cover"><div class="cover_item cover_half cover_direction_left" data-app="{&quot;type&quot;:&quot;cover&quot;,&quot;kind&quot;:&quot;cover_half&quot;,&quot;align&quot;:&quot;left&quot;,&quot;style&quot;:{&quot;background-image&quot;:&quot;http://t1.daumcdn.net/brunch/service/user/aUIc/image/6nJKygDl5hPOZW7x6laeja2QdL4.jpg&quot;},&quot;title&quot;:{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;믿음의 끈.&quot;,&quot;style&quot;:{&quot;color&quot;:&quot;#ffffff&quot;}},&quot;title-sub&quot;:{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;모든 인간관계는 믿음의 끈으로 연결되어 있다.&quot;},&quot;width&quot;:&quot;1920&quot;,&quot;height&quot;:&quot;1271&quot;}"><div class="cover_image" style="background-image:url(//t1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/aUIc/image/6nJKygDl5hPOZW7x6laeja2QdL4.jpg);"></div><div class="cover_inner" style=""></div><div class="cover_cell cover_direction_left"><h1 class="cover_title" style="color:#ffffff;">믿음의 끈.</h1><p class="cover_sub_title">모든 인간관계는 믿음의 끈으로 연결되어 있다.</p></div></div></div><div class=" wrap_body text_align_justify"><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><div class="wrap_item item_type_hr hr_type_4" data-app="{&quot;type&quot;:&quot;hr&quot;,&quot;kind&quot;:&quot;hr_type_4&quot;,&quot;url&quot;:&quot;http://twg.core-svc.dev.daumcorp.com/brunch/static/img/line/hr_type_4.png&quot;}"><div class="inner_wrap"><hr /></div></div><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;style&quot;:{&quot;color&quot;:&quot;#959595&quot;},&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;style&quot;:{&quot;background-color&quot;:&quot;#ffffff&quot;},&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 그렇다. 모든 인간관계는 믿음의 끈으로 연결되어 있다. 그 믿음의 끈이 헐거운지, 팽팽한지, 아니면 꽉 조여서 숨이 막히는지는 우리가 누구를 생각하고 있느냐에 따라 다르다. 가장 친한 베스트 프렌드와는 믿음의 끈이 튼튼할 것이고, 이제 막 알아가기 시작한 사람과는 믿음의 끈이 얇고 연약할 수도 있다. 그런데 한 가지 더 생각해야 할 것이 있다. 그것은 바로 우리는 믿음의 끈을 두 개씩 가지고 있다는 사실이다.&quot;}],&quot;styleType&quot;:&quot;underline&quot;}]}]}],&quot;size&quot;:&quot;h4&quot;}"><span style="color:#959595;"><span style="background-color:#ffffff;"><u>&nbsp;그렇다. 모든 인간관계는 믿음의 끈으로 연결되어 있다. 그 믿음의 끈이 헐거운지, 팽팽한지, 아니면 꽉 조여서 숨이 막히는지는 우리가 누구를 생각하고 있느냐에 따라 다르다. 가장 친한 베스트 프렌드와는 믿음의 끈이 튼튼할 것이고, 이제 막 알아가기 시작한 사람과는 믿음의 끈이 얇고 연약할 수도 있다. 그런데 한 가지 더 생각해야 할 것이 있다. 그것은 바로 우리는 믿음의 끈을 두 개씩 가지고 있다는 사실이다.</u></span></span></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><div class="wrap_item item_type_hr hr_type_4" data-app="{&quot;type&quot;:&quot;hr&quot;,&quot;kind&quot;:&quot;hr_type_4&quot;,&quot;url&quot;:&quot;http://twg.core-svc.dev.daumcorp.com/brunch/static/img/line/hr_type_4.png&quot;}"><div class="inner_wrap"><hr /></div></div><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 요새 일주일에 두 번은 버스를 탄다. 가끔 프로젝트나 약속이 있는 주간이라면 더 많이 타기도 한다. 엇, 잠깐 시계를 보니 지금 버스를 타면 늦을 것 같다. 택시를 불러야 할 것 같다. 택시는 버스보다 빠르니깐.&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;요새 일주일에 두 번은 버스를 탄다. 가끔 프로젝트나 약속이 있는 주간이라면 더 많이 타기도 한다. 엇, 잠깐 시계를 보니 지금 버스를 타면 늦을 것 같다. 택시를 불러야 할 것 같다. 택시는 버스보다 빠르니깐.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 실제로 나는 대학생이 된 첫 주에 지각을 면하기 위해 택시를 잡아 학교까지 간 적이 있다. 1교시인데 내가 강의실에 들어간 건 9시 20분, 시간표 상 명백한 지각이었다. 하지만 출석을 체크하는 교과 조교가 나보다 5분을 더 늦는 바람에 나는 택시비만 날린 셈이 되었다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;실제로 나는 대학생이 된 첫 주에 지각을 면하기 위해 택시를 잡아 학교까지 간 적이 있다. 1교시인데 내가 강의실에 들어간 건 9시 20분, 시간표 상 명백한 지각이었다. 하지만 출석을 체크하는 교과 조교가 나보다 5분을 더 늦는 바람에 나는 택시비만 날린 셈이 되었다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 택시 이야기로 돌아오자. 택시에 타고 좀 있으니 나이가 지긋하신 기사님께서 말을 붙여온다. 기분이 좋은 택시 기사님들은 꼭 수다쟁이가 된다. 그에 질세라, 나도 기분이 좀 괜찮으면 처음 보는 사이인데도 이것저것 말하게 된다. 오버하면 개인 정보까지 흘릴 정도로 대화하게 된다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;택시 이야기로 돌아오자. 택시에 타고 좀 있으니 나이가 지긋하신 기사님께서 말을 붙여온다. 기분이 좋은 택시 기사님들은 꼭 수다쟁이가 된다. 그에 질세라, 나도 기분이 좀 괜찮으면 처음 보는 사이인데도 이것저것 말하게 된다. 오버하면 개인 정보까지 흘릴 정도로 대화하게 된다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 가만, 지금 누구랑 그런 이야기를 나누고 있는 거지? 약속에 늦을 것 같아 찾은 택시 안에서, 처음 보는 기사님이랑 별 이야기를 다 하게 된다. 개인주의가 심해지는 세상에서 이 택시만은 예외인가 보다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;가만, 지금 누구랑 그런 이야기를 나누고 있는 거지? 약속에 늦을 것 같아 찾은 택시 안에서, 처음 보는 기사님이랑 별 이야기를 다 하게 된다. 개인주의가 심해지는 세상에서 이 택시만은 예외인가 보다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 또 언제는 버스를 타고 창밖을 바라보다가 이런 생각을 했다. \&quot;아니, 이 승객들은 버스 기사가 어디로 운전할 줄 알고 믿고 타는 거지?\&quot;, \&quot;버스 기사가 이상한 마음을 먹고 경로를 이탈하면 어떻게 되는 거야?\&quot; 그때 떠오른 생각이 바로 \&quot;믿음의 끈\&quot;이다. &quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;또 언제는 버스를 타고 창밖을 바라보다가 이런 생각을 했다. &quot;아니, 이 승객들은 버스 기사가 어디로 운전할 줄 알고 믿고 타는 거지?&quot;, &quot;버스 기사가 이상한 마음을 먹고 경로를 이탈하면 어떻게 되는 거야?&quot; 그때 떠오른 생각이 바로 &quot;믿음의 끈&quot;이다. </h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 사람들은 출퇴근 길에 버스와 지하철, 택시를 당연하게 이용한다. 막말로 테러리스트가 운전할지도 모르는데, 그냥 믿고 타는 것이다. 여기에 \&quot;믿음의 끈\&quot;이 작동한다. \u0027늘 별생각 없이 타 왔던 지하철이니까 오늘도 문제없겠지, 언제나 빠르고 편안한 택시니까 오늘도 문제없겠지\u0027 라며 말이다. 운전하는 기사님들을 무의식 중에 신뢰하는 것이다. 그 기사님의 인품이나 오늘 하루의 기분을 전혀 모르지만, 나에게 영향이 없을 것이라고 믿는 셈이다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;사람들은 출퇴근 길에 버스와 지하철, 택시를 당연하게 이용한다. 막말로 테러리스트가 운전할지도 모르는데, 그냥 믿고 타는 것이다. 여기에 &quot;믿음의 끈&quot;이 작동한다. '늘 별생각 없이 타 왔던 지하철이니까 오늘도 문제없겠지, 언제나 빠르고 편안한 택시니까 오늘도 문제없겠지' 라며 말이다. 운전하는 기사님들을 무의식 중에 신뢰하는 것이다. 그 기사님의 인품이나 오늘 하루의 기분을 전혀 모르지만, 나에게 영향이 없을 것이라고 믿는 셈이다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 약속 장소에 조금 늦게 도착했다. 시계를 보니 벌써 5분이 지나있는데, 오기로 한 친구도 아직인가 보다. 하지만 이 정도는 괜찮다. 그 친구는 늦더라도 안 올 친구는 아니니까, 조금만 지나면 \&quot;늦어서 미안~\&quot;하며 잰걸음과 함께 등장할 것이다. 우리는 그렇게 친구가 \&quot;곧 오리라고 믿고\&quot; 기다린다. 이 때는 친구를 겪어본 경험으로 의식을 가진 채 믿는 것이다. 버스 기사님은 잘 모르지만 믿는 거고, 친구는 잘 아니까 믿는 것이다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;약속 장소에 조금 늦게 도착했다. 시계를 보니 벌써 5분이 지나있는데, 오기로 한 친구도 아직인가 보다. 하지만 이 정도는 괜찮다. 그 친구는 늦더라도 안 올 친구는 아니니까, 조금만 지나면 &quot;늦어서 미안~&quot;하며 잰걸음과 함께 등장할 것이다. 우리는 그렇게 친구가 &quot;곧 오리라고 믿고&quot; 기다린다. 이 때는 친구를 겪어본 경험으로 의식을 가진 채 믿는 것이다. 버스 기사님은 잘 모르지만 믿는 거고, 친구는 잘 아니까 믿는 것이다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 그렇다. 모든 인간관계는 믿음의 끈으로 연결되어 있다. 그 믿음의 끈이 헐거운지, 팽팽한지, 아니면 꽉 조여서 숨이 막히는지는 우리가 누구를 생각하고 있느냐에 따라 다르다. 가장 친한 베스트 프렌드와는 믿음의 끈이 튼튼할 것이고, 이제 막 알아가기 시작한 사람과는 믿음의 끈이 얇고 연약할 수도 있다. 그런데 한 가지 더 생각해야 할 것이 있다. 그것은 바로 우리는 믿음의 끈을 두 개씩 가지고 있다는 사실이다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;그렇다. 모든 인간관계는 믿음의 끈으로 연결되어 있다. 그 믿음의 끈이 헐거운지, 팽팽한지, 아니면 꽉 조여서 숨이 막히는지는 우리가 누구를 생각하고 있느냐에 따라 다르다. 가장 친한 베스트 프렌드와는 믿음의 끈이 튼튼할 것이고, 이제 막 알아가기 시작한 사람과는 믿음의 끈이 얇고 연약할 수도 있다. 그런데 한 가지 더 생각해야 할 것이 있다. 그것은 바로 우리는 믿음의 끈을 두 개씩 가지고 있다는 사실이다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><div class="wrap_item item_type_hr hr_type_3" data-app="{&quot;type&quot;:&quot;hr&quot;,&quot;kind&quot;:&quot;hr_type_3&quot;,&quot;url&quot;:&quot;http://twg.core-svc.dev.daumcorp.com/brunch/static/img/line/hr_type_3.png&quot;}"><div class="inner_wrap"><hr /></div></div><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h3 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;믿음의 끈 : 서로의 존재를 인식하는 순간부터 생겨난다.&quot;}],&quot;styleType&quot;:&quot;bold&quot;}],&quot;size&quot;:&quot;h3&quot;}"><b>믿음의 끈 : 서로의 존재를 인식하는 순간부터 생겨난다.</b></h3><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; &quot;},{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;믿음의 끈은 서로의 존재를 인식하고 있는 사람에게 적용할 수 있는 개념이다.&quot;}],&quot;styleType&quot;:&quot;bold&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 친한 친구나 가족처럼 상대방을 잘 알고 있는 경우에도 쓸 수 있고, 버스기사처럼 한 번 보고 더 이상 보지 않을 사람에게도 믿음의 끈은 작용한다. 설령 상대의 얼굴을 한 번도 보지 못한 사이라 하더라도 전혀 문제 될 것이 없다. 예를 들면 인스타그램과 같은 SNS 메신저에서 대화를 몇 번 나눈 사이, 재택근무여서 얼굴은 모르지만 업무 관련 이야기를 나눈 직장 동료와 같은 관계에서도 믿음의 끈은 존재한다. &quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;<b>믿음의 끈은 서로의 존재를 인식하고 있는 사람에게 적용할 수 있는 개념이다.</b>&nbsp;친한 친구나 가족처럼 상대방을 잘 알고 있는 경우에도 쓸 수 있고, 버스기사처럼 한 번 보고 더 이상 보지 않을 사람에게도 믿음의 끈은 작용한다. 설령 상대의 얼굴을 한 번도 보지 못한 사이라 하더라도 전혀 문제 될 것이 없다. 예를 들면 인스타그램과 같은 SNS 메신저에서 대화를 몇 번 나눈 사이, 재택근무여서 얼굴은 모르지만 업무 관련 이야기를 나눈 직장 동료와 같은 관계에서도 믿음의 끈은 존재한다. </h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 즉, 믿음의 끈이 있느냐 없느냐는 대상이 되는 상대방의 존재를 서로 알고 있느냐 모르냐로 구분할 수 있다.&quot;}],&quot;styleType&quot;:&quot;bold&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 중요한 점은 &quot;},{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;양쪽 모두가 서로를 알고 있어야 한다는 점이다.&quot;}],&quot;styleType&quot;:&quot;bold&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 한쪽은 상대를 너무나도 잘 알고 있으나, 다른 한쪽은 상대의 존재를 알지 못하는 때에는 믿음의 끈이 존재하지 않는다. 예를 들어서, 이제 막 연예인에 관심이 생겨 한 가수를 좋아하게 된 학생이 있다고 치자. 이 학생은 가수의 노래 영상이나 관련 기사를 찾아보면서 가수에게 대한 지식과 애정이 늘어났을 것이다. 하지만 이 학생이 가수와 메신저를 나누거나 팬미팅에 참가해 가수를 직접 만난 적이 없다면 해당 가수는 이 학생을 모를 것이다. 따라서 이 관계 사이에는 믿음의 끈이 발생하지 않는다.&quot;}],&quot;size&quot;:&quot;h4&quot;}"><b>&nbsp;즉, 믿음의 끈이 있느냐 없느냐는 대상이 되는 상대방의 존재를 서로 알고 있느냐 모르냐로 구분할 수 있다.</b>&nbsp;중요한 점은 <b>양쪽 모두가 서로를 알고 있어야 한다는 점이다.</b>&nbsp;한쪽은 상대를 너무나도 잘 알고 있으나, 다른 한쪽은 상대의 존재를 알지 못하는 때에는 믿음의 끈이 존재하지 않는다. 예를 들어서, 이제 막 연예인에 관심이 생겨 한 가수를 좋아하게 된 학생이 있다고 치자. 이 학생은 가수의 노래 영상이나 관련 기사를 찾아보면서 가수에게 대한 지식과 애정이 늘어났을 것이다. 하지만 이 학생이 가수와 메신저를 나누거나 팬미팅에 참가해 가수를 직접 만난 적이 없다면 해당 가수는 이 학생을 모를 것이다. 따라서 이 관계 사이에는 믿음의 끈이 발생하지 않는다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h3 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 믿음의 끈은 서로를 잘 알아갈수록 튼튼해진다.&quot;}],&quot;styleType&quot;:&quot;bold&quot;}],&quot;size&quot;:&quot;h3&quot;}"><b>&nbsp;믿음의 끈은 서로를 잘 알아갈수록 튼튼해진다.</b></h3><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 이 부분은 작가의 경험을 빌려서 이야기를 시작하겠다. 필자는 걸어서 3분 거리인 중학교를 나왔지만, 고등학교는 버스로 약 30분 거리에 있는 곳이었다. 그리 먼 곳은 아니었지만, 배정받아 들어간 1학년 교실에는 아는 학생이 단 한 명도 없었다. 조금은 당황스러웠다. 아는 사람이 없다는 것이 첫째 이유였고, 어떤 친구들을 만나게 될지가 걱정되었다는 것이 둘째 이유였다. &quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;이 부분은 작가의 경험을 빌려서 이야기를 시작하겠다. 필자는 걸어서 3분 거리인 중학교를 나왔지만, 고등학교는 버스로 약 30분 거리에 있는 곳이었다. 그리 먼 곳은 아니었지만, 배정받아 들어간 1학년 교실에는 아는 학생이 단 한 명도 없었다. 조금은 당황스러웠다. 아는 사람이 없다는 것이 첫째 이유였고, 어떤 친구들을 만나게 될지가 걱정되었다는 것이 둘째 이유였다. </h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 하지만 하루, 이틀, 그리고 일주일이 지나면서 교실의 전부를 알게 되었다. 그렇게 고등학교 3년 시절을 보내면서 지금까지도 스스럼없이 지낼 수 있는 친구들을 곁에 두게 됐다. 그들을 알게 되는 시점이나 친해지는 순간은 전부 달랐다. 체육시간에 손가락을 다쳐 보건실을 찾고 있을 적에 이름도 모르는 내게 보건실 위치를 설명해준 아이가 지금까지도 막역한 친구가 되었으며, 당시 차갑던 나를 툭툭 건드리며 장난을 쳤던 친구들이 지금 둘도 없는 사이가 되었다. &quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;하지만 하루, 이틀, 그리고 일주일이 지나면서 교실의 전부를 알게 되었다. 그렇게 고등학교 3년 시절을 보내면서 지금까지도 스스럼없이 지낼 수 있는 친구들을 곁에 두게 됐다. 그들을 알게 되는 시점이나 친해지는 순간은 전부 달랐다. 체육시간에 손가락을 다쳐 보건실을 찾고 있을 적에 이름도 모르는 내게 보건실 위치를 설명해준 아이가 지금까지도 막역한 친구가 되었으며, 당시 차갑던 나를 툭툭 건드리며 장난을 쳤던 친구들이 지금 둘도 없는 사이가 되었다. </h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;style&quot;:{&quot;color&quot;:&quot;#333333&quot;},&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;style&quot;:{&quot;background-color&quot;:&quot;#ffffff&quot;},&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 친구 관계는 믿음의 끈을 대입하기에 매우 적절한 관계이다. 일단 우리에게는 모르는 사람이 친구가 됨과 동시에 믿음의 끈이 생겨난다. 이 끈은 두 개가 존재한다. 서로 왼손과 오른손에 하나씩 잡고 있는 그림을 떠올려보면 이해하기가 편할 것이다. &quot;}]}]}],&quot;size&quot;:&quot;h4&quot;}"><span style="color:#333333;"><span style="background-color:#ffffff;">&nbsp;친구 관계는 믿음의 끈을 대입하기에 매우 적절한 관계이다. 일단 우리에게는 모르는 사람이 친구가 됨과 동시에 믿음의 끈이 생겨난다. 이 끈은 두 개가 존재한다. 서로 왼손과 오른손에 하나씩 잡고 있는 그림을 떠올려보면 이해하기가 편할 것이다. </span></span></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><div class="wrap_item item_type_img" data-app="{&quot;type&quot;:&quot;img&quot;,&quot;align&quot;:&quot;content-full&quot;,&quot;mobileAlign&quot;:&quot;full&quot;,&quot;url&quot;:&quot;http://t1.daumcdn.net/brunch/service/user/aUIc/image/iK7PEt_WJey5Se3Cf4RtAeUNqBY.jpg&quot;,&quot;caption&quot;:&quot;1번 그림: 믿음의 끈을 잡고 있는 두 사람, A와 B&quot;,&quot;width&quot;:&quot;879&quot;,&quot;height&quot;:&quot;363&quot;}"><div class="wrap_content mobile_align_full"><div class="wrap_img_float"><img src="//t1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/aUIc/image/iK7PEt_WJey5Se3Cf4RtAeUNqBY.jpg" /><span class="text_caption">1번 그림: 믿음의 끈을 잡고 있는 두 사람, A와 B</span></div></div></div><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 1번 그림이다. 이제 막 알게 된 친구 사이에는 두 개의 끈이 생겨난다. 서로의 존재를 인식한 그 순간에 발생한 이 끈은 매우 얇다. 두 사람 사이에 어떤 대화가 오가는지, 또 어떤 시간을 보내는지에 따라서 이 끈은 변화될 수 있다. 1번 그림에서 알 수 있는 것은 두 사람이 두 개의 끈으로 연결됐다는 사실이다. 가령, 자신이 알고 있는 사람이 100명이라면 쥐고 있는 믿음의 끈은 100 * 2 \u003d 200개가 되는 셈이다. 여기부터는 설명의 간결함을 위해 왼쪽의 사람을 A, 오른쪽의 사람을 B라고 칭하도록 한다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;1번 그림이다. 이제 막 알게 된 친구 사이에는 두 개의 끈이 생겨난다. 서로의 존재를 인식한 그 순간에 발생한 이 끈은 매우 얇다. 두 사람 사이에 어떤 대화가 오가는지, 또 어떤 시간을 보내는지에 따라서 이 끈은 변화될 수 있다. 1번 그림에서 알 수 있는 것은 두 사람이 두 개의 끈으로 연결됐다는 사실이다. 가령, 자신이 알고 있는 사람이 100명이라면 쥐고 있는 믿음의 끈은 100 * 2 = 200개가 되는 셈이다. 여기부터는 설명의 간결함을 위해 왼쪽의 사람을 A, 오른쪽의 사람을 B라고 칭하도록 한다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><div class="wrap_item item_type_img" data-app="{&quot;type&quot;:&quot;img&quot;,&quot;align&quot;:&quot;content-full&quot;,&quot;mobileAlign&quot;:&quot;full&quot;,&quot;url&quot;:&quot;http://t1.daumcdn.net/brunch/service/user/aUIc/image/rFpdsOu-ywfqbgycQpGMJq8IVnA.jpg&quot;,&quot;caption&quot;:&quot;2번 그림: 서로를 잘 알게 되어 믿음의 끈이 튼튼해짐.&quot;,&quot;width&quot;:&quot;864&quot;,&quot;height&quot;:&quot;398&quot;}"><div class="wrap_content mobile_align_full"><div class="wrap_img_float"><img src="//t1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/aUIc/image/rFpdsOu-ywfqbgycQpGMJq8IVnA.jpg" /><span class="text_caption">2번 그림: 서로를 잘 알게 되어 믿음의 끈이 튼튼해짐.</span></div></div></div><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 2번 그림이다. 1번과 달라진 것은 끈의 두께이다. 1번과 비교했을 때, 2번의 끈은 두껍고 튼튼한 끈으로 바뀌었다. &quot;},{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;이는 두 사람 사이에 충분한 친밀감과 신뢰가 누적되었다는 증거이다.&quot;}],&quot;styleType&quot;:&quot;bold&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 끈이 강해진만큼 서로를 잘 알고 있다고 해석할 수 있으나, 무거워진 만큼 서로의 관계에 신중을 가해야 한다는 의미로도 해석할 수 있다. 이때부터는 단순히 스치듯 아는 관계가 아니라 서로의 인격을 이해하고 있는 관계이기 때문이다. &quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;2번 그림이다. 1번과 달라진 것은 끈의 두께이다. 1번과 비교했을 때, 2번의 끈은 두껍고 튼튼한 끈으로 바뀌었다. <b>이는 두 사람 사이에 충분한 친밀감과 신뢰가 누적되었다는 증거이다.</b>&nbsp;끈이 강해진만큼 서로를 잘 알고 있다고 해석할 수 있으나, 무거워진 만큼 서로의 관계에 신중을 가해야 한다는 의미로도 해석할 수 있다. 이때부터는 단순히 스치듯 아는 관계가 아니라 서로의 인격을 이해하고 있는 관계이기 때문이다. </h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 관계에 경중에 따라서 저 끈의 두께와 모습은 얼마든지 다르게 표현할 수 있다. 지금 알고 있는 인간관계를 대입해보는 것도 좋을 것이다. 다양한 인간관계가 있지 않겠는가? 아는 친구에서 베스트 프렌드로 깊어지는 과정, 모르던 이성과 연인으로 발전하는 것, 더 나아가 부부가 되는 모습 등 여러 관계에 이 그림을 적용해볼 수 있다. 높은 신뢰도가 요구될수록 저 믿음의 끈은 튼튼해지고 또 동시에 무거워질 것이다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;관계에 경중에 따라서 저 끈의 두께와 모습은 얼마든지 다르게 표현할 수 있다. 지금 알고 있는 인간관계를 대입해보는 것도 좋을 것이다. 다양한 인간관계가 있지 않겠는가? 아는 친구에서 베스트 프렌드로 깊어지는 과정, 모르던 이성과 연인으로 발전하는 것, 더 나아가 부부가 되는 모습 등 여러 관계에 이 그림을 적용해볼 수 있다. 높은 신뢰도가 요구될수록 저 믿음의 끈은 튼튼해지고 또 동시에 무거워질 것이다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h3 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;믿음의 끈은 놓을 수도 있고 사라질 수도 있다.&quot;}],&quot;styleType&quot;:&quot;bold&quot;}],&quot;size&quot;:&quot;h3&quot;}"><b>믿음의 끈은 놓을 수도 있고 사라질 수도 있다.</b></h3><div class="wrap_item item_type_img" data-app="{&quot;type&quot;:&quot;img&quot;,&quot;align&quot;:&quot;content-full&quot;,&quot;mobileAlign&quot;:&quot;full&quot;,&quot;url&quot;:&quot;http://t1.daumcdn.net/brunch/service/user/aUIc/image/cbpqCkAukFfYOzZTRkw0o1UlHcI.jpg&quot;,&quot;caption&quot;:&quot;3번 그림: 오해나 갈등으로 인해 끈 하나를 놓친 상황&quot;,&quot;width&quot;:&quot;1756&quot;,&quot;height&quot;:&quot;932&quot;}"><div class="wrap_content mobile_align_full"><div class="wrap_img_float"><img src="//t1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/aUIc/image/cbpqCkAukFfYOzZTRkw0o1UlHcI.jpg" /><span class="text_caption">3번 그림: 오해나 갈등으로 인해 끈 하나를 놓친 상황</span></div></div></div><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 3번 그림이다. 여기서는 B가 2개의 끈 중 하나를 놓은 것을 볼 수 있다. 여기서 우리는 어떤 이유로든 둘 사이에 신뢰가 약해졌다는 것을 추측할 수 있다. 둘이 원래 긴밀한 사이였는데 사이가 틀어졌을 수 있고, 원래 깊은 사이는 아니었지만 관계 면에서 흔들린 것일 수도 있다. 그림에서 A는 두 끈을 모두 잡고 있으나 B는 하나의 끈을 놓았다. 이 사실 하나만으로도 여러 생각을 해볼 수 있다. &quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;3번 그림이다. 여기서는 B가 2개의 끈 중 하나를 놓은 것을 볼 수 있다. 여기서 우리는 어떤 이유로든 둘 사이에 신뢰가 약해졌다는 것을 추측할 수 있다. 둘이 원래 긴밀한 사이였는데 사이가 틀어졌을 수 있고, 원래 깊은 사이는 아니었지만 관계 면에서 흔들린 것일 수도 있다. 그림에서 A는 두 끈을 모두 잡고 있으나 B는 하나의 끈을 놓았다. 이 사실 하나만으로도 여러 생각을 해볼 수 있다. </h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;1. B는 자신을 자주 놀리는 A에게 싫증이 나버렸다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">1. B는 자신을 자주 놀리는 A에게 싫증이 나버렸다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;2. B는 약속을 자주 어기는 A에게 불신이 생겼다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">2. B는 약속을 자주 어기는 A에게 불신이 생겼다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;3. B는 연락이 소홀한 A에게 의심을 품게 됐다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">3. B는 연락이 소홀한 A에게 의심을 품게 됐다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;4. A는 B와 친하다고 생각하지만, B는 A를 좋아하지 않는다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">4. A는 B와 친하다고 생각하지만, B는 A를 좋아하지 않는다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 여기서 우리가 범하기 쉬운 오류는 B가 끈을 놓은 사실만을 보고 무심코 B에게 부정적 가치를 부여하는 것이다. B에게는 죄나 잘못이 없다. A의 실수로 인해 B는 상처 받은 입장일 수도 있고, B는 A에 비해 관계 유지에 큰 뜻이 없는 사람인 것일 수도 있다. 물론, 둘 사이에서 비도덕적이고 과격한 일이 있었다면 그때는 판단이 필요할지도 모르지만, 당장은 그 상황은 배제하고 생각하도록 한다. 여기서는 일상 수준의 인간관계를 다룬다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;여기서 우리가 범하기 쉬운 오류는 B가 끈을 놓은 사실만을 보고 무심코 B에게 부정적 가치를 부여하는 것이다. B에게는 죄나 잘못이 없다. A의 실수로 인해 B는 상처 받은 입장일 수도 있고, B는 A에 비해 관계 유지에 큰 뜻이 없는 사람인 것일 수도 있다. 물론, 둘 사이에서 비도덕적이고 과격한 일이 있었다면 그때는 판단이 필요할지도 모르지만, 당장은 그 상황은 배제하고 생각하도록 한다. 여기서는 일상 수준의 인간관계를 다룬다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 오해가 있는 상황이었는데 A와 B가 시간을 갖고 진실된 대화를 나눈다면 둘의 사이는 1번으로 돌아갈 수 있다. 오히려 관계가 더 튼튼해져 2번 모형이 될 수도 있다. 이는 두 사람의 노력을 통해 얼마든지 바꿀 수 있는 것이다. 반면, 두 사람의 선택과 노력으로 인해 두 믿음의 끈이 모두 놓아질 때가 있다. 그 관계가 바로 아래 4번 그림이다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;오해가 있는 상황이었는데 A와 B가 시간을 갖고 진실된 대화를 나눈다면 둘의 사이는 1번으로 돌아갈 수 있다. 오히려 관계가 더 튼튼해져 2번 모형이 될 수도 있다. 이는 두 사람의 노력을 통해 얼마든지 바꿀 수 있는 것이다. 반면, 두 사람의 선택과 노력으로 인해 두 믿음의 끈이 모두 놓아질 때가 있다. 그 관계가 바로 아래 4번 그림이다.</h4><div class="wrap_item item_type_img" data-app="{&quot;type&quot;:&quot;img&quot;,&quot;align&quot;:&quot;content-full&quot;,&quot;mobileAlign&quot;:&quot;full&quot;,&quot;url&quot;:&quot;http://t1.daumcdn.net/brunch/service/user/aUIc/image/bvPCUI8pXe5zChudhYaRxWZz1GE.jpg&quot;,&quot;caption&quot;:&quot;4번 그림: 관계가 끊어짐&quot;,&quot;width&quot;:&quot;1676&quot;,&quot;height&quot;:&quot;820&quot;}"><div class="wrap_content mobile_align_full"><div class="wrap_img_float"><img src="//t1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/aUIc/image/bvPCUI8pXe5zChudhYaRxWZz1GE.jpg" /><span class="text_caption">4번 그림: 관계가 끊어짐</span></div></div></div><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 이제 두 사람의 손에는 믿음의 끈이 들려있지 않다. 이것은 관계의 끝을 의미한다. 여기서도 똑같은 우를 범할 수 있어서 한 번 더 첨언한다. 우리는 4번 그림에 무심코 \&quot;부정적인 이미지\&quot;를 가지면 안 된다. 관계가 끊어졌다는 것 자체에는 아무런 의미가 없다. &quot;},{&quot;type&quot;:&quot;anchor&quot;,&quot;url&quot;:&quot;https://brunch.co.kr/@carly4779/67&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;지난 글 \u003c가치의 다름을 이해하기.\u003e&quot;}],&quot;target&quot;:&quot;_blank&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;의 서론에서 말한 것처럼, 존재와 사실 자체에는 아무런 가치가 없기 때문이다. &quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;이제 두 사람의 손에는 믿음의 끈이 들려있지 않다. 이것은 관계의 끝을 의미한다. 여기서도 똑같은 우를 범할 수 있어서 한 번 더 첨언한다. 우리는 4번 그림에 무심코 &quot;부정적인 이미지&quot;를 가지면 안 된다. 관계가 끊어졌다는 것 자체에는 아무런 의미가 없다. <a class="link" target="_blank" href="https://brunch.co.kr/@carly4779/67">지난 글 &lt;가치의 다름을 이해하기.&gt;</a>의 서론에서 말한 것처럼, 존재와 사실 자체에는 아무런 가치가 없기 때문이다. </h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; &quot;},{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;의미는 사람들이 그 사실에 부여하는 것이다&quot;}],&quot;styleType&quot;:&quot;bold&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;.&quot;}],&quot;styleType&quot;:&quot;bold&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 4번 그림이 내포하고 있는 객관적 사실은 \&quot;관계의 끊어짐\&quot;이다. 단어를 바꾸면 \&quot;관계의 소멸\&quot;, \&quot;관계의 종료\&quot;로도 얼마든지 쓸 수 있다. 이 그림에 \u0027긍정\u0027 혹은 \u0027부정\u0027이라는 감정을 매겨버리는 순간 우리는 주관적으로 관계를 해석하는 입장이 되는 것이다. 저 두 사람의 관계가 사라진 것은 좋은 일일 수도 있고 슬픈 일일 수도 있다. &quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;<b>의미는 사람들이 그 사실에 부여하는 것이다</b><b>.</b>&nbsp;4번 그림이 내포하고 있는 객관적 사실은 &quot;관계의 끊어짐&quot;이다. 단어를 바꾸면 &quot;관계의 소멸&quot;, &quot;관계의 종료&quot;로도 얼마든지 쓸 수 있다. 이 그림에 '긍정' 혹은 '부정'이라는 감정을 매겨버리는 순간 우리는 주관적으로 관계를 해석하는 입장이 되는 것이다. 저 두 사람의 관계가 사라진 것은 좋은 일일 수도 있고 슬픈 일일 수도 있다. </h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><div class="wrap_item item_type_gridGallery" data-app="{&quot;type&quot;:&quot;gridGallery&quot;,&quot;caption&quot;:&quot;4번 그림의 예&quot;,&quot;gridImages&quot;:[{&quot;url&quot;:&quot;http://t1.daumcdn.net/brunch/service/user/aUIc/image/hKegC-OcLCYw09_-bd8cXmGhikU.jpg&quot;,&quot;widthRatio&quot;:&quot;53.035606%&quot;,&quot;width&quot;:&quot;1648&quot;,&quot;height&quot;:&quot;714&quot;,&quot;caption&quot;:&quot;&quot;},{&quot;url&quot;:&quot;http://t1.daumcdn.net/brunch/service/user/aUIc/image/bvPCUI8pXe5zChudhYaRxWZz1GE.jpg&quot;,&quot;widthRatio&quot;:&quot;46.96439%&quot;,&quot;width&quot;:&quot;1676&quot;,&quot;height&quot;:&quot;820&quot;,&quot;caption&quot;:&quot;&quot;}]}"><div class="wrap_outer column2"><div class="wrap_img_float" style="width:53.035606%"><img src="//t1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/aUIc/image/hKegC-OcLCYw09_-bd8cXmGhikU.jpg" /></div><div class="wrap_img_float" style="width:46.96439%"><img src="//t1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/aUIc/image/bvPCUI8pXe5zChudhYaRxWZz1GE.jpg" /></div></div><span class="text_caption">4번 그림의 예</span></div><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 관계가 종료되는 과정도 다양하다. 여기서 왼쪽 그림은 한쪽이 먼저 관계를 놓아버린 경우이고, 오른쪽은 양쪽이 관계를 종료한 모습이다. &quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;관계가 종료되는 과정도 다양하다. 여기서 왼쪽 그림은 한쪽이 먼저 관계를 놓아버린 경우이고, 오른쪽은 양쪽이 관계를 종료한 모습이다. </h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;왼쪽에 포함될 수 있는 상황은 다음과 같다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">왼쪽에 포함될 수 있는 상황은 다음과 같다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;- A는 B와 연락하는 친구 사이였는데, B가 돌연 행방을 감추고 사라졌다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">- A는 B와 연락하는 친구 사이였는데, B가 돌연 행방을 감추고 사라졌다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;- A와 B는 연인이었는데, B가 A에게 이별을 먼저 통보했다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">- A와 B는 연인이었는데, B가 A에게 이별을 먼저 통보했다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;오른쪽에 포함되는 상황은 이렇다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">오른쪽에 포함되는 상황은 이렇다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;- A와 B는 부부였으나 합의 이혼을 했다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">- A와 B는 부부였으나 합의 이혼을 했다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;- A와 B는 친구였으나 어떤 일을 겪고 절교했다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">- A와 B는 친구였으나 어떤 일을 겪고 절교했다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 이 둘에는 조금의 시간차가 있을 뿐, 왼쪽의 모형도 결국에는 오른쪽의 그림처럼 된다. 3번 그림에서는 B가 놓은 끈을 다시 주울 수 있다는 선택의 기회가 있지만, 4번 그림에서는 재선택의 기회가 없다. 한쪽이 두 끈을 모두 놓았거나, 양쪽이 끈을 모두 놓아버린 경우에는 다시 1번으로 돌아가는 것 자체가 불가능하다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;이 둘에는 조금의 시간차가 있을 뿐, 왼쪽의 모형도 결국에는 오른쪽의 그림처럼 된다. 3번 그림에서는 B가 놓은 끈을 다시 주울 수 있다는 선택의 기회가 있지만, 4번 그림에서는 재선택의 기회가 없다. 한쪽이 두 끈을 모두 놓았거나, 양쪽이 끈을 모두 놓아버린 경우에는 다시 1번으로 돌아가는 것 자체가 불가능하다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; &quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;</h4><h3 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 믿음의 끈 열어보기&quot;}],&quot;styleType&quot;:&quot;bold&quot;}],&quot;size&quot;:&quot;h3&quot;}"><b>&nbsp;믿음의 끈 열어보기</b></h3><h3 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h3&quot;}"><br /></h3><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 위 단락까지는 믿음의 끈의 대략적인 설명이었다면, 여기부터는 작가의 주관으로 해석한 믿음의 끈이다. 필자는 모든 인간관계에는 어떠한 뜻이 들어있다고 생각한다. 모든 관계에는 교훈이 들어있다고 믿는 편이다. 하지만 그 뜻을 빠르고 쉽게 알아내는 것은 무리이다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;위 단락까지는 믿음의 끈의 대략적인 설명이었다면, 여기부터는 작가의 주관으로 해석한 믿음의 끈이다. 필자는 모든 인간관계에는 어떠한 뜻이 들어있다고 생각한다. 모든 관계에는 교훈이 들어있다고 믿는 편이다. 하지만 그 뜻을 빠르고 쉽게 알아내는 것은 무리이다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 왜냐하면 인간관계는 나와 다른 사람을 알아가며 생기는 것이므로 타인의 생각과 마음을 예측하는 데에는 어려움이 따르기 때문이다. 나와는 \&quot;다른 사람\&quot;이기 때문에 그동안 살아온 배경과 지향하는 가치가 다르며, 서로에게 마음을 여는 속도가 제각각이다. 특히, 20대인 지금은 10대 때에 비해 자연스럽게 발전하는 관계가 적어졌음을 절감한다. 고등학교 때 사귄 친구들과는 큰 노력을 하지 않았음에도 마치 휴지에 물이 젖듯 자연스럽게 친해졌는데 말이다. 그래서 필자는 새로 알게 된 사람과 믿음의 끈 2번 모형처럼 둘 사이의 유대가 깊어지고 튼튼해지는 것은 굉장히 어려운 일이라고 생각하는 편이다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;왜냐하면 인간관계는 나와 다른 사람을 알아가며 생기는 것이므로 타인의 생각과 마음을 예측하는 데에는 어려움이 따르기 때문이다. 나와는 &quot;다른 사람&quot;이기 때문에 그동안 살아온 배경과 지향하는 가치가 다르며, 서로에게 마음을 여는 속도가 제각각이다. 특히, 20대인 지금은 10대 때에 비해 자연스럽게 발전하는 관계가 적어졌음을 절감한다. 고등학교 때 사귄 친구들과는 큰 노력을 하지 않았음에도 마치 휴지에 물이 젖듯 자연스럽게 친해졌는데 말이다. 그래서 필자는 새로 알게 된 사람과 믿음의 끈 2번 모형처럼 둘 사이의 유대가 깊어지고 튼튼해지는 것은 굉장히 어려운 일이라고 생각하는 편이다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; &quot;},{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;믿음의 끈은 긍정성과 부정성을 동시에 가지고 있다.&quot;}],&quot;styleType&quot;:&quot;bold&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 하나의 개념을 정하고 싶어 \&quot;믿음\&quot;이라는 어휘를 썼지만, 이 끈이 \u003c믿음의 끈\u003e 일지 \u003c의심의 끈\u003e 일지는 정확히 알 수 없다. 여태껏 알게 된 수많은 사람들을 리플레이해보자. 누군가와의 관계는 자동차의 안전벨트처럼 소중하지만, 다른 누군가와의 관계에서는 사슬처럼 느껴지는 순간이 있지 않던가?&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;<b>믿음의 끈은 긍정성과 부정성을 동시에 가지고 있다.</b>&nbsp;하나의 개념을 정하고 싶어 &quot;믿음&quot;이라는 어휘를 썼지만, 이 끈이 &lt;믿음의 끈&gt; 일지 &lt;의심의 끈&gt; 일지는 정확히 알 수 없다. 여태껏 알게 된 수많은 사람들을 리플레이해보자. 누군가와의 관계는 자동차의 안전벨트처럼 소중하지만, 다른 누군가와의 관계에서는 사슬처럼 느껴지는 순간이 있지 않던가?</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; &quot;},{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;모든 사람이 1번 모형으로 시작하지만, 그 관계가 시간이 지나 2번이 될지, 4번 모형이 될지는 그 누구도 예측할 수 없다.&quot;}],&quot;styleType&quot;:&quot;bold&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 때로는 관계를 개선하기 위해 선택과 노력을 해야 할 때가 있으며, 어쩔 때는 관계를 내려놓고 정리할 시기가 온다. 관계를 형성하고 있는 두 명의 사람 사이에도 다른 생각이 존재할 수 있다. A는 B와 더 친하게 지내고 싶지만, B는 A를 마냥 반기지 않는 그런 경우 말이다. &quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;<b>모든 사람이 1번 모형으로 시작하지만, 그 관계가 시간이 지나 2번이 될지, 4번 모형이 될지는 그 누구도 예측할 수 없다.</b>&nbsp;때로는 관계를 개선하기 위해 선택과 노력을 해야 할 때가 있으며, 어쩔 때는 관계를 내려놓고 정리할 시기가 온다. 관계를 형성하고 있는 두 명의 사람 사이에도 다른 생각이 존재할 수 있다. A는 B와 더 친하게 지내고 싶지만, B는 A를 마냥 반기지 않는 그런 경우 말이다. </h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 만일 인간관계에도 수학 문제처럼 확실한 해법과 공식이 있다면 사람들은 인간관계로 스트레스를 받을 필요가 없을 것이다. 하지만 사람들은 이 문제를 두고 수도 없이 고민한다. &quot;},{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;그 고뇌와 힘듦이 있다는 것은 인간관계에는 정해진 법칙과 풀이법이 없다는 증거이다.&quot;}],&quot;styleType&quot;:&quot;bold&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 도서나 유튜브 등의 매체에서 \&quot;인간관계\&quot;를 둘러싼 콘텐츠는 \&quot;인간관계가 좋은 사람들은 대체로 이런 방법을 썼더라.\&quot;라며 방법론을 소개하는 것이지, 그 내용도 100% 맞는 \&quot;법칙\&quot;은 아니다. &quot;},{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;그들은 인간관계를 보다 이롭게 풀어나가기 위한 거대한 이론을 설명하고 있는 것이다.&quot;}],&quot;styleType&quot;:&quot;bold&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 필자가 앞으로 소개할 내용도 인간관계를 해석하는 하나의 이론일 뿐이지, 정확한 법칙은 아니라는 점을 늘 염두에 두기를 바란다.&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;만일 인간관계에도 수학 문제처럼 확실한 해법과 공식이 있다면 사람들은 인간관계로 스트레스를 받을 필요가 없을 것이다. 하지만 사람들은 이 문제를 두고 수도 없이 고민한다. <b>그 고뇌와 힘듦이 있다는 것은 인간관계에는 정해진 법칙과 풀이법이 없다는 증거이다.</b>&nbsp;도서나 유튜브 등의 매체에서 &quot;인간관계&quot;를 둘러싼 콘텐츠는 &quot;인간관계가 좋은 사람들은 대체로 이런 방법을 썼더라.&quot;라며 방법론을 소개하는 것이지, 그 내용도 100% 맞는 &quot;법칙&quot;은 아니다. <b>그들은 인간관계를 보다 이롭게 풀어나가기 위한 거대한 이론을 설명하고 있는 것이다.</b>&nbsp;필자가 앞으로 소개할 내용도 인간관계를 해석하는 하나의 이론일 뿐이지, 정확한 법칙은 아니라는 점을 늘 염두에 두기를 바란다.</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><div class="wrap_item item_type_hr hr_type_3" data-app="{&quot;type&quot;:&quot;hr&quot;,&quot;kind&quot;:&quot;hr_type_3&quot;,&quot;url&quot;:&quot;http://twg.core-svc.dev.daumcorp.com/brunch/static/img/line/hr_type_3.png&quot;}"><div class="inner_wrap"><hr /></div></div><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h3 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;anchor&quot;,&quot;url&quot;:&quot;https://brunch.co.kr/@carly4779/67&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;이전 글: \u003c가치의 다름을 이해하기.\u003e&quot;}],&quot;target&quot;:&quot;_blank&quot;}],&quot;size&quot;:&quot;h3&quot;}"><a class="link" target="_blank" href="https://brunch.co.kr/@carly4779/67">이전 글: &lt;가치의 다름을 이해하기.&gt;</a></h3><h3 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h3&quot;}"><br /></h3><h3 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;다음화 미리 보기&quot;}],&quot;size&quot;:&quot;h3&quot;}">다음화 미리 보기</h3><h3 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h3&quot;}"><br /></h3><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;style&quot;:{&quot;color&quot;:&quot;#959595&quot;},&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 이제는 가면을 벗고 솔직한 자신으로 돌아가야 한다. 계속해서 가짜 자아로 사는 것이 습관이 되어버리면 본질적인 나를 잃어버릴 수밖에 없다. 설령 가면을 쓴 모습이 진짜 자신보다 더 대단해 보인다고 해도, 우리는 가면을 내려놓아야 한다. 언제까지 가짜 인격으로 살 텐가? 나를 위해서도, 남을 위해서도 가면은 내려놓는 것이 좋을 것이다. 가면을 쓰면 상대가 우리의 진짜 마음을 눈치챌 수 있겠는가? 거꾸로 우리 역시 상대가 어떤 표정을 짓고 있는지 제대로 알 수 있을까? 이렇게까지 말해도 가면을 꼭 써야겠다면, 나는 말리지 않겠다.&quot;}],&quot;styleType&quot;:&quot;underline&quot;}]}],&quot;size&quot;:&quot;h4&quot;}"><span style="color:#959595;"><u>&nbsp;이제는 가면을 벗고 솔직한 자신으로 돌아가야 한다. 계속해서 가짜 자아로 사는 것이 습관이 되어버리면 본질적인 나를 잃어버릴 수밖에 없다. 설령 가면을 쓴 모습이 진짜 자신보다 더 대단해 보인다고 해도, 우리는 가면을 내려놓아야 한다. 언제까지 가짜 인격으로 살 텐가? 나를 위해서도, 남을 위해서도 가면은 내려놓는 것이 좋을 것이다. 가면을 쓰면 상대가 우리의 진짜 마음을 눈치챌 수 있겠는가? 거꾸로 우리 역시 상대가 어떤 표정을 짓고 있는지 제대로 알 수 있을까? 이렇게까지 말해도 가면을 꼭 써야겠다면, 나는 말리지 않겠다.</u></span></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><div class="wrap_item item_type_hr hr_type_5" data-app="{&quot;type&quot;:&quot;hr&quot;,&quot;kind&quot;:&quot;hr_type_5&quot;,&quot;url&quot;:&quot;http://twg.core-svc.dev.daumcorp.com/brunch/static/img/line/hr_type_5.png&quot;}"><div class="inner_wrap"><hr /></div></div><h3 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;[이것저것 생각 나눔]&quot;}],&quot;size&quot;:&quot;h3&quot;}">[이것저것 생각 나눔]</h3><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h3 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;의미와 의식은 사람이 부여하는 것이다.&quot;}],&quot;size&quot;:&quot;h3&quot;}">의미와 의식은 사람이 부여하는 것이다.</h3><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; &quot;},{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;사람들은 사실에 의미를 부여하는 존재입니다.&quot;}],&quot;styleType&quot;:&quot;bold&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 대상이 객관적 사실이라고 해도 거기에 사람의 판단이 개입하면, 그때부터는 주관이 섞이는 것이고 가치 판단이 되는 것이죠. 자신이 평소 가지고 있는 감정이 원래부터 그런 것인지, 본인이 의식해서 그 감정을 느끼고 있는지는 생각해볼 문제입니다. &quot;},{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;이 생각을 거친다면, 우리가 느끼는 대부분의 감정은 우리의 주관적인 인식에서 시작된다는 것을 알게 됩니다. &quot;}],&quot;styleType&quot;:&quot;bold&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;<b>사람들은 사실에 의미를 부여하는 존재입니다.</b>&nbsp;대상이 객관적 사실이라고 해도 거기에 사람의 판단이 개입하면, 그때부터는 주관이 섞이는 것이고 가치 판단이 되는 것이죠. 자신이 평소 가지고 있는 감정이 원래부터 그런 것인지, 본인이 의식해서 그 감정을 느끼고 있는지는 생각해볼 문제입니다. <b>이 생각을 거친다면, 우리가 느끼는 대부분의 감정은 우리의 주관적인 인식에서 시작된다는 것을 알게 됩니다. </b></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 다시 말해, 원래부터 기분 나쁜 것은 없습니다. 도로의 차가 빗물을 쓸며 지나가 내 바지가 더러워져 짜증이 난 상황을 생각해보세요. 자동차가 지나가기 전과 후에 달라진 것은 \&quot;바지에 물이 튀었냐, 튀지 않았냐\&quot;입니다. 만약에 물이 튀어서 짜증을 낸 것이라면, 똑같은 상황을 겪은 모든 사람이 동일한 감정을 느껴야 합니다. 하지만 실제로는 사람마다 반응이 다르죠. 그냥 튄 것뿐이라며 갈 길 가는 사람이 있는가 하면, 저만치 멀어진 자동차를 향해 욕을 하는 사람도 있고, 이 정도는 시원하다며 좋아하는 사람도 있습니다. &quot;},{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;즉, 내 기분이 나빠진 것은 바지가 젖었기 때문이 아니라 우연한 상황에 내 의식이 기분 나쁨을 택하였기 때문입니다. &quot;}],&quot;styleType&quot;:&quot;bold&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;우리가 느끼는 모든 감정은 우리의 의식이 선택하는 방향의 결과입니다. 이를 적용해 다시 생각해보면, 바지에 물이 튄 것은 의식하는 바에 따라서 &quot;},{&quot;type&quot;:&quot;text&quot;,&quot;style&quot;:{&quot;color&quot;:&quot;#333333&quot;},&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;style&quot;:{&quot;background-color&quot;:&quot;#ffffff&quot;},&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;좋을 &quot;}]}]},{&quot;type&quot;:&quot;text&quot;,&quot;style&quot;:{&quot;color&quot;:&quot;#333333&quot;},&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;style&quot;:{&quot;background-color&quot;:&quot;#ffffff&quot;},&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;수도 있고 &quot;}]}]},{&quot;type&quot;:&quot;text&quot;,&quot;style&quot;:{&quot;color&quot;:&quot;#333333&quot;},&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;style&quot;:{&quot;background-color&quot;:&quot;#ffffff&quot;},&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;나쁠&quot;}]}]},{&quot;type&quot;:&quot;text&quot;,&quot;style&quot;:{&quot;color&quot;:&quot;#333333&quot;},&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;style&quot;:{&quot;background-color&quot;:&quot;#ffffff&quot;},&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 수도 있는 것입니다. &quot;}]}]},{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;중요한 것은 상황이 원인이 아니라 개인의 의식이 원인이라는 것을 기억하는 것입니다.&quot;}],&quot;styleType&quot;:&quot;bold&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;다시 말해, 원래부터 기분 나쁜 것은 없습니다. 도로의 차가 빗물을 쓸며 지나가 내 바지가 더러워져 짜증이 난 상황을 생각해보세요. 자동차가 지나가기 전과 후에 달라진 것은 &quot;바지에 물이 튀었냐, 튀지 않았냐&quot;입니다. 만약에 물이 튀어서 짜증을 낸 것이라면, 똑같은 상황을 겪은 모든 사람이 동일한 감정을 느껴야 합니다. 하지만 실제로는 사람마다 반응이 다르죠. 그냥 튄 것뿐이라며 갈 길 가는 사람이 있는가 하면, 저만치 멀어진 자동차를 향해 욕을 하는 사람도 있고, 이 정도는 시원하다며 좋아하는 사람도 있습니다. <b>즉, 내 기분이 나빠진 것은 바지가 젖었기 때문이 아니라 우연한 상황에 내 의식이 기분 나쁨을 택하였기 때문입니다. </b>우리가 느끼는 모든 감정은 우리의 의식이 선택하는 방향의 결과입니다. 이를 적용해 다시 생각해보면, 바지에 물이 튄 것은 의식하는 바에 따라서 <span style="color:#333333;"><span style="background-color:#ffffff;">좋을 </span></span><span style="color:#333333;"><span style="background-color:#ffffff;">수도 있고 </span></span><span style="color:#333333;"><span style="background-color:#ffffff;">나쁠</span></span><span style="color:#333333;"><span style="background-color:#ffffff;">&nbsp;수도 있는 것입니다. </span></span><b>중요한 것은 상황이 원인이 아니라 개인의 의식이 원인이라는 것을 기억하는 것입니다.</b></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 인간관계에도 마찬가지 원리가 적용됩니다. 본문에 사용된 1~4번의 그림은 인간관계의 단계, 양상을 보여주기 위한 것입니다. 두 사람이 친해져 믿음의 끈이 튼튼해진 2번 그림이 3번이나 4번 그림보다 낫다고는 단정할 수 없습니다. 갈등 자체를 기피하는 평화주의자 성향의 인물이 있는가 하면, 속 시원하게 싸우고 감정을 털어놓아야 편안해하는 타입의 사람도 있습니다. 마냥 튼튼해 보이는 2번 모형이 3번보다 건강한 관계라고는 단정할 수 없다는 말입니다. 따라서 \&quot;좋아 보일수록 좋은 관계다.\&quot;는 문장은 성립될 수 없습니다. 우리가 매기는 겉보기 값은 실제 가치와는 다르기 때문이죠. 그리고 실제 가치는 누구도 매길 수가 없습니다. &quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;인간관계에도 마찬가지 원리가 적용됩니다. 본문에 사용된 1~4번의 그림은 인간관계의 단계, 양상을 보여주기 위한 것입니다. 두 사람이 친해져 믿음의 끈이 튼튼해진 2번 그림이 3번이나 4번 그림보다 낫다고는 단정할 수 없습니다. 갈등 자체를 기피하는 평화주의자 성향의 인물이 있는가 하면, 속 시원하게 싸우고 감정을 털어놓아야 편안해하는 타입의 사람도 있습니다. 마냥 튼튼해 보이는 2번 모형이 3번보다 건강한 관계라고는 단정할 수 없다는 말입니다. 따라서 &quot;좋아 보일수록 좋은 관계다.&quot;는 문장은 성립될 수 없습니다. 우리가 매기는 겉보기 값은 실제 가치와는 다르기 때문이죠. 그리고 실제 가치는 누구도 매길 수가 없습니다. </h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot; 아래에는 \u003c믿음의 끈\u003e과는 다른 느낌의 고찰 내용을 수록합니다. 혼자 생각하다가 간단한 미적분 식을 이용해 인간관계를 표현해보았습니다. 정리된 글이 아니고 혼자 기록했던 글이므로 재미로, 감상하는 정도로만 보시기를 권합니다. (정제된 글이 아닙니다.)&quot;}],&quot;size&quot;:&quot;h4&quot;}">&nbsp;아래에는 &lt;믿음의 끈&gt;과는 다른 느낌의 고찰 내용을 수록합니다. 혼자 생각하다가 간단한 미적분 식을 이용해 인간관계를 표현해보았습니다. 정리된 글이 아니고 혼자 기록했던 글이므로 재미로, 감상하는 정도로만 보시기를 권합니다. (정제된 글이 아닙니다.)</h4><h4 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;br&quot;}],&quot;size&quot;:&quot;h4&quot;}"><br /></h4><h3 class="wrap_item item_type_text" data-app="{&quot;type&quot;:&quot;text&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;anchor&quot;,&quot;url&quot;:&quot;https://blog.naver.com/carly4779/221984116461&quot;,&quot;data&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;\&quot;저 사람을 알아간다\&quot;에 대한 고찰, 앎의 정리(K)&quot;}],&quot;target&quot;:&quot;_blank&quot;}],&quot;size&quot;:&quot;h3&quot;}"><a class="link" target="_blank" href="https://blog.naver.com/carly4779/221984116461">&quot;저 사람을 알아간다&quot;에 대한 고찰, 앎의 정리(K)</a></h3></div>
+
+                            <div class="wrap_body_info">
+                                        
+                                                                
+            <div class="info_keyword">
+            <div class="info_article wrap_keyword" data-ctr-expose="keyword" data-ctr-referrer="true">
+                <strong class="screen_out">keyword</strong>
+                <ul class="list_keyword">
+                                                                        <li>
+                                <a href="/keyword/생각"
+                                    class="link_keyword  #keyword "
+                                    data-ctr-click="keyword_click"
+                                    data-ctr-referrer="true"
+                                    data-tiara-action-name="글뷰 > 본문 하단 > 키워드 클릭"
+                                    data-tiara-layer="bottom more_contents keyword"
+                                >
+                                    생각
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="/keyword/인간관계"
+                                    class="link_keyword  #keyword "
+                                    data-ctr-click="keyword_click"
+                                    data-ctr-referrer="true"
+                                    data-tiara-action-name="글뷰 > 본문 하단 > 키워드 클릭"
+                                    data-tiara-layer="bottom more_contents keyword"
+                                >
+                                    인간관계
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="/keyword/믿음"
+                                    class="link_keyword  #keyword "
+                                    data-ctr-click="keyword_click"
+                                    data-ctr-referrer="true"
+                                    data-tiara-action-name="글뷰 > 본문 하단 > 키워드 클릭"
+                                    data-tiara-layer="bottom more_contents keyword"
+                                >
+                                    믿음
+                                </a>
+                            </li>
+                                                            </ul>
+            </div>
+        </div>
+    
+                                        
+                                        <div id="donation-layout"></div>
+
+                                        <div id="comments"></div>
+                </div>
+                    </div>
+
+                <div class="wrap_author" data-ctr-expose="profile" data-ctr-referrer="true">
+            <div class="inner_author">
+                <div class="author_profile">
+                    <strong class="author_name">
+                        <a href="https://brunch.co.kr/@carly4779"
+                           data-tiara-action-name="글뷰 > 작가 소개 영역 > 작가 프로필 클릭"
+                           data-tiara-layer="writer_info writer profile"
+                           data-tiara-copy="성장흐름"
+                           data-ctr-click="profile_click"
+                           data-ctr-referrer="true"
+                           class="link_author_name">
+                            성장흐름
+                        </a>
+                    </strong>
+
+                                            
+                                            <span class="author_belong ">
+                                                            <em class="screen_out">소속</em>
+                                <span class="">성장흐름</span>
+                                                                                        <em class="screen_out">직업</em>
+                                <span class="">크리에이터</span>
+                                                    </span>
+                    
+                    <a href="https://brunch.co.kr/@carly4779"
+                       class="link_author_image #profile"
+                       data-ctr-click="profile_click"
+                       data-ctr-referrer="true"
+                       data-tiara-action-name="글뷰 > 작가 소개 영역 > 작가 프로필 클릭"
+                       data-tiara-layer="writer_info writer profile"
+                       data-tiara-copy="성장흐름">
+                        <img src="//img1.daumcdn.net/thumb/C200x200.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/aUIc/image/WCtIntqNCKiR5iK43eC9S7k_-Bg" class="img_author" width="100" height="100" alt="">
+                    </a>
+
+                </div>
+                <div class="author_desc">
+                    <a href="https://brunch.co.kr/@carly4779"
+                       data-tiara-action-name="글뷰 > 작가 소개 영역 > 작가 프로필 클릭"
+                       data-tiara-layer="writer_info writer profile"
+                       data-tiara-copy="성장흐름">
+                        
+                                                    <p class="txt_desc">20대 지식창업가, 크리에이터. '나에게 투자하여 몸값을 올리고 돈까지 벌 수 있다면?' 브런치에는 긴 글 위주로 담습니다.</p>
+                                            </a>
+                </div>
+
+
+                <div class="wrap_subscription ">
+                    <a href="https://brunch.co.kr/@carly4779">
+                        <span class="info_subscription">
+                            <span>구독자</span>
+                                                            <span class="num_subscription">85</span>
+                                                    </span>
+                    </a>
+                    <span class="wrap_subscription_btn">
+                                                                                    <button type="button" class="btn_suggest btn_new_type #post_view#propose" data-user-id="aUIc">
+                                제안하기
+                                </button>
+                            
+                                                                <button type="button"              class="btn_type btn_new_type btn_default btn_profile btnFollow #p_follow">
+        <span class="ico_brunch" style="display:none;"></span>
+        <span class="txt_default"><img class="ico_plus" src="https://u1.daumcdn.net/brunch/static/img/icon/ico-plus.png" />구독</span>
+    </button>
+                                                                        </span>
+                </div>
+            </div>
+        </div>
+
+                                                    <div class="wrap_related_article"></div>
+            
+            
+                                                                    
+            <div class="wrap_page_article " data-ctr-expose="writers_post" data-ctr-referrer="true"
+                data-tiara-action-name="글뷰 > 하단 고정 영역 > 매거진 다른글 클릭" data-tiara-action-kind="ClickContent">
+                                                            <a href="/@carly4779/67" class="link_page #p_bottom#prev_post" data-ctr-click="writers_post_click" data-ctr-referrer="true"
+                        data-tiara-layer="bottom_bar magazine_article"
+                        data-tiara-copy="가치의 다름을 이해하기."
+                        data-tiara-id="68"
+                        data-tiara-type="magazine_article"
+                        data-tiara-name="믿음의 끈."
+                        data-tiara-author=""
+                        data-tiara-author_id="@@aUIc">
+                            <span class="txt_page">
+                                                                     매거진의 이전글
+                                                                                                </span>
+                            <strong class="tit_page">&#44032;&#52824;&#51032; &#45796;&#47492;&#51012; &#51060;&#54644;&#54616;&#44592;.</strong>
+                        </a>
+                    
+                                            <a href="/@carly4779/69" class="link_page link_next #p_bottom#next_post" data-ctr-click="writers_post_click" data-ctr-referrer="true"
+                        data-tiara-layer="bottom_bar magazine_article"
+                        data-tiara-copy="가면 벗기."
+                        data-tiara-id="68"
+                        data-tiara-type="magazine_article"
+                        data-tiara-name="믿음의 끈."
+                        data-tiara-author=""
+                        data-tiara-author_id="@@aUIc">
+                            <strong class="tit_page">&#44032;&#47732; &#48279;&#44592;.</strong>
+                            <span class="txt_page next_page">
+                                                                     매거진의 다음글                                                             </span>
+                        </a>
+                                                </div>
+            </div>
+
+        <div id="article-share-btn-layer"></div>
+
+    
+
+
+<input id="userStatusInput" type="hidden" value=""/>
+<input id="articleKeywordsInput" type="hidden" value="[{&quot;no&quot;:1753,&quot;keywordNo&quot;:0,&quot;keyword&quot;:&quot;생각&quot;,&quot;keywordCount&quot;:0,&quot;rank&quot;:0,&quot;userId&quot;:&quot;aUIc&quot;,&quot;articleNo&quot;:68,&quot;sequence&quot;:1,&quot;count&quot;:0,&quot;type&quot;:&quot;white&quot;,&quot;hideView&quot;:false,&quot;hideEditor&quot;:false,&quot;publishTimestamp&quot;:0},{&quot;no&quot;:2629,&quot;keywordNo&quot;:0,&quot;keyword&quot;:&quot;인간관계&quot;,&quot;keywordCount&quot;:0,&quot;rank&quot;:0,&quot;userId&quot;:&quot;aUIc&quot;,&quot;articleNo&quot;:68,&quot;sequence&quot;:2,&quot;count&quot;:0,&quot;type&quot;:&quot;white&quot;,&quot;hideView&quot;:false,&quot;hideEditor&quot;:false,&quot;publishTimestamp&quot;:0},{&quot;no&quot;:1417,&quot;keywordNo&quot;:0,&quot;keyword&quot;:&quot;믿음&quot;,&quot;keywordCount&quot;:0,&quot;rank&quot;:0,&quot;userId&quot;:&quot;aUIc&quot;,&quot;articleNo&quot;:68,&quot;sequence&quot;:3,&quot;count&quot;:0,&quot;type&quot;:&quot;white&quot;,&quot;hideView&quot;:false,&quot;hideEditor&quot;:false,&quot;publishTimestamp&quot;:0}]"/>
+<input id="articleStatusInput" type="hidden" value="publish"/>
+<input id="articleMagazineNoInput" type="hidden" value="88873"/>
+<input id="articleMagazineTypeInput" type="hidden" value=""/>
+<input id="commentWritableInput" type="hidden" value="true"/>
+
+
+<div id="layerDimEditorForPublishSideMenu">
+	<div class="spinner"></div>
+</div>
+<div id="wrapPublishSideMenu" >
+	<div id="wrapBtnSidePublish" class="wrap_inner_publish wrap_save_btn wrap_btn_side_publish">
+		<button class="cancel button" type="button">취소</button>
+		<button class="save button mint" type="button">완료</button>
+	</div>
+
+	
+	<div class="wrap_publish_magazine wrap_inner_publish">
+		<div class="wrap_label_magazine"><h3 class="label_magazine_selection">작품 선택</h3></div>
+		<div id="wrapPublishMagazineList" class="wrap_publish_magazine_list"></div>
+	</div>
+
+	<div class="wrap_publish_keyword wrap_inner_publish">
+		<div class="wrap_keyword_title">
+			<span class="label_keyword_select">키워드 선택<span id="guideKeywordLayer"></span></span>
+			<span class="wrap_keyword_count">
+			<span id="wrapCountSelectedKeyword" class="wrap_count_selected_keyword">0</span>
+			<span class="wrap_count_keyword_slash">/</span>
+			<span class="wrap_count_keyword_total">3</span>
+		</span>
+			<span class="wrap_promotion_keyword_count">
+			<span id="wrapCountSelectedPromotionKeyword"
+				  class="wrap_count_selected_keyword">0</span>
+		</span>
+			<button id="btnKeywordSearch" class="ico_publish_keyword" type="button">검색</button>
+			<div id="wrapKeywordSearchSlide">
+				<div class="wrap_inner_publish">
+				<span id="wrapInputKeywordSearch">
+					<span class="ico_publish_keyword ico_search_input"></span>
+					<input id="inputKeywordSearch" placeholder="키워드를 입력해 주세요" type="text"/>
+				</span>
+					<span id="btnKeywordSearchClose"
+						  class="ico_publish_keyword ico_search_close"></span>
+					<div class="wrap_keyword_search_list" id="wrapKeywordSearchList"></div>
 				</div>
 			</div>
-		
-		<textarea name="comment" cols="" rows="4" placeholder="여러분의 소중한 댓글을 입력해주세요."></textarea>
-		<div class="submit">
-			<button type="submit" class="btn" onclick="addComment(this, 36); return false;">댓글달기</button>
 		</div>
+		<div class="wrap_keyword_selected" id="wrapKeywordSelected">
+			<div class="inner_keyword_selected"></div>
+		</div>
+	</div>
+
+	<div class="wrap_cmt_confirm">
+		<h3 class="screen_out">댓글여부</h3>
+		<div class="chk_editor">
+			<label for="cmtConfirm" class="lab_g">댓글 쓰기 허용</label>
+			<input type="checkbox" id="cmtConfirm" class="inp_chk">
+			<span class="ico_publish_keyword_v1 ico_check_type1">afliean</span>
+		</div>
+	</div>
 </div>
-
-        </form>
-			</div>
-		</div>
-<script type="text/javascript">loadedComments[36]=true;
-findFragmentAndHighlight(36);</script>
-
-
-	
-
                 
+    
+
+    <script type="text/javascript" src="//developers.kakao.com/sdk/js/kakao.min.js?v=2"></script>
+
+
+                        <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/B.min.js"></script>
             
-			</div>
 
+
+
+    <script type="text/javascript">
+        function BrunchConfigInit() {
+            B.Config = {"createMagazineConfirm":"로그인이 필요합니다.","downloadDomain":"t1.daumcdn.net","channelPublicId":"_YYcYV","KakaoTvIframeHost":"https://play-tv.kakao.com","brunchbookArticleMinCount":10,"serviceUrl":"https://brunch.co.kr","active":"real","isInnerNetwork":false,"kakaoJSKey":"7577e1f674fc3bc73963db5bf15e03df","facebookApiVersion":"v11.0","serviceDomain":"brunch.co.kr","webpackJsUrl":null,"templateUrl":"/template/","isCbtHome":false,"matrixFtDsn":"https://82e056052bc34de9a6b32456d6f1f370@aem-kakao-collector.onkakao.net/1768","webpackCssUrl":null,"apiUrl":"https://api.brunch.co.kr","servicecode":"7eF1DYRbLy8LCLcy","brunchbookArticleMaxCount":30,"creatorsfitServiceUrl":"https://creatorsfit.kakao.com","thumbnailDomain":"img1.daumcdn.net","viteJsUrl":null};
+            B.User = {
+                            };
+        }
+        Guard.executeAndSaveFunction(BrunchConfigInit)
+    </script>
+
+            <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/purify.min.js"></script>
+                            <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/tiaraEventHandler.min.js"></script>
+                                    <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/B.Util.min.js"></script>
+            
+                        <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/B.Message.min.js"></script>
+            
+<script type="text/javascript">
+    function messageInit() {
+        try {
+            B.Message.init();
+        } catch (e) {
+            Sentry.setTag('InitFail', 'Message')
+            Sentry.captureMessage('[BRUNCH] InitFail')
+        }
+    }
+
+    (function() {
+        Guard.executeAndSaveFunction(messageInit);
+    })();
+</script>                        <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/B.Login.min.js"></script>
+            
+    <script type="text/javascript">
+        function loginInit() {
+            try {
+                // pc , mobile, tablet, unknown
+                var isPcOrTablet = !B.UserAgent.isMobile;
+                                                        B.Login.init(isPcOrTablet, 'https%3A%2F%2Fbrunch.co.kr%2Fsignin%2Ffinish%3Furl%3D%252F%2540carly4779%252F68');
+                            } catch(e) {
+                Sentry.setTag('InitFail', 'Login')
+                Sentry.captureMessage('[BRUNCH] InitFail')
+            }
+        }
+        (function() {
+            Guard.executeAndSaveFunction(loginInit);
+        })();
+    </script>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "브런치스토리",
+        "url": "https://brunch.co.kr",
+        "sameAs": [
+            "https://play.google.com/store/apps/details?id=com.daumkakao.android.brunchapp",
+            "https://apps.apple.com/kr/app/id1001388574"
+        ]
+    }
+</script>            <div class="compatible-info">
+            <em class="text_noti">브런치는 최신 브라우저에 최적화 되어있습니다.</em>
+            <a class="ico_browser ico_ie text_hide" target="_blank" href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie">IE</a>
+            <a class="ico_browser ico_chrome text_hide" target="_blank" href="http://www.google.co.kr/chrome/">chrome</a>
+            <a class="ico_browser ico_safari text_hide" target="_blank" href="http://www.apple.com/kr/safari/">safari</a>
+        </div>
+    
+    <script type="text/javascript">
+        try {
+                            if(B.UserAgent.isIE11Under) {
+                    jQuery('body').addClass('no-compatible');
+                }
+                    } catch(e) {
+        }
+    </script>
+
+                                            <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/B.PublishSideMenu.min.js"></script>
+                                                            <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/B.Report.min.js"></script>
+                                                            <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/B.SubscriptionLayer.min.js"></script>
+                                                            <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/B.Article.min.js"></script>
+                                                            <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/B.ArticleLike.min.js"></script>
+                                                            <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/B.PostMessage.min.js"></script>
+                                                            <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/intersection-observer.min.js"></script>
+                                                            <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/B.ReadHelper.min.js"></script>
+                                                            <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/B.Related.Article.min.js"></script>
+                        
+    
+
+
+
+
+
+
+
+
+
+
+<script>
+    function readHelperInit() {
+        B.ReadHelper.init({
+            articleUserId: "aUIc",
+            articleNo: 68,
+            staticSeconds: 619
+        });
+    }
+
+    function readSecondsHelperInit() {
+        B.ReadSecondsHelper.init({
+            staticSeconds: 619
+        });
+    }
+
+    function ctrCheckerInit() {
+        B.ctrChecker = B.CtrChecker.init({
+            eventType: 'post_view',
+            eventReferrerType: 'post_referrer',
+            os: 'pc',
+            isChannel:  false ,
+            authorUserId: 'aUIc'
+        });
+    }
+
+    function notMobileRelatedAritcleInit() {
+        B.Related.Article.init({
+            isMobile:false,
+            authorProfileId:'carly4779',
+            authorUserId: 'aUIc',
+            userId: ''
+        }, B.ctrChecker);
+    }
+
+    function mobileRelatedArticleInit() {
+        B.Related.Article.init({
+            isMobile:true,
+            authorProfileId:'carly4779',
+            authorUserId: 'aUIc',
+        }, B.ctrChecker);
+    }
+
+    function mobileArticleLikeInit() {
+        B.ArticleLike.init(
+                {
+                    articleNo: '68',
+                    authorUserId: 'aUIc'
+                },
+                {
+                    userId: '',
+                },
+                {
+                    isLike: false,
+                    isOwner: false
+                }
+        );
+    }
+
+    function articleInit() {
+        B.Article.init(B.ctrChecker);
+    }
+
+    function mobileArticleInit() {
+        B.M.Article.init(B.ctrChecker);
+    }
+
+    function completeReadRateHelperInit() {
+        B.CompleteReadRateHelper.init({
+            articleUserId: "aUIc",
+            articleNo: 68,
+            isBrunchbook: "false"
+        });
+    }
+
+    function goToLastTopVisibleBlock() {
+        B.CompleteReadRateHelper.goToLastTopVisibleBlock("aUIc", 68);
+    }
+
+    (function() {
+                    Guard.executeAndSaveFunction(readHelperInit);
+            Guard.executeAndSaveFunction(readSecondsHelperInit);
+            Guard.executeAndSaveFunction(ctrCheckerInit);
+                            Guard.executeAndSaveFunction(notMobileRelatedAritcleInit);
+                    
+                    Guard.executeAndSaveFunction(articleInit);
+        
+        
+            Guard.executeAndSaveFunction(completeReadRateHelperInit);
+
+                        })();
+</script>
+
+            <script id="__BRUNCH_DATA__" type="application/json">{
+  "article": {
+    "articleNo": 68,
+    "articleTitle": "믿음의 끈.",
+    "articleStatus": "publish",
+    "articleCommentCount": 0,
+    "articleCommentWritable": true,
+    "donationCommentCount": 0,
+    "authorUserId": "aUIc",
+    "authorUserImage": "http://t1.daumcdn.net/brunch/service/user/aUIc/image/WCtIntqNCKiR5iK43eC9S7k_-Bg",
+    "authorUserName": "성장흐름",
+    "isLike": false,
+    "likeCount": 10
+  },
+  "isBlocked": false,
+  "isDonationEnabled": false
+}</script>
+    
+            <script type="module" src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/pages/@{profileId}/{articleNo}/index.min.js"></script>
+        <script nomodule src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/pages/polyfills.min-legacy.js"></script>
+        <script nomodule src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/pages/@{profileId}/{articleNo}/index.min-legacy.js"></script>
+    
+	                        <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/202312271327/production/jennifer.min.js"></script>
+            
+	<script>
+		try {
 			
+			extras['sv'] = B.Config.servicecode;
 
+							extras["ci"] = 'aUIc';
 			
-
+							extras["mi"] = '68';
 			
-
-		</article>
-	</section>
-	<hr>
-	<footer id="footer">
-		<p class="copyright">DESIGN BY <a href="#">TISTORY</a> <a href="https://0o0deng.tistory.com/manage" class="admin">관리자</a></p>
-	</footer>
-</div>
-<script src="https://tistory1.daumcdn.net/tistory/4055456/skin/images/script.js?_version_=1594665083"></script>
-
-<div class="#menubar menu_toolbar ">
-  <h2 class="screen_out">티스토리툴바</h2>
-</div>
-<div class="#menubar menu_toolbar "></div>
-<div class="layer_tooltip">
-  <div class="inner_layer_tooltip">
-    <p class="desc_g"></p>
-  </div>
-</div>
-<iframe id="editEntry" style="position:absolute;width:1px;height:1px;left:-100px;top:-100px" src="//0o0deng.tistory.com/api"></iframe>
-
-                <!-- DragSearchHandler - START -->
-<script src="//search1.daumcdn.net/search/statics/common/js/g/search_dragselection.min.js"></script>
-
-<!-- DragSearchHandler - END -->
-
-        <!-- SyntaxHighlight - START -->
-        <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/styles/atom-one-light.min.css" rel="stylesheet"/><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/highlight.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/delphi.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/php.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/python.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/r.min.js" defer></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/ruby.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/scala.min.js" defer></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/shell.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/sql.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/swift.min.js" defer></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/typescript.min.js" defer></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/vbnet.min.js" defer></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+							extras["bi"] = '88873';
+			
+			
+			ja.pageview();
+		} catch(e) {
+			if (typeof Sentry !== 'undefined') {
+				Sentry.setTag('InitFail', 'jennifer')
+				Sentry.captureMessage('[BRUNCH] InitFail')
+			}
+		}
+	</script>
 
 
-        <!-- SyntaxHighlight - END -->
-
-                
-                <script type="text/javascript">(function($) {
-    $(document).ready(function() {
-        lightbox.options.fadeDuration = 200;
-        lightbox.options.resizeDuration = 200;
-        lightbox.options.wrapAround = false;
-        lightbox.options.albumLabel = "%1 / %2";
-    })
-})(tjQuery);</script>
-<div style="margin:0; padding:0; border:none; background:none; float:none; clear:none; z-index:0"></div>
-<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/script/common.js"></script>
-<script type="text/javascript">window.roosevelt_params_queue = window.roosevelt_params_queue || [{channel_id: 'dk', channel_label: '{tistory}'}]</script>
-<script type="text/javascript" src="//t1.daumcdn.net/midas/rt/dk_bt/roosevelt_dk_bt.js" async="async"></script>
-<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/script/menubar.min.js"></script>
-<script>            (function (win, doc, src) {
-    win.Wpm = win.Wpm || function (name, param) {
-        win.Wpm.queue = win.Wpm.queue || [];
-        const { queue } = win.Wpm;
-        queue.push([name, param]);
-    };
-    const script = doc.createElement('script');
-    script.src = src;
-    script.async = 1;
-    const [elem] = doc.getElementsByTagName('script');
-    elem.parentNode.insertBefore(script, elem);
-})(window, document, 'https://t1.kakaocdn.net/malibu_prod/normal_wpm.js');
-            const APP_KEY = 'fd21bd1c091849f9a2555e49c43a73dd';
-            Wpm('appKey', APP_KEY);</script>
-
-                
-                <script>window.tiara = {"svcDomain":"user.tistory.com","section":"글뷰","trackPage":"글뷰_보기","page":"글뷰","key":"4055456-36","customProps":{"userId":"0","blogId":"4055456","entryId":"36","role":"guest","trackPage":"글뷰_보기","filterTarget":false},"entry":{"entryId":"36","categoryName":"𝓡𝓸𝓸𝓶5: 𝒦𝑜𝓇𝑒𝒶 𝒰𝓃𝒾𝓋/Discrete mathematics","categoryId":"939522","author":"4091630","image":"kage@cinMev/btq1XlisV9b/G2yuPOrYnm6CveQfDhC65K","plink":"/entry/%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99-Chapter-3-Relations","tags":[]},"kakaoAppKey":"3e6ddd834b023f24221217e370daed18","appUserId":"null"}</script>
-<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/tistory-52164f96232a6e3e119816ab9c001f93e6d6b02f/static/script/tiara.min.js"></script>
-
-                </body>
+    <script>
+        window.onload = function () {
+            if (!window.B || Guard.hasError) {
+                try {
+                    Guard.restoreArticlePage(true);
+                } catch(e) {
+                    Guard.matrixLogging(e, 'Article View Restore Fail')
+                }
+            }
+        }
+    </script>
+</body>
 </html>

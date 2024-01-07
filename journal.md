@@ -94,3 +94,9 @@ le code, ajusté la taille du contenu des images pour une meilleure esthétique,
 un peu plus loin en utilisant les scripts Python de PALS. En parallèle, j'ai modifié les 
 transitions sur le site pour garantir une expérience utilisateur fluide. Maintenant, il ne me 
 reste plus qu'à attendre la fin des analyses en cours et à déposer notre travail.
+
+(Débora) Suite à un commit qui a divergé, je n'avais pas vu mais j'ai perdu toutes mes avancées 
+des derniers jours. J'ai donc tout arrangé. J'ai ensuite fait ma partie sur iTRameur, les PALS 
+et mon nuage de mot et j'ai ajouté mes informations et ma photos sur la partie "qui sommes nous" 
+de notre site.
+

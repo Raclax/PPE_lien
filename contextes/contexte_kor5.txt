@@ -1,20 +1,123 @@
+
+   [ ] 목차 토글
+
 관계 (수학)
+
+   [ ] 44개 언어
+     * العربية
+--
+
+   위키백과, 우리 모두의 백과사전.
+
    집합론에서 관계(關係, 영어: relation)는 곱집합의 부분 집합이다. 원소의 튜플이 이 부분 집합에 속하는지 여부를 통해
    원소들 사이의 관계를 나타낸다.
+
+정의[편집]
+
+--
+   <mi>i</mi> <mo>∈</mo> <mi>I</mi> </mrow> </msub> </mstyle> </mrow>
+   <annotation encoding="application/x-tex">{\displaystyle \{X_{i}\}_{i\in
+   I}}</annotation> </semantics> :MATH]
    \{X_{i}\}_{{i\in I}} 위의 관계는 곱집합의 부분 집합
+
+          [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+          displaystyle="true" scriptlevel="0"> <mstyle
+--
+   displaystyle="true" scriptlevel="0"> <mi>α</mi> </mstyle> </mrow>
+   <annotation encoding="application/x-tex">{\displaystyle \alpha
+   }</annotation> </semantics> :MATH]
    \alpha 항 관계(영어:
+   [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+   displaystyle="true" scriptlevel="0"> <mi>α</mi> </mstyle> </mrow>
+   <annotation encoding="application/x-tex">{\displaystyle \alpha
+--
+       displaystyle="true" scriptlevel="0"> <mi>X</mi> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       X}</annotation> </semantics> :MATH]
        X 위의 영항 관계(零項關係, 영어: nullary relation)
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>R</mi> <mo>⊆</mo> <mo
+       fence="false" stretchy="false">{</mo> <mo>∙</mo> <mo fence="false"
+--
+       displaystyle="true" scriptlevel="0"> <mi>X</mi> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       X}</annotation> </semantics> :MATH]
        X 위의 단항 관계(單項關係, 영어: unary relation)
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>R</mi> <mo>⊆</mo>
+       <mi>X</mi> </mstyle> </mrow> <annotation
+--
+       displaystyle="true" scriptlevel="0"> <mi>X</mi> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       X}</annotation> </semantics> :MATH]
        X 위의 이항 관계(二項關係, 영어: binary relation)
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>R</mi> <mo>⊆</mo>
+       <mi>X</mi> <mo>×</mo> <mi>X</mi> </mstyle> </mrow> <annotation
+--
+       displaystyle="true" scriptlevel="0"> <mi>X</mi> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       X}</annotation> </semantics> :MATH]
        X 위의 삼항 관계(三項關係, 영어: ternary relation)
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>R</mi> <mo>⊆</mo>
+       <mi>X</mi> <mo>×</mo> <mi>X</mi> <mo>×</mo> <mi>X</mi> </mstyle>
+--
+       displaystyle="true" scriptlevel="0"> <mi>n</mi> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       n}</annotation> </semantics> :MATH]
        n 항 관계(-項關係, 영어: n-ary relation)
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>R</mi> <mo>⊆</mo> <msup>
+       <mi>X</mi> <mrow class="MJX-TeXAtom-ORD"> <mo>×</mo> <mi>n</mi>
+--
+
+예[편집]
+
      * 공선점 관계는 공간 속의 점들에 대한 삼항 관계이다.
      * 여러 가지 이항 관계: 여기서는 집합
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>X</mi> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       X}</annotation> </semantics> :MATH]
        X 상의 이항 관계
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mi>R</mi> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+--
+       X(xRy\wedge yRz\rightarrow xRz)}</annotation> </semantics> :MATH]
+       {\displaystyle \forall x,y,z\in X(xRy\wedge yRz\rightarrow xRz)} 를
+       추이성이라 한다.
      * 반사적, 대칭적, 추이적인 관계를 동치 관계라 한다.
      * 반사적, 반대칭적, 추이적인 관계를 순서 관계라 하고 비대칭적, 추이적인 관계를 강 순서 관계라 한다. 그러면 관계
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mo><</mo> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       <}</annotation> </semantics> :MATH]
        < 와 관계
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mo>≤</mo> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle \leq
+--
+       displaystyle="true" scriptlevel="0"> <mo><</mo> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle
+       <}</annotation> </semantics> :MATH]
        < 가 강 순서 관계일 조건과
+       [MATH: <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle
+       displaystyle="true" scriptlevel="0"> <mo>≤</mo> </mstyle> </mrow>
+       <annotation encoding="application/x-tex">{\displaystyle \leq
+       }</annotation> </semantics> :MATH]
        \le 가 순서 관계일 조건은 서로 필요충분조건이다. 문맥에 따라 강 순서 관계를 그저 순서 관계로 할 수도 있으므로
+       주의가 필요하다.
+
+외부 링크[편집]
+--
+     * 독일
+
+   원본 주소
    "https://ko.wikipedia.org/w/index.php?title=관계_(수학)&oldid=33176364"
+   분류:
      * 관계 (수학)
+
+   숨은 분류:
+     * 위키데이터 속성 P373을 사용하는 문서

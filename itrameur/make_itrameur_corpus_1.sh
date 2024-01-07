@@ -38,3 +38,5 @@ do
     fi
 done
 echo "</LANG>" >> "$output_contextes"
+
+# ./dumps-text ./contextes kor
