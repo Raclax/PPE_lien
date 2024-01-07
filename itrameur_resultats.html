@@ -14,7 +14,7 @@
     <script src="index.js"></script>
     <style>
         body {
-            background-color: #a3cef1; 
+            background-color: #a3cef1;
         }
 
         .container {
@@ -101,8 +101,8 @@
                 du
                 corpus incluant les fréquences associées.
             </p>
-            </div>
-            <div class="card content">
+        </div>
+        <div class="card content">
             <h2>Polonais</h2>
             <p>
                 Le mot cible de mon analyse était "lien" - en polonais, "związek". Le terme "związek" a des
@@ -166,18 +166,29 @@
                 deux personnes.
             </p>
             <h3>PALS</h3>
-            <img src="./extra/pl2.png" alt="Dictionnaire polonais">
-            <p>
-                Lors de l'analyse avec le dictionnaire, nous constatons que même si le mot cible est "związek", il ne
-                figure
-                pas parmi les mots les plus fréquents du corpus. Ce qui est intéressant, c'est que le mot "w" fait
-                partie
-                d'une collocation "w związku". Cela peut expliquer sa fréquence élevée d'apparition. De plus, nous
-                observons
-                371 occurrences du mot "związek" au cas nominal, qui est le plus fréquent dans la langue polonaise.
+            <p>Pour finaliser l'étape d'analyse, j'ai pris la décision de concevoir un script PALS. Tout d'abord, j'ai
+                élaboré un script spécifique à mon fichier dump_{langue}.txt, où chaque ligne représente un mot. Une
+                fois que j'ai obtenu le document avec les mots séparés ligne par ligne, je l'ai soumis au traitement du
+                script Python fourni par les professeurs.
             </p>
-            </div>
+            <img src="./PALS/RESULTATS/resultats_pals_pl_1.jpg" alt="resultats_pals_pl_1">
+            <p>
+                Les résultats obtenus pour le polonais ne m'ont guère surpris, car ils se rapprochent sensiblement de
+                ceux obtenus lors de l'analyse effectuée avec iTrameur. Il est intéressant de noter que le mot "związek"
+                prédomine au cas nominal, confirmant ainsi son importance au sein de la langue polonaise. Cette
+                observation renforce la cohérence de nos résultats. De plus, il est à noter que les mots débutant par
+                une lettre minuscule apparaissent dans le corpus de manière significativement plus fréquente que ceux
+                commençant par une majuscule.
+            </p>
+            <img src="./PALS/RESULTATS/resultats_pals_pl_2.jpg" alt="resultats_pals_pl_2">
+            <p>
+                Lorsque nous examinons la deuxième partie des résultats, nous constatons que le mot "związek" apparaît
+                souvent en double. Cela est dû à notre choix d'utiliser principalement des dictionnaires et des sites
+                proposant des définitions du mot pour notre analyse. En analysant les résultats ci-dessus, nous pouvons
+                voir que le mot est fréquemment placé dans une définition.
+            </p>
         </div>
+    </div>
     </div>
 
     <footer class="footer has-background-light">
