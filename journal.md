@@ -58,7 +58,8 @@ La gestion appropriée de l'encodage des fichiers dump générés par Lynx étai
 J'ai rencontré des problèmes liés à l'utilisation de grep avec l'option -P. Certains systèmes ne la prennent pas en charge, donc j'ai ajusté le script pour utiliser l'option -E là où nécessaire.
 
 # 06/01
-(Maria) Aujourd'hui, j'ai rencontré un problème persistant d'encodage lié aux fichiers de dumps, mais finalement, j'ai réussi à le résoudre. J'ai également terminé l'analyse sur iTrameur et ajouté les captures d'écran de mes résultats. À présent, j'attends les analyses de Clara et de Débora pour compléter cette section et effectuer les modifications nécessaires sur le site HTML. De plus, j'ai ajouté un dossier dédié aux images et à la modification avec Bulma.
+(Maria) Aujourd'hui, j'ai rencontré un problème persistant d'encodage lié aux fichiers de dumps, mais finalement, j'ai réussi à le résoudre. J'ai également terminé l'analyse sur iTrameur et ajouté les captures d'écran de mes résultats. À présent, j'attends les analyses de Clara et de Débora pour compléter cette section et effectuer les modifications nécessaires sur le site HTML. De plus, j'ai ajouté un dossier dédié aux images et à la modification avec Bulma. Finalement, j'ai modifié le site HTML avec Bulma pour le rendre plus visible, j'ai ajouté une page pour les nuages de mots t j'ai créé une image de nuages de mots pour le polonais.
+
 (Clara) Tous les tableaux ont une colonne concordancier avec des liens qui mènent effectivement vers une page html, si 
 le site n'a pas d'errreur de type 400. Le script que j'avais fait focntionnait pour l'anglais mais pas pour le 
 polonais apparement, donc Maria a écrit des lignes de codes pour cette langue et j'ai fait une boucle if pour que si 
@@ -69,4 +70,7 @@ projet, le choix du mot et des langues. J'ai également rempli la partie me conc
 restera plus qu'à trouver une photo pour compléter tout cela. Je n'ai pas rencontré de problèmes particuiers à part le 
 fait que j'ai un peu de mal à comprendre comment me servir du HTML, mais Maria m'a aidé et je suis alllée également me 
 renseigner sur le site de Bulma.
+
+# 07/01
+
 
