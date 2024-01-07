@@ -104,3 +104,7 @@ parent mais ça ne fonctionnait pas, donc comme dans le message d'erreur j'avais
 d'être déjà dans le dossier parent j'ai changé par : 
 bash itrameur/make_itrameur_corpus_1.sh ./dumps-text/ ./contextes kor
 (et c'était bon) mon chat s'est mit sur mon clavier et ça a tout cassé (pause câlin)
+PALS : en comparant mes résulats avec Maria et Clara je me rend compte qu'il y a un petit 
+problème. J'ai creusé un peu et c'est le concordancier qui n'est pas bon. Avec le prof on avait
+regardé pour séparer les mots et on avait créé le script korean.py, mais il semblerait que 
+quelque chose d'autre n'aille pas.
