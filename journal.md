@@ -76,4 +76,5 @@ renseigner sur le site de Bulma.
 
 # 07/01
 
-
+(Clara) Il ne reste du travail pour aujourd'hui mais rien de sorcier. Je n'vais pas encore fait l'analyse iTRameur de l'anglais donc je l'ai faite, pris des captures d'écrans et l'ai intégré à la page "analyse". Maria avait déjà fait sa partie avec la présentation HTML donc j'ai en partie repris la disposition de ses images et textes. J'ai également fait la partie PALS pour l'anglais, ainsi que le nuage de mots.
+Il ne reste désormais plus qu'à faire une courte introduction à notre proket sur la page principale et à attendre que Déboré finisse sa partir iTrameur et son nuage de mots. Il n'y a pas eu de problèmes particuliers puis qu'il s'est surtout sagit de récupérer des résultats, les analyser et les présenter sur la page.
