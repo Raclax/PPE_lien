@@ -83,7 +83,14 @@ repris la disposition de ses images et textes. J'ai également fait la partie PA
 ainsi que le nuage de mots. Il ne reste désormais plus qu'à faire une courte introduction à notre 
 proket sur la page principale et à attendre que Déboré finisse sa partir iTrameur et son nuage de 
 mots. Il n'y a pas eu de problèmes particuliers puis qu'il s'est surtout sagit de récupérer des 
-résultats, les analyser et les présenter sur la page.
-- Updates : J'ai terminé de rédiger la courte intruducion sur la page d'accueil de notre site, et ai modififié le style du tableau pour le rendre plus lisible et l'accorder au reste du site, sur le modèle choisi par Maria. Je l'ai également fait pour le tableau en coréen. Je pense que ma part du travail est finie!
+résultats, les analyser et les présenter sur la page. - Updates : J'ai terminé de rédiger la 
+courte intruducion sur la page d'accueil de notre site, et ai modififié le style du tableau pour 
+le rendre plus lisible et l'accorder au reste du site, sur le modèle choisi par Maria. Je l'ai 
+également fait pour le tableau en coréen. J'ai pu observer par ailleurs, en me rendant sur la page des contributeurs du GitHub, que le nombre de commits associés à mon compte est de 1 : il a du y avoir des soucis, peut être dans l'association de mon compte GitHub aux commits que je fais? J'ai trouvé un article sur stackoverflow qui indiquait qu'il fallait réaliser les instructions suivantes : "git config --global user.name "username" git config --global user.email yourmail@example.com". Je ne sais pas si cela va fonctionner, nous verrons bien.
 
-(Maria) Aujourd'hui, ma to-do list était plutôt légère, donc j'en ai profité pour modifier le site HTML. J'ai pris le temps de traquer et de corriger les petites erreurs qui s'étaient glissées dans le code, ajusté la taille du contenu des images pour une meilleure esthétique, et poussé l'analyse un peu plus loin en utilisant les scripts Python de PALS. En parallèle, j'ai modifié les transitions sur le site pour garantir une expérience utilisateur fluide. Maintenant, il ne me reste plus qu'à attendre la fin des analyses en cours et à déposer notre travail. 
+(Maria) Aujourd'hui, ma to-do list était plutôt légère, donc j'en ai profité pour modifier le site 
+HTML. J'ai pris le temps de traquer et de corriger les petites erreurs qui s'étaient glissées dans 
+le code, ajusté la taille du contenu des images pour une meilleure esthétique, et poussé l'analyse 
+un peu plus loin en utilisant les scripts Python de PALS. En parallèle, j'ai modifié les 
+transitions sur le site pour garantir une expérience utilisateur fluide. Maintenant, il ne me 
+reste plus qu'à attendre la fin des analyses en cours et à déposer notre travail.
